@@ -1,65 +1,86 @@
 [
  {
-  "de_uid": 452,
-  "ru_uid": 960,
+  "de_uid": 330,
+  "ru_uid": null,
+  "colPos": 0,
+  "sorting": 16,
+  "CType": "text",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Imágenes gigapíxel a partir de 100 megapíxeles – para impresiones XXL, techos tensados y decoración mural",
+  "subheader": "",
+  "bodytext": "<p>Bienvenido al portal de stock especializado en fotos de ultra alta resolución a partir de <strong>100 megapíxeles</strong>. Nuestras imágenes gigapíxel son nítidas hasta el detalle, incluso en impresiones XXL sobre techos tensados, paredes de feria y decoraciones murales vistas de cerca.</p>\n<p>Licencie motivos para <strong>techos tensados</strong>, <strong>fotomurales</strong>, <strong>construcción de stands</strong>, interiorismo e impresión de gran formato. Ciudades, paisajes, arquitectura, naturaleza y arte digital: todas las imágenes sin upscaling por IA, directamente de fotografía gigapíxel profesional.</p>\n<p>Haga zoom antes de la compra a resolución completa en el navegador, y pida después con total seguridad la licencia adecuada para su proyecto.</p>"
+ },
+ {
+  "de_uid": 91,
+  "ru_uid": null,
+  "colPos": 0,
+  "sorting": 256,
+  "CType": "list",
+  "list_type": "cartgigapixels_teasergigapixels",
+  "has_flexform": 1,
+  "header": "Gigapixels Grid",
+  "subheader": "",
+  "bodytext": ""
+ },
+ {
+  "de_uid": 98,
+  "ru_uid": null,
+  "colPos": 201,
+  "sorting": 128,
+  "CType": "menu_subpages",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Información",
+  "subheader": "",
+  "bodytext": ""
+ },
+ {
+  "de_uid": 99,
+  "ru_uid": null,
+  "colPos": 202,
+  "sorting": 64,
+  "CType": "menu_subpages",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Gigapixel GmbH",
+  "subheader": "",
+  "bodytext": ""
+ },
+ {
+  "de_uid": 100,
+  "ru_uid": null,
+  "colPos": 203,
+  "sorting": 32,
+  "CType": "menu_subpages",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Ayuda",
+  "subheader": "",
+  "bodytext": ""
+ },
+ {
+  "de_uid": 438,
+  "ru_uid": 833,
+  "colPos": 204,
   "sorting": 10,
-  "CType": "textmedia",
-  "header": "Das wissenschaftliche Argument, das Ihre Kunden überzeugt",
+  "CType": "menu_subpages",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Con base científica",
   "subheader": "",
-  "bodytext": "<p style=\"font-size:1.15em;line-height:1.7;\">Als Innenarchitekt stehen Sie täglich vor der Herausforderung, ästhetische Entscheidungen zu rechtfertigen. Gigapixel-Naturbilder geben Ihnen ein Werkzeug, das über Ästhetik hinausgeht: evidenzbasierte Argumente, die Gesundheit, Produktivität und Immobilienwert messbar steigern.</p>\n<p style=\"font-size:1.15em;line-height:1.7;\">Das ist kein Bauchgefühl – das ist Wissenschaft. Und es macht Ihren Entwurf unbestreitbar.</p>\n<div style=\"display:flex;gap:1.5em;margin:2em 0;flex-wrap:wrap;\">\n<div style=\"flex:1;min-width:155px;background:#f8f4f0;border-left:4px solid #c8a96e;padding:1.2em 1.5em;border-radius:4px;\">\n<div style=\"font-size:2em;font-weight:700;color:#c8a96e;\">62 min</div>\n<div style=\"color:#555;font-size:0.9em;\">mehr Produktivität pro Mitarbeiter/Woche in biophil gestalteten Büros</div>\n</div>\n<div style=\"flex:1;min-width:155px;background:#f8f4f0;border-left:4px solid #c8a96e;padding:1.2em 1.5em;border-radius:4px;\">\n<div style=\"font-size:2em;font-weight:700;color:#c8a96e;\">60 %</div>\n<div style=\"color:#555;font-size:0.9em;\">Stressreduktion durch Naturbilder mit fraktalen Mustern</div>\n</div>\n<div style=\"flex:1;min-width:155px;background:#f8f4f0;border-left:4px solid #c8a96e;padding:1.2em 1.5em;border-radius:4px;\">\n<div style=\"font-size:2em;font-weight:700;color:#c8a96e;\">↑ Wert</div>\n<div style=\"color:#555;font-size:0.9em;\">biophil gestaltete Immobilien erzielen höhere Preise und bessere Vermarktbarkeit</div>\n</div>\n<div style=\"flex:1;min-width:155px;background:#f8f4f0;border-left:4px solid #c8a96e;padding:1.2em 1.5em;border-radius:4px;\">\n<div style=\"font-size:2em;font-weight:700;color:#c8a96e;\">D=1,3–1,5</div>\n<div style=\"color:#555;font-size:0.9em;\">optimale fraktale Komplexität für maximale Entspannungswirkung</div>\n</div>\n</div>"
+  "bodytext": ""
  },
  {
-  "de_uid": 453,
-  "ru_uid": 962,
-  "sorting": 20,
-  "CType": "textmedia",
-  "header": "Evidenzbasierte Argumente für jedes Projekt",
+  "de_uid": 544,
+  "ru_uid": 834,
+  "colPos": 205,
+  "sorting": 10,
+  "CType": "menu_subpages",
+  "list_type": "",
+  "has_flexform": 0,
+  "header": "Fundamentos",
   "subheader": "",
-  "bodytext": "<p>Die Forschung ist eindeutig: Biophiles Design ist kein ästhetisches Extra – es ist ein Werkzeug mit messbarem ROI. Das macht Ihren Entwurf gegenüber dem Auftraggeber unschlagbar.</p>\n<div style=\"margin:2em 0;\">\n<h3 style=\"color:#2c5f7a;border-bottom:2px solid #c8a96e;padding-bottom:0.4em;margin-bottom:0.8em;\">Büro- und Arbeitsprojekte</h3>\n<div style=\"background:#f0f4f8;border-radius:6px;padding:1.2em 1.8em;border-left:4px solid #4a7fa5;\">\n<p style=\"margin:0 0 0.4em;font-weight:600;color:#2c5f7a;\">Wissenschaftliche Quelle</p>\n<p style=\"margin:0;color:#444;font-size:0.95em;\"><strong>Interface (2020):</strong> „Biophilic design can add 62 minutes of productive work per week, calculated to be worth $3,000 per year per team member.\" Naturansichten in Büros sparen zudem über $2.000 pro Mitarbeiter/Jahr an Betriebskosten. (Terrapin, 2012)</p>\n</div>\n</div>\n<div style=\"margin:2em 0;\">\n<h3 style=\"color:#2c5f7a;border-bottom:2px solid #c8a96e;padding-bottom:0.4em;margin-bottom:0.8em;\">Wohnprojekte und Immobilien</h3>\n<p>Biophile Gestaltung erhöht den wahrgenommenen Wert einer Immobilie. In Singapur werden biophile Maßnahmen staatlich mit bis zu 75 % der Kosten gefördert – als Beweis für den anerkannten wirtschaftlichen und gesellschaftlichen Nutzen.</p>\n<div style=\"background:#f0f4f8;border-radius:6px;padding:1.2em 1.8em;border-left:4px solid #4a7fa5;\">\n<p style=\"margin:0 0 0.4em;font-weight:600;color:#2c5f7a;\">Wissenschaftliche Quelle</p>\n<p style=\"margin:0;color:#444;font-size:0.95em;\"><strong>Salingaros, N.A. (2015):</strong> „The structure of those buildings triggers a healing process in our own bodies, so that we consequently wish to experience such buildings as often as possible.\" Gebäude, die biophile Heilungsprozesse auslösen, erzielen höhere Preise und bessere Vermarktbarkeit.</p>\n</div>\n</div>\n<div style=\"margin:2em 0;\">\n<h3 style=\"color:#2c5f7a;border-bottom:2px solid #c8a96e;padding-bottom:0.4em;margin-bottom:0.8em;\">Gastronomie- und Handelsprojekte</h3>\n<div style=\"background:#f0f4f8;border-radius:6px;padding:1.2em 1.8em;border-left:4px solid #4a7fa5;\">\n<p style=\"margin:0 0 0.4em;font-weight:600;color:#2c5f7a;\">Wissenschaftliche Quelle</p>\n<p style=\"margin:0;color:#444;font-size:0.95em;\"><strong>Terrapin (2014) / Orth &amp; Wirtz (2014):</strong> Biophile Gestaltung steigert den Umsatz in Einzelhandel und Gastronomie nachweislich. Kunden verweilen länger und konsumieren mehr in Umgebungen, die sie als nährend und wertvoll wahrnehmen.</p>\n</div>\n</div>"
- },
- {
-  "de_uid": 454,
-  "ru_uid": 964,
-  "sorting": 30,
-  "CType": "textmedia",
-  "header": "Wissenschaftliche Empfehlungen für Motivwahl und Platzierung",
-  "subheader": "",
-  "bodytext": "<p>Die Forschung gibt Innenarchitekten konkrete, umsetzbare Leitlinien:</p>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em;margin:1.5em 0;\">\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #5a8a5a;\">\n<strong style=\"color:#3a6a3a;display:block;margin-bottom:0.5em;\">Motivwahl – Savannen-Hypothese</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Am wirksamsten sind Landschaften mit offenen Sichtachsen, Baumgruppen und sauberem Wasser. Bilder mit Wasser lösen signifikant höhere restaurative Reaktionen aus als rein grüne Motive. Warme Jahreszeiten bevorzugen.</p>\n</div>\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #c8a96e;\">\n<strong style=\"color:#8b6914;display:block;margin-bottom:0.5em;\">Fraktale Komplexität D=1,3–1,5</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Dieser Bereich fraktaler Dimension induziert Alpha-Wellen im EEG – den stärksten Entspannungseffekt. Statistische Fraktale (natürliche Zufälligkeit) wirken stärker als mathematisch exakte Muster. (Hägerhäll et al., 2015)</p>\n</div>\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #4a7fa5;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.5em;\">Farbwahl nach Raumtyp</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Blau, Grün, sanfte Violetttöne: beruhigend und restaurativ. Grün im Büro balanciert Emotionen und fördert Aufmerksamkeit. Grelle Farben und scharfe Kontraste in Hochstressbereichen vermeiden.</p>\n</div>\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #7a3a5a;\">\n<strong style=\"color:#7a3a5a;display:block;margin-bottom:0.5em;\">Platzierung und Sichtachsen</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Naturreize müssen auch in sitzender Position ungehindert wahrnehmbar sein. Interventionen entlang hochfrequentierter Wege maximieren Mikro-Restaurationen. Bilder benötigen einen definierten Rahmen um nicht als echte Fenster fehlgedeutet zu werden.</p>\n</div>\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #2c5f7a;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.5em;\">Großformate wirken stärker</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Ein kraftvolles großformatiges Bild (Prospect) ist wirksamer als mehrere kleine Interventionen. Wandfüllende Darstellungen bevorzugen horizontale Öffnungen die 25–30 % der Wand einnehmen. (Browning et al., 2014)</p>\n</div>\n<div style=\"background:#f8f4f0;padding:1.5em;border-radius:6px;border-left:3px solid #8b6914;\">\n<strong style=\"color:#8b6914;display:block;margin-bottom:0.5em;\">Auflösung nach Betrachtungsabstand</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Unsere Bilder beginnen ab 100 Megapixel originaler Bildinformation – je nach Motiv bis zu 250 Megapixel oder ab 500 Megapixel aufwärts. Pixelfrei auf jeder Fläche, aus jeder Distanz. (Ashraf et al., 2024)</p>\n</div>\n</div>"
- },
- {
-  "de_uid": 455,
-  "ru_uid": 966,
-  "sorting": 40,
-  "CType": "textmedia",
-  "header": "Warum wissenschaftlich fundierte Argumentation Ihre Position stärkt",
-  "subheader": "",
-  "bodytext": "<p>Innenarchitekten, die evidenzbasierte Gestaltungsargumente nutzen, positionieren sich im Premiumsegment – und stärken die Kundenbindung durch messbare Ergebnisse.</p>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2em;margin:1.5em 0;\">\n<div style=\"border:1px solid #ddd;border-radius:6px;padding:1.5em;background:#fff;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.6em;\">Kundenbindung durch Ergebnisse</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Wenn Ihre Kunden spürbare Verbesserungen erleben – weniger Stress, besserer Schlaf, höhere Produktivität – empfehlen sie Sie weiter. Messbare Ergebnisse sind das stärkste Marketingargument.</p>\n</div>\n<div style=\"border:1px solid #ddd;border-radius:6px;padding:1.5em;background:#fff;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.6em;\">Premiumpositionierung</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">„Wir arbeiten evidenzbasiert\" ist eine Differenzierung, die kein rein ästhetisch arbeitender Mitbewerber bieten kann. Wissenschaft ist Ihr Alleinstellungsmerkmal.</p>\n</div>\n<div style=\"border:1px solid #ddd;border-radius:6px;padding:1.5em;background:#fff;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.6em;\">Überzeugung bei Budgetentscheidungen</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Studien und messbare ROI-Zahlen (62 Minuten Produktivität, 60 % Stressreduktion, höherer Immobilienwert) helfen, Budgets für hochwertige Gestaltung zu rechtfertigen – gegenüber Geschäftsführern, Bauherren und Eigentümern.</p>\n</div>\n<div style=\"border:1px solid #ddd;border-radius:6px;padding:1.5em;background:#fff;\">\n<strong style=\"color:#2c5f7a;display:block;margin-bottom:0.6em;\">Zugang zu Gigapixel-Material</strong>\n<p style=\"font-size:0.9em;color:#555;margin:0;\">Im Portal zoomen Sie in voller Auflösung. Auf Wunsch schneiden wir kostenlos auf Ihr Zielformat zu. 1 m² Probedruckausschnitt für Kundenpräsentationen auf Anfrage.</p>\n</div>\n</div>\n<div style=\"text-align:center;margin:2em 0;\">\n<a href=\"/gigapixels\" style=\"display:inline-block;background:#c8a96e;color:#fff;padding:0.9em 2em;border-radius:4px;text-decoration:none;font-weight:600;margin:0.4em;\">Jetzt Motive entdecken</a>\n<a href=\"/kontakt\" style=\"display:inline-block;background:#2c5f7a;color:#fff;padding:0.9em 2em;border-radius:4px;text-decoration:none;font-weight:600;margin:0.4em;\">Projektberatung anfragen</a>\n</div>"
- },
- {
-  "de_uid": 456,
-  "ru_uid": 968,
-  "sorting": 50,
-  "CType": "textmedia",
-  "header": "Wissenschaftliche Quellen",
-  "subheader": "",
-  "bodytext": "<div style=\"background:#f8f8f8;border-radius:6px;padding:1.5em 2em;font-size:0.9em;line-height:1.9;color:#555;\"><ol style=\"padding-left:1.4em;margin:0;\">\n<li style=\"margin-bottom:0.7em;\"><strong>Interface Inc. (2020):</strong> Creating Positive Spaces. 62 Minuten Produktivitätsgewinn/Woche = $3.000/Jahr pro Mitarbeiter.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Terrapin Bright Green (2012/2014):</strong> The Economics of Biophilia / 14 Patterns of Biophilic Design. $2.000+ Einsparung pro Mitarbeiter/Jahr durch Naturansichten. Umsatzsteigerung in Gastronomie und Handel.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Salingaros, N.A. (2015):</strong> Biophilia &amp; Healing Environments. Biophile Gebäude triggern Heilungsprozesse und fördern Love of Place – höherer Immobilienwert.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Hägerhäll, C.M. et al. (2015):</strong> Human Physiological Benefits of Viewing Nature. Nonlinear Dynamics 19(1). D=1,3–1,5 induziert Alpha-Wellen: stärkster Entspannungseffekt.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Taylor, R.P. (2021):</strong> Biophilic Fractal Designs. 60 % Stressreduktion. Bei wandfüllenden Darstellungen: D~1,6–1,7 bevorzugt.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Browning, W.D. et al. (2014):</strong> 14 Patterns of Biophilic Design. Prospect &amp; Refuge, Sichtachsen, Biodiversität über Quantität.</li>\n<li style=\"margin-bottom:0.7em;\"><strong>Orth, U.R. &amp; Wirtz, J. (2014):</strong> Consumer Processing of Interior Service Environments. Processing Fluency und Markenbindung.</li>\n<li><strong>Ashraf, M. et al. (2024):</strong> Resolution Limit of the Eye. Cambridge / Meta. 94 ppi Auflösungsgrenze.</li>\n</ol></div>"
- },
- {
-  "de_uid": 488,
-  "ru_uid": 970,
-  "sorting": 200,
-  "CType": "textmedia",
-  "header": "Haeufige Fragen",
-  "subheader": "",
-  "bodytext": "<div style=\"margin-top:2em\"><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a\">Welche Bildaufloesung empfiehlt die Forschung für wandfuellende Installationen?</strong><p style=\"margin:0;color:#444;line-height:1.7\">Für wandfuellende Darstellungen empfiehlt die Forschung eine Mindestaufloesung von 70 ppi echter Bildinformation (Ashraf et al., 2024). Gigapixel-Bilder ab 100 Megapixel erfuellen diese Anforderung auf Flächen bis zu 20 Metern Breite.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a\">Wie viel Produktivitaet gewinnen Mitarbeiter durch biophile Buerogestaltung?</strong><p style=\"margin:0;color:#444;line-height:1.7\">Biophile Gestaltung in Büros steigert die produktive Arbeitszeit um 62 Minuten pro Woche pro Mitarbeiter – etwa 3.000 USD pro Jahr (Interface, 2020). Naturansichten senken Betriebskosten um ueber 2.000 USD pro Mitarbeiter jaehrlich.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a\">Steigert biophiles Design den Immobilienwert?</strong><p style=\"margin:0;color:#444;line-height:1.7\">Ja. Biophil gestaltete Objekte erzielen höhere Preise und bessere Vermarktbarkeit. In Singapur werden biophile Massnahmen staatlich mit bis zu 75% der Kosten gefördert.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a\">Welche Motive wirken in Büros und Wohnraeumen am stärksten?</strong><p style=\"margin:0;color:#444;line-height:1.7\">Naturmotive mit fraktalen Mustern (D = 1,3-1,5): Wälder, Gewässer, Landschaften. Bilder mit sauberem Wasser loesen die stärksten restaurativen Reaktionen aus. Für Büros: ruhige Grüntöne.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a\">Kann ich ein Gigapixel-Bild für mehrere Raeume nutzen?</strong><p style=\"margin:0;color:#444;line-height:1.7\">Ja. Ein 500-Megapixel-Bild liefert genug Bildinformation für mehrere Raeume und Wandabschnitte aus einem einzigen Original. Wir schneiden kostenlos auf Ihre Zielformate zu.</p></div></div>"
- },
- {
-  "de_uid": 490,
-  "ru_uid": 972,
-  "sorting": 220,
-  "CType": "textmedia",
-  "header": "In Kuerze",
-  "subheader": "",
-  "bodytext": "<div style=\"background:#2c5f7a;color:#fff;padding:1.5em 2em;border-radius:6px;margin-top:2em\"><p style=\"margin:0;font-size:1.05em;line-height:1.8\">Gigapixel-Bilder ab 100 Megapixel sind die wissenschaftliche Grundlage für evidenzbasierte Innenarchitektur. Sie steigern Wohlbefinden, Produktivitaet und Immobilienwert – und geben Innenarchitekten ein ueberzeugendes Argument gegenueber Auftraggebern. Ein Motiv für viele Raeume aus einer einzigen Bildquelle.</p></div>"
+  "bodytext": ""
  }
 ]
