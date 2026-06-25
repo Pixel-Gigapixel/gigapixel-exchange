@@ -1,0 +1,56 @@
+pid  | slug | title
+--------------------------------------------------------
+ 243 | /blog/imagenes-naturales-reales-vs-generadas-por-ia-por-que-gana-la-autenticidad | Imágenes naturales reales vs. generadas por IA: Por qué gana la autenticidad
+ 246 | /blog/la-regla-20-20-20-como-el-trabajo-con-pantallas-cansa-la-vista | La regla 20-20-20: Cómo el trabajo con pantallas cansa la vista
+ 248 | /blog/diseno-de-iluminacion-en-el-sector-sanitario-21-por-ciento-mejor-calidad-del-sueno | Diseño de iluminación en el sector sanitario: 21 por ciento mejor calidad del sueño
+ 250 | /blog/fractales-en-el-diseno-de-interiores-por-que-d-igual-a-1-3-a-1-5-resulta-relajante | Fractales en el diseño de interiores: Por qué D igual a 1,3 a 1,5 resulta relajante
+ 252 | /blog/100-megapixeles-vs-500-megapixeles-en-impresion-donde-se-hace-visible-la-diferencia | 100 megapíxeles vs. 500 megapíxeles en impresión: dónde se hace visible la diferencia
+ 254 | /blog/backlit-vs-impresion-directa-lo-que-la-ciencia-dice-sobre-las-paredes-de-imagen-retroiluminadas | Backlit vs. impresión directa: Lo que la ciencia dice sobre las paredes de imagen retroiluminadas
+ 256 | /blog/imagenes-aereas-gigapixel-fundamentos-tecnicos-y-aplicaciones | Imágenes aéreas gigapíxel: fundamentos técnicos y aplicaciones
+ 258 | /blog/evidence-based-selling-como-las-evidencias-cientificas-generan-exito-en-ventas | Evidence-Based Selling: Cómo las evidencias científicas generan éxito en ventas
+ 260 | /blog/roi-en-ferias-y-paredes-de-exposicion-como-las-imagenes-de-naturaleza-aumentan-el-exito-en-ferias | ROI en ferias y paredes de exposición: Cómo las imágenes de naturaleza aumentan el éxito en ferias
+ 262 | /blog/amenities-hospitalarias-como-las-imagenes-de-naturaleza-mejoran-mediblemente-la-satisfaccion-del-paciente | Amenities hospitalarias: cómo las imágenes de naturaleza mejoran mediblemente la satisfacción del paciente
+ 266 | /blog/el-punto-de-inflexion-arquitectonico-cuando-el-edificio-determina-el-espacio | El punto de inflexión arquitectónico: cuando el edificio determina el espacio
+ 269 | /blog/por-que-las-imagenes-de-stock-fracasan-en-los-paneles-de-feria-y-que-funciona-en-su-lugar | Por qué las imágenes de stock fracasan en los paneles de feria — y qué funciona en su lugar
+ 271 | /blog/healing-environment-con-gigapixel-por-que-las-imagenes-autenticas-de-naturaleza-funcionan-en-el-hospital | Healing Environment con Gigapixel: Por qué las imágenes auténticas de naturaleza funcionan en el hospital
+ 273 | /blog/gigapixel-vs-ki-upscaling-por-que-los-pixeles-reales-ganan-en-la-observacion-cercana | Gigapixel vs. KI-Upscaling: Por qué los píxeles reales ganan en la observación cercana
+ 276 | /blog/que-resolucion-de-imagen-para-una-pared-de-10m2 | ¿Qué resolución de imagen para una pared de 10m²?
+ 278 | /blog/naturelux-paredes-de-luz-con-motivos | NatureLux® Paredes de luz con motivos
+ 280 | /blog/el-mito-de-los-dpi | El mito de los DPI
+ 282 | /blog/por-que-los-smartphones-no-tienen-realmente-48-megapixeles | Por qué los smartphones no tienen realmente 48 megapíxeles
+ 284 | /blog/el-limite-fisiologico-del-ojo-humano | El límite fisiológico del ojo humano
+ 286 | /blog/por-que-los-arquitectos-deberian-decidir-sobre-las-imagenes-con-antelacion | Por qué los arquitectos deberían decidir sobre las imágenes con antelación
+ 288 | /blog/como-el-entorno-visual-reduce-la-rotacion-de-personal | Cómo el entorno visual reduce la rotación de personal
+ 290 | /blog/estudios-de-eye-tracking-lo-que-los-observadores-realmente-ven | Estudios de eye-tracking: lo que los observadores realmente ven
+ 294 | /blog/sakura-y-la-ciencia-de-la-belleza-efimera | Sakura y la ciencia de la belleza efímera
+ 296 | /blog/fidelidad-cromatica-en-gran-formato-por-que-la-fotografia-gigapixel-preserva-lo-que-el-upscaling-destruye | Fidelidad cromática en gran formato: por qué la fotografía gigapíxel preserva lo que el upscaling destruye
+ 302 | /blog/diseno-multisensorial-cuando-las-imagenes-y-los-sonidos-sanan | Diseño multisensorial: cuando las imágenes y los sonidos sanan
+ 304 | /blog/por-que-los-fabricantes-de-techos-tensados-deberian-apostar-por-gigapixeles-reales | Por qué los fabricantes de techos tensados deberían apostar por gigapíxeles reales
+ 306 | /blog/por-que-los-gigapixeles-reales-convencen-al-96-de-los-usuarios | Por qué los gigapíxeles reales convencen al 96% de los usuarios
+ 308 | /blog/vestibulos-de-hotel-como-las-imagenes-de-alta-calidad-aumentan-las-reservas-repetidas | Vestíbulos de hotel: Cómo las imágenes de alta calidad aumentan las reservas repetidas
+ 314 | /blog/el-verdadero-roi-de-las-imagenes-de-naturaleza-en-clinicas | El verdadero ROI de las imágenes de naturaleza en clínicas
+ 316 | /blog/foveated-rendering-por-que-la-resolucion-importa-donde-cae-la-mirada | Foveated Rendering: Por qué la resolución importa donde cae la mirada
+ 333 | /blog/comparativa-de-metodos-de-impresion-uv-led-vs-latex-vs-solvente | Comparativa de métodos de impresión: UV-LED vs. Látex vs. Solvente
+ 339 | /blog/coste-por-metro-cuadrado-mural-vs-material-natural-real | Coste por metro cuadrado: mural vs. material natural real
+ 341 | /blog/residencias-de-mayores-imagenes-de-naturaleza-contra-la-agitacion-demencial | Residencias de mayores: imágenes de naturaleza contra la agitación demencial
+ 343 | /blog/calculadora-de-amortizacion-mural-de-hotel-de-20-m2 | Calculadora de amortización: mural de hotel de 20 m²
+ 348 | /blog/fiscalmente-murales-como-equipamiento-empresarial-amortizable | Fiscalmente: murales como equipamiento empresarial amortizable
+ 350 | /blog/acustica-e-impresion-de-gran-formato-como-los-absorbentes-acusticos-impresos-mejoran-los-espacios-y-por-que-las-placas-perforadas-son-un-riesgo | Acústica e impresión de gran formato: cómo los absorbentes acústicos impresos mejoran los espacios — y por qué las placas perforadas son un riesgo
+ 357 | /blog/costes-de-mantenimiento-a-lo-largo-de-10-anos-mural-vs-papel-pintado | Costes de mantenimiento a lo largo de 10 años: mural vs. papel pintado
+ 359 | /blog/tolerancia-de-recorte-por-que-las-imagenes-gigapixel-aguantan-el-encuadre | Tolerancia de recorte: por qué las imágenes gigapíxel aguantan el encuadre
+ 361 | /blog/comparativa-de-formatos-de-archivo-psb-tiff-jpeg-en-imagenes-gigapixel | Comparativa de formatos de archivo: PSB, TIFF, JPEG en imágenes gigapíxel
+ 363 | /blog/limite-de-difraccion-por-que-mas-megapixeles-no-significan-mas-detalle | Límite de difracción: Por qué más megapíxeles no significan más detalle
+ 365 | /blog/proceso-de-stitching-del-mosaico-de-800-imagenes-al-panorama-gigapixel | Proceso de stitching: del mosaico de 800 imágenes al panorama gigapíxel
+ 367 | /blog/gestion-del-color-del-monitor-al-techo-tensado | Gestión del color del monitor al techo tensado
+ 369 | /blog/diseno-de-stand-ferial-gigapixel-como-punto-de-anclaje-visual | Diseño de stand ferial: Gigapixel como punto de anclaje visual
+ 371 | /blog/airport-lounges-imagenes-gigapixel-como-diferenciacion-premium | Airport Lounges: Imágenes Gigapixel como diferenciación premium
+ 373 | /blog/posicionamiento-premium-como-las-imagenes-de-alta-calidad-diferencian-los-edificios-de-oficinas | Posicionamiento premium: cómo las imágenes de alta calidad diferencian los edificios de oficinas
+ 375 | /blog/boardrooms-como-las-imagenes-premium-diferencian-la-sala-de-negociaciones | Boardrooms: Cómo las imágenes premium diferencian la sala de negociaciones
+ 377 | /blog/panoramas-de-montana-en-interiores-amplitud-profundidad | Panoramas de montaña en interiores — amplitud & profundidad
+ 379 | /blog/bano-de-bosque-en-interiores-shinrin-yoku | Baño de bosque en interiores — Shinrin-yoku
+ 385 | /blog/blue-space-imagenes-de-agua-y-bienestar-en-interiores | Blue Space: imágenes de agua y bienestar en interiores
+ 387 | /blog/campos-amplitud-horizonte-amp-calma | Campos/Amplitud — Horizonte &amp; Calma
+ 389 | /blog/mundos-de-color-estacionales-en-gran-formato-otono-colores | Mundos de color estacionales en gran formato — Otoño/Colores
+
+=== SLUG-KOLLISIONSCHECK (DB alle Sprachen + Intra-Batch) ===
+KEINE Kollisionen/Dubletten.

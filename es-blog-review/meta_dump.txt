@@ -1,0 +1,53 @@
+pid  | Datum                  | Kategorie
+--------------------------------------------------------
+ 243 | 19 de abril de 2026    | Ciencia
+ 246 | 18 de abril de 2026    | Salud
+ 248 | 17 de abril de 2026    | Salud
+ 250 | 16 de abril de 2026    | Ciencia
+ 252 | 14 de abril de 2026    | Tecnología
+ 254 | 12 de abril de 2026    | Producto
+ 256 | 10 de abril de 2026    | Tecnología
+ 258 | 8 de abril de 2026     | Ventas
+ 260 | 6 de abril de 2026     | Ventas
+ 262 | 4 de abril de 2026     | Arquitectura
+ 266 | 2 de abril de 2026     | Arquitectura
+ 269 | 29 de marzo de 2026    | Ventas
+ 271 | 31 de marzo de 2026    | Salud
+ 273 | 27 de marzo de 2026    | Tecnología
+ 276 | 25 de marzo de 2026    | Tecnología
+ 278 | 23 de marzo de 2026    | Producto
+ 280 | 21 de marzo de 2026    | Tecnología
+ 282 | 19 de marzo de 2026    | Tecnología
+ 284 | 17 de marzo de 2026    | Tecnología
+ 286 | 15 de marzo de 2026    | Ventas
+ 288 | 17 de abril de 2026    | Diseño basado en evidencia
+ 290 | 17 de abril de 2026    | Práctica y aplicación
+ 294 | 21 de abril de 2026    | Naturaleza y ciencia
+ 296 | 19 de abril de 2026    | Tecnología y ciencia
+ 302 | 26 de abril de 2026    | Práctica &amp; aplicación
+ 304 | 26 de abril de 2026    | Aplicaciones especiales
+ 306 | 30 de abril de 2026    | Tecnología y diferenciación
+ 308 | 30 de abril de 2026    | Hostelería y diseño
+ 314 | 1 de mayo de 2026      | Diseño basado en evidencia
+ 316 | 1 de mayo de 2026      | Tecnología y diferenciación
+ 333 | 07 de mayo de 2026     | Técnica
+ 339 | 10 de mayo de 2026     | Negocios
+ 341 | 10 de mayo de 2026     | Salud
+ 343 | 10 de mayo de 2026     | Negocios
+ 348 | 13 de mayo de 2026     | B2B
+ 350 | 13 de mayo de 2026     | Técnica
+ 357 | 17 de mayo de 2026     | Negocios
+ 359 | 17 de mayo de 2026     | Técnica
+ 361 | 7 de mayo de 2026      | Técnica
+ 363 | 10 de mayo de 2026     | Técnica
+ 365 | 26 de mayo de 2026     | Técnica
+ 367 | 26 de mayo de 2026     | Técnica
+ 369 | 1 de junio de 2026     | Negocios
+ 371 | 1 de junio de 2026     | Negocios
+ 373 | 3 de junio de 2026     | Negocios
+ 375 | 3 de junio de 2026     | Negocios
+ 377 | 2 de junio de 2026     | Imágenes de naturaleza
+ 379 | 2 de junio de 2026     | Imágenes de naturaleza
+ 385 | 3 de junio de 2026     | Imágenes de naturaleza
+ 387 | 3 de junio de 2026     | Imágenes de naturaleza
+ 389 | 3 de junio de 2026     | Imágenes de naturaleza
