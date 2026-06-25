@@ -1,13 +1,10 @@
 Blog-Dry-Run Bundle — 51 Seiten mit JSON (von 53; 201/241 sind bereits live)
-PASS: 46   FAIL: 5   Retry-noetig (dann gruen): [201, 241, 246, 273, 333, 339, 343, 348, 363, 367, 371, 373, 377, 385, 387, 389]
+PASS: 49   FAIL: 2   Retry-noetig (dann gruen): [201, 241, 246, 273, 333, 339, 343, 348, 363, 367, 371, 373, 377, 385, 387, 389]
 UNMAPPED_BLOG_CATS: leer (alle 19 gemappt)
 
 === GATE-FAILS (nicht committen) ===
  339 | ! Währung DE={'€,': 1} ZIEL={'€.': 1, '€,': 1}
- 363 | ! Zahlen DE-only={} ZIEL-only={'3': 1, '8': 1, '2012': 1, '5': 1, '11': 2}
  371 | ! Zahlen DE-only={} ZIEL-only={'24': 1}
- 373 | ! Tag #32  DE '<10 % vs. 20 %+ bei konventionellen Gebäuden</h3>' | ZIEL '</h3>'
- 389 | ! Tag #14  DE '< 2 ist für das menschliche Auge unsichtbar — die Reproduktion ist vom Original nicht zu unterscheiden. ΔE zwischen 2 und 6 ist bei dir
 
 === alle Seiten ===
  201 | NO-JSON (committed/skip: 201/241, oder Fehler)
@@ -51,15 +48,15 @@ UNMAPPED_BLOG_CATS: leer (alle 19 gemappt)
  357 | PASS | elems=1
  359 | PASS | elems=1
  361 | PASS | elems=1
- 363 | retry FAIL | elems=1
+ 363 | retry PASS | elems=1
  365 | PASS | elems=1
  367 | retry PASS | elems=1
  369 | PASS | elems=1
  371 | retry FAIL | elems=1
- 373 | retry FAIL | elems=1
+ 373 | retry PASS | elems=1
  375 | PASS | elems=1
  377 | retry PASS | elems=1
  379 | PASS | elems=1
  385 | retry PASS | elems=1
  387 | retry PASS | elems=1
- 389 | retry FAIL | elems=1
+ 389 | retry PASS | elems=1

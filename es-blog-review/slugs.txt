@@ -13,7 +13,7 @@ pid  | slug | title
  266 | /blog/el-punto-de-inflexion-arquitectonico-cuando-el-edificio-determina-el-espacio | El punto de inflexión arquitectónico: cuando el edificio determina el espacio
  269 | /blog/por-que-las-imagenes-de-stock-fracasan-en-los-paneles-de-feria-y-que-funciona-en-su-lugar | Por qué las imágenes de stock fracasan en los paneles de feria — y qué funciona en su lugar
  271 | /blog/healing-environment-con-gigapixel-por-que-las-imagenes-autenticas-de-naturaleza-funcionan-en-el-hospital | Healing Environment con Gigapixel: Por qué las imágenes auténticas de naturaleza funcionan en el hospital
- 273 | /blog/gigapixel-vs-ki-upscaling-por-que-los-pixeles-reales-ganan-en-la-observacion-cercana | Gigapixel vs. KI-Upscaling: Por qué los píxeles reales ganan en la observación cercana
+ 273 | /blog/gigapixel-vs-escalado-por-ia-por-que-los-pixeles-reales-ganan-en-la-observacion-cercana | Gigapixel vs. escalado por IA: Por qué los píxeles reales ganan en la observación cercana
  276 | /blog/que-resolucion-de-imagen-para-una-pared-de-10m2 | ¿Qué resolución de imagen para una pared de 10m²?
  278 | /blog/naturelux-paredes-de-luz-con-motivos | NatureLux® Paredes de luz con motivos
  280 | /blog/el-mito-de-los-dpi | El mito de los DPI
@@ -31,7 +31,7 @@ pid  | slug | title
  314 | /blog/el-verdadero-roi-de-las-imagenes-de-naturaleza-en-clinicas | El verdadero ROI de las imágenes de naturaleza en clínicas
  316 | /blog/foveated-rendering-por-que-la-resolucion-importa-donde-cae-la-mirada | Foveated Rendering: Por qué la resolución importa donde cae la mirada
  333 | /blog/comparativa-de-metodos-de-impresion-uv-led-vs-latex-vs-solvente | Comparativa de métodos de impresión: UV-LED vs. Látex vs. Solvente
- 339 | /blog/coste-por-metro-cuadrado-mural-vs-material-natural-real | Coste por metro cuadrado: mural vs. material natural real
+ 339 | /blog/coste-por-metro-cuadrado-mural-frente-a-material-natural-real | Coste por metro cuadrado: mural frente a material natural real
  341 | /blog/residencias-de-mayores-imagenes-de-naturaleza-contra-la-agitacion-demencial | Residencias de mayores: imágenes de naturaleza contra la agitación demencial
  343 | /blog/calculadora-de-amortizacion-mural-de-hotel-de-20-m2 | Calculadora de amortización: mural de hotel de 20 m²
  348 | /blog/fiscalmente-murales-como-equipamiento-empresarial-amortizable | Fiscalmente: murales como equipamiento empresarial amortizable
@@ -39,17 +39,17 @@ pid  | slug | title
  357 | /blog/costes-de-mantenimiento-a-lo-largo-de-10-anos-mural-vs-papel-pintado | Costes de mantenimiento a lo largo de 10 años: mural vs. papel pintado
  359 | /blog/tolerancia-de-recorte-por-que-las-imagenes-gigapixel-aguantan-el-encuadre | Tolerancia de recorte: por qué las imágenes gigapíxel aguantan el encuadre
  361 | /blog/comparativa-de-formatos-de-archivo-psb-tiff-jpeg-en-imagenes-gigapixel | Comparativa de formatos de archivo: PSB, TIFF, JPEG en imágenes gigapíxel
- 363 | /blog/limite-de-difraccion-por-que-mas-megapixeles-no-significan-mas-detalle | Límite de difracción: Por qué más megapíxeles no significan más detalle
+ 363 | /blog/limite-de-difraccion-por-que-mas-megapixeles-no-significan-mas-detalle | Límite de difracción: por qué más megapíxeles no significan más detalle
  365 | /blog/proceso-de-stitching-del-mosaico-de-800-imagenes-al-panorama-gigapixel | Proceso de stitching: del mosaico de 800 imágenes al panorama gigapíxel
  367 | /blog/gestion-del-color-del-monitor-al-techo-tensado | Gestión del color del monitor al techo tensado
  369 | /blog/diseno-de-stand-ferial-gigapixel-como-punto-de-anclaje-visual | Diseño de stand ferial: Gigapixel como punto de anclaje visual
- 371 | /blog/airport-lounges-imagenes-gigapixel-como-diferenciacion-premium | Airport Lounges: Imágenes Gigapixel como diferenciación premium
+ 371 | /blog/airport-lounges-imagenes-gigapixel-como-diferenciacion-premium | Airport Lounges: imágenes gigapíxel como diferenciación premium
  373 | /blog/posicionamiento-premium-como-las-imagenes-de-alta-calidad-diferencian-los-edificios-de-oficinas | Posicionamiento premium: cómo las imágenes de alta calidad diferencian los edificios de oficinas
  375 | /blog/boardrooms-como-las-imagenes-premium-diferencian-la-sala-de-negociaciones | Boardrooms: Cómo las imágenes premium diferencian la sala de negociaciones
  377 | /blog/panoramas-de-montana-en-interiores-amplitud-profundidad | Panoramas de montaña en interiores — amplitud & profundidad
  379 | /blog/bano-de-bosque-en-interiores-shinrin-yoku | Baño de bosque en interiores — Shinrin-yoku
  385 | /blog/blue-space-imagenes-de-agua-y-bienestar-en-interiores | Blue Space: imágenes de agua y bienestar en interiores
- 387 | /blog/campos-amplitud-horizonte-amp-calma | Campos/Amplitud — Horizonte &amp; Calma
+ 387 | /blog/campos-amplitud-horizonte-calma | Campos/Amplitud — Horizonte & Calma
  389 | /blog/mundos-de-color-estacionales-en-gran-formato-otono-colores | Mundos de color estacionales en gran formato — Otoño/Colores
 
 === SLUG-KOLLISIONSCHECK (DB alle Sprachen + Intra-Batch) ===
