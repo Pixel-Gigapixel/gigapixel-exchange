@@ -1,0 +1,5 @@
+rollout: lang=4 mode=dry-run model=claude-opus-4-8 pids=2
+pid 117: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-117.json  gates=PASS (5 Elemente, page-overlay=exists)
+pid 138: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-138.json  gates=PASS (1 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_ok': 2} ===

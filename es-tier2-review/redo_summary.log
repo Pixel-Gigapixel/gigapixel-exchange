@@ -1,0 +1,39 @@
+########## (2) Sonnet: 117,138 ##########
+rollout: lang=4 mode=dry-run model=claude-sonnet-4-6 pids=2
+pid 117: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 535] Zahl-Mismatch: die Quelle hat {'24': 1, '7': 1}, deine Übersetzung hat {}. Übernimm die Ziffernfolgen der QUELLE exakt; große Zahlen mit Skalenwort: Quell-Ziffer behalten + Skalenwort (DE „1,6 Milliarden” → ES „1,6 mil millones”), die Zahl NICHT umschreiben. Korrektheit vor Gate — Zahlen niemals „passend” machen.
+• [uid 536] &amp;-Anzahl weicht ab (DE=0 ES=4) — &amp; als &amp; behalten.
+pid 117: GATES FAIL nach Retry (Pass 2)
+pid 117: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-117.json  gates=FAIL (5 Elemente, page-overlay=exists)
+pid 138: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 548] HTML-Tag-Skelett weicht ab — Tags/Attribute/Reihenfolge byte-genau aus der Quelle übernehmen, nur den Text zwischen den Tags übersetzen.
+pid 138: GATES FAIL nach Retry (Pass 2)
+pid 138: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-138.json  gates=FAIL (1 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_gate_fail': 2} ===
+
+########## (3) Opus: 67,73,142 ##########
+rollout: lang=4 mode=dry-run model=claude-opus-4-8 pids=3
+pid 67: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-67.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 73: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-73.json  gates=PASS (1 Elemente, page-overlay=exists)
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 84 (char 83)) Versuch 1
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 97 (char 96)) Versuch 2
+pid 142: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 565] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „Fundiertes Wissen rund um ultra-hochauflösende Fotografie, Large-Format-Druck und professionelle Bildanwendungen – wissenschaftlich belegt, praxisnah erklärt.”  „echte Gigapixel-Fotografie — der Unterschied Wer nach „Gigapixel" sucht, findet zwei völlig verschiedene Dinge, die nur den Namen teilen.”  „Auf der einen Seite steht Topaz Gigapixel AI: eine Software, die...”  „Weiterlesen → Was ist Gigapixel-Fotografie?”  „Technik, Entstehung und Grenzen Gigapixel-Fotografie bezeichnet Aufnahmen mit einer Auflösung im Bereich von einer Milliarde Bildpunkten und mehr — ein Vielfaches dessen, was eine einzelne ...”  „Weiterlesen → Saisonale Farbwelten im Großformat — Herbst/Farben Farbtreue ist der eigentliche Aufhänger für großformatige Naturbilder — nicht die Auflösung allein.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 84 (char 83)) Versuch 1
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 84 (char 83)) Versuch 2
+pid 142: GATES FAIL nach Retry (Pass 2)
+pid 142: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-142.json  gates=FAIL (1 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_ok': 2, 'dry_gate_fail': 1} ===
+
+########## (3) Opus solo: 42 (32 Elemente) ##########
+rollout: lang=4 mode=dry-run model=claude-opus-4-8 pids=1
+pid 42: Dry-Run -> /home/pixel/exports/es-tier2-redo/es-42.json  gates=PASS (32 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_ok': 1} ===
+
+########## DONE ##########
