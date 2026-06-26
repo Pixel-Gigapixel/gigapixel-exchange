@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="EXT:gigapixel_glossary/Resources/Private/Language/locallang.xlf">
+        <body>
+            <trans-unit id="glossary.title"><source>Glossary</source><target>Glossaire</target></trans-unit>
+            <trans-unit id="glossary.hero_sub"><source>The key terms of real gigapixel photography – clearly explained, from capture to processing.</source><target>Les termes clés de la photographie gigapixel authentique – expliqués clairement, de la prise de vue au traitement.</target></trans-unit>
+            <trans-unit id="glossary.breadcrumb"><source>Glossary</source><target>Glossaire</target></trans-unit>
+            <trans-unit id="term.category_label"><source>Category: </source><target>Catégorie : </target></trans-unit>
+            <trans-unit id="term.related_title"><source>Related Terms</source><target>Termes associés</target></trans-unit>
+            <trans-unit id="term.expert_intro"><source>Explained by</source><target>Expliqué par</target></trans-unit>
+            <trans-unit id="term.expert_role"><source>Expert in gigapixel photography</source><target>Expert en photographie gigapixel</target></trans-unit>
+            <trans-unit id="cta.has_gallery"><source>Find matching images directly via the cards above – or explore all motifs in the portal.</source><target>Trouvez des images correspondantes directement via les cartes ci-dessus – ou explorez tous les motifs dans le portail.</target></trans-unit>
+            <trans-unit id="cta.no_gallery_pre"><source>Find images matching this topic via </source><target>Trouvez des images correspondant à ce sujet via </target></trans-unit>
+            <trans-unit id="cta.no_gallery_link"><source>visual search</source><target>la recherche visuelle</target></trans-unit>
+            <trans-unit id="cta.no_gallery_post"><source> in the portal.</source><target> dans le portail.</target></trans-unit>
+            <trans-unit id="cta.gallery_license"><source>You can license these motifs directly via the respective detail page.</source><target>Vous pouvez licencier ces motifs directement via la page de détail correspondante.</target></trans-unit>
+            <trans-unit id="cta.btn"><source>Browse all images →</source><target>Explorer toutes les images →</target></trans-unit>
+            <trans-unit id="methodology.title"><source>Methodology</source><target>Méthodologie</target></trans-unit>
+            <trans-unit id="schema.glossary_set_name"><source>Glossary</source><target>Glossaire</target></trans-unit>
+            <trans-unit id="schema.methodology_set_name"><source>Gigapixel Methodology</source><target>Méthodologie gigapixel</target></trans-unit>
+            <trans-unit id="category.aufnahme"><source>Capture</source><target>Prise de vue</target></trans-unit>
+            <trans-unit id="category.verarbeitung"><source>Processing</source><target>Traitement</target></trans-unit>
+            <trans-unit id="category.produktion"><source>Production</source><target>Production</target></trans-unit>
+            <trans-unit id="category.druck"><source>Print</source><target>Impression</target></trans-unit>
+            <trans-unit id="category.medien"><source>Media</source><target>Médias</target></trans-unit>
+            <trans-unit id="category.tech"><source>Technology</source><target>Technologie</target></trans-unit>
+            <trans-unit id="category.anwendung"><source>Application</source><target>Application</target></trans-unit>
+            <trans-unit id="gallery.heading.application"><source>Suitable motifs for %s</source><target>Motifs adaptés pour %s</target></trans-unit>
+            <trans-unit id="gallery.heading.generic"><source>Matching image motifs in the portal</source><target>Motifs d'images correspondants dans le portail</target></trans-unit>
+        </body>
+    </file>
+</xliff>

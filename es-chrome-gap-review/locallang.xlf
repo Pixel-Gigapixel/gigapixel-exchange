@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:gigapixel_glossary/Resources/Private/Language/locallang.xlf">
+        <body>
+            <trans-unit id="glossary.title"><source>Glossary</source></trans-unit>
+            <trans-unit id="glossary.hero_sub"><source>The key terms of real gigapixel photography – clearly explained, from capture to processing.</source></trans-unit>
+            <trans-unit id="glossary.breadcrumb"><source>Glossary</source></trans-unit>
+            <trans-unit id="term.category_label"><source>Category: </source></trans-unit>
+            <trans-unit id="term.related_title"><source>Related Terms</source></trans-unit>
+            <trans-unit id="term.expert_intro"><source>Explained by</source></trans-unit>
+            <trans-unit id="term.expert_role"><source>Expert in gigapixel photography</source></trans-unit>
+            <trans-unit id="cta.has_gallery"><source>Find matching images directly via the cards above – or explore all motifs in the portal.</source></trans-unit>
+            <trans-unit id="cta.no_gallery_pre"><source>Find images matching this topic via </source></trans-unit>
+            <trans-unit id="cta.no_gallery_link"><source>visual search</source></trans-unit>
+            <trans-unit id="cta.no_gallery_post"><source> in the portal.</source></trans-unit>
+            <trans-unit id="cta.gallery_license"><source>You can license these motifs directly via the respective detail page.</source></trans-unit>
+            <trans-unit id="cta.btn"><source>Browse all images →</source></trans-unit>
+            <trans-unit id="methodology.title"><source>Methodology</source></trans-unit>
+            <trans-unit id="schema.glossary_set_name"><source>Glossary</source></trans-unit>
+            <trans-unit id="schema.methodology_set_name"><source>Gigapixel Methodology</source></trans-unit>
+            <trans-unit id="schema.author_jobtitle"><source>Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder</source></trans-unit>
+            <trans-unit id="category.aufnahme"><source>Capture</source></trans-unit>
+            <trans-unit id="category.verarbeitung"><source>Processing</source></trans-unit>
+            <trans-unit id="category.produktion"><source>Production</source></trans-unit>
+            <trans-unit id="category.druck"><source>Print</source></trans-unit>
+            <trans-unit id="category.medien"><source>Media</source></trans-unit>
+            <trans-unit id="category.tech"><source>Technology</source></trans-unit>
+            <trans-unit id="category.anwendung"><source>Application</source></trans-unit>
+            <trans-unit id="gallery.heading.application"><source>Suitable motifs for %s</source></trans-unit>
+            <trans-unit id="gallery.heading.generic"><source>Matching image motifs in the portal</source></trans-unit>
+        </body>
+    </file>
+</xliff>
