@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" target-language="fr" datatype="plaintext" original="messages"
+          date="2026-06-17T00:00:00Z" product-name="dg_theme">
+        <header/>
+        <body>
+            <trans-unit id="kontakt.element.kontakt.properties.label" approved="yes">
+                <source>Kontakt</source>
+                <target>Contact</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.page-1.properties.label" approved="yes">
+                <source>Kontakt</source>
+                <target>Contact</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.summarypage.properties.label" approved="yes">
+                <source>Zusammenfassung</source>
+                <target>Récapitulatif</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.name.properties.label" approved="yes">
+                <source>Name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.name.properties.placeholder" approved="yes">
+                <source>Ihr Name</source>
+                <target>Votre nom</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.email.properties.label" approved="yes">
+                <source>E-Mail</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.email.properties.placeholder" approved="yes">
+                <source>Ihre E-Mail Adresse</source>
+                <target>Votre adresse e-mail</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.firma.properties.label" approved="yes">
+                <source>Firma</source>
+                <target>Société</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.firma.properties.placeholder" approved="yes">
+                <source>Ihr Firmenname</source>
+                <target>Le nom de votre société</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.telephone.properties.label" approved="yes">
+                <source>Telefonnummer</source>
+                <target>Numéro de téléphone</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.telephone.properties.placeholder" approved="yes">
+                <source>Ihre Telefonnummer</source>
+                <target>Votre numéro de téléphone</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.kontaktoptionen.properties.label" approved="yes">
+                <source>Wie möchten Sie kontaktiert werden?</source>
+                <target>Comment souhaitez-vous être contacté ?</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.kontaktoptionen.properties.options.email" approved="yes">
+                <source>Ich möchte per E-Mail kontaktiert werden.</source>
+                <target>Je souhaite être contacté par e-mail.</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.kontaktoptionen.properties.options.phone" approved="yes">
+                <source>Ich möchte per Telefon kontaktiert werden.</source>
+                <target>Je souhaite être contacté par téléphone.</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.message.properties.label" approved="yes">
+                <source>Nachricht</source>
+                <target>Message</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.message.properties.placeholder" approved="yes">
+                <source>Ihre Nachricht</source>
+                <target>Votre message</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.kontakt.renderingOptions.submitButtonLabel" approved="yes">
+                <source>Senden</source>
+                <target>Envoyer</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.page-1.renderingOptions.previousButtonLabel" approved="yes">
+                <source>Zurück</source>
+                <target>Précédent</target>
+            </trans-unit>
+            <trans-unit id="kontakt.element.page-1.renderingOptions.nextButtonLabel" approved="yes">
+                <source>Weiter</source>
+                <target>Suivant</target>
+            </trans-unit>
+            <trans-unit id="kontakt.finisher.Confirmation.options.message" approved="yes">
+                <source>Ihre Nachricht wurde versendet.</source>
+                <target>Votre message a été envoyé.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

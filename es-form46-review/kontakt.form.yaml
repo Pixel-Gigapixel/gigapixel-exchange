@@ -1,0 +1,109 @@
+renderingOptions:
+  submitButtonLabel: Senden
+  translation:
+    translationFiles:
+      10: 'EXT:dg_theme/Resources/Private/Language/Form.xlf'
+identifier: kontakt
+label: Kontakt
+type: Form
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Nachricht von large-format.photos'
+      senderAddress: '{email}'
+      senderName: '{name} {firma}'
+      format: html
+      attachUploads: false
+      translation:
+        language: ''
+      replyToRecipients:
+        - ''
+      carbonCopyRecipients:
+        - ''
+      blindCarbonCopyRecipients:
+        - ''
+      recipients:
+        bestellung@gigapixel.gmbh: 'Gigapixel GmbH'
+    identifier: EmailToReceiver
+  -
+    options:
+      message: 'Ihre Nachricht wurde versendet.'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: Weiter
+    identifier: page-1
+    label: Kontakt
+    type: Page
+    renderables:
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihr Name'
+      -
+        defaultValue: ''
+        identifier: email
+        label: E-Mail
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihre E-Mail Adresse'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Text
+        identifier: firma
+        label: Firma
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihr Firmenname'
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone
+        label: Telefonnummer
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihre Telefonnummer'
+      -
+        properties:
+          options:
+            email: 'Ich möchte per E-Mail kontaktiert werden.'
+            phone: 'Ich möchte per Telefon kontaktiert werden.'
+          fluidAdditionalAttributes: {  }
+        type: SingleSelect
+        identifier: kontaktoptionen
+        label: 'Wie möchten Sie kontaktiert werden?'
+        defaultValue: email
+      -
+        defaultValue: ''
+        identifier: message
+        label: Nachricht
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihre Nachricht'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    renderingOptions:
+      previousButtonLabel: Zurück
+      nextButtonLabel: Weiter
+    identifier: summarypage
+    label: Zusammenfassung
+    type: SummaryPage
