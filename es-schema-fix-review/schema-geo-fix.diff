@@ -1,0 +1,169 @@
+diff --git a/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php b/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
+index e5e29ae..3fd5f44 100644
+--- a/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
++++ b/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
+@@ -69,9 +69,10 @@ class MethodologyController extends ActionController
+             '<link rel="alternate" hreflang="x-default" href="https://gigapixel.gmbh/methodik" />'
+         );
+ 
+-        $glossarSlug = match($languageId) { 1 => '/glossary', 2 => '/glossaire', 3 => '/glossarij', default => '/glossar' };
++        $glossarSlug = match($languageId) { 1 => '/glossary', 2 => '/glossaire', 3 => '/glossarij', 4 => '/glosario', default => '/glossar' };
+         $this->view->assign('terms', $this->termRepository->findMethodologyTerms($languageId));
+         $this->view->assign('glossarBase', $langBase . $glossarSlug);
++        $this->view->assign('schemaBase', 'https://gigapixel.gmbh' . $langBase . $glossarSlug);
+         return $this->htmlResponse();
+     }
+ }
+diff --git a/packages/gigapixel_glossary/Classes/Controller/TermController.php b/packages/gigapixel_glossary/Classes/Controller/TermController.php
+index e509c4f..3fb57b3 100644
+--- a/packages/gigapixel_glossary/Classes/Controller/TermController.php
++++ b/packages/gigapixel_glossary/Classes/Controller/TermController.php
+@@ -74,12 +74,14 @@ class TermController extends ActionController
+         );
+ 
+         // BreadcrumbList JSON-LD (language-aware)
+-        $glossarLabel = match($languageId) {
+-            1 => 'Glossary',
+-            2 => 'Glossaire',
+-            3 => 'Глоссарий',
+-            default => 'Glossar',
++        [$glossarLabel, $glossarSlug] = match($languageId) {
++            1 => ['Glossary', '/glossary'],
++            2 => ['Glossaire', '/glossaire'],
++            3 => ['Глоссарий', '/glossarij'],
++            4 => ['Glosario', '/glosario'],
++            default => ['Glossar', '/glossar'],
+         };
++        $schemaBase = 'https://gigapixel.gmbh' . $langBase . $glossarSlug;
+         $breadcrumb = json_encode([
+             '@context' => 'https://schema.org',
+             '@type'    => 'BreadcrumbList',
+@@ -91,6 +93,7 @@ class TermController extends ActionController
+         $pageRenderer->addHeaderData('<script type="application/ld+json">' . $breadcrumb . '</script>');
+ 
+         $this->view->assign('terms', $this->termRepository->findLive($languageId));
++        $this->view->assign('schemaBase', $schemaBase);
+         return $this->htmlResponse();
+     }
+ 
+@@ -169,6 +172,7 @@ class TermController extends ActionController
+             1 => ['Glossary', '/glossary'],
+             2 => ['Glossaire', '/glossaire'],
+             3 => ['Глоссарий', '/glossarij'],
++            4 => ['Glosario', '/glosario'],
+             default => ['Glossar', '/glossar'],
+         };
+         $glossarUrl   = 'https://gigapixel.gmbh' . $langBase . $glossarSlug;
+@@ -188,6 +192,7 @@ class TermController extends ActionController
+         $this->view->assign('term', $termObject);
+         $this->view->assign('relatedTerms', $relatedTerms);
+         $this->view->assign('glossarUrl', $glossarUrl);
++        $this->view->assign('schemaBase', $glossarUrl);
+         return $this->htmlResponse();
+     }
+ 
+diff --git a/packages/gigapixel_glossary/Classes/ViewHelpers/SchemaOrgViewHelper.php b/packages/gigapixel_glossary/Classes/ViewHelpers/SchemaOrgViewHelper.php
+index 93e8359..d5aac17 100644
+--- a/packages/gigapixel_glossary/Classes/ViewHelpers/SchemaOrgViewHelper.php
++++ b/packages/gigapixel_glossary/Classes/ViewHelpers/SchemaOrgViewHelper.php
+@@ -16,6 +16,8 @@ class SchemaOrgViewHelper extends AbstractViewHelper
+         $this->registerArgument('term', Term::class, 'Einzelner Begriff → DefinedTerm', false);
+         $this->registerArgument('terms', 'mixed', 'Begriffsliste → DefinedTermSet', false);
+         $this->registerArgument('setName', 'string', 'Name des DefinedTermSet', false, 'Glossar');
++        $this->registerArgument('baseUrl', 'string', 'Lokalisierte Glossar-Basis-URL (absolut)', false, 'https://gigapixel.gmbh/glossar');
++        $this->registerArgument('jobTitle', 'string', 'Lokalisierter Autor-Titel', false, 'Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder');
+     }
+ 
+     public function render(): string
+@@ -53,19 +55,20 @@ class SchemaOrgViewHelper extends AbstractViewHelper
+         if ($withContext) {
+             $d['@context'] = 'https://schema.org';
+         }
++        $base = rtrim((string)$this->arguments['baseUrl'], '/');
+         $d['@type']        = 'DefinedTerm';
+         $d['name']         = $term->getTitle();
+         $d['description']  = $term->getShortDefinition();
+-        $d['url']          = 'https://gigapixel.gmbh/glossar/' . $term->getSlug();
++        $d['url']          = $base . '/' . $term->getSlug();
+         $d['inDefinedTermSet'] = [
+             '@type' => 'DefinedTermSet',
+-            '@id'   => 'https://gigapixel.gmbh/glossar',
+-            'name'  => 'Gigapixel-Glossar',
++            '@id'   => $base,
++            'name'  => (string)$this->arguments['setName'],
+         ];
+         $d['author'] = [
+             '@type'    => 'Person',
+             'name'     => 'Daniel Richter',
+-            'jobTitle' => 'Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder',
++            'jobTitle' => (string)$this->arguments['jobTitle'],
+             'worksFor' => ['@type' => 'Organization', 'name' => 'Gigapixel GmbH', 'url' => 'https://gigapixel.gmbh'],
+         ];
+         $d['publisher'] = [
+diff --git a/packages/gigapixel_glossary/Resources/Private/Language/es.locallang.xlf b/packages/gigapixel_glossary/Resources/Private/Language/es.locallang.xlf
+new file mode 100644
+index 0000000..446a28c
+--- /dev/null
++++ b/packages/gigapixel_glossary/Resources/Private/Language/es.locallang.xlf
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
++    <file source-language="en" target-language="es" datatype="plaintext" original="EXT:gigapixel_glossary/Resources/Private/Language/locallang.xlf">
++        <body>
++            <trans-unit id="schema.glossary_set_name"><source>Glossary</source><target>Glosario Gigapixel</target></trans-unit>
++            <trans-unit id="schema.methodology_set_name"><source>Gigapixel Methodology</source><target>Metodología Gigapixel</target></trans-unit>
++            <trans-unit id="schema.author_jobtitle"><source>Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder</source><target>Perito judicial designado y jurado para imágenes gigapíxel</target></trans-unit>
++        </body>
++    </file>
++</xliff>
+diff --git a/packages/gigapixel_glossary/Resources/Private/Language/locallang.xlf b/packages/gigapixel_glossary/Resources/Private/Language/locallang.xlf
+index 06d9083..e7c2f4c 100644
+--- a/packages/gigapixel_glossary/Resources/Private/Language/locallang.xlf
++++ b/packages/gigapixel_glossary/Resources/Private/Language/locallang.xlf
+@@ -18,6 +18,7 @@
+             <trans-unit id="methodology.title"><source>Methodology</source></trans-unit>
+             <trans-unit id="schema.glossary_set_name"><source>Glossary</source></trans-unit>
+             <trans-unit id="schema.methodology_set_name"><source>Gigapixel Methodology</source></trans-unit>
++            <trans-unit id="schema.author_jobtitle"><source>Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder</source></trans-unit>
+             <trans-unit id="category.aufnahme"><source>Capture</source></trans-unit>
+             <trans-unit id="category.verarbeitung"><source>Processing</source></trans-unit>
+             <trans-unit id="category.produktion"><source>Production</source></trans-unit>
+diff --git a/packages/gigapixel_glossary/Resources/Private/Templates/Methodology/Index.html b/packages/gigapixel_glossary/Resources/Private/Templates/Methodology/Index.html
+index df5d6e0..394ec6b 100644
+--- a/packages/gigapixel_glossary/Resources/Private/Templates/Methodology/Index.html
++++ b/packages/gigapixel_glossary/Resources/Private/Templates/Methodology/Index.html
+@@ -5,7 +5,7 @@
+ <f:section name="Main">
+     <div class="glossary-methodology">
+         <h1><f:translate key="methodology.title" extensionName="GigapixelGlossary" /></h1>
+-        <g:schemaOrg terms="{terms}" setName="{f:translate(key: 'schema.methodology_set_name', extensionName: 'GigapixelGlossary')}" />
++        <g:schemaOrg terms="{terms}" setName="{f:translate(key: 'schema.methodology_set_name', extensionName: 'GigapixelGlossary')}" baseUrl="{schemaBase}" jobTitle="{f:translate(key: 'schema.author_jobtitle', extensionName: 'GigapixelGlossary')}" />
+         <f:for each="{terms}" as="term">
+             <article class="glossary-methodology-term">
+                 <h2><a href="{glossarBase}/{term.slug}">{term.title}</a></h2>
+diff --git a/packages/gigapixel_glossary/Resources/Private/Templates/Term/List.html b/packages/gigapixel_glossary/Resources/Private/Templates/Term/List.html
+index 7f9503d..a2a4fa9 100644
+--- a/packages/gigapixel_glossary/Resources/Private/Templates/Term/List.html
++++ b/packages/gigapixel_glossary/Resources/Private/Templates/Term/List.html
+@@ -3,7 +3,7 @@
+       data-namespace-typo3-fluid="true">
+ <f:layout name="Default" />
+ <f:section name="Main">
+-    <g:schemaOrg terms="{terms}" setName="{f:translate(key: 'schema.glossary_set_name', extensionName: 'GigapixelGlossary')}" />
++    <g:schemaOrg terms="{terms}" setName="{f:translate(key: 'schema.glossary_set_name', extensionName: 'GigapixelGlossary')}" baseUrl="{schemaBase}" jobTitle="{f:translate(key: 'schema.author_jobtitle', extensionName: 'GigapixelGlossary')}" />
+     <div class="glossary-list">
+         <header class="glossary-hero">
+             <h1><f:translate key="glossary.title" extensionName="GigapixelGlossary" /></h1>
+diff --git a/packages/gigapixel_glossary/Resources/Private/Templates/Term/Show.html b/packages/gigapixel_glossary/Resources/Private/Templates/Term/Show.html
+index 0e022f0..3f28488 100644
+--- a/packages/gigapixel_glossary/Resources/Private/Templates/Term/Show.html
++++ b/packages/gigapixel_glossary/Resources/Private/Templates/Term/Show.html
+@@ -3,7 +3,7 @@
+       data-namespace-typo3-fluid="true">
+ <f:layout name="Default" />
+ <f:section name="Main">
+-    <g:schemaOrg term="{term}" />
++    <g:schemaOrg term="{term}" baseUrl="{schemaBase}" setName="{f:translate(key: 'schema.glossary_set_name', extensionName: 'GigapixelGlossary')}" jobTitle="{f:translate(key: 'schema.author_jobtitle', extensionName: 'GigapixelGlossary')}" />
+     <g:faqPageSchema items="{term.faqItemsArray}" />
+     <nav class="glossary-breadcrumb" aria-label="Breadcrumb">
+         <ol>

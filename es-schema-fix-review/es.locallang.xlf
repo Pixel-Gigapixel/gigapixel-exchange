@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="es" datatype="plaintext" original="EXT:gigapixel_glossary/Resources/Private/Language/locallang.xlf">
+        <body>
+            <trans-unit id="schema.glossary_set_name"><source>Glossary</source><target>Glosario Gigapixel</target></trans-unit>
+            <trans-unit id="schema.methodology_set_name"><source>Gigapixel Methodology</source><target>Metodología Gigapixel</target></trans-unit>
+            <trans-unit id="schema.author_jobtitle"><source>Öffentlich bestellter und vereidigter Sachverständiger für Gigapixel-Bilder</source><target>Perito judicial designado y jurado para imágenes gigapíxel</target></trans-unit>
+        </body>
+    </file>
+</xliff>
