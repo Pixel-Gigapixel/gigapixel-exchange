@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de" datatype="plaintext"
+        original="EXT:gigapixels_visualsearch/Resources/Private/Language/locallang.xlf">
+    <header/>
+    <body>
+
+      <!-- SearchBar -->
+      <trans-unit id="search.placeholder"><source>Bilder suchen…</source></trans-unit>
+      <trans-unit id="search.btn.camera"><source>Bildsuche öffnen</source></trans-unit>
+      <trans-unit id="search.btn.submit"><source>Suchen</source></trans-unit>
+
+      <!-- ExpandedPanel -->
+      <trans-unit id="drop.prompt"><source>Bild hierher ziehen oder</source></trans-unit>
+      <trans-unit id="drop.prompt.click"><source>klicken</source></trans-unit>
+      <trans-unit id="drop.hint"><source>JPEG · PNG · WebP · max 10 MB</source></trans-unit>
+      <trans-unit id="options.summary"><source>Optionen</source></trans-unit>
+      <trans-unit id="slider.weight.label"><source>Bild / Text</source></trans-unit>
+      <trans-unit id="slider.weight.title"><source>Wie stark soll das Bild gegenüber dem Text gewichtet werden?</source></trans-unit>
+      <trans-unit id="slider.weight.left"><source>◀ Text</source></trans-unit>
+      <trans-unit id="slider.weight.right"><source>Bild ▶</source></trans-unit>
+      <trans-unit id="slider.weight.image"><source>Bild</source></trans-unit>
+      <trans-unit id="slider.weight.text"><source>Text</source></trans-unit>
+      <trans-unit id="slider.threshold.label"><source>Min. Ähnlichkeit</source></trans-unit>
+      <trans-unit id="slider.threshold.title"><source>Skala 0.50–0.90 — Embeddings erreichen praktisch nie 1.00</source></trans-unit>
+
+      <!-- Results -->
+      <trans-unit id="btn.remove_image"><source>Bild entfernen</source></trans-unit>
+      <trans-unit id="summary.results"><source>%1$s Treffer · %2$s ms</source></trans-unit>
+      <trans-unit id="summary.no_results"><source>Keine Ergebnisse · %1$s ms</source></trans-unit>
+      <trans-unit id="sort.label"><source>Sortierung:</source></trans-unit>
+      <trans-unit id="sort.size"><source>Größe</source></trans-unit>
+      <trans-unit id="sort.width"><source>Breite</source></trans-unit>
+      <trans-unit id="sort.height"><source>Höhe</source></trans-unit>
+      <trans-unit id="sort.price"><source>Preis</source></trans-unit>
+      <trans-unit id="sort.reset"><source>✕ Relevanz</source></trans-unit>
+      <trans-unit id="limited.title"><source>Begrenzte Treffer-Anzeige.</source></trans-unit>
+      <trans-unit id="limited.body"><source>Die besten %1$s Treffer für „%2$s" werden angezeigt — weitere Bilder hatten zu niedrige Übereinstimmung und werden ausgeblendet.</source></trans-unit>
+      <trans-unit id="no_results.title"><source>Kein Ergebnis</source></trans-unit>
+      <trans-unit id="no_results.body"><source>Zur Suchanfrage wurden keine Treffer gefunden — Schwelle reduzieren oder andere Stichworte / ein anderes Bild versuchen.</source></trans-unit>
+
+      <!-- ResultCard -->
+      <trans-unit id="card.no_thumb"><source>kein Bild</source></trans-unit>
+      <trans-unit id="card.details"><source>Details</source></trans-unit>
+      <trans-unit id="badge.combined.tooltip"><source>Gewichtete Gesamtnote – Bild- und Textübereinstimmung kombiniert nach Slider-Gewichtung</source></trans-unit>
+      <trans-unit id="badge.image.tooltip"><source>Bildähnlichkeit zum hochgeladenen Bild (0–1)</source></trans-unit>
+      <trans-unit id="badge.text.tooltip"><source>Textübereinstimmung mit KI-Beschreibung und Keywords (0–1)</source></trans-unit>
+      <trans-unit id="badge.total.title"><source>Gewichtete Gesamtnote (Slider-basiert)</source></trans-unit>
+      <trans-unit id="badge.total.label"><source>Gesamt</source></trans-unit>
+      <trans-unit id="badge.image.title"><source>Visuelle Ähnlichkeit (Cosine)</source></trans-unit>
+      <trans-unit id="badge.text.title"><source>Keyword-Relevanz</source></trans-unit>
+
+      <!-- SimilarImages -->
+      <trans-unit id="similar.title"><source>Ähnliche Bilder</source></trans-unit>
+
+    </body>
+  </file>
+</xliff>
