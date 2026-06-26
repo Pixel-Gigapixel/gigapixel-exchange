@@ -1,0 +1,94 @@
+diff --git a/tools/rollout.py b/tools/rollout.py
+index e1b6ad2..4354065 100644
+--- a/tools/rollout.py
++++ b/tools/rollout.py
+@@ -154,27 +154,77 @@ def db_execute_tx(statements):
+ # =========================================================================================
+ # MODELL-CALL  — Anthropic API
+ # =========================================================================================
++# ---- Delimiter-Contract (escaping-frei) ------------------------------------------------
++# Statt strikt-JSON (dessen Quote-Escaping auf langem/zitatreichem HTML reproduzierbar reisst,
++# z. B. pid 142) liefert das Modell jedes Feld zwischen Markern als ROHES HTML — kein Escaping noetig.
++END_MARK  = "<<<END>>>"
++_FIELD_RE = re.compile(r"<<<FIELD:(\w+)>>>")
++
++def _fields_to_markers(fields):
++    """Eingabe-Felder ins Marker-Format serialisieren (symmetrisch zur erwarteten Modell-Ausgabe)."""
++    out = []
++    for k, v in fields.items():
++        out.append("<<<FIELD:%s>>>" % k)
++        out.append(v if v is not None else "")
++    out.append(END_MARK)
++    return "\n".join(out)
++
++def _parse_delimited(txt, expected_keys):
++    """Marker-Ausgabe -> OrderedDict. Inhalt je Feld bis zum naechsten <<<FIELD:/<<<END>>>, getrimmt.
++    Fehlt <<<END>>>, fehlt jeder Marker oder ein erwartetes Feld -> ValueError (greift bestehenden Retry)."""
++    if END_MARK not in txt:
++        raise ValueError("Marker <<<END>>> fehlt")
++    body = txt.split(END_MARK, 1)[0]
++    matches = list(_FIELD_RE.finditer(body))
++    if not matches:
++        raise ValueError("kein <<<FIELD:...>>>-Marker gefunden")
++    out = OrderedDict()
++    for i, m in enumerate(matches):
++        start = m.end()
++        end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
++        out[m.group(1)] = body[start:end].strip()
++    missing = [k for k in expected_keys if k not in out]
++    if missing:
++        raise ValueError(f"erwartete Felder fehlen in der Ausgabe: {missing}")
++    return out
++
+ def translate_fields(fields, guide, model, gate_feedback=None):
+     """fields: OrderedDict der zu uebersetzenden Felder (header/subheader/bodytext; leere weglassen).
+-    Liefert dict mit uebersetzten Werten. Modell MUSS reines JSON zurueckgeben (nur die Schluessel)."""
++    Liefert dict mit uebersetzten Werten. Modell gibt die Felder im Marker-Contract zurueck
++    (escaping-frei, rohes HTML) — Parser oben mappt zurueck ins fields-dict (unveraenderter Contract)."""
+     import anthropic
+     _load_secrets()
++    # Guard: Quellinhalt darf die Marker-Strings nicht enthalten, sonst waere der Contract mehrdeutig
++    # (in HTML praktisch ausgeschlossen; die Assertion kostet nichts).
++    for k, v in fields.items():
++        if v and ("<<<FIELD:" in v or END_MARK in v):
++            raise ValueError(f"Quellfeld {k} enthaelt Marker-Strings — Delimiter-Contract unsicher")
+     client = anthropic.Anthropic()
+-    system = guide + ("\n\n# AUSGABE-FORMAT (zwingend)\nGib AUSSCHLIESSLICH valides JSON zurueck mit "
+-                      "EXAKT den Eingabe-Schluesseln und uebersetzten Werten. Kein Text davor/danach, kein Markdown, "
+-                      "keine Code-Fence. HTML-Struktur, Zahlen, Waehrung, Symbole, &amp;, Marken byte-genau lassen.")
+-    user = "Uebersetze die Werte dieses JSON ins Spanische (es-ES) nach den Regeln des System-Prompts:\n"
++    system = guide + (
++        "\n\n# AUSGABE-FORMAT (zwingend)\n"
++        "Gib die Uebersetzung NUR als markierte Felder zurueck — KEIN JSON, KEIN Markdown, kein Text "
++        "davor/danach. Pro Eingabe-Feld genau ein Marker, dann der uebersetzte Inhalt ROH, dann der "
++        "naechste Marker bzw. <<<END>>>:\n"
++        "<<<FIELD:header>>>\n…uebersetzter Header…\n<<<FIELD:bodytext>>>\n…uebersetztes HTML, roh…\n<<<END>>>\n"
++        "Bodytext ist rohes HTML — Quotes NICHT escapen. Gib NUR Felder aus, die in der Eingabe "
++        "vorhanden waren. HTML-Struktur, Zahlen, Waehrung, Symbole, &amp;, Marken byte-genau lassen.")
++    intro = ("Uebersetze die Felder dieses Marker-Blocks ins Spanische (es-ES) nach den Regeln des "
++             "System-Prompts; gib sie im SELBEN Marker-Format zurueck:\n")
+     if gate_feedback:
+-        user = ("Die vorige Uebersetzung hat Gates verletzt. KORRIGIERE gezielt:\n" + gate_feedback +
+-                "\n\nHier erneut die Quelle, gib korrigiertes JSON:\n")
+-    user += json.dumps(fields, ensure_ascii=False)
++        intro = ("Die vorige Uebersetzung hat Gates verletzt. KORRIGIERE gezielt:\n" + gate_feedback +
++                 "\n\nHier erneut die Quelle im Marker-Format, gib korrigierte Felder im selben Format:\n")
++    user = intro + _fields_to_markers(fields)
+     # Opus 4.8 lehnt das (deprecate) temperature-Feld ab; Sonnet bleibt deterministisch bei temperature=0.
+     extra = {} if "opus-4-8" in model else {"temperature": 0}
+-    resp = client.messages.create(model=model, max_tokens=8192, system=system,
+-                                  messages=[{"role": "user", "content": user}], **extra)
++    # max_tokens hoch: lange Quellelemente (z. B. pid 142 ~7,8k Tok, FAQ/Datenschutz ~10k+) brauchen
++    # >8192 Output, sonst TRUNCATION (kein <<<END>>> -> Parse-Fehler). Sonnet 4.6 deckt 64K, Opus 4.8 128K.
++    # Ab ~16K Output MUSS gestreamt werden, sonst SDK-HTTP-Timeout -> client.messages.stream + get_final_message.
++    with client.messages.stream(model=model, max_tokens=32000, system=system,
++                                messages=[{"role": "user", "content": user}], **extra) as stream:
++        resp = stream.get_final_message()
+     txt = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+-    txt = re.sub(r"^```(?:json)?\s*|\s*```$", "", txt, flags=re.S).strip()
+-    return json.loads(txt)
++    txt = re.sub(r"^```(?:\w+)?\s*|\s*```$", "", txt, flags=re.S).strip()
++    return _parse_delimited(txt, list(fields.keys()))
+ 
+ # =========================================================================================
+ # HELPERS

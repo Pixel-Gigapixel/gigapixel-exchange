@@ -1,0 +1,19 @@
+rollout: lang=4 mode=dry-run model=claude-sonnet-4-6 pids=3
+pid 142: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 565] HTML-Tag-Skelett weicht ab — Tags/Attribute/Reihenfolge byte-genau aus der Quelle übernehmen, nur den Text zwischen den Tags übersetzen.
+pid 142: GATES FAIL nach Retry (Pass 2)
+pid 142: Dry-Run -> /home/pixel/exports/es-delim-check2/es-142.json  gates=FAIL (1 Elemente, page-overlay=exists)
+pid 369: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 797] Währungs-Token-Mismatch DE={'40 USD': 1, '90€': 1} ES={'3.000$': 1, '40 USD': 1, '90€': 1} — Beträge/Symbole/ISO-Codes ($, USD, €, 3.000) byte-genau; nur Währungs-WÖRTER übersetzen (Dollar → dólares).
+pid 369: GATES FAIL nach Retry (Pass 2)
+pid 369: Dry-Run -> /home/pixel/exports/es-delim-check2/es-369.json  gates=FAIL (1 Elemente, page-overlay=exists)
+pid 113: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 493] &amp;-Anzahl weicht ab (DE=0 ES=1) — &amp; als &amp; behalten.
+• [uid 495] &amp;-Anzahl weicht ab (DE=0 ES=5) — &amp; als &amp; behalten.
+pid 113: GATES gruen nach Retry (Pass 2)
+pid 113: Dry-Run -> /home/pixel/exports/es-delim-check2/es-113.json  gates=PASS (6 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_gate_fail': 2, 'dry_ok': 1} ===
