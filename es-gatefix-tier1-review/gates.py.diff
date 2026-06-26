@@ -1,0 +1,26 @@
+diff --git a/tools/gates.py b/tools/gates.py
+index 6bbe405..7708623 100644
+--- a/tools/gates.py
++++ b/tools/gates.py
+@@ -80,11 +80,21 @@ def _strip_citations(t):
+     t = re.sub(r'"[^"]*"', ' ', t)            # gerade Anführungszeichen "…"
+     return t
+ 
++# URLs/Domains sind NIE zu übersetzen — ihre Pfad-/Host-Tokens (z. B. „der" in
++# .../der-scharf-richter/...) dürfen die DE-Residue-Prüfung nicht auslösen.
++_TLD = r'de|com|org|net|eu|info|io|gov|edu|ch|at|co|tv'
++def _strip_urls(t):
++    t = re.sub(r'https?://\S+', ' ', t)                              # volle URLs (mit Schema)
++    t = re.sub(r'\bwww\.\S+', ' ', t)                               # www.… ohne Schema
++    t = re.sub(r'\b[\w-]+(?:\.[\w-]+)*\.(?:%s)\b(?:/\S*)?' % _TLD, ' ', t)  # bare Domain x.de / a.b.com/y
++    return t
++
+ def german(s, strip_quotes=True):
+     t = re.sub(r'<[^>]+>', ' ', s or '')
+     if strip_quotes:
+         t = _strip_citations(t)
+     t = html.unescape(t)
++    t = _strip_urls(t)                                              # URL-/Domain-Tokens raus (G3 URL-aware)
+     found = [w for w in WORD.findall(t.lower()) if w in GER]
+     found += re.findall(r'\bKI\b', t)        # KI (Künstliche Intelligenz) bleibt in JEDER Zielsprache Deutsch -> Residue
+     return found
