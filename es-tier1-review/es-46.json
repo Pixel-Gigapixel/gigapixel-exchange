@@ -1,0 +1,15 @@
+{
+ "_gates": "PASS",
+ "_gout": "uid    G1tag  G2num  Gsym   G&     Gcur   G3-de\n--------------------------------------------------------------\n180    ok     ok     ok     ok     ok     ok\n--------------------------------------------------------------\n\n>>> ALLE GATES GRÜN <<<\n",
+ "page_overlay": "exists",
+ "elements": [
+  {
+   "de_uid": 180,
+   "CType": "form_formframework",
+   "sorting": 256,
+   "header": "Contacto – Gigapixel GmbH, Weimar",
+   "subheader": "",
+   "bodytext": ""
+  }
+ ]
+}

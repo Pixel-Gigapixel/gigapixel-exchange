@@ -1,0 +1,11 @@
+rollout: lang=4 mode=dry-run model=claude-sonnet-4-6 pids=4
+pid 11: Dry-Run -> /home/pixel/exports/es-tier1-text/es-11.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 45: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 111] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „http://www.deutsche-handwerks-zeitung.de/der-scharf-richter/150/3040/323502”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+pid 45: GATES FAIL nach Retry (Pass 2)
+pid 45: Dry-Run -> /home/pixel/exports/es-tier1-text/es-45.json  gates=FAIL (22 Elemente, page-overlay=exists)
+pid 46: Dry-Run -> /home/pixel/exports/es-tier1-text/es-46.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 53: Dry-Run -> /home/pixel/exports/es-tier1-text/es-53.json  gates=PASS (4 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_ok': 3, 'dry_gate_fail': 1} ===
