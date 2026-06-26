@@ -1,0 +1,79 @@
+rollout: lang=4 mode=dry-run model=claude-sonnet-4-6 pids=18
+pid 38: Dry-Run -> /home/pixel/exports/es-tier2/es-38.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 39: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 144] &amp;-Anzahl weicht ab (DE=0 ES=1) — &amp; als &amp; behalten.
+pid 39: GATES gruen nach Retry (Pass 2)
+pid 39: Dry-Run -> /home/pixel/exports/es-tier2/es-39.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 40: Dry-Run -> /home/pixel/exports/es-tier2/es-40.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 41: Dry-Run -> /home/pixel/exports/es-tier2/es-41.json  gates=PASS (1 Elemente, page-overlay=exists)
+  pid 42 uid 253: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 122 (char 121)) Versuch 1
+  pid 42 uid 253: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 122 (char 121)) Versuch 2
+pid 42: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 253] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „„Mehr Sichtbarkeit & Traffic mit Strategie, Content & Emotionen!“ Mit einem 360 Grad Blick auf alle Online-Kanäle schmiede ich individuelle Strategien und Online Marketing-Maßnahmen für Ihren Unternehmenserfolg und setze diese auch um.”  „Im Marketingcoaching zeige ich Ihnen, wie Sie Ihre Zielgruppe mit dem richtigen Content und Performance Marketing optimal ansprechen.”  „Ich gebe Ihnen das passende Handwerkszeug an die Hand, um in Suchmaschinen, in den Sozialen Medien und lokal gefunden zu werden.”  „Profitieren Sie von bis zu 80% Förderung für Marketingberatung!”  „Trafficschmiede = 18 Jahre Erfahrung in Marketing, Vertrieb & Produktmanagement und umfassende Kenntnisse im Online Marketing.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+  pid 42 uid 253: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 122 (char 121)) Versuch 1
+  pid 42 uid 253: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 122 (char 121)) Versuch 2
+pid 42: GATES FAIL nach Retry (Pass 2)
+pid 42: Dry-Run -> /home/pixel/exports/es-tier2/es-42.json  gates=FAIL (32 Elemente, page-overlay=exists)
+pid 43: Dry-Run -> /home/pixel/exports/es-tier2/es-43.json  gates=PASS (5 Elemente, page-overlay=exists)
+  pid 67 uid 178: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 11145 (char 11144)) Versuch 1
+  pid 67 uid 178: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 11148 (char 11147)) Versuch 2
+pid 67: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 178] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „https://store.steampowered.com/app/1202360/VR_Gigapixel_Gallery__visual_VR_Benchmark/ Über diese Anwendung Die „Gigapixel VR Galerie“ ist eine Möglichkeit extrem hochauflösende Bilder in verschiedene Wunschgrößen sich genau aus der Nähe in 6DoF (frei im Raum bewegen) anzuschauen.”  „Die Galerie hat Motive von 136 Megapixel bis hin zu 15,9 Gigapixel.”  „Ein Gigapixel sind 1000 Megapixel.”  „Weiterhin gibt es eine Option zum Wechseln zwischen der hohen Auflösung mit einer Auflösung von 25 Megapixel.”  „Dies verdeutlicht, welchen Einfluss der Abstand zum Bild für die qualitative Wahrnehmung hat.”  „Je näher man am Motiv ist, desto wichtiger ist, dass die Auflösung hoch genug ist.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+  pid 67 uid 178: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 11070 (char 11069)) Versuch 1
+  pid 67 uid 178: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 363 (char 362)) Versuch 2
+pid 67: GATES FAIL nach Retry (Pass 2)
+pid 67: Dry-Run -> /home/pixel/exports/es-tier2/es-67.json  gates=FAIL (1 Elemente, page-overlay=exists)
+pid 69: Dry-Run -> /home/pixel/exports/es-tier2/es-69.json  gates=PASS (4 Elemente, page-overlay=exists)
+  pid 73 uid 210: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 4947 (char 4946)) Versuch 1
+  pid 73 uid 210: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 4963 (char 4962)) Versuch 2
+pid 73: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 210] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „Kostenlose Arbeitsplätze für ukrainische Kreative – Kreativität ohne Grenzen Der Krieg in der Ukraine hat Millionen Menschen zur Flucht gezwungen – darunter auch Fotograf:innen, Designer:innen, Künstler:innen und andere Kreative , die ihre Arbeit unterbrechen mussten.”  „Bei der Gigapixel GmbH möchten wir einen Beitrag leisten, damit sie ihre Projekte fortsetzen, neue Ideen entwickeln und sich in einer inspirierenden Umgebung austauschen können.”  „Deshalb bieten wir kostenlose Arbeitsplätze für geflüchtete Kreative aus der Ukraine an – mit allem, was sie brauchen, um produktiv zu sein.”  „Was wir bieten: Ein Arbeitsplatz, der mehr ist als nur ein Schreibtisch Voll ausgestattete Arbeitsplätze Auf Wunsch stellen wir komplette Arbeitsstationen mit großen Monitoren und professioneller Software zur Verfügung.”  „Gigapixel-taugliche Hardware – falls Sie an hochauflösenden Projekten arbeiten möchten, können Sie unsere Technik nutzen.”  „Schnelles Internet für Videokonferenzen, Dateiübertragungen und Online-Zusammenarbeit.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+  pid 73 uid 210: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 4939 (char 4938)) Versuch 1
+  pid 73 uid 210: Modell/Parse-Fehler (Expecting ',' delimiter: line 1 column 4956 (char 4955)) Versuch 2
+pid 73: GATES FAIL nach Retry (Pass 2)
+pid 73: Dry-Run -> /home/pixel/exports/es-tier2/es-73.json  gates=FAIL (1 Elemente, page-overlay=exists)
+pid 80: Dry-Run -> /home/pixel/exports/es-tier2/es-80.json  gates=PASS (1 Elemente, page-overlay=exists)
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 87 (char 86)) Versuch 1
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 87 (char 86)) Versuch 2
+pid 142: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 565] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „Fundiertes Wissen rund um ultra-hochauflösende Fotografie, Large-Format-Druck und professionelle Bildanwendungen – wissenschaftlich belegt, praxisnah erklärt.”  „echte Gigapixel-Fotografie — der Unterschied Wer nach „Gigapixel" sucht, findet zwei völlig verschiedene Dinge, die nur den Namen teilen.”  „Auf der einen Seite steht Topaz Gigapixel AI: eine Software, die...”  „Weiterlesen → Was ist Gigapixel-Fotografie?”  „Technik, Entstehung und Grenzen Gigapixel-Fotografie bezeichnet Aufnahmen mit einer Auflösung im Bereich von einer Milliarde Bildpunkten und mehr — ein Vielfaches dessen, was eine einzelne ...”  „Weiterlesen → Saisonale Farbwelten im Großformat — Herbst/Farben Farbtreue ist der eigentliche Aufhänger für großformatige Naturbilder — nicht die Auflösung allein.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 85 (char 84)) Versuch 1
+  pid 142 uid 565: Modell/Parse-Fehler (Unterminated string starting at: line 1 column 82 (char 81)) Versuch 2
+pid 142: GATES FAIL nach Retry (Pass 2)
+pid 142: Dry-Run -> /home/pixel/exports/es-tier2/es-142.json  gates=FAIL (1 Elemente, page-overlay=exists)
+pid 113: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 493] &amp;-Anzahl weicht ab (DE=0 ES=1) — &amp; als &amp; behalten.
+• [uid 495] &amp;-Anzahl weicht ab (DE=0 ES=5) — &amp; als &amp; behalten.
+pid 113: GATES gruen nach Retry (Pass 2)
+pid 113: Dry-Run -> /home/pixel/exports/es-tier2/es-113.json  gates=PASS (6 Elemente, page-overlay=exists)
+pid 114: Dry-Run -> /home/pixel/exports/es-tier2/es-114.json  gates=PASS (5 Elemente, page-overlay=exists)
+pid 115: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 515] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: „niedriger Auflösung korreliert mit nur r = 0,091.”  In Quellenblöcken (class="gp-blog-source") nur Autor/Werktitel/Journal/Jahr im Original lassen; erklärende/beschreibende Sätze MÜSSEN übersetzt werden.
+pid 115: GATES gruen nach Retry (Pass 2)
+pid 115: Dry-Run -> /home/pixel/exports/es-tier2/es-115.json  gates=PASS (5 Elemente, page-overlay=exists)
+pid 116: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 526] &amp;-Anzahl weicht ab (DE=0 ES=1) — &amp; als &amp; behalten.
+pid 116: GATES gruen nach Retry (Pass 2)
+pid 116: Dry-Run -> /home/pixel/exports/es-tier2/es-116.json  gates=PASS (5 Elemente, page-overlay=exists)
+pid 117: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 535] Zahl-Mismatch: die Quelle hat {'24': 1, '7': 1}, deine Übersetzung hat {}. Übernimm die Ziffernfolgen der QUELLE exakt; große Zahlen mit Skalenwort: Quell-Ziffer behalten + Skalenwort (DE „1,6 Milliarden” → ES „1,6 mil millones”), die Zahl NICHT umschreiben. Korrektheit vor Gate — Zahlen niemals „passend” machen.
+• [uid 536] &amp;-Anzahl weicht ab (DE=0 ES=4) — &amp; als &amp; behalten.
+pid 117: GATES FAIL nach Retry (Pass 2)
+pid 117: Dry-Run -> /home/pixel/exports/es-tier2/es-117.json  gates=FAIL (5 Elemente, page-overlay=exists)
+pid 136: Dry-Run -> /home/pixel/exports/es-tier2/es-136.json  gates=PASS (1 Elemente, page-overlay=exists)
+pid 138: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:
+Deine vorige Übersetzung hat folgende Prüfungen verletzt. Korrigiere GEZIELT genau diese Punkte, sonst alles unverändert lassen:
+• [uid 548] HTML-Tag-Skelett weicht ab — Tags/Attribute/Reihenfolge byte-genau aus der Quelle übernehmen, nur den Text zwischen den Tags übersetzen.
+pid 138: GATES FAIL nach Retry (Pass 2)
+pid 138: Dry-Run -> /home/pixel/exports/es-tier2/es-138.json  gates=FAIL (1 Elemente, page-overlay=exists)
+
+=== Summary: {'dry_ok': 12, 'dry_gate_fail': 6} ===

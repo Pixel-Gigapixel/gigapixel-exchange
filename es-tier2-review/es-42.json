@@ -1,0 +1,263 @@
+{
+ "_gates": "FAIL",
+ "_gout": "uid    G1tag  G2num  Gsym   G&     Gcur   G3-de\n--------------------------------------------------------------\n104    ok     ok     ok     ok     ok     ok\n125    ok     ok     ok     ok     ok     ok\n126    ok     ok     ok     ok     ok     ok\n127    ok     ok     ok     ok     ok     ok\n128    ok     ok     ok     ok     ok     ok\n129    ok     ok     ok     ok     ok     ok\n130    ok     ok     ok     ok     ok     ok\n197    ok     ok     ok     ok     ok     ok\n199    ok     ok     ok     ok     ok     ok\n218    ok     ok     ok     ok     ok     ok\n220    ok     ok     ok     ok     ok     ok\n223    ok     ok     ok     ok     ok     ok\n225    ok     ok     ok     ok     ok     ok\n227    ok     ok     ok     ok     ok     ok\n229    ok     ok     ok     ok     ok     ok\n231    ok     ok     ok     ok     ok     ok\n233    ok     ok     ok     ok     ok     ok\n235    ok     ok     ok     ok     ok     ok\n238    ok     ok     ok     ok     ok     ok\n240    ok     ok     ok     ok     ok     ok\n242    ok     ok     ok     ok     ok     ok\n244    ok     ok     ok     ok     ok     ok\n246    ok     ok     ok     ok     ok     ok\n248    ok     ok     ok     ok     ok     ok\n251    ok     ok     ok     ok     ok     ok\n253    ok     ok     ok     ok     ok     FAIL{'mit': 2, 'einem': 1, 'auf': 1, 'und': 5, 'für': 2, 'diese': 1, 'auch': 1, 'ihre': 1, 'dem': 1, 'das': 1, 'werden': 1, 'von': 1, 'KI': 1}\n255    ok     ok     ok     ok     ok     ok\n257    ok     ok     ok     ok     ok     ok\n259    ok     ok     ok     ok     ok     FAIL{'auf': 1, 'und': 7, 'mit': 2, 'einem': 1, 'von': 1, 'der': 1, 'zur': 1, 'für': 2, 'sich': 1, 'durch': 1, 'aus': 2, 'ihre': 1, 'das': 1, 'eine': 1, 'zwischen': 1}\n261    ok     ok     ok     ok     ok     ok\n263    ok     ok     ok     ok     ok     ok\n732    ok     ok     ok     ok     ok     ok\n--------------------------------------------------------------\n  WARN uid 253: DE-Tokens in Anfuehrung: {'mehr': 1}  -> Fremdzitat? (verifizieren)\n\n>>> FAIL — siehe oben <<<\n",
+ "page_overlay": "exists",
+ "elements": [
+  {
+   "de_uid": 104,
+   "CType": "textpic",
+   "sorting": 256,
+   "header": "",
+   "subheader": "",
+   "bodytext": ""
+  },
+  {
+   "de_uid": 125,
+   "CType": "textpic",
+   "sorting": 512,
+   "header": "",
+   "subheader": "Spanndecken Weise",
+   "bodytext": "<p>Diseñar techos tensados con ilusiones de imagen perfectas o representaciones en 3D: esos son nuestros trabajos favoritos; el procesamiento normal de techos tensados es el pan de cada día.<br /> <br /> <a href=\"http://www.spanndecken-weise.de/\" target=\"_blank\" title=\"www.Spanndecken-Weise.de\">www.Spanndecken-Weise.de</a></p>"
+  },
+  {
+   "de_uid": 126,
+   "CType": "textpic",
+   "sorting": 2304,
+   "header": "",
+   "subheader": "Vision & Control GmbH",
+   "bodytext": "<p>Vision &amp; Control - Hacemos que las máquinas vean y así hacemos visible lo oculto.<br /> Nuestros productos controlan las instalaciones de producción de tal manera que se evitan errores, desechos y, por tanto, reclamaciones, permitiendo así una fabricación rentable.<br /> Permitimos precisión en el rango de micrómetros.<br /> <br /> <a href=\"http://www.vision-control.com/\" target=\"_blank\" title=\"http://www.vision-control.com\">www.vision-control.com</a></p>"
+  },
+  {
+   "de_uid": 127,
+   "CType": "textpic",
+   "sorting": 2560,
+   "header": "",
+   "subheader": "Integromed GmbH",
+   "bodytext": "<p>Integromed ofrece soluciones completas de espacios hospitalarios desde una sola fuente. Nuestro equipo le acompaña en todas las fases de su proyecto. Así nos aseguramos de que nuestra solución cumpla sus requisitos hasta el último detalle.</p>\r\n<p>Juntos diseñamos entornos únicos para el personal hospitalario y los pacientes.</p>\r\n<p><a href=\"http://www.integromed.de/\" target=\"_blank\" title=\"www.integromed.de\">www.integromed.de</a></p>"
+  },
+  {
+   "de_uid": 128,
+   "CType": "textpic",
+   "sorting": 2816,
+   "header": "",
+   "subheader": "Synantik GmbH",
+   "bodytext": "<p>Synantik GmbH es su socio para el desarrollo personalizado y la producción de conjuntos electrónicos y dispositivos para aplicaciones industriales, científicas y privadas. Nuestras competencias clave se encuentran en el ámbito de la tecnología de medición, control y regulación.<br /> <br /> <a href=\"http://www.synantik.de/\" target=\"_blank\" title=\"www.synantik.de\">www.synantik.de</a></p>"
+  },
+  {
+   "de_uid": 129,
+   "CType": "textpic",
+   "sorting": 3072,
+   "header": "",
+   "subheader": "Eugen Helm Formenbau und Thermoplastverarbeitung GmbH",
+   "bodytext": "<p>Estamos especializados en el procesamiento de una amplia gama de todos los materiales termoplásticos habituales, en particular poliamidas reforzadas con fibra de vidrio.<br /> Con la combinación probada de herramentería propia y departamento de moldeo por inyección, somos capaces de satisfacer los deseos y exigencias de nuestros clientes.<br /> <br /> <a href=\"http://www.eugen-helm.de/\" target=\"_blank\" title=\"www.eugen-helm.de\">www.eugen-helm.de</a></p>"
+  },
+  {
+   "de_uid": 197,
+   "CType": "textpic",
+   "sorting": 3200,
+   "header": "",
+   "subheader": "Werbehaus360 GmbH & Co. KG",
+   "bodytext": "<p>Werbehaus360 ofrece tecnología publicitaria innovadora, así como imágenes de gran formato en alta resolución y gráficos textiles de hasta 5m x 60m de tamaño de impresión sin costuras. ¡Nuestros técnicos publicitarios convierten su imagen Gigapixel en una experiencia!<br /> <br /> <a href=\"http://www.werbehaus-muenchen.de\">www.werbehaus-muenchen.de</a></p>"
+  },
+  {
+   "de_uid": 199,
+   "CType": "textpic",
+   "sorting": 3264,
+   "header": "",
+   "subheader": "Mister Wallpaper ",
+   "bodytext": "<p>Mister Wallpaper - tapices impresos individualmente y impresiones de gran formato - envío mundial<br /> <br /> <a href=\"https://misterwallpaper.com.au\">https://misterwallpaper.com.au</a></p>"
+  },
+  {
+   "de_uid": 130,
+   "CType": "textpic",
+   "sorting": 3328,
+   "header": "",
+   "subheader": "Schaldach MÖBELBAU + RAUM ",
+   "bodytext": "<p>Somos la carpintería en Blankenhain / Turingia con soluciones creativas para una vida hermosa con muebles completamente individuales / muebles de madera maciza y conceptos de espacio perfectamente pensados.<br /> <br /> <a href=\"http://www.schaldach-moebelbau-raum.de/\" target=\"_blank\" title=\"www.schaldach-moebelbau-raum.de\">www.schaldach-moebelbau-raum.de</a></p>"
+  },
+  {
+   "de_uid": 218,
+   "CType": "textpic",
+   "sorting": 3584,
+   "header": "",
+   "subheader": "Modulit Solutions",
+   "bodytext": "<p>Modul IT Solutions es un distribuidor multi-brand con más de 3000 clientes activos en más de 27 países europeos. Nuestra oferta integral incluye todo lo que los instaladores Pro-AV e integradores de sistemas necesitan: desde soluciones ergonómicas para oficinas hasta una gama completa de dispositivos audiovisuales de más de una docena de marcas cuidadosamente seleccionadas de Europa, EE. UU. y el Sudeste Asiático. Además, ofrecemos consultoría en diseño de sistemas e implementación de proyectos, así como servicios logísticos eficaces y asequibles en toda Europa.</p>\r\n<p><a href=\"https://modulit.eu\">https://modulit.eu</a></p>"
+  },
+  {
+   "de_uid": 220,
+   "CType": "textpic",
+   "sorting": 3840,
+   "header": "",
+   "subheader": "Pfeffergrafik",
+   "bodytext": "<p>Pfeffergrafik – ¡Le pongo pimienta a tu publicidad!</p>\r\n<p>¿Estás buscando una diseñadora gráfica para tu imagen de marca individual, quieres aumentar el reconocimiento de tu empresa o ganar nuevos clientes? ¡Entonces has llegado al lugar indicado!<br /> Como diseñadora gráfica te apoyo en el desarrollo de una estrategia publicitaria orientada a tu público objetivo.<br /> Desde el logotipo hasta el sitio web, aquí encontrarás todo lo que tu empresa necesita en materia de publicidad.</p>\r\n<p><a href=\"http://www.pfeffergrafik.com\">www.pfeffergrafik.com</a></p>"
+  },
+  {
+   "de_uid": 223,
+   "CType": "textpic",
+   "sorting": 4096,
+   "header": "",
+   "subheader": "NBRX AG",
+   "bodytext": "<p>NBRX -&nbsp;Los impulsores de la transición energética en tu empresa</p>\r\n<p>Como la empresa dinámica detrás de la red GreenExperts, conectamos a expertos y proveedores con empresas industriales que buscan soluciones sostenibles. A través de nuestra potente red, apostamos por la sostenibilidad, la eficiencia y la innovación. Nuestro objetivo es ayudar a las empresas a alcanzar la neutralidad climática y lograr sus metas de sostenibilidad. ¡Da con nosotros el siguiente paso hacia un futuro más sostenible!</p>\r\n<p><a href=\"http://www.nbrx.com\" target=\"_blank\">www.nbrx.com</a></p>"
+  },
+  {
+   "de_uid": 225,
+   "CType": "textpic",
+   "sorting": 4352,
+   "header": "Ühleke Training & Coaching",
+   "subheader": "",
+   "bodytext": "<p>Ventas. Simple. Acción.</p>\r\n<p>Imagínese que conoce los deseos, necesidades y motivaciones individuales de su cliente y habla el idioma de su cliente.<br /> Entonces convierte a un cliente en un fan. ¿Cómo le suena eso?<br /> El experto en ventas Dominik Ühleke apoya a vendedores/as y asesores/as para comprender a sus clientes y convencerles de sí mismos y del producto / servicio con un enfoque adaptado a su perfil.</p>\r\n<p><a href=\"https://www.ühleke.de\">https://www.ühleke.de</a></p>"
+  },
+  {
+   "de_uid": 227,
+   "CType": "textpic",
+   "sorting": 4608,
+   "header": "Workplace Checker",
+   "subheader": "",
+   "bodytext": "<p>Soy el Checker, el Workplace Checker, y configuro puestos de trabajo según criterios ergonómicos y mi principio de puzzle. Como todos somos diferentes, adapto cada puesto de trabajo individualmente a la persona. Ya sea algo más grande, algo más pequeño, algo más pesado, algo más ligero.<br /> Qué beneficio obtiene el cliente a través de mi asesoramiento y configuración.<br /> Mantenimiento de la salud de los empleados<br /> Reducción de los días de baja por enfermedad<br /> Más motivación, concentración, rendimiento, reconocimiento, fidelización de empleados<br /> Medidas preventivas</p>\r\n<p><a href=\"http://www.asprro-tec.de/\">www.asprro-tec.de</a></p>"
+  },
+  {
+   "de_uid": 229,
+   "CType": "textpic",
+   "sorting": 4864,
+   "header": "Kathrin Schmidt KS-Wohndesign",
+   "subheader": "",
+   "bodytext": "<p>Fisioterapeuta &amp; Diseñadora de Interiores</p>\r\n<p>Espacios residenciales y de trabajo saludables. Conceptos de diseño ergonómicos y estéticos para mayor bienestar y salud. Diseño de espacios para oficinas y consultorios. Materiales naturales, planificación de la iluminación, acústica y los conocimientos de la psicología del hogar y la arquitectura se integran en mi trabajo.</p>\r\n<p><a href=\"http://www.ks-wohndesign.com\">http://www.ks-wohndesign.com</a></p>"
+  },
+  {
+   "de_uid": 231,
+   "CType": "textpic",
+   "sorting": 5120,
+   "header": "Spanndecken Markowski GmbH",
+   "subheader": "",
+   "bodytext": "<p>Bienvenido al fascinante mundo de los techos tensados, donde la elegancia, la creatividad y la innovación técnica transforman los espacios. Nuestra empresa representa el diseño, la calidad y la precisión artesanal en la decoración de interiores.</p>\r\n<p>Nuestra misión: convertir espacios en obras de arte. Con materiales y técnicas modernas, creamos techos tensados estéticamente impresionantes y duraderos. Nuestro equipo de diseñadores y artesanos hace realidad las ideas para resaltar el carácter de un espacio.</p>\r\n<p>Nuestra tienda de techos tensados va más allá de la venta. La decoración de espacios es un viaje emocional. Nuestra tienda convierte las ideas en realidad. Diseñe espacios según sus preferencias y lleve a cabo proyectos por su cuenta.</p>\r\n<p><a href=\"http://www.spanndecken-hilden.de\">ww.spanndecken-hilden.de</a></p>\r\n<p><a href=\"http://www.spanndecken-shop24.de\">www.spanndecken-shop24.de</a></p>"
+  },
+  {
+   "de_uid": 233,
+   "CType": "textpic",
+   "sorting": 5376,
+   "header": "LTS Licht & Leuchten GmbH",
+   "subheader": "",
+   "bodytext": "<p>Lo que comenzó hace unos 30 años como una empresa de garaje en Ravensburg, a orillas del lago de Constanza, es hoy un fabricante internacional de iluminación. LTS Licht &amp; Leuchten GmbH desarrolla, produce y distribuye luminarias para arquitectura de alto nivel, iluminación de retail, hostelería y oficinas. Gracias a nuestros expertos, los deseos especiales de los clientes y las soluciones de iluminación individuales pueden realizarse de forma flexible y rápida.</p>\r\n<p><a href=\"https://www.lts-light.com\">www.lts-light.com</a></p>\r\n\r\n"
+  },
+  {
+   "de_uid": 235,
+   "CType": "textpic",
+   "sorting": 5632,
+   "header": "ArtOwls",
+   "subheader": "",
+   "bodytext": "<p>ArtOwls - The Graphic Design Studio es una empresa de diseño gráfico de servicio completo que ofrece soluciones efectivas para aplicaciones digitales, de impresión y web. Trabajamos con nuestros clientes para crear una identidad de marca coherente, incluyendo sitios web personalizados y materiales de marketing como logotipos, catálogos, folletos, anuncios impresos, carteles y gráficos para stands de feria.</p>\r\n<p><a href=\"https://www.artowls.com\">https://www.artowls.com</a></p>"
+  },
+  {
+   "de_uid": 238,
+   "CType": "textpic",
+   "sorting": 5888,
+   "header": "VOLL GmbH",
+   "subheader": "",
+   "bodytext": "<p>¡Somos el cerebro y el músculo de su marketing online!</p>\r\n<p>¿Marketing online? ¡Hoy funciona de otra manera! Como agencia basada en datos y socio oficial de Google, nos encargamos de escalar su presencia online con una estrategia clara, las herramientas adecuadas y un enfoque orientado a soluciones: Google AdWords, anuncios en redes sociales y mucho más. ¿Quiere ir un paso por delante de la competencia? ¡Analizamos también a sus competidores y le mostramos sus ventajas! Sin complicaciones. Con seguridad. Orientado al éxito. ¿Y cuándo empieza usted con sus anuncios?</p>\r\n<p><a href=\"http://www.voll-gmbh.de\">www.voll-gmbh.de</a><br /> <a href=\"https://forms.zohopublic.eu/vollgmbh/form/WettbewerbsanalysePrsentationserstellung/formperma/4jzs12tNDXgnghWCNEkt3WDFYJRUHJzum6yEr264x_s?Ref=Gigapixel\">análisis inicial gratuito</a></p>"
+  },
+  {
+   "de_uid": 240,
+   "CType": "textpic",
+   "sorting": 6144,
+   "header": "DEF-trans-Reisser",
+   "subheader": "",
+   "bodytext": "<p>DEF-trans-Reisser representa la atención individualizada de su presencia empresarial internacional en los idiomas alemán, inglés y francés.</p>\r\n<p>¡Su argumento de venta más poderoso es su entusiasmo por su empresa!<br /> Y eso es exactamente lo que trasladamos juntos a otros idiomas.<br /> JUNTOS llevamos su empresa al mercado internacional.</p>\r\n<p>Traduzco su sitio web, folletos y catálogos, le asisto cuando se trata de negociaciones o cierres de contratos y le proporciono la seguridad y la confianza necesaria para negociar usted mismo con sus socios comerciales y representar a su empresa.</p>\r\n<p><a href=\"https://www.def-trans-reisser.de\">https://www.def-trans-reisser.de</a></p>"
+  },
+  {
+   "de_uid": 242,
+   "CType": "textpic",
+   "sorting": 6400,
+   "header": "FLEDES s.r.o.",
+   "subheader": "",
+   "bodytext": "<p>Somos un estudio de diseño de interiores y arquitectura con sede en Praga, dedicado a la creación de espacios interiores atemporales, desde la concepción hasta la ejecución impecable. Nuestra filosofía de diseño encarna una mezcla de elementos modernos, minimalistas e industriales, creando espacios que armonizan a la perfección estética y funcionalidad.</p>\r\n<p><a href=\"https://fledes.cz\">https://fledes.cz</a></p>"
+  },
+  {
+   "de_uid": 244,
+   "CType": "textpic",
+   "sorting": 6656,
+   "header": "Landgraf Datenschutz GmbH",
+   "subheader": "",
+   "bodytext": "<p>Como delegado de protección de datos externo para tu empresa, aplico un enfoque orientado a soluciones. Aporto más de 10 años de experiencia en consultoría de protección de datos y además soy abogado especialista en derecho informático.&nbsp;</p>\r\n<p><a href=\"http://www.landgraf-datenschutz.de\">www.landgraf-datenschutz.de</a></p>"
+  },
+  {
+   "de_uid": 246,
+   "CType": "textpic",
+   "sorting": 6912,
+   "header": "VertiDruck",
+   "subheader": "",
+   "bodytext": "<p>VertiDruck lleva sus imágenes directamente a la pared. Gracias a una innovadora impresora mural, podemos transferir cualquier archivo de imagen digital de forma continua sobre casi cualquier superficie vertical. Nuestro proceso de impresión permite realizar cada detalle con precisión y alta calidad, desde la tipografía más fina hasta imágenes de gran formato con una altura de hasta 4 metros.</p>\r\n<p><a href=\"https://vertidruck.de\">https://vertidruck.de</a></p>"
+  },
+  {
+   "de_uid": 248,
+   "CType": "textpic",
+   "sorting": 7168,
+   "header": "Kredit-Profiler",
+   "subheader": "",
+   "bodytext": "<p>Asesoramiento y acompañamiento independiente de bancos por Ruth Grabosch</p>\r\n<p>¿Cómo financias tu inmueble de forma que el crédito se adapte a tu planificación de vida y no al revés? Y sobre todo, ¿con qué banco financias mejor? ¿Cuáles son las diferencias entre los muchos bancos del mercado? Mi asesoramiento independiente de bancos responde a estas preguntas. Es más, redacto y gestiono la solicitud de financiación en el banco de tu elección. Sigo siendo tu interlocutor hasta que el crédito haya sido devuelto íntegramente al banco. Personal, digital &amp; en toda Alemania - Para primeros compradores, propietarios y quienes quieran serlo.</p>\r\n<p>Compra, obra nueva, refinanciación, financiación adicional, renovación, modernización, (micro)créditos de libre disposición</p>\r\n<p><a href=\"https://kredit-profiler.de\">https://kredit-profiler.de</a></p>"
+  },
+  {
+   "de_uid": 251,
+   "CType": "textpic",
+   "sorting": 7424,
+   "header": "HFA BGMplus",
+   "subheader": "",
+   "bodytext": "<p>Su socio para la salud empresarial.<br /> ¿Sus empleados se enferman con frecuencia? ¿La rotación en su empresa es alta? ¿Sus empleados expresan insatisfacción?<br /> Nos encargamos de crear condiciones de trabajo saludables y fomentamos la satisfacción de los empleados.<br /> Basándonos en un análisis, elaboramos su concepto empresarial individual, ayudamos en la implementación y verificamos el éxito.<br /> <br /> <a href=\"http://www.hfa-bgm.de\">www.hfa-bgm.de</a></p>"
+  },
+  {
+   "de_uid": 253,
+   "CType": "textpic",
+   "sorting": 7680,
+   "header": "Trafficschmiede",
+   "subheader": "",
+   "bodytext": "<p>„Mehr Sichtbarkeit &amp; Traffic mit Strategie, Content &amp; Emotionen!“<br /> Mit einem 360 Grad Blick auf alle Online-Kanäle schmiede ich individuelle Strategien und Online Marketing-Maßnahmen für Ihren Unternehmenserfolg und setze diese auch um.<br /> Im Marketingcoaching zeige ich Ihnen, wie Sie Ihre Zielgruppe mit dem richtigen Content und Performance Marketing optimal ansprechen. Ich gebe Ihnen das passende Handwerkszeug an die Hand, um in Suchmaschinen, in den Sozialen Medien und lokal gefunden zu werden.<br /> In meiner KI Beratung unterstütze ich Sie die passenden Prompts zu erstellen. Profitieren Sie von bis zu 80% Förderung für Marketingberatung!<br /> Trafficschmiede = 18 Jahre Erfahrung in Marketing, Vertrieb &amp; Produktmanagement und umfassende Kenntnisse im Online Marketing.</p>\r\n<p><a href=\"https://trafficschmiede.de\">https://trafficschmiede.de</a></p>"
+  },
+  {
+   "de_uid": 255,
+   "CType": "textpic",
+   "sorting": 7936,
+   "header": " Auras Sehen",
+   "subheader": "",
+   "bodytext": "<p>¿Necesita unas gafas nuevas y no tiene tiempo de ir al óptico?<br /> Como maestra óptica móvil, me desplazo a su oficina o a su domicilio.<br /> Realizo una prueba de visión en su salón o en su empresa y puede elegir directamente sus nuevas gafas.<br /> ¡Mi servicio y un asesoramiento completo sobre cristales y monturas están incluidos por supuesto!</p>\r\n<p><br /> Theresa Auras, de Weimar en Turingia</p>\r\n<p>Auras Sehen – mobile Augenoptik<br /> Móvil: 0174 7170709</p>\r\n<p>https://www.auras-sehen.de</p>"
+  },
+  {
+   "de_uid": 257,
+   "CType": "textpic",
+   "sorting": 8192,
+   "header": "co print",
+   "subheader": "",
+   "bodytext": "<p><strong>Somos tu hub creativo para ideas que se convierten en realidad.</strong></p>\r\n<p>Nuestro trabajo es háptico: transporta mensajes, nombres, noticias, historias e imágenes. Nos importa mucho la calidad. No solo en nuestras materias primas, sino también en nuestro propio trabajo. Descubra la variedad de nuestras soluciones de impresión y experimente cómo sus ideas se vuelven tangibles.</p>\r\n<p><a href=\"https://www.co-print.de\">https://www.co-print.de</a></p>\r\n<p><a href=\"https://shop.co-print.de\">https://shop.co-print.de</a></p>"
+  },
+  {
+   "de_uid": 259,
+   "CType": "textpic",
+   "sorting": 8448,
+   "header": "Die AEO GmbH",
+   "subheader": "",
+   "bodytext": "<p>Die AEO GmbH bietet innovative LED-Lichtlösungen, spezialisiert auf maßgeschneiderte Lichtdecken und Großflächenleuchten. Mit einem umfassenden Service von der Planung bis zur Inbetriebnahme, erfüllt AEO individuelle Beleuchtungsanforderungen für Architekten und Innenarchitekten. Die Produkte zeichnen sich durch hohe technische Qualität und vielseitige Anwendungsmöglichkeiten aus.</p>\r\n<p><a href=\"https://dular.eu/\">https://dular.eu</a></p>\r\n<p>Quiet Light kombiniert elegante Lichtlösungen mit effektiver Schallabsorption, um Innenräume akustisch und optisch zu optimieren. Ihre innovativen Leuchten aus hochwertigem Nitona®-Filz und leistungsstarken LEDs verbessern die Klangqualität und das Raumgefühl erheblich. Ideal für moderne Innenarchitektur, schaffen sie eine harmonische Balance zwischen Ruhe, Licht und Design.</p>\r\n<p><a href=\"https://quiet-light.de\">https://quiet-light.de</a></p>"
+  },
+  {
+   "de_uid": 261,
+   "CType": "textpic",
+   "sorting": 8704,
+   "header": "Asesoría Fiscal NRS",
+   "subheader": "",
+   "bodytext": "<p>Como asesoría fiscal, le acompañamos durante todo el año en todas las cuestiones relacionadas con sus finanzas. Desde la contabilidad financiera y de nóminas hasta la elaboración del cierre anual y las correspondientes declaraciones fiscales. Le apoyamos en todas las cuestiones empresariales para que podamos alcanzar juntos los objetivos que se ha propuesto.</p>\r\n<p><a href=\"http://www.steuerkanzlei-nrs.de\">www.steuerkanzlei-nrs.de</a></p>"
+  },
+  {
+   "de_uid": 263,
+   "CType": "textpic",
+   "sorting": 8960,
+   "header": "CILING® Decken und Licht GmbH",
+   "subheader": "",
+   "bodytext": "<p>CILING® ofrece techos tensados impresos y paredes de alta calidad que pueden diseñarse de forma individual según sus deseos, ya sea para impresionantes motivos de techo o acentos creativos en paredes. Gracias al uso de la tecnología de impresión más moderna y materiales de alta calidad, se crean diseños duraderos y elegantes que, en combinación con iluminación trasera, generan efectos espaciales únicos. Con más de 25 años de experiencia y una red de instaladores especializados a nivel europeo, CILING® garantiza un servicio excelente y soluciones innovadoras para una atmósfera interior especial.</p>\r\n<p><a href=\"http://www.ciling.de/\">www.ciling.de</a></p>"
+  },
+  {
+   "de_uid": 732,
+   "CType": "textpic",
+   "sorting": 9216,
+   "header": "Habitaciones en el Elberadweg",
+   "subheader": "",
+   "bodytext": "<p>La familia Richter alquila en Vockerode, un barrio de Oranienbaum-Wörlitz en Sajonia-Anhalt, seis plazas para ciclistas de ruta y grupos pequeños. La casa se encuentra a 200 metros del Elberadweg, en pleno Patrimonio Mundial de la UNESCO Dessau-Wörlitzer Gartenreich, entre Dessau y la ciudad de Lutero Wittenberg. Alojamiento desde 25 € por persona y noche, directamente con la familia — sin plataforma de reservas, sin comisión. Una tranquila parada de etapa en el Elba Medio para ciclistas de larga distancia, familias y viajeros culturales. Más información y consulta sin compromiso en</p>\r\n<p><a href=\"https://elberadweg-zimmer.de\" title=\"https://elberadweg-zimmer.de\" target=\"_blank\">https://elberadweg-zimmer.de</a></p>"
+  }
+ ]
+}

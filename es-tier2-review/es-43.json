@@ -1,0 +1,47 @@
+{
+ "_gates": "PASS",
+ "_gout": "uid    G1tag  G2num  Gsym   G&     Gcur   G3-de\n--------------------------------------------------------------\n105    ok     ok     ok     ok     ok     ok\n201    ok     ok     ok     ok     ok     ok\n202    ok     ok     ok     ok     ok     ok\n203    ok     ok     ok     ok     ok     ok\n208    ok     ok     ok     ok     ok     ok\n--------------------------------------------------------------\n\n>>> ALLE GATES GRÜN <<<\n",
+ "page_overlay": "exists",
+ "elements": [
+  {
+   "de_uid": 105,
+   "CType": "text",
+   "sorting": 256,
+   "header": "",
+   "subheader": "Información sobre esta página:",
+   "bodytext": "<p>Nos complace apoyar proyectos que encontramos interesantes, de los que somos fans o que están relacionados con nuestros pasatiempos. A menudo participamos con pequeñas aportaciones que se recaudan entre todos. Estos proyectos no suelen tener un enfoque comercial.</p>"
+  },
+  {
+   "de_uid": 208,
+   "CType": "textpic",
+   "sorting": 264,
+   "header": " Lapporten Project - Highline Projekt",
+   "subheader": "",
+   "bodytext": "<p>El proyecto Lapporten no es solo un récord mundial. Es la highline más difícil que jamás se ha instalado.</p>\r\n<p>______________________________</p>\r\n<p>Bajo el sol de medianoche, en el corredor de viento de Lapporten en el norte de Escandinavia, un equipo de atletas y riggers comprometidos intentó superar el enorme vano.</p>\r\n<p><a href=\"https://www.instagram.com/northernlines_slackline\">https://www.instagram.com/northernlines_slackline</a></p>\r\n\r\n"
+  },
+  {
+   "de_uid": 203,
+   "CType": "textpic",
+   "sorting": 288,
+   "header": "Creative Connection For Communities e.V.",
+   "subheader": "Apoyo desde la fundación en 2021",
+   "bodytext": "<p>Creative Connection For Communities e.V.</p>\r\n<p>Apoyamos el arte y la cultura en comunidades desfavorecidas</p>\r\n<p><a href=\"https://www.crecoco.org\">https://www.crecoco.org</a></p>"
+  },
+  {
+   "de_uid": 202,
+   "CType": "textmedia",
+   "sorting": 320,
+   "header": "SQUADRON: A STAR TREK FAN PRODUCTION",
+   "subheader": "Financiación 2020 - Estreno de la película 2021",
+   "bodytext": "<p>Otro proyecto de fans de Star Trek :)&nbsp;</p>\r\n\r\n<p>SQUADRON: Una producción de fans de Star Trek - Parte 1 + Parte 2 (No olvide activar los subtítulos en EN / PT / D o CZ)</p>\r\n<p>En el apogeo de la Guerra del Dominio, cuatro naves espaciales son enviadas a patrullar un sector remoto. Los problemas reales surgen cuando los agentes del Dominio intentan secuestrar una de las naves y bombardear un mundo neutral cercano.</p>\r\n<p>Dirección: Tereza Junová</p>\r\n<p>Escrito por: Jan Kotouč</p>\r\n<p>Música de: Jan Rybář</p>\r\n<p>Reparto: Michal Husák, Jakub Holý, Jana Peclová y otros.</p>\r\n<p>Productor: Tereza Junová</p>\r\n<p>Productor ejecutivo: Tereza Junová, Jakub Holý</p>\r\n<p>Coproductor: Karel Škop</p>\r\n<p>Producido por: Terka Fanproduction, MadBros Production, Street Light Production, Made in Titan</p>\r\n<p>La película fue rodada en 2019 y 2020 en el Atelier Berunice en la República Checa. La película tiene subtítulos en inglés, portugués y checo.</p>\r\n<p>© SquadronProductions 2021</p>"
+  },
+  {
+   "de_uid": 201,
+   "CType": "textpic",
+   "sorting": 384,
+   "header": "Interlude - The Axanar Fan Film",
+   "subheader": "Apoyo en 2019 - Estreno de la película en 2021",
+   "bodytext": "<p>Todos somos trekkies aquí y por eso apoyar este proyecto fue una decisión obvia para nosotros.</p>\r\n\r\n<p>Interlude: The Axanar Fan Film.</p>\r\n<p>Executive Producer: Jonathan Lane</p>\r\n<p>Director: Victoria Fox</p>\r\n<p>Director of Photography: Joshua Irwin</p>\r\n\r\n<p>Interlude takes place in the Axanar universe and tells the story of the first encounters by the Federation ships with the Klingon D-7s.</p>\r\n<p>Interlude stars Alec Peters as Garth of Izar and Warren Hawk as Captain Jakande.</p>"
+  }
+ ]
+}

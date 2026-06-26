@@ -1,0 +1,47 @@
+{
+ "_gates": "PASS",
+ "_gout": "uid    G1tag  G2num  Gsym   G&     Gcur   G3-de\n--------------------------------------------------------------\n514    ok     ok     ok     ok     ok     ok\n515    ok     ok     ok     ok     ok     ok\n516    ok     ok     ok     ok     ok     ok\n517    ok     ok     ok     ok     ok     ok\n518    ok     ok     ok     ok     ok     ok\n--------------------------------------------------------------\n\n>>> ALLE GATES GRÜN <<<\n",
+ "page_overlay": "exists",
+ "elements": [
+  {
+   "de_uid": 514,
+   "CType": "textmedia",
+   "sorting": 10,
+   "header": "Gigapixel vs. imágenes de stock estándar – La diferencia decisiva",
+   "subheader": "",
+   "bodytext": "<p style=\"font-size:1.15em;line-height:1.8;\">Shutterstock, Getty, Adobe Stock – todos ofrecen imágenes de 25–50 megapíxeles. Para redes sociales, sitios web e impresiones pequeñas, eso es completamente suficiente. Sin embargo, para decoraciones murales a partir de 2 metros, techos tensados, paredes de exposición e instalaciones clínicas, estas imágenes fallan – de forma medible y visible.</p><p style=\"font-size:1.15em;line-height:1.8;\">Gigapixel GmbH no es un portal de stock clásico. Es un especialista en imágenes originales de ultra alta resolución a partir de 100 megapíxeles – desarrollado precisamente para las aplicaciones en las que las imágenes de stock estándar fracasan.</p>"
+  },
+  {
+   "de_uid": 515,
+   "CType": "textmedia",
+   "sorting": 20,
+   "header": "La comparación directa",
+   "subheader": "",
+   "bodytext": "<div style=\"background:#f4f0ec;border-radius:6px;padding:1.5em 2em;margin:1.5em 0;\"><table style=\"width:100%;border-collapse:collapse;font-size:0.9em;\"><tr style=\"border-bottom:2px solid #c8a96e;\"><th style=\"text-align:left;padding:0.6em;color:#2c5f7a;\">Característica</th><th style=\"text-align:center;padding:0.6em;color:#2c5f7a;\">Portales de stock estándar</th><th style=\"text-align:center;padding:0.6em;color:#2c5f7a;\">Gigapixel GmbH</th></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">Resolución típica</td><td style=\"text-align:center;padding:0.6em;color:#BA7517;\">25–50 megapíxeles</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">100–500+ megapíxeles</td></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">Tamaño de impresión sin píxeles</td><td style=\"text-align:center;padding:0.6em;color:#E24B4A;\">hasta aprox. 1,5 m de ancho</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">hasta 20+ m de ancho</td></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">Información de imagen</td><td style=\"text-align:center;padding:0.6em;color:#BA7517;\">Original, pero insuficiente</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">Original, no interpolada</td></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">¿Escalado por IA necesario?</td><td style=\"text-align:center;padding:0.6em;color:#E24B4A;\">Sí, para formatos grandes</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">No – nunca necesario</td></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">Zoom previo en resolución original</td><td style=\"text-align:center;padding:0.6em;color:#E24B4A;\">No</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">Sí – visor de zoom HTML5</td></tr><tr style=\"border-bottom:1px solid #ddd;\"><td style=\"padding:0.6em;\">Especialización</td><td style=\"text-align:center;padding:0.6em;color:#BA7517;\">Amplio surtido</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">Solo Large Format</td></tr><tr><td style=\"padding:0.6em;\">Adecuado para techos tensados</td><td style=\"text-align:center;padding:0.6em;color:#E24B4A;\">No</td><td style=\"text-align:center;padding:0.6em;color:#1D9E75;\">Sí – desarrollado específicamente</td></tr></table></div><div style=\"background:#f0f4f8;border-left:4px solid #4a7fa5;padding:1.2em 1.8em;border-radius:4px;margin-top:1em;\"><p style=\"margin:0;color:#444;font-size:0.95em;\"><strong>Evidencia científica:</strong> Mullin, C. et al. (2017): La valoración estética del mismo motivo en alta vs. baja resolución correlaciona con solo r = 0,091. Esto significa: una imagen que resulta convincente en pantalla puede perder completamente su impacto en una pared de feria o en un techo tensado si la resolución no es suficiente.</p></div>"
+  },
+  {
+   "de_uid": 516,
+   "CType": "textmedia",
+   "sorting": 30,
+   "header": "¿Cuándo es suficiente una imagen de stock estándar y cuándo no?",
+   "subheader": "",
+   "bodytext": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2em;margin:1.5em 0;\"><div style=\"background:#E1F5EE;padding:1.5em;border-radius:6px;border-left:3px solid #1D9E75;\"><strong style=\"color:#085041;display:block;margin-bottom:0.5em;\">La imagen de stock estándar es suficiente para:</strong><ul style=\"margin:0;padding-left:1.2em;color:#3a6a3a;font-size:0.9em;line-height:1.8;\"><li>Publicaciones en redes sociales</li><li>Encabezados de sitios web y blogs</li><li>Diapositivas de presentaciones</li><li>Impresiones hasta aprox. A2 (42 × 59 cm)</li><li>Anuncios digitales y banners</li></ul></div><div style=\"background:#FCEBEB;padding:1.5em;border-radius:6px;border-left:3px solid #E24B4A;\"><strong style=\"color:#A32D2D;display:block;margin-bottom:0.5em;\">La imagen de stock estándar falla en:</strong><ul style=\"margin:0;padding-left:1.2em;color:#A32D2D;font-size:0.9em;line-height:1.8;\"><li>Techos tensados desde 2 m de ancho</li><li>Fotomurales (visión de cerca)</li><li>Paredes de feria desde 3 m de ancho</li><li>Decoraciones murales en habitaciones de hotel</li><li>Imágenes de techos y paredes en clínicas</li><li>Impresiones de gran formato para vestíbulos</li><li>Interiorismo comercial y showrooms</li></ul></div></div>"
+  },
+  {
+   "de_uid": 517,
+   "CType": "textmedia",
+   "sorting": 40,
+   "header": "Preguntas frecuentes – Gigapixel vs. imágenes de stock",
+   "subheader": "",
+   "bodytext": "<div style=\"margin-top:1em;\"><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e;\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a;\">¿Puedo usar una imagen de Shutterstock para un techo tensado?</strong><p style=\"margin:0;color:#444;line-height:1.7;\">En principio sí, pero el resultado será borroso. Una imagen típica de Shutterstock con 25 megapíxeles ofrece en un techo tensado de 4 × 3 metros solo aprox. 40 ppi de información de imagen real. El ojo humano resuelve hasta 94 ppi. El desenfoque visible es inevitable.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e;\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a;\">¿Puede el escalado por IA resolver el problema?</strong><p style=\"margin:0;color:#444;line-height:1.7;\">No. El escalado por IA como Topaz Gigapixel AI calcula los píxeles faltantes en base a patrones aprendidos – no se genera nueva información de imagen real. A partir de aprox. 4 veces de ampliación aparecen artefactos. La fotografía gigapíxel real ofrece al hacer zoom siempre nuevos detalles físicamente correctos – algo que la IA no puede replicar.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e;\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a;\">¿Son las imágenes gigapíxel más caras que las imágenes de stock?</strong><p style=\"margin:0;color:#444;line-height:1.7;\">Las licencias de impresión comienzan desde 90 euros. En comparación con los costes de una reclamación – nueva producción, retraso en el montaje, insatisfacción del cliente – es una inversión muy rentable. Además, las imágenes gigapíxel pueden, gracias a su resolución, recortarse para varias superficies a partir de una sola imagen.</p></div><div style=\"margin-bottom:1.2em;padding:1.2em 1.5em;background:#f8f4f0;border-radius:6px;border-left:4px solid #c8a96e;\"><strong style=\"display:block;margin-bottom:0.5em;color:#2c5f7a;\">¿Tiene Gigapixel GmbH la misma variedad de motivos que Shutterstock?</strong><p style=\"margin:0;color:#444;line-height:1.7;\">No, y eso es un enfoque deliberado. Gigapixel GmbH no es un portal de stock de surtido completo sino un especialista: panoramas urbanos, paisajes, arquitectura, naturaleza, macrofotografía, fractales y motivos espaciales – todos con una resolución original de 100 megapíxeles o más.</p></div></div>"
+  },
+  {
+   "de_uid": 518,
+   "CType": "textmedia",
+   "sorting": 50,
+   "header": "En resumen",
+   "subheader": "",
+   "bodytext": "<div style=\"background:#2c5f7a;color:#fff;padding:1.5em 2em;border-radius:6px;margin-top:1em;\"><p style=\"margin:0;font-size:1.05em;line-height:1.8;\">Las imágenes de stock estándar de Shutterstock, Getty o Adobe Stock son ideales para redes sociales y sitios web, pero no son adecuadas para impresión en gran formato a partir de 2 metros. Gigapixel GmbH es el único proveedor especializado en imágenes de ultra-alta resolución a partir de 100 megapíxeles sin escalado por IA. El visor zoom HTML5 permite verificar la resolución completa antes de la compra, lo que elimina las reclamaciones.</p></div>"
+  }
+ ]
+}

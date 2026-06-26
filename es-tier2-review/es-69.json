@@ -1,0 +1,39 @@
+{
+ "_gates": "PASS",
+ "_gout": "uid    G1tag  G2num  Gsym   G&     Gcur   G3-de\n--------------------------------------------------------------\n183    ok     ok     ok     ok     ok     ok\n185    ok     ok     ok     ok     ok     ok\n187    ok     ok     ok     ok     ok     ok\n193    ok     ok     ok     ok     ok     ok\n--------------------------------------------------------------\n\n>>> ALLE GATES GRÜN <<<\n",
+ "page_overlay": "exists",
+ "elements": [
+  {
+   "de_uid": 183,
+   "CType": "textpic",
+   "sorting": 256,
+   "header": "",
+   "subheader": "Instagram",
+   "bodytext": "<p>También estamos presentes en Instagram.</p>\r\n<p>Para no incluir cookies en esta página, no hay ningún enlace directo a nuestra página de Instagram.</p>\r\n<p>Quien quiera seguirnos en Instagram, simplemente búsquenos allí como \"GigapixelGmbH\".</p>"
+  },
+  {
+   "de_uid": 185,
+   "CType": "textpic",
+   "sorting": 384,
+   "header": "",
+   "subheader": "LinkedIn",
+   "bodytext": "<p>También estamos presentes en LinkedIn.</p>\r\n<p>Para no incluir cookies en esta página, no hay ningún enlace directo a nuestra página de LinkedIn.</p>\r\n<p>Quien quiera seguirnos en LinkedIn, simplemente búsquenos allí como \"Gigapixel GmbH\".</p>"
+  },
+  {
+   "de_uid": 187,
+   "CType": "textpic",
+   "sorting": 448,
+   "header": "",
+   "subheader": "Facebook",
+   "bodytext": "<p>También estamos presentes en Facebook.</p>\r\n<p>Para no incluir cookies en esta página, no hay ningún enlace directo a nuestra página de Facebook.</p>\r\n<p>Quien quiera seguirnos en Facebook, simplemente búsquenos allí como \"@GigapixelGmbH\".</p>"
+  },
+  {
+   "de_uid": 193,
+   "CType": "textpic",
+   "sorting": 480,
+   "header": "",
+   "subheader": "Twitter",
+   "bodytext": "<p>También estamos presentes en Twitter.</p>\r\n<p>Para no incluir cookies en esta página, no hay ningún enlace directo a nuestra página de Twitter.</p>\r\n<p>Quien quiera seguirnos en Twitter, simplemente búsquenos allí como \"@GigapixelGmbH\".</p>"
+  }
+ ]
+}
