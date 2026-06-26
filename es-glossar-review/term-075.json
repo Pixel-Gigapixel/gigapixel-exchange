@@ -1,0 +1,22 @@
+{
+  "de_uid": 75,
+  "category": 1,
+  "is_methodology_term": 1,
+  "title": "Método Terapíxel",
+  "slug": "metodo-terapixel",
+  "short_definition": "Una metodología desarrollada en la propia práctica para la generación de imágenes en el rango del terapíxel a partir de decenas de miles de imágenes individuales – la primera imagen de terapíxel surgió en 2012 como estudio de viabilidad.",
+  "long_definition": "<p>El método Terapíxel agrupa la captura, el stitching y el procesamiento de datos de forma que se generan imágenes con una resolución en el rango de un billón de píxeles. Para ello se capturan decenas de miles de tomas individuales y se unen en una única imagen global mediante un flujo de trabajo de datos y cómputo especialmente ajustado.</p><p>La primera imagen de terapíxel se realizó en 2012 como estudio de viabilidad. El resultado es una única imagen en un formato especial más allá del límite PSB, con distorsiones debidas a la proyección como en los panoramas de 360 grados, y visualizable exclusivamente mediante Deep-Zoom. La metodología fue desarrollada en la propia obra.</p>",
+  "meta_description": "Método Terapíxel: metodología propia para imágenes de terapíxel a partir de decenas de miles de imágenes individuales – una única imagen en formato especial, visualizable solo mediante Deep-Zoom.",
+  "faq_items": "[{\"question\": \"¿Qué caracteriza al método Terapíxel?\", \"answer\": \"La interacción coordinada de captura, stitching y flujo de trabajo de datos para resoluciones en el rango de un billón de píxeles – implementado por primera vez en 2012.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Terapixel-Verfahren",
+    "slug": "terapixel-verfahren",
+    "short_definition": "Eine in eigener Praxis entwickelte Methodik zur Erzeugung von Bildern im Terapixel-Bereich aus zehntausenden Einzelbildern – das erste Terapixel-Bild entstand 2012 als Machbarkeitsstudie.",
+    "long_definition": "<p>Das Terapixel-Verfahren bündelt Aufnahme, Stitching und Datenverarbeitung so, dass Bilder mit einer Auflösung im Bereich einer Billion Pixel entstehen. Dazu werden zehntausende Einzelaufnahmen erfasst und über einen eigens abgestimmten Daten- und Rechen-Workflow zu einem einzigen Gesamtbild verbunden.</p><p>Das erste Terapixel-Bild wurde 2012 als Machbarkeitsstudie realisiert. Das Ergebnis ist ein einziges Bild in einem speziellen Format jenseits der PSB-Grenze, mit projektionsbedingten Verzerrungen wie bei 360-Grad-Panoramen, und ausschließlich über Deep-Zoom betrachtbar. Die Methodik wurde im eigenen Werk entwickelt.</p>",
+    "meta_description": "Terapixel-Verfahren: eigene Methodik für Terapixel-Bilder aus zehntausenden Einzelbildern – ein einziges Bild in speziellem Format, betrachtbar nur über Deep-Zoom.",
+    "faq_items": "[{\"question\":\"Was zeichnet das Terapixel-Verfahren aus?\",\"answer\":\"Das abgestimmte Zusammenspiel aus Aufnahme, Stitching und Daten-Workflow für Auflösungen im Bereich einer Billion Pixel – erstmals 2012 umgesetzt.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

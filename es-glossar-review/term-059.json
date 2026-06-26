@@ -1,0 +1,22 @@
+{
+  "de_uid": 59,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Profundidad de campo",
+  "slug": "profundidad-de-campo",
+  "short_definition": "El rango delante y detrás del plano de enfoque que aparece aceptablemente nítido en una toma. Depende de la apertura, la longitud focal y la distancia de disparo.",
+  "long_definition": "<p>La profundidad de campo describe qué rango de profundidad de un motivo se reproduce nítidamente. Un diafragma pequeño (número f elevado) aumenta la profundidad de campo, mientras que una apertura amplia la reduce; del mismo modo, las longitudes focales más cortas y una mayor distancia de disparo también aumentan la profundidad de campo.</p><p>En la fotografía gigapíxel, la profundidad de campo es especialmente crítica, porque los motivos con gran nivel de detalle deben permanecer nítidos en toda su profundidad. Cuando una sola apertura no es suficiente, el focus stacking combina varios planos de enfoque para obtener una nitidez continua.</p>",
+  "meta_description": "Profundidad de campo: el rango de profundidad reproducido nítidamente en una toma, controlado mediante la apertura, la longitud focal y la distancia.",
+  "faq_items": "[{\"question\": \"¿Cómo se aumenta la profundidad de campo?\", \"answer\": \"Mediante un diafragma más pequeño, una longitud focal más corta o una mayor distancia de disparo. Si esto no es suficiente, el focus stacking es la solución.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Schärfentiefe",
+    "slug": "schaerfentiefe",
+    "short_definition": "Der Bereich vor und hinter der Fokusebene, der in einer Aufnahme akzeptabel scharf erscheint. Abhängig von Blende, Brennweite und Aufnahmeabstand.",
+    "long_definition": "<p>Die Schärfentiefe beschreibt, welcher Tiefenbereich eines Motivs scharf abgebildet wird. Eine kleine Blende (große Blendenzahl) vergrößert die Schärfentiefe, eine offene Blende verringert sie; ebenso wirken kürzere Brennweiten und größerer Aufnahmeabstand schärfentiefe-vergrößernd.</p><p>In der Gigapixel-Fotografie ist die Schärfentiefe besonders heikel, weil sehr detailreiche Motive über die gesamte Tiefe scharf bleiben sollen. Wo eine einzelne Blende nicht ausreicht, kombiniert Focus-Stacking mehrere Fokusebenen zu durchgehender Schärfe.</p>",
+    "meta_description": "Schärfentiefe: der scharf abgebildete Tiefenbereich einer Aufnahme – gesteuert über Blende, Brennweite und Abstand.",
+    "faq_items": "[{\"question\":\"Wie vergrößert man die Schärfentiefe?\",\"answer\":\"Durch eine kleinere Blende, kürzere Brennweite oder größeren Aufnahmeabstand. Reicht das nicht, hilft Focus-Stacking.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

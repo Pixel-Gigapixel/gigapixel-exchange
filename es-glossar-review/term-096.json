@@ -1,0 +1,22 @@
+{
+  "de_uid": 96,
+  "category": 7,
+  "is_methodology_term": 0,
+  "title": "Alu-Dibond",
+  "slug": "alu-dibond",
+  "short_definition": "Un material compuesto de dos capas de aluminio con núcleo de plástico. Estable, ligero y perfectamente plano: un soporte de imagen muy popular para cuadros de pared de alta calidad.",
+  "long_definition": "<p>Alu-Dibond está compuesto por dos finas capas exteriores de aluminio con un núcleo de plástico. El compuesto es muy estable, ligero y permanece perfectamente plano de forma duradera, sin ondularse.</p><p>Como soporte de imagen, el motivo se aplica directamente o se lamina como impresión. El resultado tiene un aspecto de alta calidad y moderno; en combinación con motivos Gigapixel de alta resolución, la imagen permanece nítida incluso de cerca.</p>",
+  "meta_description": "Alu-Dibond: compuesto de aluminio estable y perfectamente plano como soporte de imagen – de alta calidad y moderno para cuadros de pared.",
+  "faq_items": "[{\"question\": \"¿Cuál es la ventaja del Alu-Dibond?\", \"answer\": \"Es estable, ligero y permanece perfectamente plano de forma duradera: un soporte de imagen de alta calidad y moderno sin formación de ondas.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Alu-Dibond",
+    "slug": "alu-dibond",
+    "short_definition": "Ein Verbundmaterial aus zwei Aluminiumschichten mit Kunststoffkern. Stabil, leicht und planeben – ein beliebter Bildträger für hochwertige Wandbilder.",
+    "long_definition": "<p>Alu-Dibond besteht aus zwei dünnen Aluminiumdeckschichten mit einem Kunststoffkern. Der Verbund ist sehr stabil, leicht und bleibt dauerhaft planeben, ohne sich zu wellen.</p><p>Als Bildträger wird das Motiv direkt aufgebracht oder als Druck aufkaschiert. Das Ergebnis wirkt hochwertig und modern; in Kombination mit hochauflösenden Gigapixel-Motiven bleibt das Bild auch aus der Nähe gestochen scharf.</p>",
+    "meta_description": "Alu-Dibond: stabiler, planebener Aluminium-Verbund als Bildträger – hochwertig und modern für Wandbilder.",
+    "faq_items": "[{\"question\":\"Was ist der Vorteil von Alu-Dibond?\",\"answer\":\"Es ist stabil, leicht und bleibt dauerhaft planeben – ein hochwertiger, moderner Bildträger ohne Wellenbildung.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

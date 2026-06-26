@@ -1,0 +1,22 @@
+{
+  "de_uid": 6,
+  "category": 3,
+  "is_methodology_term": 1,
+  "title": "Producción en serie Gigapixel",
+  "slug": "produccion-en-serie-gigapixel",
+  "short_definition": "Una metodología desarrollada en la propia práctica que produce tomas Gigapixel de forma reproducible y con calidad constante en mayor cantidad, en lugar de tratarlas como piezas únicas.",
+  "long_definition": "<p>Producción en serie Gigapixel designa una metodología que transforma el laborioso proceso de creación de tomas Gigapixel de un proceso artesanal individual en un flujo de producción reproducible.</p><p>En el centro se encuentran pasos estandarizados de captura, stitching y postproducción, una gestión del color coordinada y un flujo de trabajo RAW continuo, de modo que numerosos motivos se obtienen con una calidad uniformemente alta. Esto permite poner la resolución Gigapixel a disposición no solo de objetos de prestigio individuales, sino también de extensos fondos de imágenes y aplicaciones recurrentes.</p><p>La metodología fue desarrollada en la propia empresa; ejemplos de trabajos se encuentran como páginas de detalle en el portal.</p>",
+  "meta_description": "Producción en serie Gigapixel: una metodología propia que produce tomas Gigapixel de forma reproducible y con calidad constante en serie.",
+  "faq_items": "[{\"question\": \"¿Qué diferencia la producción en serie de las tomas individuales?\", \"answer\": \"Los procesos estandarizados y reproducibles junto con una gestión del color continua garantizan una calidad constante a lo largo de numerosos motivos, en lugar de tratar cada imagen como una pieza única.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Serienproduktion Gigapixel",
+    "slug": "serienproduktion-gigapixel",
+    "short_definition": "Eine in eigener Praxis entwickelte Methodik, die Gigapixel-Aufnahmen reproduzierbar und in gleichbleibender Qualität in größerer Stückzahl erzeugt, statt sie als Einzelstücke zu behandeln.",
+    "long_definition": "<p>Serienproduktion Gigapixel bezeichnet eine Methodik, die das aufwendige Erstellen von Gigapixel-Aufnahmen von einem handwerklichen Einzelprozess in einen reproduzierbaren Produktionsablauf überführt.</p><p>Im Zentrum stehen standardisierte Aufnahme-, Stitching- und Nachbearbeitungsschritte, abgestimmtes Color-Management und ein durchgängiger RAW-Workflow, sodass viele Motive in gleichbleibend hoher Qualität entstehen. Das ermöglicht es, Gigapixel-Auflösung nicht nur für einzelne Prestigeobjekte, sondern für umfangreiche Bildbestände und wiederkehrende Anwendungen verfügbar zu machen.</p><p>Die Methodik wurde im eigenen Betrieb entwickelt; Beispielarbeiten finden sich als Detailseiten im Portal.</p>",
+    "meta_description": "Serienproduktion Gigapixel: eine eigene Methodik, die Gigapixel-Aufnahmen reproduzierbar und in gleichbleibender Qualität in Serie erzeugt.",
+    "faq_items": "[{\"question\":\"Was unterscheidet Serienproduktion von Einzelaufnahmen?\",\"answer\":\"Standardisierte, reproduzierbare Abläufe und durchgängiges Color-Management sorgen für gleichbleibende Qualität über viele Motive hinweg, statt jedes Bild als Einzelstück zu behandeln.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

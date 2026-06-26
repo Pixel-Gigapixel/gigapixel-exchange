@@ -1,0 +1,22 @@
+{
+  "de_uid": 19,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Resolución por m²",
+  "slug": "resolucion-por-m2",
+  "short_definition": "Una medida práctica de cuántos píxeles por metro cuadrado de superficie de impresión están disponibles – decisiva para que un gran formato resulte fiel a los detalles.",
+  "long_definition": "<p>La resolución por metro cuadrado describe cuántos píxeles están realmente disponibles en una determinada superficie de impresión. Relaciona el número total de píxeles de una imagen con el tamaño de impresión deseado y resulta, por tanto, más informativa que los valores de PPI puros cuando se trata de formatos muy grandes.</p><p>Como regla general para grandes formatos listos para su exposición, se utiliza una resolución de salida de aproximadamente 70 PPI: el tamaño de impresión de un lado en píxeles se obtiene dividiendo el número de píxeles entre 70; el resultado en pulgadas multiplicado por 2,54 da los centímetros. Así puede determinarse directamente para cada toma gigapíxel la superficie máxima con plena fidelidad de detalle.</p><p>Cuanto mayor es la superficie con el mismo número de píxeles, menor es la resolución por m² – razón por la que la resolución gigapíxel despliega su valor precisamente en el gran formato.</p>",
+  "meta_description": "Resolución por m²: cuántos píxeles por metro cuadrado de superficie de impresión están disponibles – decisiva para la fidelidad de detalle en el gran formato.",
+  "faq_items": "[{\"question\": \"¿Cómo se calcula el tamaño máximo de impresión?\", \"answer\": \"El número de píxeles del lado dividido entre la resolución de salida (p. ej., 70 PPI) da pulgadas; multiplicado por 2,54 da centímetros. De ahí se obtiene la superficie con plena fidelidad de detalle.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Auflösung pro m²",
+    "slug": "aufloesung-pro-quadratmeter",
+    "short_definition": "Ein praxisnahes Maß dafür, wie viele Bildpunkte pro Quadratmeter Druckfläche zur Verfügung stehen – entscheidend, ob ein Großformat detailtreu wirkt.",
+    "long_definition": "<p>Die Auflösung pro Quadratmeter beschreibt, wie viele Pixel auf einer bestimmten Druckfläche tatsächlich zur Verfügung stehen. Sie verbindet die Gesamtpixelzahl eines Bildes mit der angestrebten Druckgröße und ist damit aussagekräftiger als reine PPI-Werte, wenn es um sehr große Formate geht.</p><p>Als Faustregel für betrachtungsfertige Großformate dient eine Ausgabe-Auflösung von rund 70 PPI: Die Druckgröße einer Pixelkante ergibt sich aus der Pixelzahl geteilt durch 70, das Ergebnis in Zoll mal 2,54 für Zentimeter. So lässt sich für jede Gigapixel-Aufnahme direkt die maximale Fläche bei voller Detailtreue bestimmen.</p><p>Je größer die Fläche bei gleicher Pixelzahl, desto geringer die Auflösung pro m² – weshalb Gigapixel-Auflösung gerade im Großformat ihren Wert entfaltet.</p>",
+    "meta_description": "Auflösung pro m²: wie viele Bildpunkte pro Quadratmeter Druckfläche zur Verfügung stehen – entscheidend für Detailtreue im Großformat.",
+    "faq_items": "[{\"question\":\"Wie berechnet man die maximale Druckgröße?\",\"answer\":\"Pixelzahl der Kante geteilt durch die Ausgabe-Auflösung (z. B. 70 PPI) ergibt Zoll, mal 2,54 ergibt Zentimeter. Daraus folgt die Fläche bei voller Detailtreue.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

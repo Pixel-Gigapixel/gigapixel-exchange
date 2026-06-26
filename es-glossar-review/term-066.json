@@ -1,0 +1,22 @@
+{
+  "de_uid": 66,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Rango dinámico",
+  "slug": "rango-dinamico",
+  "short_definition": "El rango de luminosidad entre las zonas más oscuras y más claras con detalle que un sensor puede capturar en una toma.",
+  "long_definition": "<p>El rango dinámico describe cuántos niveles de luminosidad entre la sombra más profunda y la luz más intensa puede capturar un sensor conservando detalle. Si no es suficiente, las sombras se bloquean o las altas luces se queman.</p><p>Las escenas de alto contraste superan con frecuencia el rango dinámico de una sola toma; en estos casos, los procedimientos HDR combinan varias exposiciones para abarcar todo el rango. La conversión al rango representable en impresión o pantalla la realiza el tonemapping.</p>",
+  "meta_description": "Rango dinámico: el rango capturable entre las zonas más oscuras y más claras con detalle — ampliado mediante HDR en situaciones de alto contraste.",
+  "faq_items": "[{\"question\": \"¿Qué ocurre cuando el rango dinámico es insuficiente?\", \"answer\": \"Las sombras se bloquean o las altas luces se queman. En situaciones de alto contraste, una serie de exposiciones HDR resulta de gran ayuda.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Dynamikumfang",
+    "slug": "dynamikumfang",
+    "short_definition": "Der Helligkeitsbereich zwischen den dunkelsten und hellsten durchgezeichneten Bildbereichen, die ein Sensor in einer Aufnahme erfassen kann.",
+    "long_definition": "<p>Der Dynamikumfang beschreibt, wie viele Helligkeitsstufen zwischen tiefstem Schatten und hellstem Licht ein Sensor noch mit Zeichnung erfassen kann. Reicht er nicht aus, saufen Schatten ab oder Lichter brennen aus.</p><p>Sehr kontrastreiche Szenen übersteigen oft den Dynamikumfang einer Einzelaufnahme – hier kombinieren HDR-Verfahren mehrere Belichtungen, um den gesamten Bereich abzubilden. Die Überführung in den darstellbaren Umfang von Druck oder Bildschirm übernimmt das Tonemapping.</p>",
+    "meta_description": "Dynamikumfang: der erfassbare Bereich zwischen dunkelsten und hellsten durchgezeichneten Bildpartien – bei hohem Kontrast via HDR erweitert.",
+    "faq_items": "[{\"question\":\"Was passiert bei zu geringem Dynamikumfang?\",\"answer\":\"Schatten laufen zu oder Lichter brennen aus. Bei hohem Kontrast hilft eine HDR-Belichtungsreihe.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

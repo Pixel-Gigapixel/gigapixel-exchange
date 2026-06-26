@@ -1,0 +1,22 @@
+{
+  "de_uid": 18,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "PPI vs DPI",
+  "slug": "ppi-vs-dpi",
+  "short_definition": "PPI (pixels per inch) es la resolución de imagen del archivo, DPI (dots per inch) la densidad de puntos de impresión de la impresora. Ambos se confunden con frecuencia, pero deben diferenciarse claramente.",
+  "long_definition": "<p>PPI y DPI suenan parecido, pero describen cosas distintas. <strong>PPI – pixels per inch</strong> indica cuántos píxeles del archivo digital corresponden a una pulgada de superficie de salida. Es la medida correcta para describir la resolución de detalle de una imagen a un tamaño de impresión determinado.</p><p><strong>DPI – dots per inch</strong> indica, en cambio, cuántos puntos de tinta coloca físicamente la impresora por pulgada. Las impresoras utilizan a menudo varios puntos de tinta para un único píxel de imagen, por lo que el valor DPI de una impresora suele ser más alto que la resolución PPI útil de la imagen.</p><p>Para calcular el tamaño máximo de impresión de una imagen gigapíxel, solo el PPI es determinante — no el valor DPI de la impresora.</p>",
+  "meta_description": "PPI vs DPI: PPI es la resolución de imagen del archivo, DPI la densidad de puntos de impresión de la impresora. Para el tamaño de impresión cuenta el PPI, no el DPI.",
+  "faq_items": "[{\"question\": \"¿Cuál es la diferencia entre PPI y DPI?\", \"answer\": \"PPI describe los píxeles del archivo por pulgada (resolución de imagen), DPI los puntos de tinta de la impresora por pulgada (técnica de impresión). Para el tamaño de impresión, el PPI es determinante.\"}, {\"question\": \"¿Qué valor necesito para el tamaño de impresión?\", \"answer\": \"PPI. El tamaño máximo de impresión se obtiene dividiendo el número de píxeles entre la resolución PPI deseada.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "PPI vs DPI",
+    "slug": "ppi-vs-dpi",
+    "short_definition": "PPI (pixels per inch) ist die Bildauflösung der Datei, DPI (dots per inch) die Druckpunktdichte des Druckers. Beide werden oft verwechselt, sind aber klar zu trennen.",
+    "long_definition": "<p>PPI und DPI klingen ähnlich, beschreiben aber Verschiedenes. <strong>PPI – pixels per inch</strong> bezeichnet, wie viele Bildpunkte der digitalen Datei auf einen Zoll Ausgabefläche entfallen. Das ist die korrekte Größe, um die Detailauflösung eines Bildes bei einer bestimmten Druckgröße zu beschreiben.</p><p><strong>DPI – dots per inch</strong> bezeichnet dagegen, wie viele Tintenpunkte der Drucker physikalisch pro Zoll setzt. Drucker setzen für einen einzelnen Bildpunkt oft mehrere Tintenpunkte ein, weshalb die DPI-Zahl eines Druckers regelmäßig höher liegt als die sinnvolle PPI-Auflösung des Bildes.</p><p>Für die Berechnung der maximalen Druckgröße eines Gigapixel-Bildes ist allein PPI maßgeblich – nicht die DPI-Angabe des Druckers.</p>",
+    "meta_description": "PPI vs DPI: PPI ist die Bildauflösung der Datei, DPI die Druckpunktdichte des Druckers. Für die Druckgröße zählt PPI, nicht DPI.",
+    "faq_items": "[{\"question\":\"Was ist der Unterschied zwischen PPI und DPI?\",\"answer\":\"PPI beschreibt die Bildpunkte der Datei pro Zoll (Bildauflösung), DPI die Tintenpunkte des Druckers pro Zoll (Drucktechnik). Für die Druckgröße ist PPI maßgeblich.\"},{\"question\":\"Welche Angabe brauche ich für die Druckgröße?\",\"answer\":\"PPI. Die maximale Druckgröße ergibt sich aus der Pixelzahl geteilt durch die gewünschte PPI-Auflösung.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

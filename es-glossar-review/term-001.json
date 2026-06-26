@@ -1,0 +1,22 @@
+{
+  "de_uid": 1,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Toma gigapíxel",
+  "slug": "toma-gigapixel",
+  "short_definition": "Una toma fotográfica con al menos mil millones de píxeles (1000 megapíxeles). Se obtiene generalmente mediante el stitching de muchas imágenes individuales para formar una imagen final de detalle extremo, sin upscaling por IA.",
+  "long_definition": "<p>Una toma gigapíxel es una imagen fotográfica con una resolución a partir de mil millones de píxeles. Para comparar: una cámara profesional de fotograma completo ofrece entre 40 y 100 megapíxeles; una toma gigapíxel alcanza por tanto entre diez y veinticinco veces más, e incluso superior.</p><p>Esta resolución no se obtiene mediante un único sensor, sino mediante la captura sistemática de muchas imágenes individuales solapadas que se ensamblan posteriormente por stitching en una imagen final sin costuras. Cada zona de la imagen se captura con toda la nitidez óptica.</p><p>Lo decisivo para la calidad de imagen es que la resolución se genera ópticamente y no se interpola mediante upscaling por IA a posteriori. Solo así las estructuras más finas se reproducen con fidelidad de detalle en toda la superficie, condición fundamental para aplicaciones en gran formato como techos tensados, construcción de stands feriales o impresión arquitectónica.</p>",
+  "meta_description": "Qué define una toma gigapíxel: a partir de mil millones de píxeles, generada ópticamente mediante stitching, sin upscaling por IA, ideal para impresión en gran formato con máximo detalle.",
+  "faq_items": "[{\"question\": \"¿A partir de cuándo se habla de una toma gigapíxel?\", \"answer\": \"A partir de una resolución de mil millones de píxeles, es decir, 1000 megapíxeles. Por debajo de ese umbral se habla de resolución en megapíxeles.\"}, {\"question\": \"¿Se genera la resolución mediante IA?\", \"answer\": \"No. Una toma gigapíxel auténtica se obtiene ópticamente mediante el stitching de muchas imágenes individuales capturadas de forma real. El upscaling por IA solo genera detalles aparentes e interpolados.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Gigapixel-Aufnahme",
+    "slug": "gigapixel-aufnahme",
+    "short_definition": "Eine fotografische Aufnahme mit mindestens einer Milliarde Pixel (1000 Megapixel). Entsteht meist durch das Stitchen vieler Einzelbilder zu einem extrem detailreichen Gesamtbild – ohne KI-Hochrechnung.",
+    "long_definition": "<p>Eine Gigapixel-Aufnahme ist ein fotografisches Bild mit einer Auflösung ab einer Milliarde Pixel. Zum Vergleich: Eine professionelle Vollformatkamera liefert 40 bis 100 Megapixel – eine Gigapixel-Aufnahme erreicht also das Zehn- bis Fünfundzwanzigfache und mehr.</p><p>Erzeugt wird diese Auflösung nicht durch einen einzelnen Sensor, sondern durch das systematische Aufnehmen vieler überlappender Einzelbilder, die anschließend per Stitching zu einem nahtlosen Gesamtbild zusammengesetzt werden. Jeder Bildbereich wird dabei mit voller optischer Schärfe erfasst.</p><p>Entscheidend für die Bildqualität ist, dass die Auflösung optisch entsteht und nicht durch nachträgliches KI-Upscaling interpoliert wird. Nur so bleiben feinste Strukturen über die gesamte Fläche detailtreu – die Grundvoraussetzung für großformatige Anwendungen wie Spanndecken, Messebau oder Architekturdruck.</p>",
+    "meta_description": "Was eine Gigapixel-Aufnahme ausmacht: ab einer Milliarde Pixel, optisch durch Stitching erzeugt, ohne KI-Upscaling – ideal für detailtreuen Großformatdruck.",
+    "faq_items": "[{\"question\":\"Ab wann spricht man von einer Gigapixel-Aufnahme?\",\"answer\":\"Ab einer Auflösung von einer Milliarde Pixel, also 1000 Megapixel. Darunter spricht man von Megapixel-Auflösung.\"},{\"question\":\"Wird die Auflösung durch KI erzeugt?\",\"answer\":\"Nein. Eine echte Gigapixel-Aufnahme entsteht optisch durch das Stitchen vieler real aufgenommener Einzelbilder. KI-Upscaling erzeugt nur scheinbare, interpolierte Details.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

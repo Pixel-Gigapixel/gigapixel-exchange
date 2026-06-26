@@ -1,0 +1,22 @@
+{
+  "de_uid": 60,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Distancia hiperfocal",
+  "slug": "distancia-hiperfocal",
+  "short_definition": "La distancia de enfoque en la que la profundidad de campo se aprovecha al máximo: desde la mitad de esa distancia hasta el infinito, todo aparece nítido.",
+  "long_definition": "<p>La distancia hiperfocal es la distancia a la que se enfoca para obtener la mayor zona nítida posible con una apertura y una focal determinadas. Si se enfoca exactamente a esa distancia, la nitidez abarca desde la mitad de esa distancia hasta el infinito.</p><p>Para paisajes amplios y arquitectura es una herramienta fundamental para mantener el primer plano y el fondo nítidos al mismo tiempo, especialmente en tomas de alta resolución en las que el desenfoque resulta inmediatamente visible.</p>",
+  "meta_description": "Distancia hiperfocal: la distancia de enfoque para la máxima profundidad de campo, nítido desde la mitad de la distancia hasta el infinito.",
+  "faq_items": "[{\"question\": \"¿Para qué sirve la distancia hiperfocal?\", \"answer\": \"Para lograr la zona nítida máxima con una apertura y una focal determinadas, ideal para paisajes nítidos de principio a fin.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Hyperfokaldistanz",
+    "slug": "hyperfokaldistanz",
+    "short_definition": "Die Fokusentfernung, bei der die Schärfentiefe maximal ausgenutzt wird – von der halben Distanz bis unendlich erscheint alles scharf.",
+    "long_definition": "<p>Die Hyperfokaldistanz ist die Entfernung, auf die man fokussiert, um bei gegebener Blende und Brennweite den größtmöglichen scharfen Bereich zu erhalten. Fokussiert man genau auf diese Distanz, reicht die Schärfe von der Hälfte dieser Entfernung bis ins Unendliche.</p><p>Für weitläufige Landschaften und Architektur ist sie ein wichtiges Werkzeug, um Vorder- und Hintergrund gleichzeitig scharf zu halten – gerade bei hochauflösenden Aufnahmen, in denen Unschärfe sofort sichtbar wird.</p>",
+    "meta_description": "Hyperfokaldistanz: die Fokusentfernung für maximale Schärfentiefe – von halber Distanz bis unendlich scharf.",
+    "faq_items": "[{\"question\":\"Wozu dient die Hyperfokaldistanz?\",\"answer\":\"Um bei gegebener Blende und Brennweite den maximal scharfen Bereich zu erreichen – ideal für durchgehend scharfe Landschaften.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

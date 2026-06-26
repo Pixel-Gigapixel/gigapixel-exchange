@@ -1,0 +1,22 @@
+{
+  "de_uid": 29,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Uso del filtro polarizador",
+  "slug": "uso-del-filtro-polarizador",
+  "short_definition": "El uso de un filtro de polarización para reducir reflejos y destellos, y para intensificar colores y contrastes – con particularidades en fotografías panorámicas y gigapíxel.",
+  "long_definition": "<p>Un filtro polarizador (filtro pol) reduce los reflejos direccionales en superficies no metálicas como el agua, el cristal o el follaje, y puede hacer que el cielo aparezca más saturado y los colores más intensos. Actúa bloqueando selectivamente la luz polarizada.</p><p>En fotografías panorámicas y gigapíxel, su uso debe elegirse con cuidado: dado que el efecto de polarización depende del ángulo respecto a la fuente de luz, un filtro ajustado de forma uniforme a lo largo de varias posiciones de giro puede provocar luminosidades irregulares – como un cielo con aspecto irregular. En tales casos, el uso del filtro se adapta a la situación de captura o se aplica con moderación.</p>",
+  "meta_description": "Uso del filtro polarizador: reducir reflejos e intensificar colores – con requisitos especiales en fotografías panorámicas y gigapíxel.",
+  "faq_items": "[{\"question\": \"¿Qué efecto tiene un filtro polarizador?\", \"answer\": \"Reduce los reflejos en superficies no metálicas y puede hacer que el cielo y los colores aparezcan más saturados, bloqueando la luz polarizada.\"}, {\"question\": \"¿Qué hay que tener en cuenta en los panoramas?\", \"answer\": \"El efecto de polarización depende del ángulo respecto a la fuente de luz; a lo largo de varias posiciones de giro, un filtro ajustado de forma fija puede generar luminosidades irregulares.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Polfilter-Einsatz",
+    "slug": "polfilter-einsatz",
+    "short_definition": "Der Einsatz eines Polarisationsfilters, um Reflexionen und Spiegelungen zu reduzieren und Farben sowie Kontraste zu verstärken – mit Besonderheiten bei Panorama- und Gigapixel-Aufnahmen.",
+    "long_definition": "<p>Ein Polfilter (Polarisationsfilter) reduziert gerichtete Reflexionen auf nichtmetallischen Oberflächen wie Wasser, Glas oder Laub und kann den Himmel satter und Farben kräftiger erscheinen lassen. Er wirkt, indem er polarisiertes Licht gezielt ausblendet.</p><p>Bei Panorama- und Gigapixel-Aufnahmen ist der Einsatz mit Bedacht zu wählen: Da die Polarisationswirkung vom Winkel zur Lichtquelle abhängt, kann ein über mehrere Schwenkpositionen gleich eingestellter Filter zu ungleichmäßigen Helligkeiten – etwa einem fleckig wirkenden Himmel – führen. In solchen Fällen wird der Filtereinsatz an die Aufnahmesituation angepasst oder zurückhaltend dosiert.</p>",
+    "meta_description": "Polfilter-Einsatz: Reflexionen reduzieren und Farben verstärken – mit besonderen Anforderungen bei Panorama- und Gigapixel-Aufnahmen.",
+    "faq_items": "[{\"question\":\"Was bewirkt ein Polfilter?\",\"answer\":\"Er reduziert Reflexionen auf nichtmetallischen Oberflächen und kann Himmel und Farben satter wirken lassen, indem er polarisiertes Licht ausblendet.\"},{\"question\":\"Worauf ist bei Panoramen zu achten?\",\"answer\":\"Die Polarisationswirkung hängt vom Winkel zur Lichtquelle ab; über mehrere Schwenkpositionen kann ein fest eingestellter Filter ungleichmäßige Helligkeiten erzeugen.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

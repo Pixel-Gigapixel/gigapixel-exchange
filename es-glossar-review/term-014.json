@@ -1,0 +1,22 @@
+{
+  "de_uid": 14,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Bracketing",
+  "slug": "bracketing",
+  "short_definition": "La captura de una serie de exposiciones del mismo motivo con valores de exposición deliberadamente distintos – base para los procedimientos HDR.",
+  "long_definition": "<p>El bracketing (serie de exposiciones) designa la captura automática o manual de varias imágenes del mismo motivo con exposiciones escalonadas y distintas – típicamente una toma correctamente expuesta, una subexpuesta y una sobreexpuesta.</p><p>El objetivo es cubrir todo el rango de luminosidad de una escena a lo largo de varias tomas. La serie así obtenida constituye la base para el procedimiento HDR, en el que las imágenes individuales se combinan en una imagen con rango dinámico ampliado.</p><p>El bracketing puede aplicarse, además de a la exposición, a otros parámetros como el enfoque (focus bracketing para focus stacking).</p>",
+  "meta_description": "Bracketing: una serie de exposiciones del mismo motivo con valores escalonados y distintos – base para los procedimientos HDR.",
+  "faq_items": "[{\"question\": \"¿Para qué sirve el bracketing?\", \"answer\": \"Proporciona varias tomas del mismo motivo con distintas exposiciones, que posteriormente se combinan en una imagen HDR con rango dinámico ampliado.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Bracketing",
+    "slug": "bracketing",
+    "short_definition": "Das Aufnehmen einer Belichtungsreihe desselben Motivs mit gezielt unterschiedlichen Belichtungswerten – Grundlage für HDR-Verfahren.",
+    "long_definition": "<p>Bracketing (Belichtungsreihe) bezeichnet das automatische oder manuelle Aufnehmen mehrerer Bilder desselben Motivs mit gestuft unterschiedlicher Belichtung – typischerweise eine korrekt belichtete, eine unterbelichtete und eine überbelichtete Aufnahme.</p><p>Ziel ist es, den gesamten Helligkeitsumfang einer Szene über mehrere Aufnahmen abzudecken. Die so gewonnene Reihe bildet die Grundlage für das HDR-Verfahren, bei dem die Einzelbilder zu einem Bild mit erweitertem Dynamikumfang verrechnet werden.</p><p>Bracketing kann sich neben der Belichtung auch auf andere Parameter wie Fokus (Focus-Bracketing für Focus-Stacking) beziehen.</p>",
+    "meta_description": "Bracketing: eine Belichtungsreihe desselben Motivs mit gestuft unterschiedlichen Werten – Grundlage für HDR-Verfahren.",
+    "faq_items": "[{\"question\":\"Wofür dient Bracketing?\",\"answer\":\"Es liefert mehrere unterschiedlich belichtete Aufnahmen desselben Motivs, die anschließend zu einem HDR-Bild mit erweitertem Dynamikumfang verrechnet werden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

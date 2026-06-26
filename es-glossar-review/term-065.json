@@ -1,0 +1,22 @@
+{
+  "de_uid": 65,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "ISO / Ruido de imagen",
+  "slug": "iso-ruido-de-imagen",
+  "short_definition": "ISO controla la sensibilidad a la luz de la toma. Los valores ISO más altos permiten exposiciones más cortas, pero aumentan el ruido de imagen.",
+  "long_definition": "<p>El valor ISO determina en qué medida se amplifica la señal del sensor. Los valores ISO bajos ofrecen la calidad de imagen más limpia; los valores altos permiten tomas con poca luz, pero aumentan el ruido, visible como grano y manchas de color, especialmente en las zonas oscuras.</p><p>Para las tomas gigapíxel se trabaja habitualmente con ISO bajo desde trípode, a fin de obtener la máxima fidelidad de detalle y el mínimo ruido en la gran superficie de imagen.</p>",
+  "meta_description": "ISO / Ruido de imagen: ISO controla la sensibilidad a la luz; los valores altos aumentan el ruido. Las tomas gigapíxel utilizan habitualmente ISO bajo.",
+  "faq_items": "[{\"question\": \"¿Por qué ISO bajo en las tomas gigapíxel?\", \"answer\": \"El ISO bajo ofrece la imagen más limpia y detallada con el mínimo ruido, algo decisivo en grandes superficies de salida.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "ISO / Bildrauschen",
+    "slug": "iso-bildrauschen",
+    "short_definition": "ISO steuert die Lichtempfindlichkeit der Aufnahme. Höhere ISO-Werte erlauben kürzere Belichtung, verstärken aber das Bildrauschen.",
+    "long_definition": "<p>Der ISO-Wert bestimmt, wie stark das Sensorsignal verstärkt wird. Niedrige ISO-Werte liefern die sauberste Bildqualität; hohe Werte ermöglichen Aufnahmen bei wenig Licht, verstärken jedoch das Rauschen – sichtbar als Körnung und Farbflecken, besonders in dunklen Bereichen.</p><p>Für Gigapixel-Aufnahmen wird meist mit niedriger ISO vom Stativ gearbeitet, um maximale Detailtreue und geringes Rauschen über die große Bildfläche zu erhalten.</p>",
+    "meta_description": "ISO / Bildrauschen: ISO steuert die Lichtempfindlichkeit; hohe Werte erhöhen das Rauschen. Gigapixel-Aufnahmen nutzen meist niedrige ISO.",
+    "faq_items": "[{\"question\":\"Warum niedrige ISO bei Gigapixel-Aufnahmen?\",\"answer\":\"Niedrige ISO liefert das sauberste, detailreichste Bild mit minimalem Rauschen – entscheidend auf großer Ausgabefläche.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,22 @@
+{
+  "de_uid": 7,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Focus-Stacking Gran Formato",
+  "slug": "focus-stacking-gran-formato",
+  "short_definition": "Focus-Stacking aplicado a gran formato y resolución gigapíxel: varias capas de enfoque se combinan para obtener nitidez continua sobre superficies de imagen muy grandes.",
+  "long_definition": "<p>Focus-Stacking combina varias tomas con diferentes capas de enfoque en una imagen con profundidad de campo continua. El principio está consolidado en fotografía; trasladado a gran formato y resolución gigapíxel, las capas de nitidez deben mantenerse consistentes no solo en cada imagen individual, sino a lo largo de miles de teselas unidas mediante stitching.</p><p>Así es posible reproducir motivos con gran extensión en profundidad —como interiores, arquitectura o primeros planos con mucho detalle— con nitidez de principio a fin sobre toda la superficie de imagen, de gran tamaño.</p>",
+  "meta_description": "Focus-Stacking gran formato: profundidad de campo continua sobre superficies de imagen gigapíxel muy grandes mediante la combinación de varias capas de enfoque.",
+  "faq_items": "[{\"question\": \"¿Qué aporta el Focus-Stacking en gran formato?\", \"answer\": \"Genera nitidez continua de principio a fin sobre superficies de imagen muy grandes unidas mediante stitching, combinando varias capas de enfoque y manteniéndolas consistentes entre teselas.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Focus-Stacking Großformat",
+    "slug": "focus-stacking-grossformat",
+    "short_definition": "Focus-Stacking auf Großformat und Gigapixel-Auflösung angewandt: mehrere Fokusebenen werden zu durchgehender Schärfe über sehr große Bildflächen kombiniert.",
+    "long_definition": "<p>Focus-Stacking kombiniert mehrere Aufnahmen mit unterschiedlicher Fokusebene zu einem Bild mit durchgehender Schärfentiefe. Das Prinzip ist in der Fotografie etabliert; auf Großformat und Gigapixel-Auflösung übertragen, müssen die Schärfeebenen nicht nur pro Einzelbild, sondern über tausende gestitchte Kacheln hinweg konsistent bleiben.</p><p>So lassen sich Motive mit großer Tiefenausdehnung – etwa Innenräume, Architektur oder detailreiche Nahbereiche – über die gesamte, sehr große Bildfläche von vorne bis hinten scharf abbilden.</p>",
+    "meta_description": "Focus-Stacking Großformat: durchgehende Schärfentiefe über sehr große Gigapixel-Bildflächen durch Kombination mehrerer Fokusebenen.",
+    "faq_items": "[{\"question\":\"Was leistet Focus-Stacking im Großformat?\",\"answer\":\"Es erzeugt durchgehende Schärfe von vorne bis hinten über sehr große, gestitchte Bildflächen, indem mehrere Fokusebenen kombiniert und kachelübergreifend konsistent gehalten werden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

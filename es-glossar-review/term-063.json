@@ -1,0 +1,22 @@
+{
+  "de_uid": 63,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Viñeteo",
+  "slug": "vineteo",
+  "short_definition": "Oscurecimiento hacia los bordes y esquinas de la imagen, causado por el objetivo o el diafragma. Especialmente problemático en el stitching, ya que genera patrones de luminosidad visibles.",
+  "long_definition": "<p>El viñeteo designa la caída de luminosidad desde el centro de la imagen hacia los bordes. Sus causas son las propiedades ópticas y constructivas del objetivo, así como el diafragma; por lo general, el efecto es más pronunciado con el diafragma abierto.</p><p>En el stitching de gigapíxeles, el viñeteo es crítico: si no se corrige, aparece en la imagen compuesta un patrón de luminosidad en forma de cuadrícula en los límites de las teselas. Por ello se compensa antes del stitching.</p>",
+  "meta_description": "Viñeteo: oscurecimiento hacia los bordes de la imagen – crítico en el stitching, ya que de lo contrario se generan patrones de luminosidad.",
+  "faq_items": "[{\"question\": \"¿Por qué es el viñeteo un problema en el stitching?\", \"answer\": \"Sin corregir, los bordes oscurecidos de numerosas teselas generan un patrón de luminosidad en forma de cuadrícula visible en la imagen final.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Vignettierung",
+    "slug": "vignettierung",
+    "short_definition": "Abdunklung zu den Bildrändern und -ecken hin, bedingt durch Objektiv oder Blende. Beim Stitching besonders störend, weil sichtbare Helligkeitsmuster entstehen.",
+    "long_definition": "<p>Vignettierung bezeichnet den Helligkeitsabfall vom Bildzentrum zu den Rändern. Ursachen sind optische und bauliche Eigenschaften des Objektivs sowie die Blende; meist ist der Effekt bei offener Blende am stärksten.</p><p>Beim Gigapixel-Stitching ist Vignettierung kritisch: Bleibt sie unkorrigiert, entsteht im zusammengesetzten Bild ein gitterartiges Helligkeitsmuster an den Kachelgrenzen. Daher wird sie vor dem Stitching ausgeglichen.</p>",
+    "meta_description": "Vignettierung: Abdunklung zu den Bildrändern hin – beim Stitching kritisch, da sonst Helligkeitsmuster entstehen.",
+    "faq_items": "[{\"question\":\"Warum ist Vignettierung beim Stitching ein Problem?\",\"answer\":\"Unkorrigiert ergeben die abgedunkelten Ränder vieler Kacheln ein sichtbares gitterartiges Helligkeitsmuster im Gesamtbild.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

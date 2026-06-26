@@ -1,0 +1,22 @@
+{
+  "de_uid": 26,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Pirámide de teselas",
+  "slug": "piramide-de-teselas",
+  "short_definition": "Una estructura de imagen escalonada compuesta por teselas precalculadas en varios niveles de resolución, que permite visualizar y hacer zoom de forma fluida en imágenes extremadamente grandes en el navegador.",
+  "long_definition": "<p>Una pirámide de teselas es la base técnica para hacer visibles en la web imágenes de gigapíxeles y terapíxeles. La enorme imagen completa se descompone en varios niveles de resolución y cada nivel se divide en pequeñas teselas cuadradas (tiles).</p><p>Al visualizar la imagen, el visor carga únicamente las teselas visibles para el encuadre actual y el nivel de zoom seleccionado. Así la representación se mantiene fluida, aunque la imagen completa supere con creces la capacidad de pantalla y de memoria. La estructura se asemeja a una pirámide: arriba pocas teselas con baja resolución, abajo muchas teselas con resolución completa.</p>",
+  "meta_description": "Pirámide de teselas: una estructura escalonada de teselas de imagen precalculadas que permite hacer zoom de forma fluida en imágenes de gigapíxeles extremadamente grandes en el navegador.",
+  "faq_items": "[{\"question\": \"¿Para qué sirve una pirámide de teselas?\", \"answer\": \"Permite visualizar y hacer zoom de forma fluida en imágenes muy grandes, cargando únicamente las teselas necesarias para el encuadre actual.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Tile-Pyramide",
+    "slug": "tile-pyramide",
+    "short_definition": "Eine gestufte Bildstruktur aus vorberechneten Kacheln in mehreren Auflösungsstufen, die das flüssige Betrachten und Zoomen extrem großer Bilder im Browser ermöglicht.",
+    "long_definition": "<p>Eine Tile-Pyramide ist die technische Grundlage, um Gigapixel- und Terapixel-Bilder im Web betrachtbar zu machen. Das riesige Gesamtbild wird in mehrere Auflösungsstufen zerlegt und jede Stufe in kleine, quadratische Kacheln (Tiles) aufgeteilt.</p><p>Beim Betrachten lädt der Viewer jeweils nur die Kacheln, die für den aktuellen Bildausschnitt und die gewählte Zoomstufe sichtbar sind. So bleibt die Darstellung flüssig, obwohl das vollständige Bild ein Vielfaches der Bildschirm- und Speicherkapazität übersteigt. Die Struktur ähnelt einer Pyramide: oben wenige Kacheln in niedriger Auflösung, unten viele Kacheln in voller Auflösung.</p>",
+    "meta_description": "Tile-Pyramide: eine gestufte Struktur vorberechneter Bildkacheln, die flüssiges Zoomen extrem großer Gigapixel-Bilder im Browser ermöglicht.",
+    "faq_items": "[{\"question\":\"Wofür dient eine Tile-Pyramide?\",\"answer\":\"Sie ermöglicht das flüssige Betrachten und Zoomen sehr großer Bilder, indem nur die für den aktuellen Ausschnitt benötigten Kacheln geladen werden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

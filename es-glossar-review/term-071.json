@@ -1,0 +1,22 @@
+{
+  "de_uid": 71,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Poder de resolución",
+  "slug": "poder-de-resolucion",
+  "short_definition": "La capacidad de un sistema óptico para representar estructuras finas por separado, expresada a menudo en pares de líneas por milímetro (MTF).",
+  "long_definition": "<p>El poder de resolución describe con qué finura un sistema formado por objetivo y sensor puede distinguir detalles adyacentes. Se mide frecuentemente en pares de líneas por milímetro o mediante la función de transferencia de modulación (MTF), que describe el contraste en función del nivel de detalle.</p><p>Pone de manifiesto que la fidelidad de detalle real no depende únicamente del número de megapíxeles: un objetivo limitante o la difracción restringen lo que puede resolverse en la práctica. En la fotografía gigapíxel, la alta resolución se logra mediante numerosas tomas individuales, cada una con un buen poder de resolución.</p>",
+  "meta_description": "Poder de resolución: con qué finura un sistema objetivo-sensor separa los detalles (pares de líneas/mm, MTF) – fidelidad de detalle real, no solo megapíxeles.",
+  "faq_items": "[{\"question\": \"¿Más megapíxeles equivale a mayor poder de resolución?\", \"answer\": \"No. La calidad del objetivo y la difracción limitan el detalle resoluble en la práctica, independientemente del número de píxeles.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Auflösungsvermögen",
+    "slug": "aufloesungsvermoegen",
+    "short_definition": "Die Fähigkeit eines optischen Systems, feine Strukturen getrennt abzubilden – oft in Linienpaaren pro Millimeter (MTF) angegeben.",
+    "long_definition": "<p>Das Auflösungsvermögen beschreibt, wie fein ein System aus Objektiv und Sensor benachbarte Details noch unterscheiden kann. Gemessen wird es häufig in Linienpaaren pro Millimeter oder über die Modulationsübertragungsfunktion (MTF), die Kontrast über Detailfeinheit beschreibt.</p><p>Es macht deutlich, dass echte Detailtreue nicht allein von der Megapixelzahl abhängt: Ein limitierendes Objektiv oder Beugung begrenzen das real Auflösbare. In der Gigapixel-Fotografie wird hohe Auflösung durch viele Einzelaufnahmen mit jeweils gutem Auflösungsvermögen erreicht.</p>",
+    "meta_description": "Auflösungsvermögen: wie fein ein Objektiv-Sensor-System Details trennt (Linienpaare/mm, MTF) – echte Detailtreue, nicht nur Megapixel.",
+    "faq_items": "[{\"question\":\"Ist mehr Megapixel gleich mehr Auflösungsvermögen?\",\"answer\":\"Nein. Objektivqualität und Beugung begrenzen das real auflösbare Detail unabhängig von der Pixelzahl.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

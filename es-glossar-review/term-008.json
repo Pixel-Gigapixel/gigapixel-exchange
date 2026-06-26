@@ -1,0 +1,22 @@
+{
+  "de_uid": 8,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Resolución en megapíxeles",
+  "slug": "resolucion-en-megapixeles",
+  "short_definition": "La resolución de imagen en millones de píxeles. Las cámaras actuales ofrecen entre 20 y 200 megapíxeles en el sensor — aunque la cantidad de detalle realmente resoluble suele ser menor, porque el objetivo y la difracción imponen límites.",
+  "long_definition": "<p>Megapíxel (MP) designa el número total de puntos de imagen de una toma; un megapíxel equivale a un millón de píxeles. Las cámaras actuales disponen de sensores de aproximadamente 20 a 200 megapíxeles.</p><p>Lo decisivo es la diferencia entre la <strong>resolución del sensor</strong> y la <strong>cantidad de detalle realmente resoluble</strong>: la calidad del objetivo, la difracción con aperturas pequeñas y las condiciones de captura determinan cuántos de esos píxeles contienen realmente detalle de imagen. En formato medio, unos 50 megapíxeles efectivamente aprovechables a f/8 son realistas — más píxeles en el sensor apenas aportan detalle adicional, porque la difracción limita la nitidez.</p><p>El número de megapíxeles es, por tanto, un límite superior, no una garantía de detalle. Las tomas gigapíxel superan el límite de un único sensor combinando mediante stitching muchas imágenes individuales, cada una con la apertura óptima.</p>",
+  "meta_description": "Megapíxeles: número de píxeles del sensor (20–200 MP) frente al detalle realmente resoluble. Base del tamaño de impresión — a partir de 1000 MP comienza el rango gigapíxel.",
+  "faq_items": "[{\"question\": \"¿Dice mucho un número elevado de megapíxeles sobre la calidad?\", \"answer\": \"Solo en parte. La óptica, el tamaño del sensor y la técnica de captura son igual de importantes. Sin embargo, el número de megapíxeles determina el tamaño de impresión máximo posible.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Megapixel-Auflösung",
+    "slug": "megapixel-aufloesung",
+    "short_definition": "Die Bildauflösung in Millionen Pixeln. Aktuelle Kameras liefern 20 bis 200 Megapixel auf dem Sensor — die real auflösbare Detailmenge liegt aber meist darunter, weil Objektiv und Beugung begrenzen.",
+    "long_definition": "<p>Megapixel (MP) bezeichnet die Gesamtzahl der Bildpunkte einer Aufnahme; ein Megapixel entspricht einer Million Pixel. Aktuelle Kameras besitzen Sensoren mit etwa 20 bis 200 Megapixel.</p><p>Entscheidend ist der Unterschied zwischen der <strong>Sensor-Auflösung</strong> und der <strong>real auflösbaren Detailmenge</strong>: Objektivqualität, Beugung bei kleinen Blenden und Aufnahmebedingungen begrenzen, wie viele dieser Pixel tatsächlich echtes Bilddetail tragen. Bei Mittelformat sind etwa 50 effektiv nutzbare Megapixel bei Blende 8 realistisch — mehr Sensorpixel bringen dann kaum zusätzliches Detail, weil die Beugung die Schärfe begrenzt.</p><p>Die Megapixelzahl ist damit eine Obergrenze, keine Garantie für Detail. Gigapixel-Aufnahmen umgehen die Grenze eines einzelnen Sensors, indem viele Einzelbilder mit jeweils optimaler Blende gestitcht werden.</p>",
+    "meta_description": "Megapixel: Sensor-Pixelzahl (20–200 MP) vs. real auflösbares Detail. Grundlage der Druckgröße — ab 1000 MP beginnt der Gigapixel-Bereich.",
+    "faq_items": "[{\"question\":\"Sagt eine hohe Megapixelzahl viel über die Qualität?\",\"answer\":\"Nur bedingt. Optik, Sensorgröße und Aufnahmetechnik sind genauso wichtig. Die Megapixelzahl bestimmt aber die maximal mögliche Druckgröße.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

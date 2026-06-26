@@ -1,0 +1,22 @@
+{
+  "de_uid": 68,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Tamaño de sensor / Factor de recorte",
+  "slug": "tamano-de-sensor-factor-de-recorte",
+  "short_definition": "El tamaño físico del sensor de imagen. Influye en el aspecto de la imagen, el comportamiento del ruido y —a través del factor de recorte— el ángulo de visión efectivo de una distancia focal.",
+  "long_definition": "<p>El tamaño de sensor abarca desde sensores pequeños hasta el formato completo (36 × 24 mm), pasando por el formato medio y el gran formato. Los sensores más grandes recogen más luz por píxel, lo que tiende a proporcionar mayor rango dinámico y menos ruido, y permiten píxeles más grandes con la misma resolución.</p><p>El factor de recorte indica en qué medida un sensor recorta el ángulo de visión respecto al formato completo: un sensor más pequeño actúa como una distancia focal más larga. Para tomas de alta resolución y gran fidelidad de detalle se prefieren sensores grandes —como el formato medio—.</p>",
+  "meta_description": "Tamaño de sensor / Factor de recorte: el tamaño físico del sensor influye en el ruido, el rango dinámico y el ángulo de visión efectivo de una distancia focal.",
+  "faq_items": "[{\"question\": \"¿Qué significa el factor de recorte?\", \"answer\": \"Describe en qué medida un sensor recorta el ángulo de visión respecto al formato completo: un sensor más pequeño actúa como una distancia focal más larga.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Sensorgröße / Crop-Faktor",
+    "slug": "sensorgroesse-crop-faktor",
+    "short_definition": "Die physische Größe des Bildsensors. Sie beeinflusst Bildwirkung, Rauschverhalten und – über den Crop-Faktor – den effektiven Bildwinkel einer Brennweite.",
+    "long_definition": "<p>Die Sensorgröße reicht von kleinen Sensoren über Vollformat (36 × 24 mm) bis zu Mittel- und Großformat. Größere Sensoren sammeln pro Pixel mehr Licht, was tendenziell mehr Dynamikumfang und weniger Rauschen bringt, und erlauben bei gleicher Auflösung größere Pixel.</p><p>Der Crop-Faktor gibt an, wie stark ein Sensor den Bildwinkel gegenüber dem Vollformat beschneidet: Ein kleinerer Sensor wirkt wie eine längere Brennweite. Für hochauflösende und detailtreue Aufnahmen werden bevorzugt große Sensoren – etwa Mittelformat – eingesetzt.</p>",
+    "meta_description": "Sensorgröße / Crop-Faktor: die physische Sensorgröße beeinflusst Rauschen, Dynamik und effektiven Bildwinkel einer Brennweite.",
+    "faq_items": "[{\"question\":\"Was bedeutet der Crop-Faktor?\",\"answer\":\"Er beschreibt, wie stark ein Sensor den Bildwinkel gegenüber Vollformat beschneidet – ein kleinerer Sensor wirkt wie eine längere Brennweite.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

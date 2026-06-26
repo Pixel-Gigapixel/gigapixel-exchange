@@ -1,0 +1,22 @@
+{
+  "de_uid": 70,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Tonemapping",
+  "slug": "tonemapping",
+  "short_definition": "La conversión de un alto rango dinámico al rango representable de impresión o pantalla, sin perder detalle en luces ni sombras.",
+  "long_definition": "<p>El tonemapping distribuye los valores de luminosidad de una imagen con alto rango dinámico —por ejemplo, procedente de un procesado HDR— en el rango limitado de impresión o monitor, de modo que tanto las luces como las sombras queden completamente detalladas.</p><p>Aplicado con discreción, el resultado parece natural; usado en exceso, aparecen efectos exagerados y artificiales. Para salidas en gran formato es importante un tonemapping contenido, para que la imagen resulte tranquila y creíble en superficies de gran tamaño.</p>",
+  "meta_description": "Tonemapping: convertir un alto rango dinámico al rango representable de impresión/pantalla sin perder detalle.",
+  "faq_items": "[{\"question\": \"¿Qué es lo más importante en el tonemapping?\", \"answer\": \"Un resultado contenido: luces y sombras completamente detalladas, sin efectos exagerados ni artificiales.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Tonemapping",
+    "slug": "tonemapping",
+    "short_definition": "Die Überführung eines hohen Dynamikumfangs in den darstellbaren Bereich von Druck oder Bildschirm, ohne Zeichnung in Lichtern und Schatten zu verlieren.",
+    "long_definition": "<p>Tonemapping verteilt die Helligkeitswerte eines Bildes mit hohem Dynamikumfang – etwa aus einer HDR-Verrechnung – so auf den begrenzten Umfang von Druck oder Monitor, dass sowohl Lichter als auch Schatten durchgezeichnet bleiben.</p><p>Dezent eingesetzt wirkt das Ergebnis natürlich; zu stark angewendet entstehen überzeichnete, unnatürliche Effekte. Für Großformatausgaben ist ein zurückhaltendes Tonemapping wichtig, damit das Bild auf großer Fläche ruhig und glaubwürdig wirkt.</p>",
+    "meta_description": "Tonemapping: hohen Dynamikumfang in den darstellbaren Bereich von Druck/Bildschirm überführen, ohne Zeichnung zu verlieren.",
+    "faq_items": "[{\"question\":\"Worauf kommt es beim Tonemapping an?\",\"answer\":\"Auf ein zurückhaltendes Ergebnis – Lichter und Schatten durchgezeichnet, ohne überzeichnete, unnatürliche Effekte.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,22 @@
+{
+  "de_uid": 95,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Impresión por sublimación",
+  "slug": "impresion-por-sublimacion",
+  "short_definition": "Proceso de impresión en el que el color penetra en el material —generalmente textil— en forma gaseosa bajo calor. Ofrece resultados brillantes, resistentes al roce y al lavado.",
+  "long_definition": "<p>En la impresión por sublimación, el color se imprime primero en un soporte de transferencia y, a continuación, se transfiere en forma gaseosa al material de destino mediante calor y presión. Las partículas de color se unen de forma permanente a las fibras en lugar de depositarse simplemente sobre ellas.</p><p>El resultado son impresiones especialmente brillantes, resistentes al roce y lavables. El proceso es la base de las impresiones textiles de alta calidad —por ejemplo, para techos tensados, elementos acústicos impresos y textiles para ferias.</p>",
+  "meta_description": "Impresión por sublimación: el color penetra en forma gaseosa en el textil bajo calor – resultados brillantes, resistentes al roce y al lavado.",
+  "faq_items": "[{\"question\": \"¿Qué hace que la impresión por sublimación sea duradera?\", \"answer\": \"El color se une de forma permanente a las fibras en estado gaseoso en lugar de depositarse simplemente sobre ellas, lo que lo hace resistente al roce y al lavado.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Sublimationsdruck",
+    "slug": "sublimationsdruck",
+    "short_definition": "Druckverfahren, bei dem Farbe unter Hitze gasförmig in das Material – meist Textil – eindringt. Liefert brillante, wisch- und waschfeste Ergebnisse.",
+    "long_definition": "<p>Beim Sublimationsdruck wird die Farbe zunächst auf ein Transfermedium gedruckt und anschließend unter Hitze und Druck gasförmig in das Zielmaterial überführt. Die Farbpartikel verbinden sich dauerhaft mit den Fasern, statt nur aufzuliegen.</p><p>Dadurch entstehen besonders brillante, abriebfeste und waschbare Drucke. Das Verfahren ist die Grundlage für hochwertige Textildrucke – etwa für Spanndecken, bedruckte Akustikelemente und Messetextilien.</p>",
+    "meta_description": "Sublimationsdruck: Farbe dringt unter Hitze gasförmig ins Textil ein – brillante, abrieb- und waschfeste Ergebnisse.",
+    "faq_items": "[{\"question\":\"Was macht Sublimationsdruck haltbar?\",\"answer\":\"Die Farbe verbindet sich gasförmig dauerhaft mit den Fasern, statt nur aufzuliegen – das macht ihn abrieb- und waschfest.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

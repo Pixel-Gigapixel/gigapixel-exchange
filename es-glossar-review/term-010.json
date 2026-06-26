@@ -1,0 +1,22 @@
+{
+  "de_uid": 10,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Artefactos de stitching",
+  "slug": "artefactos-de-stitching",
+  "short_definition": "Errores visibles en la imagen compuesta – como bordes desplazados, imágenes fantasma o saltos de luminosidad –, que surgen por una captura o unión imprecisa.",
+  "long_definition": "<p>Los artefactos de stitching son errores no deseados y visibles que aparecen al unir imágenes individuales. Las formas típicas son bordes desplazados o dobles, imágenes fantasma causadas por objetos en movimiento, líneas de costura visibles y saltos de luminosidad o color entre las teselas.</p><p>Las causas suelen ser errores de paralaje por rotación fuera del punto nodal, solapamiento insuficiente, elementos de imagen en movimiento o condiciones de iluminación cambiantes durante la captura. En imágenes gigapíxel de alta resolución, estos errores resultan especialmente evidentes, ya que se hacen visibles al hacer zoom.</p><p>Una técnica de captura cuidadosa y condiciones controladas reducen los artefactos; metodologías especiales tratan las zonas en movimiento de forma específica.</p>",
+  "meta_description": "Artefactos de stitching: errores visibles como bordes desplazados, imágenes fantasma o saltos de luminosidad al unir imágenes individuales.",
+  "faq_items": "[{\"question\": \"¿Qué causa los artefactos de stitching?\", \"answer\": \"Principalmente errores de paralaje, solapamiento insuficiente, motivos en movimiento o iluminación variable. Una técnica de captura correcta alrededor del punto nodal los reduce.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Stitching-Artefakte",
+    "slug": "stitching-artefakte",
+    "short_definition": "Sichtbare Fehler im zusammengesetzten Bild – etwa versetzte Kanten, Geisterbilder oder Helligkeitssprünge –, die durch ungenaues Aufnehmen oder Zusammenfügen entstehen.",
+    "long_definition": "<p>Stitching-Artefakte sind unerwünschte, sichtbare Fehler, die beim Zusammensetzen von Einzelbildern entstehen. Typische Formen sind versetzte oder doppelte Kanten, Geisterbilder durch bewegte Objekte, sichtbare Nahtlinien sowie Helligkeits- oder Farbsprünge zwischen den Kacheln.</p><p>Ursachen sind meist Parallaxenfehler durch Drehen abseits des Nodalpunkts, zu geringe Überlappung, bewegte Bildelemente oder wechselnde Lichtverhältnisse während der Aufnahme. In hochauflösenden Gigapixel-Bildern fallen solche Fehler besonders auf, da sie beim Heranzoomen sichtbar werden.</p><p>Sorgfältige Aufnahmetechnik und kontrollierte Bedingungen reduzieren Artefakte; spezielle Methodiken behandeln bewegte Bereiche gezielt.</p>",
+    "meta_description": "Stitching-Artefakte: sichtbare Fehler wie versetzte Kanten, Geisterbilder oder Helligkeitssprünge beim Zusammensetzen von Einzelbildern.",
+    "faq_items": "[{\"question\":\"Wodurch entstehen Stitching-Artefakte?\",\"answer\":\"Meist durch Parallaxenfehler, zu geringe Überlappung, bewegte Motive oder wechselndes Licht. Saubere Aufnahmetechnik um den Nodalpunkt reduziert sie.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

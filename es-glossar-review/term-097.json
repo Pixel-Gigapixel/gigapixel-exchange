@@ -1,0 +1,22 @@
+{
+  "de_uid": 97,
+  "category": 7,
+  "is_methodology_term": 0,
+  "title": "Acrílico / Impresión tras cristal acrílico",
+  "slug": "acrilico-impresion-tras-cristal-acrilico",
+  "short_definition": "Presentación de imágenes detrás o sobre acrílico. Crea efecto de profundidad, colores brillantes y una impresión elegante y luminosa.",
+  "long_definition": "<p>En la imagen sobre acrílico, el motivo se coloca detrás de una placa de cristal acrílico (impresión tras cristal) o se imprime directamente sobre ella. El material transparente otorga profundidad a la imagen y hace que los colores resulten especialmente brillantes y luminosos.</p><p>La superficie brillante genera una impresión elegante y moderna. Para motivos Gigapixel con gran nivel de detalle, el acrílico resulta atractivo porque las estructuras finas se aprecian con nitidez y alto contraste.</p>",
+  "meta_description": "Acrílico / Impresión tras cristal acrílico: motivo detrás o sobre acrílico – efecto de profundidad, colores brillantes, brillo elegante.",
+  "faq_items": "[{\"question\": \"¿Por qué las imágenes sobre acrílico resultan tan brillantes?\", \"answer\": \"El cristal acrílico transparente otorga profundidad y hace que los colores aparezcan más luminosos y con mayor contraste que una impresión mate.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Acrylglas / Hinterglasdruck",
+    "slug": "acrylglas-hinterglasdruck",
+    "short_definition": "Bildpräsentation hinter oder auf Acrylglas. Erzeugt Tiefenwirkung, brillante Farben und einen edlen, glänzenden Eindruck.",
+    "long_definition": "<p>Beim Acrylglas-Bild wird das Motiv hinter eine Acrylglasplatte gebracht (Hinterglasdruck) oder direkt darauf gedruckt. Das transparente Material verleiht dem Bild Tiefe und lässt Farben besonders brillant und leuchtend wirken.</p><p>Die glänzende Oberfläche erzeugt einen edlen, modernen Eindruck. Für detailreiche Gigapixel-Motive ist Acrylglas attraktiv, weil feine Strukturen klar und kontrastreich zur Geltung kommen.</p>",
+    "meta_description": "Acrylglas / Hinterglasdruck: Motiv hinter oder auf Acrylglas – Tiefenwirkung, brillante Farben, edler Glanz.",
+    "faq_items": "[{\"question\":\"Warum wirken Acrylglas-Bilder so brillant?\",\"answer\":\"Das transparente Acrylglas verleiht Tiefe und lässt Farben leuchtender und kontrastreicher erscheinen als ein matter Druck.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

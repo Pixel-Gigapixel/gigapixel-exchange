@@ -1,0 +1,22 @@
+{
+  "de_uid": 99,
+  "category": 6,
+  "is_methodology_term": 0,
+  "title": "Cuadro acústico",
+  "slug": "cuadro-acustico",
+  "short_definition": "Un panel de pared absorbente del sonido con motivo impreso. Combina la acústica del espacio con la composición de imágenes a gran formato.",
+  "long_definition": "<p>Un cuadro acústico combina un núcleo absorbente del sonido con una superficie textil impresa. De este modo mejora la acústica del espacio y sirve al mismo tiempo como imagen mural a gran formato.</p><p>El motivo se aplica generalmente mediante impresión por sublimación sobre un tejido acústicamente permeable. Especialmente en oficinas, consultas y espacios residenciales, los cuadros acústicos resultan atractivos porque reducen la reverberación y tienen un efecto decorativo: los motivos de alta resolución mantienen su fidelidad de detalle incluso de cerca.</p>",
+  "meta_description": "Cuadro acústico: panel de pared absorbente del sonido con motivo impreso – combina la acústica del espacio con la composición a gran formato.",
+  "faq_items": "[{\"question\": \"¿Qué aporta un cuadro acústico?\", \"answer\": \"Reduce la reverberación en el espacio y sirve al mismo tiempo como imagen mural a gran formato: acústica y diseño en un solo elemento.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Akustikbild",
+    "slug": "akustikbild",
+    "short_definition": "Ein schallabsorbierendes Wandelement mit bedrucktem Bildmotiv. Verbindet Raumakustik mit großformatiger Bildgestaltung.",
+    "long_definition": "<p>Ein Akustikbild kombiniert einen schallabsorbierenden Kern mit einer bedruckten textilen Oberfläche. So verbessert es die Raumakustik und dient zugleich als großformatiges Wandbild.</p><p>Das Motiv wird meist per Sublimationsdruck auf ein akustisch durchlässiges Gewebe gebracht. Gerade in Büros, Praxen und Wohnräumen sind Akustikbilder attraktiv, weil sie Hall reduzieren und gestalterisch wirken – hochauflösende Motive bleiben dabei auch aus der Nähe detailtreu.</p>",
+    "meta_description": "Akustikbild: schallabsorbierendes Wandelement mit bedrucktem Motiv – verbindet Raumakustik mit großformatiger Gestaltung.",
+    "faq_items": "[{\"question\":\"Was leistet ein Akustikbild?\",\"answer\":\"Es reduziert Hall im Raum und dient gleichzeitig als großformatiges Wandbild – Akustik und Gestaltung in einem Element.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

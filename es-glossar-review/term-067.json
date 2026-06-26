@@ -1,0 +1,22 @@
+{
+  "de_uid": 67,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Bracketing de enfoque",
+  "slug": "bracketing-de-enfoque",
+  "short_definition": "Una serie de tomas del mismo motivo con el plano de enfoque desplazado progresivamente — la base para el focus stacking.",
+  "long_definition": "<p>En el bracketing de enfoque se realizan varias tomas cuyo plano de nitidez se desplaza cada vez un poco más hacia el fondo. De este modo, la serie cubre sucesivamente todo el rango de profundidad deseado con nitidez.</p><p>A continuación, las zonas nítidas de las imágenes individuales se combinan mediante focus stacking en una imagen completamente nítida — especialmente valioso en fotografía macro y de detalle, así como en motivos de gran profundidad en formato grande.</p>",
+  "meta_description": "Bracketing de enfoque: serie de tomas con el plano de enfoque desplazado progresivamente — base para el focus stacking.",
+  "faq_items": "[{\"question\": \"¿Para qué se necesita el bracketing de enfoque?\", \"answer\": \"Para capturar con nitidez todo el rango de profundidad a lo largo de varias tomas, que posteriormente se combinan mediante focus stacking.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Fokus-Bracketing",
+    "slug": "fokus-bracketing",
+    "short_definition": "Eine Aufnahmereihe desselben Motivs mit schrittweise verschobener Fokusebene – die Grundlage für Focus-Stacking.",
+    "long_definition": "<p>Beim Fokus-Bracketing werden mehrere Aufnahmen erstellt, deren Schärfeebene jeweils ein Stück weiter nach hinten verschoben ist. So deckt die Reihe nacheinander den gesamten gewünschten Tiefenbereich scharf ab.</p><p>Anschließend werden die scharfen Bereiche der Einzelbilder per Focus-Stacking zu einem durchgehend scharfen Bild verrechnet – besonders wertvoll bei Makro- und Detailaufnahmen sowie tiefen Motiven im Großformat.</p>",
+    "meta_description": "Fokus-Bracketing: Aufnahmereihe mit schrittweise verschobener Fokusebene – Grundlage für Focus-Stacking.",
+    "faq_items": "[{\"question\":\"Wofür braucht man Fokus-Bracketing?\",\"answer\":\"Um über mehrere Aufnahmen den gesamten Tiefenbereich scharf zu erfassen, der anschließend per Focus-Stacking kombiniert wird.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

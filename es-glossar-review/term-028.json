@@ -1,0 +1,22 @@
+{
+  "de_uid": 28,
+  "category": 6,
+  "is_methodology_term": 0,
+  "title": "Techo tensado (impresión gran formato)",
+  "slug": "techo-tensado-impresion-gran-formato",
+  "short_definition": "Una membrana de techo tensada e imprimible sobre la que se aplican motivos de imagen en gran formato. Una aplicación exigente para tomas Gigapixel de alta resolución.",
+  "long_definition": "<p>Un techo tensado impreso es una membrana extendida sobre el techo de una estancia a la que se aplica un motivo de imagen en gran formato — como un cielo, un paisaje o un patrón decorativo. Se encuentra entre las aplicaciones más exigentes de la impresión en gran formato.</p><p>Dado que los techos tensados suelen ocupar grandes superficies y se contemplan desde una distancia relativamente corta, las imágenes de alta resolución son decisivas: una resolución insuficiente resultaría visible sobre la superficie tensada. Las tomas Gigapixel son especialmente adecuadas aquí porque mantienen el detalle con fidelidad a lo largo de todo el techo.</p><p>También son importantes una gestión del color coordinada y una preimpresión cuidadosa, para que los colores y las transiciones resulten uniformes.</p>",
+  "meta_description": "Techo tensado (impresión gran formato): una membrana de techo tensada e impresa — aplicación exigente para tomas Gigapixel de alta resolución.",
+  "faq_items": "[{\"question\": \"¿Por qué son adecuadas las tomas Gigapixel para techos tensados?\", \"answer\": \"Porque los techos tensados ocupan grandes superficies y a menudo se contemplan desde menor distancia — la alta resolución mantiene el detalle con fidelidad a lo largo de todo el techo.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Spanndecke (Großformat-Print)",
+    "slug": "spanndecke-grossformat-print",
+    "short_definition": "Eine bedruckbare, gespannte Deckenmembran, auf die großformatige Bildmotive aufgebracht werden. Eine anspruchsvolle Anwendung für hochauflösende Gigapixel-Aufnahmen.",
+    "long_definition": "<p>Eine bedruckte Spanndecke ist eine über die Raumdecke gespannte Membran, die mit einem großformatigen Bildmotiv versehen wird – etwa einem Himmel, einer Landschaft oder einem dekorativen Muster. Sie zählt zu den anspruchsvollsten Anwendungen des Großformatdrucks.</p><p>Da Spanndecken oft große Flächen einnehmen und aus vergleichsweise geringem Abstand betrachtet werden, sind hochauflösende Bildvorlagen entscheidend: Eine zu geringe Auflösung würde auf der gespannten Fläche sichtbar. Gigapixel-Aufnahmen eignen sich hier besonders, weil sie über die gesamte Decke detailtreu bleiben.</p><p>Wichtig sind außerdem ein abgestimmtes Color-Management und eine sorgfältige Druckvorstufe, damit Farben und Übergänge gleichmäßig wirken.</p>",
+    "meta_description": "Spanndecke (Großformat-Print): eine bedruckte, gespannte Deckenmembran – anspruchsvolle Anwendung für hochauflösende Gigapixel-Aufnahmen.",
+    "faq_items": "[{\"question\":\"Warum sind Gigapixel-Aufnahmen für Spanndecken geeignet?\",\"answer\":\"Weil Spanndecken große Flächen einnehmen und oft aus geringerer Entfernung betrachtet werden – hohe Auflösung bleibt über die ganze Decke detailtreu.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

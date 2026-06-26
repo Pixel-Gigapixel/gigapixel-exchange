@@ -1,0 +1,22 @@
+{
+  "de_uid": 23,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Perfil ICC",
+  "slug": "perfil-icc",
+  "short_definition": "Un archivo estandarizado que describe el comportamiento cromático de un dispositivo. Elemento fundamental de la gestión del color para la traducción cromática correcta entre dispositivos.",
+  "long_definition": "<p>Un perfil ICC (según el International Color Consortium) es un archivo normalizado que describe cómo un dispositivo concreto —cámara, monitor, impresora— capta o reproduce los colores. Asigna los valores de color propios del dispositivo a un espacio de color de referencia independiente del dispositivo.</p><p>Con la ayuda de los perfiles ICC, la gestión del color puede transferir correctamente los colores de un dispositivo a otro. Así es posible predecir, por ejemplo, cómo aparecerá en impresión un color evaluado en el monitor.</p><p>Para la salida en gran formato de alta calidad, los monitores e impresoras se perfilan periódicamente para que los perfiles reflejen con precisión el comportamiento actual del dispositivo.</p>",
+  "meta_description": "Perfil ICC: un archivo normalizado que describe el comportamiento cromático de un dispositivo, elemento fundamental de la gestión del color.",
+  "faq_items": "[{\"question\": \"¿Qué describe un perfil ICC?\", \"answer\": \"Cómo un dispositivo concreto capta o reproduce los colores, en relación con un espacio de color de referencia independiente del dispositivo, la base para una traducción cromática correcta.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "ICC-Profil",
+    "slug": "icc-profil",
+    "short_definition": "Eine standardisierte Datei, die das Farbverhalten eines Geräts beschreibt. Grundbaustein des Color-Managements für die gerätübergreifend korrekte Farbübersetzung.",
+    "long_definition": "<p>Ein ICC-Profil (nach dem International Color Consortium) ist eine genormte Datei, die beschreibt, wie ein bestimmtes Gerät – Kamera, Monitor, Drucker – Farben erfasst oder wiedergibt. Es ordnet die geräteeigenen Farbwerte einem geräteunabhängigen Referenzfarbraum zu.</p><p>Mit Hilfe von ICC-Profilen kann das Color-Management Farben korrekt von einem Gerät auf ein anderes übertragen. So lässt sich etwa vorhersagen, wie eine am Monitor beurteilte Farbe im Druck erscheinen wird.</p><p>Für hochwertige Großformatausgabe werden Monitore und Drucker regelmäßig profiliert, damit die Profile das aktuelle Geräteverhalten zutreffend abbilden.</p>",
+    "meta_description": "ICC-Profil: eine genormte Datei, die das Farbverhalten eines Geräts beschreibt – Grundbaustein des Color-Managements.",
+    "faq_items": "[{\"question\":\"Was beschreibt ein ICC-Profil?\",\"answer\":\"Wie ein bestimmtes Gerät Farben erfasst oder wiedergibt, bezogen auf einen geräteunabhängigen Referenzfarbraum – die Basis für korrekte Farbübersetzung.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

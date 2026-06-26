@@ -1,0 +1,22 @@
+{
+  "de_uid": 27,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Deep-Zoom",
+  "slug": "deep-zoom",
+  "short_definition": "Una técnica de visualización que permite hacer zoom continuo y fluido en imágenes de resolución extremadamente alta, basada en una pirámide de teselas.",
+  "long_definition": "<p>Deep-Zoom designa la técnica de visualización interactiva que permite hacer zoom continuo y fluido en imágenes de gigapíxeles y terapíxeles, desde la vista general hasta los detalles más pequeños en resolución completa.</p><p>Técnicamente, Deep-Zoom se basa en una pirámide de teselas: al hacer zoom, se van cargando de forma continua las teselas adecuadas en la resolución necesaria. Esto crea la sensación de una inmersión en la imagen sin interrupciones y sin límite, sin que sea necesario cargar el volumen total de datos de una sola vez.</p><p>Deep-Zoom hace perceptible el valor real de las tomas de alta resolución, ya que las estructuras más finas solo se vuelven visibles al acercarse.</p>",
+  "meta_description": "Deep-Zoom: zoom continuo y fluido en imágenes de gigapíxeles de resolución extremadamente alta, basado en una pirámide de teselas.",
+  "faq_items": "[{\"question\": \"¿Cómo funciona Deep-Zoom?\", \"answer\": \"Al hacer zoom, carga de forma continua las teselas adecuadas de una pirámide de teselas, de modo que se puede avanzar sin interrupciones hasta los detalles más finos.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Deep-Zoom",
+    "slug": "deep-zoom",
+    "short_definition": "Eine Betrachtungstechnik, die stufenloses, flüssiges Hineinzoomen in extrem hochauflösende Bilder erlaubt – auf Basis einer Tile-Pyramide.",
+    "long_definition": "<p>Deep-Zoom bezeichnet die interaktive Betrachtungstechnik, mit der sich in Gigapixel- und Terapixel-Bilder stufenlos und flüssig hineinzoomen lässt – von der Gesamtansicht bis hinab zu kleinsten Details in voller Auflösung.</p><p>Technisch basiert Deep-Zoom auf einer Tile-Pyramide: Beim Zoomen werden fortlaufend die jeweils passenden Kacheln in der benötigten Auflösung nachgeladen. So entsteht der Eindruck eines nahtlosen, endlosen Hineingehens ins Bild, ohne dass die gesamte Datenmenge auf einmal geladen werden muss.</p><p>Deep-Zoom macht den eigentlichen Wert hochauflösender Aufnahmen erlebbar, da feinste Strukturen erst beim Heranzoomen sichtbar werden.</p>",
+    "meta_description": "Deep-Zoom: stufenloses, flüssiges Hineinzoomen in extrem hochauflösende Gigapixel-Bilder auf Basis einer Tile-Pyramide.",
+    "faq_items": "[{\"question\":\"Wie funktioniert Deep-Zoom?\",\"answer\":\"Es lädt beim Zoomen fortlaufend die passenden Kacheln aus einer Tile-Pyramide nach, sodass man stufenlos bis in die feinsten Details hineingehen kann.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

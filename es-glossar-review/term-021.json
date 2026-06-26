@@ -1,0 +1,22 @@
+{
+  "de_uid": 21,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Impresión de gran formato",
+  "slug": "impresion-de-gran-formato",
+  "short_definition": "Procedimiento de impresión para formatos de salida muy grandes – desde murales hasta superficies de feria y techos tensados. Plantea exigencias especiales en cuanto a resolución de imagen y gestión del color.",
+  "long_definition": "<p>La impresión de gran formato abarca todos los procedimientos de impresión para salidas que superan con creces los formatos de papel clásicos – como murales, construcciones para ferias, fachadas, banners o techos tensados impresos.</p><p>El reto especial reside en que la calidad de imagen debe mantenerse en superficies grandes. Si la resolución de imagen no es suficiente, se hacen visibles los desenfoques y la pérdida de detalle. Por eso son decisivos las imágenes fuente de alta resolución, una gestión del color coherente y la consideración de la distancia de observación.</p><p>Las tomas gigapíxel son especialmente adecuadas para aplicaciones de gran formato exigentes, ya que conservan la fidelidad de detalle incluso en superficies muy grandes y a corta distancia.</p>",
+  "meta_description": "Impresión de gran formato: procedimiento de impresión para formatos muy grandes como murales, superficies de feria o techos tensados – con altas exigencias en cuanto a resolución y color.",
+  "faq_items": "[{\"question\": \"¿Qué es especialmente importante en la impresión de gran formato?\", \"answer\": \"Una resolución de imagen suficientemente alta para la superficie, una gestión del color coherente y la coordinación con la distancia de observación.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Großformatdruck",
+    "slug": "grossformatdruck",
+    "short_definition": "Druckverfahren für sehr große Ausgabeformate – von Wandbildern über Messeflächen bis zu Spanndecken. Stellt besondere Anforderungen an Bildauflösung und Color-Management.",
+    "long_definition": "<p>Großformatdruck umfasst alle Druckverfahren für Ausgaben, die deutlich über klassische Papierformate hinausgehen – etwa Wandbilder, Messebauten, Fassaden, Banner oder bedruckte Spanndecken.</p><p>Die besondere Herausforderung liegt darin, dass die Bildqualität auf großer Fläche erhalten bleiben muss. Reicht die Bildauflösung nicht aus, werden Unschärfen und Strukturverluste sichtbar. Deshalb sind hochauflösende Quellbilder, ein durchgängiges Color-Management und die Berücksichtigung des Betrachtungsabstands entscheidend.</p><p>Gigapixel-Aufnahmen sind für anspruchsvolle Großformatanwendungen besonders geeignet, da sie auch auf sehr großen Flächen und aus der Nähe detailtreu bleiben.</p>",
+    "meta_description": "Großformatdruck: Druckverfahren für sehr große Formate wie Wandbilder, Messeflächen oder Spanndecken – mit hohen Anforderungen an Auflösung und Farbe.",
+    "faq_items": "[{\"question\":\"Was ist beim Großformatdruck besonders wichtig?\",\"answer\":\"Ausreichend hohe Bildauflösung für die Fläche, ein konsequentes Color-Management und die Abstimmung auf den Betrachtungsabstand.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

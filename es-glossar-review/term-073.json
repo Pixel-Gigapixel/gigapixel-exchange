@@ -1,0 +1,22 @@
+{
+  "de_uid": 73,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Gigapixel-Viewer / Zoomify",
+  "slug": "gigapixel-viewer-zoomify",
+  "short_definition": "Un visor basado en web que permite visualizar imágenes muy grandes de forma fluida mediante una pirámide de teselas, con zoom continuo hasta el más mínimo detalle.",
+  "long_definition": "<p>Un Gigapixel-Viewer (basado, por ejemplo, en Zoomify, OpenSeadragon o tecnologías similares) carga desde una pirámide de teselas únicamente las piezas visibles para el encuadre actual y el nivel de zoom seleccionado. Esto permite visualizar imágenes que superan con creces la capacidad de pantalla y de memoria disponible.</p><p>Es precisamente el visor el que hace experimentable el valor real de una toma gigapíxel: se puede hacer zoom continuo hacia el interior y descubrir las estructuras más finas que permanecen invisibles en la vista general.</p>",
+  "meta_description": "Gigapixel-Viewer / Zoomify: visor basado en web para imágenes muy grandes mediante una pirámide de teselas – zoom continuo hasta el más mínimo detalle.",
+  "faq_items": "[{\"question\": \"¿Para qué sirve un Gigapixel-Viewer?\", \"answer\": \"Para visualizar imágenes muy grandes de forma fluida en el navegador y hacer zoom continuo hasta los detalles más finos, sin necesidad de cargar todos los datos de una sola vez.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Gigapixel-Viewer / Zoomify",
+    "slug": "gigapixel-viewer-zoomify",
+    "short_definition": "Ein webbasierter Betrachter, der sehr große Bilder über eine Tile-Pyramide flüssig darstellbar macht – mit stufenlosem Zoom bis ins kleinste Detail.",
+    "long_definition": "<p>Ein Gigapixel-Viewer (etwa auf Basis von Zoomify, OpenSeadragon oder ähnlichen Techniken) lädt aus einer Tile-Pyramide jeweils nur die Kacheln, die für den aktuellen Ausschnitt und die Zoomstufe sichtbar sind. So lassen sich Bilder betrachten, die ein Vielfaches der Bildschirm- und Speicherkapazität übersteigen.</p><p>Erst der Viewer macht den eigentlichen Wert einer Gigapixel-Aufnahme erlebbar: Man kann stufenlos hineinzoomen und feinste Strukturen entdecken, die in der Gesamtansicht unsichtbar bleiben.</p>",
+    "meta_description": "Gigapixel-Viewer / Zoomify: webbasierter Betrachter für sehr große Bilder über eine Tile-Pyramide – stufenloser Zoom bis ins Detail.",
+    "faq_items": "[{\"question\":\"Wozu ein Gigapixel-Viewer?\",\"answer\":\"Um sehr große Bilder im Browser flüssig zu betrachten und stufenlos bis in feinste Details zu zoomen, ohne alle Daten auf einmal zu laden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

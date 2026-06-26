@@ -1,0 +1,22 @@
+{
+  "de_uid": 100,
+  "category": 6,
+  "is_methodology_term": 0,
+  "title": "Fotomural",
+  "slug": "fotomural",
+  "short_definition": "Un papel tapiz de pared impreso en gran formato con motivo fotográfico. Cubre paredes enteras: la resolución debe adaptarse al tamaño de la pared.",
+  "long_definition": "<p>Un fotomural cubre una pared entera con un motivo fotográfico y se instala habitualmente en tiras encoladas o como impresión continua.</p><p>Dado que se contempla de cerca y sobre grandes superficies, una resolución suficientemente alta por metro cuadrado es decisiva; de lo contrario, el desenfoque se hace visible. Los motivos Gigapixel de alta resolución son especialmente adecuados porque mantienen el detalle incluso en paredes de gran tamaño.</p>",
+  "meta_description": "Fotomural: papel tapiz de pared impreso en gran formato con motivo fotográfico – la resolución por m² debe adaptarse al tamaño de la pared.",
+  "faq_items": "[{\"question\": \"¿Qué es lo más importante en un fotomural?\", \"answer\": \"Una resolución suficiente por metro cuadrado, ya que se contempla de cerca y sobre grandes superficies: los motivos Gigapixel mantienen el detalle con fidelidad.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Fototapete",
+    "slug": "fototapete",
+    "short_definition": "Eine großflächig bedruckte Wandtapete mit fotografischem Motiv. Gestaltet ganze Wände – Auflösung muss zur Wandgröße passen.",
+    "long_definition": "<p>Eine Fototapete überzieht eine ganze Wand mit einem fotografischen Motiv und wird meist in Bahnen verklebt oder als zusammenhängender Druck angebracht.</p><p>Da sie aus der Nähe und über große Flächen betrachtet wird, ist eine ausreichend hohe Auflösung pro Quadratmeter entscheidend – sonst werden Unschärfen sichtbar. Hochauflösende Gigapixel-Motive eignen sich daher besonders, weil sie auch auf großen Wänden detailtreu bleiben.</p>",
+    "meta_description": "Fototapete: großflächig bedruckte Wandtapete mit Foto-Motiv – die Auflösung pro m² muss zur Wandgröße passen.",
+    "faq_items": "[{\"question\":\"Worauf kommt es bei einer Fototapete an?\",\"answer\":\"Auf ausreichende Auflösung pro Quadratmeter, da sie aus der Nähe und über große Flächen betrachtet wird – Gigapixel-Motive bleiben detailtreu.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

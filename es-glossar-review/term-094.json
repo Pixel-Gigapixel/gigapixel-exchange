@@ -1,0 +1,22 @@
+{
+  "de_uid": 94,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Impresión látex",
+  "slug": "impresion-latex",
+  "short_definition": "Impresión digital con tintas látex de base acuosa – de bajo olor, respetuosa con el medio ambiente y versátil, especialmente para aplicaciones de interior como fotomurales.",
+  "long_definition": "<p>La impresión látex utiliza tintas de base acuosa con partículas de látex que se fijan al soporte mediante calor. El proceso es de bajo olor y prescinde de disolventes agresivos.</p><p>Las impresiones están secas al instante, son resistentes al roce y aptas tanto para interiores como para exteriores. La impresión látex está muy extendida en fotomurales y decoración de grandes superficies de interior, ya que presenta bajas emisiones y es segura para entornos sensibles.</p>",
+  "meta_description": "Impresión látex: impresión digital con tintas látex de base acuosa – de bajo olor y versátil, ideal para fotomurales e interiores.",
+  "faq_items": "[{\"question\": \"¿Por qué elegir la impresión látex para interiores?\", \"answer\": \"Porque es de bajo olor y bajas emisiones, y prescinde de disolventes agresivos, lo que la hace segura para entornos sensibles.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Latexdruck",
+    "slug": "latexdruck",
+    "short_definition": "Digitaldruck mit wasserbasierten Latextinten – geruchsarm, umweltfreundlich und vielseitig, besonders für Innenanwendungen wie Fototapeten.",
+    "long_definition": "<p>Der Latexdruck nutzt wasserbasierte Tinten mit Latexpartikeln, die durch Wärme auf dem Medium fixiert werden. Das Verfahren ist geruchsarm und kommt ohne aggressive Lösungsmittel aus.</p><p>Die Drucke sind sofort trocken, wischfest und für Innen- wie Außenanwendungen geeignet. Gerade für Fototapeten und großflächige Innenraumgestaltung ist Latexdruck verbreitet, weil er emissionsarm und für sensible Umgebungen unbedenklich ist.</p>",
+    "meta_description": "Latexdruck: Digitaldruck mit wasserbasierten Latextinten – geruchsarm und vielseitig, ideal für Fototapeten und Innenräume.",
+    "faq_items": "[{\"question\":\"Warum Latexdruck für Innenräume?\",\"answer\":\"Weil er geruchsarm und emissionsarm ist und ohne aggressive Lösungsmittel auskommt – unbedenklich für sensible Umgebungen.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

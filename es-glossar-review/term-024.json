@@ -1,0 +1,22 @@
+{
+  "de_uid": 24,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Espacio de color (sRGB / AdobeRGB / P3)",
+  "slug": "espacio-de-color-srgb-adobergb-p3",
+  "short_definition": "El rango definido de colores representables. Los espacios de color más comunes son sRGB, AdobeRGB y Display-P3 – se diferencian en cuántos colores abarcan y cuáles son.",
+  "long_definition": "<p>Un espacio de color determina qué colores pueden representarse en una imagen o en un dispositivo. Define una región delimitada dentro del espectro de colores visible para el ser humano.</p><p>Los espacios de color habituales se diferencian en su amplitud: <strong>sRGB</strong> es el más pequeño y se considera el estándar para la web y la salida básica. <strong>AdobeRGB</strong> abarca significativamente más tonos de verde y cian saturados y se utiliza con frecuencia en la edición de imágenes profesional y en impresión. <strong>Display-P3</strong> es un espacio de color moderno, igualmente ampliado, que está muy extendido sobre todo en las pantallas actuales.</p><p>La elección del espacio de color está estrechamente vinculada a la gestión del color y al flujo de trabajo RAW, e influye en la viveza y diferenciación de los colores en la salida en gran formato.</p>",
+  "meta_description": "Espacio de color (sRGB / AdobeRGB / P3): el rango definido de colores representables. Determina cuántos colores y cuáles abarca una imagen o dispositivo.",
+  "faq_items": "[{\"question\": \"¿En qué se diferencian sRGB y AdobeRGB?\", \"answer\": \"AdobeRGB abarca más colores saturados, especialmente en el rango del verde y el cian, y se prefiere en la edición profesional y en impresión. sRGB es el estándar web más reducido.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Farbraum (sRGB / AdobeRGB / P3)",
+    "slug": "farbraum",
+    "short_definition": "Der definierte Umfang darstellbarer Farben. Gängige Farbräume sind sRGB, AdobeRGB und Display-P3 – sie unterscheiden sich darin, wie viele und welche Farben sie umfassen.",
+    "long_definition": "<p>Ein Farbraum legt fest, welche Farben in einem Bild oder auf einem Gerät überhaupt dargestellt werden können. Er bildet einen abgegrenzten Bereich innerhalb des für den Menschen sichtbaren Farbspektrums ab.</p><p>Gebräuchliche Farbräume unterscheiden sich in ihrem Umfang: <strong>sRGB</strong> ist der kleinste und gilt als Standard für Web und einfache Ausgabe. <strong>AdobeRGB</strong> umfasst deutlich mehr gesättigte Grün- und Cyantöne und wird häufig in der professionellen Bildbearbeitung und im Druck genutzt. <strong>Display-P3</strong> ist ein moderner, ebenfalls erweiterter Farbraum, der vor allem bei aktuellen Displays verbreitet ist.</p><p>Die Wahl des Farbraums ist eng mit Color-Management und RAW-Workflow verbunden und beeinflusst, wie satt und differenziert Farben in der Großformatausgabe erscheinen.</p>",
+    "meta_description": "Farbraum (sRGB / AdobeRGB / P3): der definierte Umfang darstellbarer Farben. Bestimmt, wie viele und welche Farben ein Bild oder Gerät umfasst.",
+    "faq_items": "[{\"question\":\"Worin unterscheiden sich sRGB und AdobeRGB?\",\"answer\":\"AdobeRGB umfasst mehr gesättigte Farben, besonders im Grün- und Cyanbereich, und wird in Profibearbeitung und Druck bevorzugt. sRGB ist der kleinere Web-Standard.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,22 @@
+{
+  "de_uid": 64,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Balance de blancos",
+  "slug": "balance-de-blancos",
+  "short_definition": "El ajuste de la temperatura de color para que el blanco resulte neutro y los colores aparezcan correctamente bajo distintas condiciones de luz.",
+  "long_definition": "<p>El balance de blancos compensa la temperatura de color de la luz de captura para que los tonos neutros no viren hacia el azul o el amarillo. La luz diurna, las sombras y la luz artificial tienen temperaturas de color muy distintas que, sin corrección, tiñen toda la imagen.</p><p>En el flujo de trabajo RAW, el balance de blancos se puede ajustar a posteriori sin pérdida de calidad. En las tomas gigapíxel, un balance de blancos uniforme en todas las imágenes individuales es fundamental para que las teselas encajen sin costuras de color.</p>",
+  "meta_description": "Balance de blancos: ajuste de la temperatura de color para que el blanco sea neutro y los colores aparezcan correctamente – uniforme en todas las teselas de stitching.",
+  "faq_items": "[{\"question\": \"¿Por qué usar RAW para el balance de blancos?\", \"answer\": \"Porque el balance de blancos se puede establecer a posteriori sin pérdida de calidad a partir de datos RAW, lo que es fundamental para obtener colores consistentes en todas las teselas.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Weißabgleich",
+    "slug": "weissabgleich",
+    "short_definition": "Die Anpassung der Farbtemperatur, damit Weiß neutral wirkt und Farben unter unterschiedlichem Licht korrekt erscheinen.",
+    "long_definition": "<p>Der Weißabgleich gleicht die Farbtemperatur des Aufnahmelichts aus, damit neutrale Töne nicht ins Bläuliche oder Gelbliche kippen. Tageslicht, Schatten und Kunstlicht haben sehr unterschiedliche Farbtemperaturen, die ohne Korrektur das gesamte Bild einfärben.</p><p>Im RAW-Workflow ist der Weißabgleich verlustfrei nachträglich anpassbar. Bei Gigapixel-Aufnahmen ist ein einheitlicher Weißabgleich über alle Einzelbilder wichtig, damit die Kacheln farblich nahtlos zusammenpassen.</p>",
+    "meta_description": "Weißabgleich: Anpassung der Farbtemperatur, damit Weiß neutral und Farben korrekt erscheinen – über alle Stitching-Kacheln einheitlich.",
+    "faq_items": "[{\"question\":\"Warum RAW für den Weißabgleich?\",\"answer\":\"Weil sich der Weißabgleich aus RAW-Daten verlustfrei nachträglich setzen lässt – wichtig für konsistente Farben über alle Kacheln.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

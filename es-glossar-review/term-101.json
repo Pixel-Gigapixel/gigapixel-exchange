@@ -1,0 +1,22 @@
+{
+  "de_uid": 101,
+  "category": 6,
+  "is_methodology_term": 0,
+  "title": "Gráfica para construcción de stands",
+  "slug": "grafica-para-construccion-de-stands",
+  "short_definition": "Gráfica de imagen en gran formato para stands de feria – desde paredes retroiluminadas hasta revestimientos completos. Deben planificarse distintas distancias de observación.",
+  "long_definition": "<p>La gráfica para construcción de stands abarca el diseño de imagen a gran superficie en stands de feria – como revestimientos de paredes, superficies retroiluminadas, mostradores y elementos de techo.</p><p>Dado que los visitantes contemplan las superficies tanto desde la distancia como de muy cerca, la resolución y la calidad de impresión deben adaptarse a la distancia de observación correspondiente. Los motivos Gigapixel de alta resolución resultan especialmente valiosos y fieles al detalle precisamente en las zonas observadas de cerca.</p>",
+  "meta_description": "Gráfica para construcción de stands: imagen en gran formato para stands de feria – adaptar la resolución a las distintas distancias de observación.",
+  "faq_items": "[{\"question\": \"¿Qué es importante en la gráfica para construcción de stands?\", \"answer\": \"La adaptación de la resolución y la calidad de impresión a las distintas distancias de observación – las zonas observadas de cerca se benefician de una alta resolución.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Messebau-Grafik",
+    "slug": "messebau-grafik",
+    "short_definition": "Großformatige Bildgrafik für Messestände – von hinterleuchteten Wänden bis Komplettverkleidungen. Unterschiedliche Betrachtungsabstände sind einzuplanen.",
+    "long_definition": "<p>Messebau-Grafik umfasst die großflächige Bildgestaltung von Messeständen – etwa Wandverkleidungen, hinterleuchtete Flächen, Theken und Deckenelemente.</p><p>Da Besucher die Flächen sowohl aus der Distanz als auch aus nächster Nähe betrachten, müssen Auflösung und Druckqualität auf den jeweiligen Betrachtungsabstand abgestimmt sein. Hochauflösende Gigapixel-Motive wirken gerade in den nah betrachteten Zonen hochwertig und detailtreu.</p>",
+    "meta_description": "Messebau-Grafik: großformatige Bildgrafik für Messestände – Auflösung auf wechselnde Betrachtungsabstände abstimmen.",
+    "faq_items": "[{\"question\":\"Was ist bei Messebau-Grafik wichtig?\",\"answer\":\"Die Abstimmung von Auflösung und Druckqualität auf wechselnde Betrachtungsabstände – nah betrachtete Zonen profitieren von hoher Auflösung.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

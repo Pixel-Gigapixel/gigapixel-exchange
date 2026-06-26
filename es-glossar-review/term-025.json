@@ -1,0 +1,22 @@
+{
+  "de_uid": 25,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Preimpresión",
+  "slug": "preimpresion",
+  "short_definition": "Todos los pasos de trabajo entre el archivo de imagen terminado y la impresión — como la conversión de color, la asignación de perfiles, el enfoque y el ajuste de formato — que garantizan una salida de impresión correcta.",
+  "long_definition": "<p>La preimpresión abarca todos los pasos preparatorios que hacen que un archivo de imagen esté listo para imprimir. Esto incluye la conversión al espacio de color de salida adecuado, la asignación de los perfiles ICC correctos, el enfoque orientado a la salida, el escalado al tamaño de impresión final, así como el control de la resolución y las desviaciones de color.</p><p>Una preimpresión cuidadosa garantiza que el resultado impreso corresponda a la valoración en pantalla y que se conserve la calidad del original. En la impresión de gran formato, este paso tiene consecuencias especialmente importantes, ya que los errores se hacen claramente visibles en superficies grandes y en serie.</p>",
+  "meta_description": "Preimpresión: todos los pasos entre el archivo de imagen terminado y la impresión — conversión de color, asignación de perfiles, enfoque y ajuste de formato.",
+  "faq_items": "[{\"question\": \"¿Qué ocurre en la preimpresión?\", \"answer\": \"El archivo de imagen se prepara para la impresión: conversión del espacio de color, asignación de perfiles ICC, enfoque orientado a la salida, escalado y control de calidad.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Druckvorstufe",
+    "slug": "druckvorstufe",
+    "short_definition": "Alle Arbeitsschritte zwischen fertiger Bilddatei und Druck – etwa Farbumwandlung, Profilzuweisung, Schärfung und Formatanpassung – die den korrekten Druckausgang sicherstellen.",
+    "long_definition": "<p>Die Druckvorstufe umfasst sämtliche vorbereitenden Schritte, die eine Bilddatei druckreif machen. Dazu gehören die Umwandlung in den passenden Ausgabe-Farbraum, die Zuweisung der korrekten ICC-Profile, ausgabegerechte Schärfung, Skalierung auf die endgültige Druckgröße sowie die Kontrolle auf Auflösung und Farbabweichungen.</p><p>Eine sorgfältige Druckvorstufe stellt sicher, dass das gedruckte Ergebnis der Bildschirmbeurteilung entspricht und die Qualität der Vorlage erhalten bleibt. Im Großformatdruck ist dieser Schritt besonders folgenreich, da Fehler auf großer Fläche und in der Serie deutlich sichtbar werden.</p>",
+    "meta_description": "Druckvorstufe: alle Schritte zwischen fertiger Bilddatei und Druck – Farbumwandlung, Profilzuweisung, Schärfung und Formatanpassung.",
+    "faq_items": "[{\"question\":\"Was passiert in der Druckvorstufe?\",\"answer\":\"Die Bilddatei wird druckreif gemacht: Farbraumumwandlung, ICC-Profilzuweisung, ausgabegerechte Schärfung, Skalierung und Qualitätskontrolle.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

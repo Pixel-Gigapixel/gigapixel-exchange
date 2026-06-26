@@ -1,0 +1,22 @@
+{
+  "de_uid": 61,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Desenfoque por difracción",
+  "slug": "desenfoque-por-difraccion",
+  "short_definition": "Pérdida de nitidez causada por la difracción de la luz en un diafragma muy pequeño. Limita el detalle que un objetivo puede ofrecer con independencia de la resolución del sensor.",
+  "long_definition": "<p>El desenfoque por difracción se produce cuando la luz se difracta al pasar por la pequeña apertura de un diafragma muy cerrado y se expande ligeramente sobre el sensor. A medida que aumenta el número f, aumenta la profundidad de campo, pero a partir de cierto punto la nitidez global vuelve a disminuir porque la difracción difumina los detalles finos.</p><p>Esto explica por qué más megapíxeles en el sensor no significan automáticamente más detalle: en formato medio, el óptimo se alcanza aproximadamente en f/8. En la fotografía gigapíxel se elige por ello un diafragma con poca difracción para cada toma individual, y la profundidad de campo se obtiene mediante stitching y focus stacking.</p>",
+  "meta_description": "Desenfoque por difracción: pérdida de nitidez causada por la difracción de la luz en un diafragma pequeño – limita el detalle realmente resoluble con independencia de la resolución del sensor.",
+  "faq_items": "[{\"question\": \"¿Por qué un diafragma muy pequeño no aporta más nitidez?\", \"answer\": \"Porque a partir de cierto punto la difracción difumina los detalles finos. Una mayor profundidad de campo va entonces en detrimento de la nitidez global.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Beugungsunschärfe",
+    "slug": "beugungsunschaerfe",
+    "short_definition": "Schärfeverlust durch Lichtbeugung an einer sehr kleinen Blende. Begrenzt, wie viel Detail ein Objektiv unabhängig von der Sensorauflösung liefern kann.",
+    "long_definition": "<p>Beugungsunschärfe entsteht, wenn Licht an der kleinen Öffnung einer stark geschlossenen Blende gebeugt wird und sich auf dem Sensor leicht aufweitet. Mit zunehmender Blendenzahl wächst die Schärfentiefe, doch ab einem bestimmten Punkt sinkt die Gesamtschärfe wieder, weil die Beugung feine Details verwischt.</p><p>Das erklärt, warum mehr Sensor-Megapixel nicht automatisch mehr Detail bedeuten: Bei Mittelformat ist etwa bei Blende 8 das Optimum erreicht. In der Gigapixel-Fotografie wird deshalb pro Einzelbild eine beugungsarme Blende gewählt und Schärfentiefe über Stitching und Focus-Stacking gewonnen.</p>",
+    "meta_description": "Beugungsunschärfe: Schärfeverlust durch Lichtbeugung an kleiner Blende – begrenzt das real auflösbare Detail unabhängig von der Sensorauflösung.",
+    "faq_items": "[{\"question\":\"Warum bringt eine sehr kleine Blende nicht mehr Schärfe?\",\"answer\":\"Weil ab einem Punkt die Beugung feine Details verwischt. Mehr Schärfentiefe geht dann zulasten der Gesamtschärfe.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

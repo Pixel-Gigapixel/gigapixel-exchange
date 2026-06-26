@@ -1,0 +1,22 @@
+{
+  "de_uid": 15,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Flujo de trabajo RAW",
+  "slug": "flujo-de-trabajo-raw",
+  "short_definition": "El procesamiento continuo de datos RAW sin comprimir de la cámara – máximas reservas en exposición, color y detalle para una salida de gran formato de alta calidad.",
+  "long_definition": "<p>Un flujo de trabajo RAW trabaja de forma coherente con los datos sin procesar del sensor de la cámara en lugar de con JPEGs ya procesados. Los archivos RAW contienen la gama tonal y de color completa, así como todos los datos del sensor, antes de que se fijen el balance de blancos, el contraste y la nitidez.</p><p>Esto ofrece reservas considerables: la exposición y el balance de blancos pueden corregirse con mínimas pérdidas, las luces y las sombras pueden recuperarse en mayor medida, y los perfiles de color pueden asignarse de forma precisa. Para las tomas en gigapíxeles y la impresión en gran formato esto es decisivo, ya que cada reserva de calidad se hace visible en la gran superficie de salida.</p><p>Un flujo de trabajo RAW continuo está estrechamente vinculado a una gestión del color coherente.</p>",
+  "meta_description": "Flujo de trabajo RAW: procesamiento continuo de datos sin comprimir para máximas reservas en exposición, color y detalle en gran formato.",
+  "faq_items": "[{\"question\": \"¿Por qué RAW en lugar de JPEG?\", \"answer\": \"RAW contiene la gama tonal y de color completa antes del procesamiento interno de la cámara y ofrece así reservas de corrección y calidad significativamente mayores – importante para la salida en gran formato.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "RAW-Workflow",
+    "slug": "raw-workflow",
+    "short_definition": "Die durchgängige Verarbeitung unkomprimierter RAW-Rohdaten der Kamera – maximale Reserven bei Belichtung, Farbe und Detail für hochwertige Großformatausgabe.",
+    "long_definition": "<p>Ein RAW-Workflow arbeitet konsequent mit den unkomprimierten Rohdaten des Kamerasensors statt mit bereits verarbeiteten JPEGs. RAW-Dateien enthalten den vollen Tonwert- und Farbumfang sowie alle Sensordaten, bevor Weißabgleich, Kontrast und Schärfung festgelegt sind.</p><p>Das bietet erhebliche Reserven: Belichtung und Weißabgleich lassen sich verlustarm korrigieren, Lichter und Schatten weiter aufziehen, und Farbprofile gezielt zuweisen. Für Gigapixel-Aufnahmen und Großformatdruck ist das entscheidend, da jede Qualitätsreserve auf der großen Ausgabefläche sichtbar wird.</p><p>Ein durchgängiger RAW-Workflow ist eng mit konsequentem Color-Management verbunden.</p>",
+    "meta_description": "RAW-Workflow: durchgängige Verarbeitung unkomprimierter Rohdaten für maximale Reserven bei Belichtung, Farbe und Detail im Großformat.",
+    "faq_items": "[{\"question\":\"Warum RAW statt JPEG?\",\"answer\":\"RAW enthält den vollen Tonwert- und Farbumfang vor der kamerainternen Verarbeitung und bietet so deutlich größere Korrektur- und Qualitätsreserven – wichtig für Großformatausgabe.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

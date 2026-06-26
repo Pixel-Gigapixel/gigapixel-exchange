@@ -1,0 +1,22 @@
+{
+  "de_uid": 62,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Aberración cromática",
+  "slug": "aberracion-cromatica",
+  "short_definition": "Franjas de color en bordes de alto contraste, porque un objetivo no enfoca todas las longitudes de onda exactamente en el mismo punto.",
+  "long_definition": "<p>La aberración cromática es un defecto del objetivo por el cual la luz de distintos colores se refracta con diferente intensidad y no converge en un punto común. Se manifiesta como franjas de color —generalmente violeta, verde o rojo— en bordes de alto contraste, especialmente hacia los extremos de la imagen.</p><p>En tomas gigapíxel de alta resolución, estas franjas resultan claramente visibles al hacer zoom. Las ópticas de alta calidad minimizan el error; los errores residuales pueden corregirse en el flujo de trabajo RAW.</p>",
+  "meta_description": "Aberración cromática: franjas de color en bordes, porque un objetivo no enfoca todas las longitudes de onda en el mismo punto.",
+  "faq_items": "[{\"question\": \"¿Cómo se puede reducir la aberración cromática?\", \"answer\": \"Mediante óptica de alta calidad y corrección en el flujo de trabajo RAW; con frecuencia basta con cerrar ligeramente el diafragma.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Chromatische Aberration",
+    "slug": "chromatische-aberration",
+    "short_definition": "Farbsäume an kontrastreichen Kanten, weil ein Objektiv unterschiedliche Wellenlängen nicht exakt im selben Punkt bündelt.",
+    "long_definition": "<p>Chromatische Aberration ist ein Objektivfehler, bei dem Licht verschiedener Farben unterschiedlich stark gebrochen wird und sich nicht in einem gemeinsamen Punkt vereint. Sichtbar wird das als farbige Säume – meist violett, grün oder rot – an kontrastreichen Kanten, besonders zum Bildrand hin.</p><p>In hochauflösenden Gigapixel-Aufnahmen fallen solche Säume beim Heranzoomen deutlich auf. Hochwertige Optiken minimieren den Fehler; Restfehler lassen sich im RAW-Workflow korrigieren.</p>",
+    "meta_description": "Chromatische Aberration: Farbsäume an Kanten, weil ein Objektiv nicht alle Wellenlängen im selben Punkt bündelt.",
+    "faq_items": "[{\"question\":\"Wie lässt sich chromatische Aberration reduzieren?\",\"answer\":\"Durch hochwertige Optik und Korrektur im RAW-Workflow; oft hilft schon leichtes Abblenden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

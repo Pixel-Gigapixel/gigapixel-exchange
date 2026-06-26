@@ -1,0 +1,22 @@
+{
+  "de_uid": 98,
+  "category": 7,
+  "is_methodology_term": 0,
+  "title": "Impresión en lienzo",
+  "slug": "impresion-en-lienzo",
+  "short_definition": "Impresión sobre lienzo textil, generalmente tensado sobre un bastidor. Confiere a los motivos un carácter clásico y pictórico.",
+  "long_definition": "<p>En la impresión en lienzo, el motivo se imprime sobre un lienzo textil y se tensa a continuación sobre un bastidor. La estructura del tejido confiere a la imagen un carácter clásico, similar al de una pintura.</p><p>El lienzo es adecuado para grandes cuadros murales con un aspecto cálido y mate. La estructura del tejido es deliberadamente visible; para una nitidez de detalle máxima, los soportes lisos como el Alu-Dibond o el acrílico son la alternativa.</p>",
+  "meta_description": "Impresión en lienzo: motivo sobre lienzo textil, tensado sobre bastidor – carácter clásico y pictórico.",
+  "faq_items": "[{\"question\": \"¿Cuándo es el lienzo la elección correcta?\", \"answer\": \"Cuando se desea un carácter cálido y pictórico. Para una nitidez de detalle máxima, los soportes lisos como el Alu-Dibond o el acrílico son más adecuados.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Leinwanddruck",
+    "slug": "leinwanddruck",
+    "short_definition": "Druck auf textile Leinwand, meist auf einen Keilrahmen gespannt. Verleiht Motiven einen klassischen, malerischen Charakter.",
+    "long_definition": "<p>Beim Leinwanddruck wird das Motiv auf eine textile Leinwand gedruckt und anschließend auf einen Keilrahmen gespannt. Die Struktur des Gewebes verleiht dem Bild einen klassischen, gemäldeartigen Charakter.</p><p>Leinwand eignet sich für großflächige Wandbilder mit warmer, matter Anmutung. Die Gewebestruktur ist bewusst sichtbar – für maximale Detailschärfe sind glatte Träger wie Alu-Dibond oder Acrylglas die Alternative.</p>",
+    "meta_description": "Leinwanddruck: Motiv auf textile Leinwand, auf Keilrahmen gespannt – klassischer, malerischer Charakter.",
+    "faq_items": "[{\"question\":\"Wann ist Leinwand die richtige Wahl?\",\"answer\":\"Wenn ein warmer, malerischer Charakter gewünscht ist. Für maximale Detailschärfe eignen sich glatte Träger wie Alu-Dibond oder Acrylglas besser.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

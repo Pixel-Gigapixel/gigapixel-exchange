@@ -1,0 +1,22 @@
+{
+  "de_uid": 69,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Cabezal panorámico",
+  "slug": "cabezal-panoramico",
+  "short_definition": "Un cabezal de trípode especial que gira la cámara exactamente alrededor del punto nodal, permitiendo tomas libres de paralaje para el stitching de panoramas y gigapíxeles.",
+  "long_definition": "<p>Un cabezal panorámico (con adaptador de punto nodal) permite girar la cámara con precisión alrededor del punto nodal del objetivo, en lugar de alrededor del eje del trípode. De este modo, el primer plano y el fondo no se desplazan entre sí, y las tomas solapadas pueden stitcharse con limpieza.</p><p>Los buenos cabezales panorámicos ofrecen ángulos de cuadrícula ajustables para un solapamiento uniforme y series reproducibles, requisito indispensable para grandes mosaicos de gigapíxeles compuestos por cientos de imágenes individuales.</p>",
+  "meta_description": "Cabezal panorámico: cabezal de trípode que gira la cámara alrededor del punto nodal – libre de paralaje para el stitching de panoramas y gigapíxeles.",
+  "faq_items": "[{\"question\": \"¿Por qué usar un cabezal panorámico en lugar de un cabezal de trípode normal?\", \"answer\": \"Gira la cámara alrededor del punto nodal y evita así los errores de paralaje, requisito indispensable para un stitching limpio.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Panoramakopf",
+    "slug": "panoramakopf",
+    "short_definition": "Ein spezieller Stativkopf, der die Kamera exakt um den Nodalpunkt dreht und so parallaxefreie Aufnahmen für Panorama- und Gigapixel-Stitching ermöglicht.",
+    "long_definition": "<p>Ein Panoramakopf (mit Nodalpunktadapter) erlaubt es, die Kamera präzise um den Nodalpunkt des Objektivs zu schwenken, statt um die Stativachse. Dadurch verschieben sich Vorder- und Hintergrund nicht gegeneinander, und überlappende Aufnahmen lassen sich sauber stitchen.</p><p>Gute Panoramaköpfe bieten einstellbare Rasterwinkel für gleichmäßige Überlappung und reproduzierbare Reihen – Voraussetzung für große Gigapixel-Mosaike aus hunderten Einzelbildern.</p>",
+    "meta_description": "Panoramakopf: Stativkopf, der die Kamera um den Nodalpunkt dreht – parallaxefrei für Panorama- und Gigapixel-Stitching.",
+    "faq_items": "[{\"question\":\"Warum ein Panoramakopf statt normalem Stativkopf?\",\"answer\":\"Er dreht die Kamera um den Nodalpunkt und vermeidet so Parallaxenfehler – Voraussetzung für sauberes Stitching.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

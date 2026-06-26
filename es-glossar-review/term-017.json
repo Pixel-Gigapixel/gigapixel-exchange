@@ -1,0 +1,22 @@
+{
+  "de_uid": 17,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "DPI en impresión de gran formato",
+  "slug": "dpi-en-impresion-de-gran-formato",
+  "short_definition": "DPI (dots per inch) indica el número de puntos de impresión por pulgada que establece una impresora. No debe confundirse con la resolución de imagen (PPI) y debe valorarse de forma diferente en gran formato que en formatos pequeños.",
+  "long_definition": "<p>DPI – dots per inch – describe cuántos puntos de tinta individuales imprime una impresora por pulgada. Es una propiedad de la impresora y de la técnica de impresión, no del archivo de imagen.</p><p>En la impresión de gran formato existe un error extendido: creer que siempre son necesarios valores muy elevados. En realidad, los grandes formatos se contemplan desde mayor distancia, por lo que una resolución de salida moderada es suficiente para que la imagen parezca nítida. Lo decisivo es, por tanto, la interacción entre la resolución de imagen (en PPI), la densidad de puntos de impresión y la distancia de visualización real.</p><p>En la práctica, la resolución de imagen en PPI es más relevante que el simple valor DPI de la impresora.</p>",
+  "meta_description": "DPI en impresión de gran formato: la densidad de puntos de impresión por pulgada de la impresora — no debe confundirse con la resolución de imagen (PPI) y debe valorarse en función de la distancia de visualización.",
+  "faq_items": "[{\"question\": \"¿La impresión de gran formato siempre necesita DPI muy elevados?\", \"answer\": \"No. Los grandes formatos se contemplan desde mayor distancia, por lo que a menudo una resolución moderada es suficiente para que la imagen parezca nítida. Lo determinante es la distancia de visualización.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "DPI bei Großformatdruck",
+    "slug": "dpi-bei-grossformatdruck",
+    "short_definition": "DPI (dots per inch) gibt die Anzahl der Druckpunkte pro Zoll an, die ein Drucker setzt. Sie ist nicht mit der Bildauflösung (PPI) zu verwechseln und im Großformat anders zu bewerten als bei Kleinformaten.",
+    "long_definition": "<p>DPI – dots per inch – beschreibt, wie viele einzelne Tintenpunkte ein Drucker pro Zoll setzt. Es ist eine Eigenschaft des Druckers und der Drucktechnik, nicht der Bilddatei.</p><p>Im Großformatdruck ist ein verbreiteter Irrtum, dass stets sehr hohe Werte nötig seien. Tatsächlich werden große Formate aus größerer Entfernung betrachtet, sodass eine moderate Ausgabe-Auflösung ausreicht, um scharf zu wirken. Entscheidend ist deshalb das Zusammenspiel von Bildauflösung (in PPI), Druckpunktdichte und dem realen Betrachtungsabstand.</p><p>Für die Praxis ist die Bildauflösung in PPI relevanter als die reine DPI-Angabe des Druckers.</p>",
+    "meta_description": "DPI bei Großformatdruck: die Druckpunktdichte pro Zoll des Druckers – nicht mit der Bildauflösung (PPI) zu verwechseln und entfernungsabhängig zu bewerten.",
+    "faq_items": "[{\"question\":\"Braucht Großformatdruck immer sehr hohe DPI?\",\"answer\":\"Nein. Große Formate werden aus größerer Entfernung betrachtet, daher genügt oft eine moderate Auflösung, um scharf zu wirken. Maßgeblich ist der Betrachtungsabstand.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

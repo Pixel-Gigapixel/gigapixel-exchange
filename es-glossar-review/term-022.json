@@ -1,0 +1,22 @@
+{
+  "de_uid": 22,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Color-Management",
+  "slug": "color-management",
+  "short_definition": "El control continuo de la reproducción del color desde la captura, pasando por la edición, hasta la impresión, para que los colores sean predecibles y consistentes en todos los dispositivos.",
+  "long_definition": "<p>El Color-Management garantiza que los colores se representen de forma consistente a lo largo de toda la cadena de producción – desde la cámara, pasando por el monitor y la edición de imagen, hasta la impresión final. Cada dispositivo reproduce los colores de manera diferente; sin control, la misma imagen tendría un aspecto distinto en cada dispositivo.</p><p>La base son los perfiles ICC, que describen el comportamiento cromático de cada dispositivo, así como espacios de color claramente definidos. Sobre esta base, los colores se traducen de forma controlada de un dispositivo a otro.</p><p>En la impresión de gran formato, un Color-Management riguroso es especialmente importante, ya que las desviaciones de color resultan claramente visibles en superficies grandes y en encargos recurrentes.</p>",
+  "meta_description": "Color-Management: el control continuo de la reproducción del color desde la captura hasta la impresión para obtener colores consistentes y predecibles en todos los dispositivos.",
+  "faq_items": "[{\"question\": \"¿Por qué se necesita el Color-Management?\", \"answer\": \"Porque cada dispositivo reproduce los colores de manera diferente. El Color-Management traduce los colores de forma controlada entre los dispositivos, de modo que el resultado sigue siendo predecible.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Color-Management",
+    "slug": "color-management",
+    "short_definition": "Die durchgängige Steuerung der Farbwiedergabe von der Aufnahme über die Bearbeitung bis zum Druck, damit Farben gerätübergreifend vorhersehbar und konsistent bleiben.",
+    "long_definition": "<p>Color-Management sorgt dafür, dass Farben über die gesamte Produktionskette hinweg konsistent dargestellt werden – von der Kamera über Monitor und Bildbearbeitung bis zum endgültigen Druck. Jedes Gerät gibt Farben unterschiedlich wieder; ohne Steuerung würde dasselbe Bild auf jedem Gerät anders aussehen.</p><p>Grundlage sind ICC-Profile, die das Farbverhalten jedes Geräts beschreiben, sowie klar definierte Farbräume. Auf dieser Basis werden Farben kontrolliert von einem Gerät ins andere übersetzt.</p><p>Im Großformatdruck ist konsequentes Color-Management besonders wichtig, da Farbabweichungen auf großer Fläche und bei wiederkehrenden Aufträgen deutlich auffallen.</p>",
+    "meta_description": "Color-Management: die durchgängige Steuerung der Farbwiedergabe von Aufnahme bis Druck für konsistente, vorhersehbare Farben über alle Geräte.",
+    "faq_items": "[{\"question\":\"Warum braucht man Color-Management?\",\"answer\":\"Weil jedes Gerät Farben unterschiedlich wiedergibt. Color-Management übersetzt Farben kontrolliert zwischen den Geräten, sodass das Ergebnis vorhersehbar bleibt.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

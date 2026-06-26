@@ -1,0 +1,22 @@
+{
+  "de_uid": 4,
+  "category": 1,
+  "is_methodology_term": 1,
+  "title": "Multiviewpoint-Gigapixel",
+  "slug": "multiviewpoint-gigapixel",
+  "short_definition": "Una metodología desarrollada en la propia práctica que combina varios puntos de vista seleccionados de forma controlada en una toma gigapíxel, para representar los motivos de manera espacialmente más completa.",
+  "long_definition": "<p>Multiviewpoint-Gigapixel designa una metodología en la que un motivo no se captura desde un único punto fijo, sino desde varios puntos de vista seleccionados de forma controlada, que se unen en una toma gigapíxel coherente.</p><p>Mientras que el stitching clásico trabaja desde un punto nodal para evitar errores de paralaje, este procedimiento utiliza deliberadamente varias perspectivas — por ejemplo, para hacer visibles zonas ocultas o para representar escenas extensas sin distorsión perspectiva.</p><p>Estos trabajos no pueden generarse como un único objeto de impresión continuo y, por tanto, no están representados como motivos en el portal — la metodología fue desarrollada en la propia obra.</p>",
+  "meta_description": "Multiviewpoint-Gigapixel: una metodología propia que combina varios puntos de vista en una toma gigapíxel — no disponible como impresión individual y, por tanto, no incluida en el portal.",
+  "faq_items": "[{\"question\": \"¿En qué se diferencia Multiviewpoint del stitching clásico?\", \"answer\": \"El stitching clásico trabaja desde un punto nodal fijo. Multiviewpoint combina varios puntos de vista seleccionados de forma controlada en una imagen global coherente.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Multiviewpoint-Gigapixel",
+    "slug": "multiviewpoint-gigapixel",
+    "short_definition": "Eine in eigener Praxis entwickelte Methodik, die mehrere kontrolliert gewählte Blickpunkte in einer Gigapixel-Aufnahme kombiniert, um Motive räumlich vollständiger abzubilden.",
+    "long_definition": "<p>Multiviewpoint-Gigapixel bezeichnet eine Methodik, bei der ein Motiv nicht von einem einzigen festen Standpunkt, sondern aus mehreren kontrolliert gewählten Blickpunkten aufgenommen und zu einer zusammenhängenden Gigapixel-Aufnahme verbunden wird.</p><p>Während klassisches Stitching von einem Nodalpunkt aus arbeitet, um Parallaxenfehler zu vermeiden, nutzt dieses Verfahren mehrere Perspektiven gezielt — etwa um verdeckte Bereiche sichtbar zu machen oder ausgedehnte Szenen ohne perspektivische Verzerrung darzustellen.</p><p>Solche Arbeiten lassen sich nicht als ein einzelnes, durchgängiges Druckobjekt ausgeben und sind daher nicht als Motive im Portal vertreten — die Methodik wurde im eigenen Werk entwickelt.</p>",
+    "meta_description": "Multiviewpoint-Gigapixel: eine eigene Methodik, die mehrere Blickpunkte in einer Gigapixel-Aufnahme kombiniert — nicht als Einzeldruck und daher nicht im Portal.",
+    "faq_items": "[{\"question\":\"Worin unterscheidet sich Multiviewpoint vom klassischen Stitching?\",\"answer\":\"Klassisches Stitching arbeitet von einem festen Nodalpunkt aus. Multiviewpoint kombiniert mehrere kontrolliert gewählte Blickpunkte zu einem konsistenten Gesamtbild.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

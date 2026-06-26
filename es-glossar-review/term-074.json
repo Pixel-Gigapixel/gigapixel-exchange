@@ -1,0 +1,22 @@
+{
+  "de_uid": 74,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Búsqueda de imágenes por embedding",
+  "slug": "busqueda-de-imagenes-por-embedding",
+  "short_definition": "Una búsqueda de imágenes que traduce imágenes y términos de búsqueda en vectores numéricos (embeddings) y encuentra resultados por similitud de contenido, en lugar de solo por palabras clave.",
+  "long_definition": "<p>En la búsqueda de imágenes por embedding, los contenidos de las imágenes y las consultas de búsqueda son transformados por un modelo de IA en vectores de alta dimensión. Los motivos con contenido similar se sitúan próximos entre sí en este espacio vectorial, de modo que la búsqueda opera por significado en lugar de por palabras clave exactas.</p><p>En el portal, esto permite una búsqueda visual: se encuentran motivos adecuados mediante una descripción o una imagen de ejemplo, incluso cuando las palabras clave almacenadas no coinciden literalmente.</p>",
+  "meta_description": "Búsqueda de imágenes por embedding: búsqueda por similitud de contenido mediante vectores (embeddings) en lugar de solo por palabras clave, a través de texto o imagen de ejemplo.",
+  "faq_items": "[{\"question\": \"¿Cuál es la ventaja frente a la búsqueda por palabras clave?\", \"answer\": \"Encuentra motivos con contenido adecuado incluso sin palabras clave exactamente coincidentes, operando por significado en lugar de por igualdad de términos.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Embedding-Bildsuche",
+    "slug": "embedding-bildsuche",
+    "short_definition": "Eine Bildsuche, die Bilder und Suchbegriffe in Zahlenvektoren (Embeddings) übersetzt und nach inhaltlicher Ähnlichkeit findet – statt nur nach Stichworten.",
+    "long_definition": "<p>Bei der Embedding-Bildsuche werden Bildinhalte und Suchanfragen von einem KI-Modell in hochdimensionale Vektoren überführt. Inhaltlich ähnliche Motive liegen in diesem Vektorraum nah beieinander, sodass die Suche nach Bedeutung statt nach exakten Stichworten arbeitet.</p><p>Im Portal ermöglicht das eine visuelle Suche: Man findet passende Motive über eine Beschreibung oder ein Beispielbild, auch wenn die hinterlegten Stichworte nicht wörtlich übereinstimmen.</p>",
+    "meta_description": "Embedding-Bildsuche: Suche nach inhaltlicher Ähnlichkeit über Vektoren (Embeddings) statt nur nach Stichworten – per Text oder Beispielbild.",
+    "faq_items": "[{\"question\":\"Was ist der Vorteil gegenüber Stichwortsuche?\",\"answer\":\"Sie findet inhaltlich passende Motive auch ohne exakt übereinstimmende Stichworte – über Bedeutung statt Wortgleichheit.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

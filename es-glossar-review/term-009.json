@@ -1,0 +1,22 @@
+{
+  "de_uid": 9,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Panorama-Stitching",
+  "slug": "panorama-stitching",
+  "short_definition": "Una forma de stitching en la que tomas desplazadas se unen para formar un amplio panorama. El caso habitual son los recortes anchos — las vistas de 360 grados son un caso especial, no la norma.",
+  "long_definition": "<p>El Panorama-Stitching es la aplicación del stitching a un ángulo de imagen ampliado. Varias tomas desplazadas horizontal o verticalmente se unen en una imagen con un amplio campo visual.</p><p>El caso habitual son los panoramas anchos y recortados — una vista de 360 grados completa es un caso especial, no la norma. Para que las líneas rectas permanezcan rectas y no aparezcan imágenes fantasma, lo ideal es girar alrededor del punto nodal del objetivo; según el ángulo de imagen se emplean proyecciones cilíndricas o esféricas.</p><p>Cuando se combinan muchas filas, un panorama se convierte al mismo tiempo en una toma Gigapixel de alta resolución.</p>",
+  "meta_description": "Panorama-Stitching: unir tomas desplazadas para formar un amplio panorama. Los recortes anchos son el caso habitual, los 360 grados un caso especial.",
+  "faq_items": "[{\"question\": \"¿Por qué se gira alrededor del punto nodal?\", \"answer\": \"Para evitar errores de paralaje. Solo así el primer plano y el fondo no se desplazan entre sí y el panorama puede ensamblarse correctamente.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Panorama-Stitching",
+    "slug": "panorama-stitching",
+    "short_definition": "Eine Form des Stitchings, bei der versetzte Aufnahmen zu einem breiten Panorama verbunden werden. Der Normalfall sind breite Ausschnitte — 360-Grad-Rundumansichten sind ein Sonderfall, nicht die Regel.",
+    "long_definition": "<p>Panorama-Stitching ist die Anwendung des Stitchings auf einen erweiterten Bildwinkel. Mehrere horizontal oder vertikal versetzte Aufnahmen werden zu einem Bild mit breitem Blickfeld verbunden.</p><p>Der Normalfall sind breite, ausschnitthafte Panoramen — eine vollständige 360-Grad-Rundumansicht ist ein Sonderfall, nicht die Regel. Damit gerade Linien gerade bleiben und keine Geisterbilder entstehen, wird idealerweise um den Nodalpunkt des Objektivs gedreht; je nach Bildwinkel kommen zylindrische oder sphärische Projektionen zum Einsatz.</p><p>Werden viele Reihen kombiniert, entsteht aus einem Panorama zugleich eine hochauflösende Gigapixel-Aufnahme.</p>",
+    "meta_description": "Panorama-Stitching: versetzte Aufnahmen zu einem breiten Panorama verbinden. Breite Ausschnitte sind der Normalfall, 360 Grad ein Sonderfall.",
+    "faq_items": "[{\"question\":\"Warum dreht man um den Nodalpunkt?\",\"answer\":\"Um Parallaxenfehler zu vermeiden. Nur so verschieben sich Vorder- und Hintergrund nicht gegeneinander und das Panorama lässt sich sauber zusammensetzen.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

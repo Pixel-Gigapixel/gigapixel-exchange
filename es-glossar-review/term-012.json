@@ -1,0 +1,22 @@
+{
+  "de_uid": 12,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Punto nodal",
+  "slug": "punto-nodal",
+  "short_definition": "El punto del objetivo alrededor del cual debe girarse la cámara para evitar errores de paralaje — denominado con mayor precisión técnica «No-Parallax-Point».",
+  "long_definition": "<p>El punto nodal es, en la fotografía panorámica y gigapíxel, el punto de giro alrededor del cual debe rotar la cámara para que no aparezcan errores de paralaje al realizar el barrido. Técnicamente, este punto se denomina «No-Parallax-Point» o pupila de entrada; no obstante, el término «punto nodal» se ha consolidado en la práctica.</p><p>Cuando la cámara gira exactamente alrededor de este punto, los elementos cercanos y lejanos de la imagen mantienen su posición relativa entre sí, y las tomas superpuestas pueden unirse mediante stitching sin costuras. El punto se determina una sola vez para cada combinación objetivo-distancia focal y se ajusta en la cabeza panorámica.</p>",
+  "meta_description": "Punto nodal: el punto de giro del objetivo (denominación correcta: No-Parallax-Point) alrededor del cual debe rotar la cámara para un stitching sin paralaje.",
+  "faq_items": "[{\"question\": \"¿Es «punto nodal» el término correcto?\", \"answer\": \"Técnicamente, el término más preciso es «No-Parallax-Point» o pupila de entrada. Sin embargo, en la práctica se habla mayoritariamente de punto nodal.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Nodalpunkt",
+    "slug": "nodalpunkt",
+    "short_definition": "Der Punkt im Objektiv, um den die Kamera gedreht werden muss, um Parallaxenfehler zu vermeiden – fachlich genauer als „No-Parallax-Point“ bezeichnet.",
+    "long_definition": "<p>Der Nodalpunkt ist in der Panorama- und Gigapixel-Fotografie der Drehpunkt, um den die Kamera rotiert werden muss, damit beim Schwenken kein Parallaxenfehler auftritt. Fachlich korrekt heißt dieser Punkt „No-Parallax-Point“ oder Eintrittspupille; der Begriff Nodalpunkt hat sich in der Praxis dennoch eingebürgert.</p><p>Wird die Kamera exakt um diesen Punkt gedreht, behalten nahe und ferne Bildelemente ihre relative Lage zueinander, und überlappende Aufnahmen lassen sich nahtlos stitchen. Ermittelt wird der Punkt für jede Objektiv-Brennweiten-Kombination einmalig und am Panoramakopf eingestellt.</p>",
+    "meta_description": "Nodalpunkt: der Drehpunkt im Objektiv (korrekt: No-Parallax-Point), um den die Kamera für parallaxefreies Stitching rotiert werden muss.",
+    "faq_items": "[{\"question\":\"Ist „Nodalpunkt“ der korrekte Begriff?\",\"answer\":\"Fachlich genauer ist „No-Parallax-Point“ bzw. Eintrittspupille. In der Praxis wird jedoch meist vom Nodalpunkt gesprochen.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

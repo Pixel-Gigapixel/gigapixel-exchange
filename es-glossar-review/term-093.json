@@ -1,0 +1,22 @@
+{
+  "de_uid": 93,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Impresión UV",
+  "slug": "impresion-uv",
+  "short_definition": "Proceso de impresión digital en el que la tinta de curado UV se endurece de inmediato bajo luz UV. Permite impresiones brillantes y resistentes al roce en materiales prácticamente ilimitados.",
+  "long_definition": "<p>En la impresión UV, la tinta se cura con luz UV inmediatamente después de su aplicación. No se seca por absorción en el material, sino que endurece como una capa sólida sobre la superficie.</p><p>Esto permite imprimir en materiales prácticamente ilimitados, incluso no absorbentes, como lámina, madera, metal y vidrio. Las impresiones son de colores brillantes, resistentes al roce y duraderas, lo que hace que la impresión UV resulte atractiva para muchas aplicaciones de gran formato e impresión directa.</p>",
+  "meta_description": "Impresión UV: impresión digital con tinta de curado UV – impresiones brillantes y resistentes al roce en materiales prácticamente ilimitados.",
+  "faq_items": "[{\"question\": \"¿Sobre qué materiales se puede imprimir con impresión UV?\", \"answer\": \"En materiales prácticamente ilimitados, incluso no absorbentes como lámina, madera, metal o vidrio – la tinta endurece sobre la superficie.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "UV-Druck",
+    "slug": "uv-druck",
+    "short_definition": "Digitaldruckverfahren, bei dem UV-härtende Tinte sofort unter UV-Licht aushärtet. Ermöglicht brillante, wischfeste Drucke auf nahezu beliebigen Materialien.",
+    "long_definition": "<p>Beim UV-Druck wird die Tinte unmittelbar nach dem Auftragen mit UV-Licht ausgehärtet. Sie trocknet nicht durch Einziehen ins Material, sondern härtet als feste Schicht auf der Oberfläche aus.</p><p>Dadurch lässt sich auf nahezu beliebigen, auch unsaugenden Materialien drucken – von Folie über Holz bis Metall und Glas. Die Drucke sind farbbrillant, wischfest und widerstandsfähig, was UV-Druck für viele Großformat- und Direktdruck-Anwendungen attraktiv macht.</p>",
+    "meta_description": "UV-Druck: Digitaldruck mit UV-härtender Tinte – brillante, wischfeste Drucke auf nahezu beliebigen Materialien.",
+    "faq_items": "[{\"question\":\"Worauf kann man im UV-Druck drucken?\",\"answer\":\"Auf nahezu beliebige Materialien, auch unsaugende wie Folie, Holz, Metall oder Glas – die Tinte härtet auf der Oberfläche aus.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

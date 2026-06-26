@@ -1,0 +1,22 @@
+{
+  "de_uid": 3,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Terapíxel",
+  "slug": "terapixel",
+  "short_definition": "Una toma con al menos un billón de píxeles (1000 gigapíxeles), compuesta por decenas de miles de imágenes individuales. Una única imagen en un formato especial – un raro proyecto especial.",
+  "long_definition": "<p>Un terapíxel designa una resolución de imagen de un billón de píxeles — el millar de veces una toma de gigapíxel y un millón de megapíxeles. Estas tomas se crean mediante el stitching de decenas de miles de imágenes individuales en una única imagen global.</p><p>El resultado es una única imagen en un <strong>formato especial</strong>: el formato PSB habitual (Photoshop Big) está limitado a unos 90 gigapíxeles — también en nuestro portal — y no puede contener un terapíxel. Al igual que en los panoramas de 360 grados, aparecen distorsiones debidas a la proyección. Una imagen de este tipo puede visualizarse mediante Deep-Zoom basado en una pirámide de tiles.</p><p>Las tomas de terapíxel son raros proyectos especiales; el primero se realizó en 2012 como estudio de viabilidad y actualmente no es visible públicamente.</p>",
+  "meta_description": "Terapíxel: un billón de píxeles (1000 gigapíxeles) a partir de decenas de miles de imágenes individuales – una única imagen en formato especial (no PSB), con distorsiones como en los panoramas de 360°.",
+  "faq_items": "[{\"question\": \"¿Cuántos píxeles tiene una imagen de terapíxel?\", \"answer\": \"Un billón de píxeles – es decir, 1000 gigapíxeles o un millón de megapíxeles.\"}, {\"question\": \"¿Cómo se visualiza una imagen de terapíxel?\", \"answer\": \"Mediante Deep-Zoom basado en una pirámide de tiles, ya que ninguna pantalla ni impresión individual puede mostrar toda la información simultáneamente.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Terapixel",
+    "slug": "terapixel",
+    "short_definition": "Eine Aufnahme mit mindestens einer Billion Pixel (1000 Gigapixel), zusammengesetzt aus zehntausenden Einzelbildern. Ein einziges Bild in einem speziellen Format – ein seltenes Sonderprojekt.",
+    "long_definition": "<p>Ein Terapixel bezeichnet eine Bildauflösung von einer Billion Pixel — das Tausendfache einer Gigapixel-Aufnahme und eine Million Megapixel. Solche Aufnahmen entstehen durch das Stitchen von zehntausenden Einzelbildern zu einem einzigen Gesamtbild.</p><p>Das Ergebnis ist ein einziges Bild in einem <strong>speziellen Format</strong>: Das übliche PSB-Format (Photoshop Big) ist auf rund 90 Gigapixel begrenzt — auch in unserem Portal — und kann ein Terapixel nicht fassen. Wie bei 360-Grad-Panoramen treten dabei projektionsbedingte Verzerrungen auf. Betrachtbar ist ein solches Bild über Deep-Zoom auf Basis einer Tile-Pyramide.</p><p>Terapixel-Aufnahmen sind seltene Sonderprojekte; das erste wurde 2012 als Machbarkeitsstudie realisiert und ist derzeit nicht öffentlich betrachtbar.</p>",
+    "meta_description": "Terapixel: eine Billion Pixel (1000 Gigapixel) aus zehntausenden Einzelbildern – ein einziges Bild in speziellem Format (nicht PSB), mit Verzerrungen wie bei 360°-Panoramen.",
+    "faq_items": "[{\"question\":\"Wie viele Pixel hat ein Terapixel-Bild?\",\"answer\":\"Eine Billion Pixel – das sind 1000 Gigapixel oder eine Million Megapixel.\"},{\"question\":\"Wie betrachtet man ein Terapixel-Bild?\",\"answer\":\"Über Deep-Zoom auf Basis einer Tile-Pyramide, da kein einzelner Bildschirm oder Druck die gesamte Information gleichzeitig darstellen kann.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

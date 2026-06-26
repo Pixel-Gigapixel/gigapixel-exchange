@@ -1,0 +1,22 @@
+{
+  "de_uid": 16,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Pixelpitch",
+  "slug": "pixelpitch",
+  "short_definition": "La distancia entre los centros de píxeles adyacentes, generalmente en micrómetros. En la salida, determina con qué finura aparece resuelta la imagen.",
+  "long_definition": "<p>El pixelpitch designa la distancia entre centros de píxeles adyacentes. Medido en el sensor de la cámara (en micrómetros), influye en la sensibilidad a la luz y la resolución de detalle; en dispositivos de salida como pantallas o paredes LED, determina con qué finura se perciben los puntos de imagen a una distancia determinada.</p><p>Un pixelpitch menor significa más puntos de imagen por superficie y, por tanto, una representación más fina. En la impresión de gran formato, el pixelpitch está directamente relacionado con la resolución alcanzable por superficie y la distancia de visualización adecuada.</p>",
+  "meta_description": "Pixelpitch: la distancia entre centros de píxeles adyacentes. Determina con qué finura aparece resuelta una imagen en la salida.",
+  "faq_items": "[{\"question\": \"¿Qué significa un pixelpitch pequeño?\", \"answer\": \"Más puntos de imagen por superficie y, por tanto, una representación más fina y detallada: relevante para la nitidez percibida en la salida.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Pixelpitch",
+    "slug": "pixelpitch",
+    "short_definition": "Der Abstand zwischen den Mittelpunkten benachbarter Bildpunkte, meist in Mikrometern. Bei der Ausgabe bestimmt er, wie fein das Bild aufgelöst erscheint.",
+    "long_definition": "<p>Der Pixelpitch bezeichnet den Mittenabstand benachbarter Pixel. Auf dem Kamerasensor gemessen (in Mikrometern) beeinflusst er Lichtempfindlichkeit und Detailauflösung; bei Ausgabegeräten wie Displays oder LED-Wänden bestimmt er, wie fein Bildpunkte aus einer bestimmten Entfernung wahrgenommen werden.</p><p>Ein kleinerer Pixelpitch bedeutet mehr Bildpunkte pro Fläche und damit eine feinere Darstellung. Im Großformatdruck steht der Pixelpitch in direktem Zusammenhang mit der erreichbaren Auflösung pro Fläche und dem sinnvollen Betrachtungsabstand.</p>",
+    "meta_description": "Pixelpitch: der Mittenabstand benachbarter Bildpunkte. Bestimmt, wie fein ein Bild bei der Ausgabe aufgelöst erscheint.",
+    "faq_items": "[{\"question\":\"Was bedeutet ein kleiner Pixelpitch?\",\"answer\":\"Mehr Bildpunkte pro Fläche und damit eine feinere, detailreichere Darstellung – relevant für die wahrgenommene Schärfe bei der Ausgabe.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

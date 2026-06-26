@@ -1,0 +1,22 @@
+{
+  "de_uid": 72,
+  "category": 5,
+  "is_methodology_term": 0,
+  "title": "Escalado por IA / Interpolación",
+  "slug": "escalado-por-ia-interpolacion",
+  "short_definition": "Procedimientos que amplían una imagen mediante cálculo e inventan píxeles adicionales. El resultado parece más detallado, pero no contiene ningún detalle captado realmente.",
+  "long_definition": "<p>La interpolación y el escalado por IA aumentan el número de píxeles de una imagen mediante cálculo: los puntos de imagen faltantes se estiman y, en los procedimientos de IA, se complementan de forma plausible a partir de patrones aprendidos. La imagen parece así más grande y aparentemente más nítida.</p><p>Lo decisivo es: este detalle está <strong>inventado, no captado</strong>. Al observar de cerca aparecen artefactos, estructuras falsas o una impresión suavizada artificialmente. Las verdaderas tomas gigapíxel se crean de forma puramente óptica mediante stitching de imágenes individuales reales — sin escalado por IA. Precisamente eso es lo que las diferencia de las imágenes ampliadas por cálculo.</p>",
+  "meta_description": "Escalado por IA / Interpolación: píxeles inventados mediante cálculo en lugar de detalle captado realmente. Las verdaderas imágenes gigapíxel se crean ópticamente, sin escalado.",
+  "faq_items": "[{\"question\": \"¿Es el detalle ampliado por IA un detalle real?\", \"answer\": \"No. Está inventado de forma plausible, no captado. La verdadera resolución gigapíxel se obtiene ópticamente mediante stitching de tomas reales.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "KI-Upscaling / Interpolation",
+    "slug": "ki-upscaling-interpolation",
+    "short_definition": "Verfahren, die ein Bild rechnerisch vergrößern und dabei zusätzliche Pixel erfinden. Das Ergebnis sieht detaillierter aus, enthält aber kein real aufgenommenes Detail.",
+    "long_definition": "<p>Interpolation und KI-Upscaling erhöhen die Pixelzahl eines Bildes rechnerisch: Fehlende Bildpunkte werden geschätzt, bei KI-Verfahren anhand gelernter Muster plausibel ergänzt. Das Bild wirkt dadurch größer und vermeintlich schärfer.</p><p>Entscheidend ist: Dieses Detail ist <strong>erfunden, nicht aufgenommen</strong>. Bei genauem Hinsehen entstehen Artefakte, falsche Strukturen oder ein glattgerechneter Eindruck. Echte Gigapixel-Aufnahmen entstehen rein optisch durch Stitching realer Einzelbilder – ohne KI-Upscaling. Genau das unterscheidet sie von hochgerechneten Bildern.</p>",
+    "meta_description": "KI-Upscaling / Interpolation: rechnerisch erfundene Pixel statt real aufgenommenem Detail. Echte Gigapixel-Bilder entstehen optisch, ohne Upscaling.",
+    "faq_items": "[{\"question\":\"Ist KI-hochgerechnetes Detail echtes Detail?\",\"answer\":\"Nein. Es ist plausibel erfunden, nicht aufgenommen. Echte Gigapixel-Auflösung entsteht optisch durch Stitching realer Aufnahmen.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,22 @@
+{
+  "de_uid": 13,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Técnica HDR",
+  "slug": "tecnica-hdr",
+  "short_definition": "Una técnica que combina varias tomas con diferente exposición para representar con fidelidad de detalle las luces y las sombras de motivos con un rango de contraste muy elevado.",
+  "long_definition": "<p>HDR son las siglas de High Dynamic Range. La técnica aborda el problema de que un sensor de cámara no puede capturar de una sola vez todo el rango de luminosidad de escenas con un contraste muy elevado —por ejemplo, un cielo luminoso sobre un interior oscuro.</p><p>Para ello se realizan varias tomas con diferente exposición (bracketing) y se combinan de forma que tanto las zonas más claras como las más oscuras queden completamente detalladas. El resultado se convierte a continuación al rango de contraste representable en pantalla o en impresión.</p><p>En combinación con el stitching de gigapíxeles, la técnica HDR exige especial cuidado con los elementos de la imagen en movimiento.</p>",
+  "meta_description": "Técnica HDR: la combinación de tomas con diferente exposición para representar con fidelidad de detalle las luces y las sombras de motivos con alto contraste.",
+  "faq_items": "[{\"question\": \"¿Cuándo tiene sentido usar HDR?\", \"answer\": \"En motivos con un rango de contraste muy elevado, como un cielo luminoso y un primer plano oscuro, que un sensor no puede capturar completamente en una sola toma.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "HDR-Verfahren",
+    "slug": "hdr-verfahren",
+    "short_definition": "Ein Verfahren, das mehrere unterschiedlich belichtete Aufnahmen kombiniert, um Motive mit sehr hohem Kontrastumfang detailtreu in Lichtern und Schatten abzubilden.",
+    "long_definition": "<p>HDR steht für High Dynamic Range. Das Verfahren begegnet dem Problem, dass ein Kamerasensor nicht den gesamten Helligkeitsumfang sehr kontrastreicher Szenen auf einmal erfassen kann – etwa einen hellen Himmel über einem dunklen Innenraum.</p><p>Dazu werden mehrere Aufnahmen mit unterschiedlicher Belichtung erstellt (Bracketing) und so verrechnet, dass sowohl die hellsten als auch die dunkelsten Bereiche durchgezeichnet bleiben. Das Ergebnis wird anschließend in den darstellbaren Kontrastumfang von Bildschirm oder Druck überführt.</p><p>In Verbindung mit Gigapixel-Stitching erfordert HDR besondere Sorgfalt bei bewegten Bildelementen.</p>",
+    "meta_description": "HDR-Verfahren: das Kombinieren unterschiedlich belichteter Aufnahmen, um kontrastreiche Motive in Lichtern und Schatten detailtreu abzubilden.",
+    "faq_items": "[{\"question\":\"Wann ist HDR sinnvoll?\",\"answer\":\"Bei Motiven mit sehr hohem Kontrastumfang, etwa heller Himmel und dunkler Vordergrund, die ein Sensor nicht in einer Aufnahme vollständig erfassen kann.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

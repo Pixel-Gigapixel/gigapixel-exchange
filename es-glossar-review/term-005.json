@@ -1,0 +1,22 @@
+{
+  "de_uid": 5,
+  "category": 1,
+  "is_methodology_term": 1,
+  "title": "HDR-Gigapixel con movimiento",
+  "slug": "hdr-gigapixel-con-movimiento",
+  "short_definition": "Una metodología desarrollada en la propia práctica que combina series de exposición HDR con Gigapixel-Stitching y trata de forma controlada los elementos en movimiento, en lugar de generarlos como artefactos.",
+  "long_definition": "<p>HDR-Gigapixel con movimiento combina dos técnicas exigentes: la ampliación del rango dinámico mediante series de exposición HDR y el aumento de resolución mediante Gigapixel-Stitching. La dificultad particular reside en los elementos en movimiento —como agua, nubes, follaje o personas— que cambian de posición entre las exposiciones individuales y las teselas individuales.</p><p>Sin un tratamiento específico, dichos movimientos generan imágenes fantasma y artefactos de stitching. La metodología lo aborda mediante una estrategia de captura y composición coordinada que resuelve de forma consistente las zonas en movimiento, manteniendo al mismo tiempo un alto rango dinámico y la resolución de detalle completa.</p><p>La metodología fue desarrollada en la propia obra; ejemplos de trabajos se encuentran como páginas de detalle en el portal.</p>",
+  "meta_description": "HDR-Gigapixel con movimiento: una metodología propia que combina HDR y Gigapixel-Stitching y trata motivos en movimiento sin artefactos.",
+  "faq_items": "[{\"question\": \"¿Por qué los motivos en movimiento son problemáticos en HDR-Gigapixel?\", \"answer\": \"Porque los elementos se desplazan entre exposiciones individuales y teselas, generando de otro modo imágenes fantasma y artefactos de stitching. La metodología resuelve estas zonas de forma consistente.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "HDR-Gigapixel mit Bewegung",
+    "slug": "hdr-gigapixel-mit-bewegung",
+    "short_definition": "Eine in eigener Praxis entwickelte Methodik, die HDR-Belichtungsreihen mit Gigapixel-Stitching verbindet und dabei bewegte Bildelemente kontrolliert behandelt, statt sie als Artefakte zu erzeugen.",
+    "long_definition": "<p>HDR-Gigapixel mit Bewegung verbindet zwei anspruchsvolle Verfahren: die Erweiterung des Dynamikumfangs durch HDR-Belichtungsreihen und die Auflösungssteigerung durch Gigapixel-Stitching. Die besondere Schwierigkeit liegt in bewegten Bildelementen – etwa Wasser, Wolken, Laub oder Menschen –, die zwischen den Einzelbelichtungen und Einzelkacheln ihre Position verändern.</p><p>Ohne gezielte Behandlung führen solche Bewegungen zu Geisterbildern und Stitching-Artefakten. Die Methodik begegnet dem durch eine abgestimmte Aufnahme- und Zusammensetzungsstrategie, die bewegte Bereiche konsistent auflöst, während gleichzeitig hoher Dynamikumfang und volle Detailauflösung erhalten bleiben.</p><p>Die Methodik wurde im eigenen Werk entwickelt; Beispielarbeiten finden sich als Detailseiten im Portal.</p>",
+    "meta_description": "HDR-Gigapixel mit Bewegung: eine eigene Methodik, die HDR und Gigapixel-Stitching verbindet und bewegte Motive artefaktfrei behandelt.",
+    "faq_items": "[{\"question\":\"Warum sind bewegte Motive bei HDR-Gigapixel problematisch?\",\"answer\":\"Weil sich Elemente zwischen Einzelbelichtungen und Kacheln verschieben und sonst Geisterbilder sowie Stitching-Artefakte entstehen. Die Methodik löst diese Bereiche konsistent auf.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,22 @@
+{
+  "de_uid": 2,
+  "category": 2,
+  "is_methodology_term": 0,
+  "title": "Stitching",
+  "slug": "stitching",
+  "short_definition": "El ensamblaje asistido por software de muchas imágenes individuales superpuestas en una imagen global sin costuras. Técnica fundamental de cualquier toma gigapíxel y panorámica.",
+  "long_definition": "<p>El stitching designa el ensamblaje asistido por ordenador de varias tomas individuales superpuestas en una única imagen sin costuras. El software reconoce características comunes de la imagen en las zonas de solapamiento, alinea geométricamente las imágenes individuales y ajusta el brillo y el color.</p><p>El stitching es la base de las tomas panorámicas y gigapíxel: en lugar de una única imagen del sensor, se capturan y combinan muchas imágenes parciales, cada una con su resolución completa. La calidad depende de una toma precisa —idealmente alrededor del punto nodal— y de un solapamiento suficiente.</p><p>Los errores durante la captura o el ensamblaje pueden provocar artefactos de stitching visibles.</p>",
+  "meta_description": "Stitching: el ensamblaje sin costuras de muchas imágenes individuales en una imagen global — la técnica fundamental de cualquier toma gigapíxel y panorámica.",
+  "faq_items": "[{\"question\": \"¿Para qué se necesita el stitching?\", \"answer\": \"Para crear a partir de muchas imágenes individuales una imagen global con una resolución significativamente mayor o un ángulo de visión más amplio — la base de la fotografía panorámica y gigapíxel.\"}, {\"question\": \"¿Por qué deben solaparse las imágenes?\", \"answer\": \"El software necesita características comunes en las zonas de solapamiento para alinear y combinar correctamente las imágenes individuales.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Stitching",
+    "slug": "stitching",
+    "short_definition": "Das softwaregestützte Zusammenfügen vieler überlappender Einzelbilder zu einem nahtlosen Gesamtbild. Grundtechnik jeder Gigapixel- und Panorama-Aufnahme.",
+    "long_definition": "<p>Stitching bezeichnet das rechnergestützte Zusammensetzen mehrerer überlappender Einzelaufnahmen zu einem einzigen, nahtlosen Bild. Die Software erkennt gemeinsame Bildmerkmale in den Überlappungsbereichen, richtet die Einzelbilder geometrisch aus und gleicht Helligkeit und Farbe an.</p><p>Stitching ist die Grundlage für Panorama- und Gigapixel-Aufnahmen: Statt eines einzelnen Sensorbildes werden viele Teilbilder mit jeweils voller Auflösung erfasst und verbunden. Die Qualität hängt von präziser Aufnahme – idealerweise um den Nodalpunkt – sowie ausreichender Überlappung ab.</p><p>Fehler beim Aufnehmen oder Zusammensetzen können sichtbare Stitching-Artefakte verursachen.</p>",
+    "meta_description": "Stitching: das nahtlose Zusammenfügen vieler Einzelbilder zu einem Gesamtbild – die Grundtechnik jeder Gigapixel- und Panorama-Aufnahme.",
+    "faq_items": "[{\"question\":\"Wofür braucht man Stitching?\",\"answer\":\"Um aus vielen Einzelbildern ein Gesamtbild mit deutlich höherer Auflösung oder größerem Bildwinkel zu erzeugen – die Basis von Panorama- und Gigapixel-Fotografie.\"},{\"question\":\"Warum müssen sich die Bilder überlappen?\",\"answer\":\"Die Software braucht gemeinsame Merkmale in den Überlappungsbereichen, um die Einzelbilder korrekt auszurichten und zu verbinden.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

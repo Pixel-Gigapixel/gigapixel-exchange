@@ -1,0 +1,22 @@
+{
+  "de_uid": 11,
+  "category": 1,
+  "is_methodology_term": 0,
+  "title": "Error de paralaje",
+  "slug": "error-de-paralaje",
+  "short_definition": "El desplazamiento aparente del primer plano respecto al fondo cuando la cámara no gira alrededor del punto nodal – principal causa de errores de stitching.",
+  "long_definition": "<p>El error de paralaje describe el desplazamiento aparente de los objetos cercanos respecto a los lejanos cuando el punto de toma varía entre dos imágenes. Si se gira la cámara alrededor de un punto distinto al punto nodal del objetivo, el primer plano y el fondo se desplazan de forma diferente.</p><p>En el stitching, esto provoca que las zonas solapadas no puedan alinearse con exactitud, generando bordes desplazados e imágenes fantasma. El efecto es especialmente pronunciado en motivos con elementos cercanos y lejanos.</p><p>El error de paralaje se evita haciendo girar la cámara con precisión alrededor del punto nodal, idealmente con una rótula panorámica adecuada.</p>",
+  "meta_description": "Error de paralaje: el desplazamiento diferencial del primer plano y el fondo al girar fuera del punto nodal – principal causa de errores de stitching.",
+  "faq_items": "[{\"question\": \"¿Cómo se evitan los errores de paralaje?\", \"answer\": \"Haciendo girar la cámara exactamente alrededor del punto nodal del objetivo, habitualmente con una rótula panorámica.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Parallaxenfehler",
+    "slug": "parallaxenfehler",
+    "short_definition": "Die scheinbare Verschiebung von Vorder- gegenüber Hintergrund, wenn die Kamera nicht um den Nodalpunkt gedreht wird – Hauptursache für Stitching-Fehler.",
+    "long_definition": "<p>Der Parallaxenfehler beschreibt die scheinbare Verschiebung naher Objekte gegenüber weiter entfernten, wenn sich der Aufnahmestandpunkt zwischen zwei Bildern verändert. Dreht man die Kamera um einen anderen Punkt als den Nodalpunkt des Objektivs, verschieben sich Vorder- und Hintergrund unterschiedlich.</p><p>Beim Stitching führt das dazu, dass sich überlappende Bereiche nicht exakt zur Deckung bringen lassen – es entstehen versetzte Kanten und Geisterbilder. Besonders bei Motiven mit nahen und fernen Elementen ist der Effekt ausgeprägt.</p><p>Vermieden wird der Parallaxenfehler, indem die Kamera präzise um den Nodalpunkt rotiert wird, idealerweise mit einem geeigneten Panoramakopf.</p>",
+    "meta_description": "Parallaxenfehler: die unterschiedliche Verschiebung von Vorder- und Hintergrund beim Drehen abseits des Nodalpunkts – Hauptursache für Stitching-Fehler.",
+    "faq_items": "[{\"question\":\"Wie vermeidet man Parallaxenfehler?\",\"answer\":\"Indem die Kamera exakt um den Nodalpunkt des Objektivs gedreht wird, üblicherweise mit einem Panoramakopf.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}

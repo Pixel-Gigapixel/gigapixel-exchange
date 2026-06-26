@@ -1,0 +1,22 @@
+{
+  "de_uid": 20,
+  "category": 4,
+  "is_methodology_term": 0,
+  "title": "Distancia de observación",
+  "slug": "distancia-de-observacion",
+  "short_definition": "La distancia desde la que se contempla una impresión. Determina de forma decisiva qué resolución de salida es necesaria para que una imagen se vea nítida.",
+  "long_definition": "<p>La distancia de observación es un factor central en la planificación de grandes formatos. El ojo humano resuelve menos detalles a mayor distancia — un cartel que se contempla desde varios metros necesita por ello una resolución de salida menor que una imagen a la que uno se acerca mucho.</p><p>De esto se deriva una regla práctica importante: no todo gran formato necesita una resolución extremadamente alta. Lo decisivo es la relación entre la resolución de salida y la distancia de observación típica. Aplicaciones como techos tensados o murales a los que uno se acerca mucho o que son muy grandes se benefician en cambio enormemente de la resolución Gigapixel, porque aquí se conserva la fidelidad de detalle completa incluso de cerca.</p>",
+  "meta_description": "Distancia de observación: la distancia desde la que se contempla una impresión — determina qué resolución es necesaria para que la imagen se vea nítida.",
+  "faq_items": "[{\"question\": \"¿Por qué es importante la distancia de observación?\", \"answer\": \"Porque el ojo resuelve menos detalles a mayor distancia. La resolución de salida necesaria depende de desde qué distancia se ve una impresión.\"}]",
+  "canonical_url": "",
+  "_checks": {},
+  "_de": {
+    "title": "Betrachtungsabstand",
+    "slug": "betrachtungsabstand",
+    "short_definition": "Die Entfernung, aus der ein Druck betrachtet wird. Sie bestimmt maßgeblich, welche Ausgabe-Auflösung nötig ist, damit ein Bild scharf wirkt.",
+    "long_definition": "<p>Der Betrachtungsabstand ist eine zentrale Größe bei der Planung von Großformaten. Das menschliche Auge löst aus größerer Entfernung weniger Details auf – ein Plakat, das aus mehreren Metern betrachtet wird, benötigt deshalb eine geringere Ausgabe-Auflösung als ein Bild, an das man dicht herantritt.</p><p>Daraus folgt die wichtige Praxisregel: Nicht jedes Großformat braucht extrem hohe Auflösung. Entscheidend ist das Verhältnis aus Ausgabe-Auflösung und typischem Betrachtungsabstand. Anwendungen wie Spanndecken oder Wandbilder, an die man nah herantritt oder die sehr groß sind, profitieren dagegen stark von Gigapixel-Auflösung, weil hier auch aus der Nähe volle Detailtreue erhalten bleibt.</p>",
+    "meta_description": "Betrachtungsabstand: die Entfernung, aus der ein Druck betrachtet wird – bestimmt, welche Auflösung nötig ist, damit das Bild scharf wirkt.",
+    "faq_items": "[{\"question\":\"Warum ist der Betrachtungsabstand wichtig?\",\"answer\":\"Weil das Auge aus größerer Entfernung weniger Details auflöst. Die nötige Ausgabe-Auflösung richtet sich danach, aus welcher Distanz ein Druck gesehen wird.\"}]"
+  },
+  "_model": "claude-sonnet-4-6"
+}
