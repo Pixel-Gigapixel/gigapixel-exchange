@@ -1,0 +1,2122 @@
+[
+ {
+  "id": "tx_cart.submit_order",
+  "de": "Kostenpflichtig bestellen",
+  "en": "Place order",
+  "fr": "Commander",
+  "es": "Realizar pedido de pago",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.stock_handling.add",
+  "de": "Gewünschte Anzahl dieses Artikels nicht verfügbar.",
+  "en": "Desired number of this item not available.",
+  "fr": "La quantité souhaitée de cet article n'est pas disponible.",
+  "es": "La cantidad deseada de este artículo no está disponible.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.stock_handling.update",
+  "de": "Gewünschte Anzahl dieses Artikels nicht verfügbar.",
+  "en": "Desired number of this item not available.",
+  "fr": "La quantité souhaitée de cet article n'est pas disponible.",
+  "es": "La cantidad deseada de este artículo no está disponible.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.success.stock_handling.add.one",
+  "de": "Artikel wurde zum Warenkorb hinzugefügt",
+  "en": "Item was added to cart.",
+  "fr": "L'article a été ajouté au panier.",
+  "es": "El artículo ha sido añadido al carrito",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.success.stock_handling.add.more",
+  "de": "%s Artikel wurden zum Warenkorb hinzugefügt",
+  "en": "%s Items were added to cart.",
+  "fr": "Les articles ont été ajoutés au panier.",
+  "es": "%s artículos han sido añadidos al carrito",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "validator.notempty.empty",
+  "de": "Der angegebene Wert ist nicht leer.",
+  "en": "validator.notempty.empty",
+  "fr": "La valeur indiquée n'était pas vide.",
+  "es": "El valor indicado no está vacío.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.mini_cart.empty_cart",
+  "de": "Der Warenkorb ist leer.",
+  "en": "Cart is empty.",
+  "fr": "Le panier est vide.",
+  "es": "El carrito está vacío.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.mini_cart.go_to_checkout",
+  "de": "Weiter zur Kasse",
+  "en": "Go to Checkout",
+  "fr": "Passer à la caisse",
+  "es": "Continuar con el pago",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.mini_cart.products_in_cart",
+  "de": "Artikel im Warenkorb.",
+  "en": "products in cart.",
+  "fr": "produits dans le panier.",
+  "es": "Artículos en el carrito.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart.billing_address",
+  "de": "Rechnungsadresse",
+  "en": "Billing Address",
+  "fr": "Adresse de facturation",
+  "es": "Dirección de facturación",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart.shipping_address",
+  "de": "Versandadresse",
+  "en": "Shipping Address",
+  "fr": "Adresse de livraison",
+  "es": "Dirección de envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart.use_billing_address",
+  "de": "Rechnungsadresse verwenden",
+  "en": "use Billing Address",
+  "fr": "utiliser l'adresse de facturation",
+  "es": "Usar dirección de facturación",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.thank_you_for_order",
+  "de": "Vielen Dank für Ihre Bestellung.",
+  "en": "Thank you for your order.",
+  "fr": "Merci pour votre commande.",
+  "es": "Gracias por su pedido.",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.thank_you_for_order_note",
+  "de": "Nachfolgend finden Sie eine Übersicht mit allen wichtigen Informationen zu Ihrer Bestellung.",
+  "en": "Below is an overview of all important information about your order.",
+  "fr": "Vous trouverez ci-dessous un récapitulatif de toutes les informations importantes concernant votre commande.",
+  "es": "A continuación encontrará un resumen de toda la información importante sobre su pedido.",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.order_information",
+  "de": "Bestellinformation",
+  "en": "Order Information",
+  "fr": "Informations sur la commande",
+  "es": "Información del pedido",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.order_summary",
+  "de": "Bestellübersicht",
+  "en": "Order Summary",
+  "fr": "Récapitulatif de la commande",
+  "es": "Resumen del pedido",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.payment_method",
+  "de": "Zahlungsart",
+  "en": "Payment method",
+  "fr": "Mode de paiement",
+  "es": "Método de pago",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.shipping_method",
+  "de": "Versandart",
+  "en": "Shipping method",
+  "fr": "Mode de livraison",
+  "es": "Método de envío",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.salutation",
+  "de": "Sehr geehrte(r) %s,",
+  "en": "Dear %s,",
+  "fr": "Bonjour %s,",
+  "es": "Hola %s,",
+  "pinned": true,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.title",
+  "de": "Produkt",
+  "en": "Product",
+  "fr": "Produit",
+  "es": "Producto",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.sku",
+  "de": "Artikelnummer",
+  "en": "tx_cart_domain_model_cart_product.sku",
+  "fr": "Référence article",
+  "es": "Número de artículo",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.sku.short",
+  "de": "Art.-Nr.",
+  "en": "tx_cart_domain_model_cart_product.sku.short",
+  "fr": "SKU",
+  "es": "N.º art.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.count",
+  "de": "Anzahl",
+  "en": "Quantity",
+  "fr": "Quantité",
+  "es": "Cantidad",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price",
+  "de": "Preis",
+  "en": "tx_cart_domain_model_cart_product.price",
+  "fr": "Prix",
+  "es": "Precio",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_net",
+  "de": "Preis (netto)",
+  "en": "tx_cart_domain_model_cart_product.price_net",
+  "fr": "Prix (net)",
+  "es": "Precio (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_gross",
+  "de": "Preis (brutto)",
+  "en": "tx_cart_domain_model_cart_product.price_gross",
+  "fr": "Prix (brut)",
+  "es": "Precio (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_per_unit",
+  "de": "Stückpreis",
+  "en": "tx_cart_domain_model_cart_product.price_per_unit",
+  "fr": "Prix unitaire",
+  "es": "Precio unitario",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_per_unit_net",
+  "de": "Stückpreis (netto)",
+  "en": "Price per unit (net)",
+  "fr": "Prix unitaire (net)",
+  "es": "Precio unitario (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_per_unit_gross",
+  "de": "Stückpreis (brutto)",
+  "en": "Price per unit (gross)",
+  "fr": "Prix unitaire (brut)",
+  "es": "Precio unitario (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_subtotal",
+  "de": "Zwischensumme",
+  "en": "Subtotal",
+  "fr": "Sous-total",
+  "es": "Subtotal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_subtotal_net",
+  "de": "Zwischensumme (net)",
+  "en": "tx_cart_domain_model_cart_product.price_subtotal_net",
+  "fr": "Sous-total (net)",
+  "es": "Subtotal (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.price_subtotal_gross",
+  "de": "Zwischensumme (gross)",
+  "en": "tx_cart_domain_model_cart_product.price_subtotal_gross",
+  "fr": "Sous-total (brut)",
+  "es": "Subtotal (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.tax",
+  "de": "Umsatzsteuer (%s)",
+  "en": "tx_cart_domain_model_cart_product.tax",
+  "fr": "Taxe (%s)",
+  "es": "Impuesto sobre el valor añadido (%s)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.discount",
+  "de": "Rabatt",
+  "en": "tx_cart_domain_model_cart_product.discount",
+  "fr": "Remise",
+  "es": "Descuento",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.total_net",
+  "de": "Gesamtpreis (netto)",
+  "en": "tx_cart_domain_model_cart_product.total_net",
+  "fr": "Prix total (net)",
+  "es": "Precio total (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.total_gross",
+  "de": "Gesamtpreis (brutto)",
+  "en": "tx_cart_domain_model_cart_product.total_gross",
+  "fr": "Prix total (brut)",
+  "es": "Precio total (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.service_net",
+  "de": "Service- und Versandkosten (netto)",
+  "en": "tx_cart_domain_model_cart_product.service_net",
+  "fr": "Frais de service et de livraison (net)",
+  "es": "Gastos de servicio y envío (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.service_gross",
+  "de": "Service- und Versandkosten (brutto)",
+  "en": "tx_cart_domain_model_cart_product.service_gross",
+  "fr": "Frais de service et de livraison (brut)",
+  "es": "Gastos de servicio y envío (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.discount_net",
+  "de": "Rabatt (netto)",
+  "en": "tx_cart_domain_model_cart_product.discount_net",
+  "fr": "Remise (net)",
+  "es": "Descuento (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.discount_gross",
+  "de": "Rabatt (brutto)",
+  "en": "tx_cart_domain_model_cart_product.discount_gross",
+  "fr": "Remise (brut)",
+  "es": "Descuento (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.title",
+  "de": "Produkt",
+  "en": "Product",
+  "fr": "Produit",
+  "es": "Producto",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.sku",
+  "de": "Artikelnummer",
+  "en": "Stock Keeping Unit",
+  "fr": "Référence article",
+  "es": "Número de artículo",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.sku.short",
+  "de": "Art.-Nr.",
+  "en": "SKU",
+  "fr": "SKU",
+  "es": "N.º art.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.count",
+  "de": "Anzahl",
+  "en": "Count",
+  "fr": "Quantité",
+  "es": "Cantidad",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.price",
+  "de": "Stückpreis",
+  "en": "Price (gross)",
+  "fr": "Prix unitaire",
+  "es": "Precio unitario",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.price_total",
+  "de": "Zwischensumme",
+  "en": "Subtotal",
+  "fr": "Sous-total",
+  "es": "Subtotal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.total",
+  "de": "Summe",
+  "en": "Total",
+  "fr": "Total",
+  "es": "Total",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.tax",
+  "de": "Umsatzsteuer (%s)",
+  "en": "tx_cart_domain_model_order_product.tax",
+  "fr": "Taxe (%s)",
+  "es": "Impuesto sobre el valor añadido (%s)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.discount",
+  "de": "Rabatt",
+  "en": "Discount",
+  "fr": "Remise",
+  "es": "Descuento",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.net",
+  "de": "Preis (netto)",
+  "en": "Net",
+  "fr": "Prix (net)",
+  "es": "Precio (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.gross",
+  "de": "Preis (brutto)",
+  "en": "Gross",
+  "fr": "Prix (brut)",
+  "es": "Precio (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.total_net",
+  "de": "Gesamtpreis (netto)",
+  "en": "Total Price (net)",
+  "fr": "Prix total (net)",
+  "es": "Precio total (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.total_gross",
+  "de": "Gesamtpreis (brutto)",
+  "en": "Total Price (gross)",
+  "fr": "Prix total (brut)",
+  "es": "Precio total (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.service_net",
+  "de": "Service- und Versandkosten (netto)",
+  "en": "Discount (net)",
+  "fr": "Frais de service et de livraison (net)",
+  "es": "Gastos de servicio y envío (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.service_gross",
+  "de": "Service- und Versandkosten (brutto)",
+  "en": "Service- and Shipping costs (gross)",
+  "fr": "Frais de service et de livraison (brut)",
+  "es": "Gastos de servicio y envío (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.discount_net",
+  "de": "Rabatt (netto)",
+  "en": "tx_cart_domain_model_order_product.discount_net",
+  "fr": "Remise (net)",
+  "es": "Descuento (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.discount_gross",
+  "de": "Rabatt (brutto)",
+  "en": "Discount (gross)",
+  "fr": "Remise (brut)",
+  "es": "Descuento (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.order_number",
+  "de": "Bestellnummer",
+  "en": "Order Number",
+  "fr": "Numéro de commande",
+  "es": "Número de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.order_date",
+  "de": "Bestelldatum",
+  "en": "Order Date",
+  "fr": "Date de commande",
+  "es": "Fecha del pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.total_gross",
+  "de": "Gesamtpreis",
+  "en": "Total Price (Gross)",
+  "fr": "Prix total (brut)",
+  "es": "Precio total",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.total_net",
+  "de": "Gesamtpreis (Netto)",
+  "en": "tx_cart_domain_model_order_item.total_net",
+  "fr": "Prix total (net)",
+  "es": "Precio total (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.order_pdfs",
+  "de": "Bestell PDFs",
+  "en": "tx_cart_domain_model_order_item.order_pdfs",
+  "fr": "PDF de commande",
+  "es": "PDFs del pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.invoice_pdfs",
+  "de": "Rechnung PDFs",
+  "en": "tx_cart_domain_model_order_item.invoice_pdfs",
+  "fr": "PDF de facture",
+  "es": "PDFs de factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.invoice_number",
+  "de": "Rechnungsnummer",
+  "en": "Invoice Number",
+  "fr": "Numéro de facture",
+  "es": "Número de factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.invoice_date",
+  "de": "Rechnungsdatum",
+  "en": "Invoice Date",
+  "fr": "Date de facture",
+  "es": "Fecha de factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.delivery_number",
+  "de": "Lieferscheinnummer",
+  "en": "Delivery Number",
+  "fr": "Numéro de livraison",
+  "es": "Número de entrega",
+  "pinned": true,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.delivery_date",
+  "de": "Lieferscheindatum",
+  "en": "Delivery Date",
+  "fr": "Date de livraison",
+  "es": "Fecha del albarán",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.billing_address",
+  "de": "Rechnungsadresse",
+  "en": "Billing Address",
+  "fr": "Adresse de facturation",
+  "es": "Dirección de facturación",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.shipping_address",
+  "de": "Versandadresse",
+  "en": "Shipping Address",
+  "fr": "Adresse de livraison",
+  "es": "Dirección de envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.order_shipping",
+  "de": "Versand",
+  "en": "Shipping",
+  "fr": "Livraison",
+  "es": "Envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.order_payment",
+  "de": "Zahlung",
+  "en": "Payment",
+  "fr": "Paiement",
+  "es": "Pago",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.comment",
+  "de": "Bemerkung",
+  "en": "Comment",
+  "fr": "Commentaire",
+  "es": "Observaciones",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_terms_and_conditions",
+  "de": "Ich habe die Allgemeinen Geschäftsbedingungen gelesen und stimme diesen zu.",
+  "en": "I have read the general terms and conditions agree to them.",
+  "fr": "J'ai lu les conditions générales et je les accepte.",
+  "es": "He leído las condiciones generales de contratación y las acepto.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_terms_and_conditions_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Allgemeinen Geschäftsbedingungen</a> gelesen und stimme diesen zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">general terms and conditions</a> and agree to them.",
+  "fr": "J'ai lu les <a href=\"%1$s\" target=\"%2$s\">conditions générales</a> et je les accepte.",
+  "es": "He leído las <a href=\"%1$s\" target=\"%2$s\">condiciones generales de contratación</a> y las acepto.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_terms_and_conditions.error.1361959228",
+  "de": "Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen.",
+  "en": "You have to agree to the general terms.",
+  "fr": "Vous devez accepter les conditions générales.",
+  "es": "Debe aceptar las condiciones generales de contratación.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_revocation_instruction",
+  "de": "Ich habe die Widerrufsbelehrung gelesen und stimme dieser zu.",
+  "en": "I have read the revocation instruction and agree to them.",
+  "fr": "J'ai lu les instructions de rétractation et je les accepte.",
+  "es": "He leído la política de desistimiento y la acepto.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_revocation_instruction_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Widerrufsbelehrung</a> gelesen und stimme dieser zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">revocation instruction</a> and agree to them.",
+  "fr": "J'ai lu les <a href=\"%1$s\" target=\"%2$s\">instructions de rétractation</a> et je les accepte.",
+  "es": "He leído la <a href=\"%1$s\" target=\"%2$s\">instrucción de desistimiento</a> y doy mi conformidad.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_revocation_instruction.error.1361959228",
+  "de": "Sie müssen der Widerrufsbelehrung zustimmen.",
+  "en": "You have to agree to the revocation instruction.",
+  "fr": "Vous devez accepter les instructions de rétractation.",
+  "es": "Debe aceptar la instrucción de desistimiento.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_privacy_policy",
+  "de": "Ich habe die Datenschutzerklärung gelesen und stimme dieser zu.",
+  "en": "I have read the privacy policy and agree to them.",
+  "fr": "J'ai lu la politique de confidentialité et je l'accepte.",
+  "es": "He leído la política de privacidad y doy mi conformidad.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_privacy_policy_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Datenschutzerklärung</a> gelesen und stimme dieser zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">privacy policy</a> and agree to them.",
+  "fr": "J'ai lu la <a href=\"%1$s\" target=\"%2$s\">politique de confidentialité</a> et je l'accepte.",
+  "es": "He leído la <a href=\"%1$s\" target=\"%2$s\">política de privacidad</a> y doy mi conformidad.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_privacy_policy.error.1361959228",
+  "de": "Sie müssen der Datenschutzerklärung zustimmen.",
+  "en": "You have to agree to the privacy policy.",
+  "fr": "Vous devez accepter la politique de confidentialité.",
+  "es": "Debe aceptar la política de privacidad.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address",
+  "de": null,
+  "en": "tx_cart_domain_model_order_address",
+  "fr": "Adresse de commande",
+  "es": "tx_cart_domain_model_order_address",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.title",
+  "de": "Titel",
+  "en": "Title",
+  "fr": "Titre",
+  "es": "Título",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.salutation",
+  "de": "Anrede",
+  "en": "Salutation",
+  "fr": "Civilité",
+  "es": "Tratamiento",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.first_name",
+  "de": "Vorname",
+  "en": "First Name",
+  "fr": "Prénom",
+  "es": "Nombre",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.last_name",
+  "de": "Nachname",
+  "en": "Last Name",
+  "fr": "Nom",
+  "es": "Apellidos",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.email",
+  "de": "E-Mail",
+  "en": "Email",
+  "fr": "E-mail",
+  "es": "Correo electrónico",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.phone",
+  "de": "Telefon",
+  "en": "Phone",
+  "fr": "Téléphone",
+  "es": "Teléfono",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.fax",
+  "de": "Fax",
+  "en": "Fax",
+  "fr": "Fax",
+  "es": "Fax",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.company",
+  "de": "Firma",
+  "en": "Company",
+  "fr": "Société",
+  "es": "Empresa",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.tax_identification_number",
+  "de": "Umsatzsteueridentifikationsnummer",
+  "en": "Tax Identification Number",
+  "fr": "Numéro d'identification fiscale",
+  "es": "Número de identificación fiscal (NIF/CIF)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.street",
+  "de": "Straße",
+  "en": "Street",
+  "fr": "Rue",
+  "es": "Calle",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.street_number",
+  "de": "Hausnummer",
+  "en": "Street Number",
+  "fr": "Numéro de rue",
+  "es": "Número",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.addition",
+  "de": "Adresszusatz",
+  "en": "Addition",
+  "fr": "Complément d'adresse",
+  "es": "Complemento de dirección",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.zip",
+  "de": "PLZ",
+  "en": "Zip",
+  "fr": "Code postal",
+  "es": "Código postal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.city",
+  "de": "Stadt",
+  "en": "City",
+  "fr": "Ville",
+  "es": "Ciudad",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_address.country",
+  "de": "Land",
+  "en": "Country",
+  "fr": "Pays",
+  "es": "País",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping",
+  "de": "Versand",
+  "en": "Shipping",
+  "fr": "Livraison",
+  "es": "Envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.name",
+  "de": "Name",
+  "en": "tx_cart_domain_model_order_shipping.name",
+  "fr": "Nom",
+  "es": "Nombre",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.net",
+  "de": "Preis (netto)",
+  "en": "tx_cart_domain_model_order_shipping.net",
+  "fr": "Prix (net)",
+  "es": "Precio (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.gross",
+  "de": "Preis (brutto)",
+  "en": "tx_cart_domain_model_order_shipping.gross",
+  "fr": "Prix (brut)",
+  "es": "Precio (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.tax",
+  "de": "Umsatzsteuer",
+  "en": "tx_cart_domain_model_order_shipping.tax",
+  "fr": "Taxe",
+  "es": "Impuesto sobre el valor añadido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.order_tax_class",
+  "de": "Steuerklasse",
+  "en": "tx_cart_domain_model_order_shipping.order_tax_class",
+  "fr": "Classe de taxe",
+  "es": "Clase fiscal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status",
+  "de": "Status",
+  "en": "Status",
+  "fr": "Statut",
+  "es": "Estado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status.all",
+  "de": "alle",
+  "en": "all",
+  "fr": "tous",
+  "es": "todos",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status.open",
+  "de": "offen",
+  "en": "open",
+  "fr": "ouvert",
+  "es": "abierto",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status.on_hold",
+  "de": "in Wartestellung",
+  "en": "on hold",
+  "fr": "en suspens",
+  "es": "en espera",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status.in_process",
+  "de": "in Bearbeitung",
+  "en": "in process",
+  "fr": "en cours",
+  "es": "en proceso",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_shipping.status.shipped",
+  "de": "ausgeliefert",
+  "en": "shipped",
+  "fr": "expédié",
+  "es": "entregado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment",
+  "de": "Zahlung",
+  "en": "Payment",
+  "fr": "Paiement",
+  "es": "Pago",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.name",
+  "de": "Name",
+  "en": "tx_cart_domain_model_order_payment.name",
+  "fr": "Nom",
+  "es": "Nombre",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.net",
+  "de": "Preis (netto)",
+  "en": "tx_cart_domain_model_order_payment.net",
+  "fr": "Prix (net)",
+  "es": "Precio (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.gross",
+  "de": "Preis (brutto)",
+  "en": "tx_cart_domain_model_order_payment.gross",
+  "fr": "Prix (brut)",
+  "es": "Precio (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.tax",
+  "de": "Umsatzsteuer",
+  "en": "tx_cart_domain_model_order_payment.tax",
+  "fr": "Taxe",
+  "es": "Impuesto sobre el valor añadido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.order_tax_class",
+  "de": "Steuerklasse",
+  "en": "tx_cart_domain_model_order_payment.order_tax_class",
+  "fr": "Classe de taxe",
+  "es": "Clase fiscal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status",
+  "de": "Status",
+  "en": "Status",
+  "fr": "Statut",
+  "es": "Estado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status.all",
+  "de": "alle",
+  "en": "all",
+  "fr": "tous",
+  "es": "todos",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status.open",
+  "de": "offen",
+  "en": "open",
+  "fr": "ouvert",
+  "es": "abierto",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status.pending",
+  "de": "ausstehend",
+  "en": "pending",
+  "fr": "en attente",
+  "es": "pendiente",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status.paid",
+  "de": "bezahlt",
+  "en": "paid",
+  "fr": "payé",
+  "es": "pagado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_payment.status.canceled",
+  "de": "storniert",
+  "en": "canceled",
+  "fr": "annulé",
+  "es": "cancelado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.buyer.subject",
+  "de": "Bestellbestätigung - %s",
+  "en": "Order confirmation - %s",
+  "fr": "Confirmation de commande - %s",
+  "es": "Confirmación de pedido - %s",
+  "pinned": true,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.seller.subject",
+  "de": "Bestelleingang - %s",
+  "en": "Order receipt - %s",
+  "fr": "Reçu de commande - %s",
+  "es": "Recepción del pedido - %s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.format.date",
+  "de": "d.m.Y",
+  "en": "Y-m-d",
+  "fr": "Y-m-d",
+  "es": "d.m.Y",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filter",
+  "de": "filter",
+  "en": "filter",
+  "fr": "filtrer",
+  "es": "filtrar",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filterCustomer",
+  "de": "Kunde",
+  "en": "filterCustomer",
+  "fr": "Client",
+  "es": "Cliente",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filterOrderNumber",
+  "de": "Bestellnummer",
+  "en": "filterOrderNumber",
+  "fr": "Numéro de commande",
+  "es": "Número de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filterInvoiceNumber",
+  "de": "Rechnungsnummer",
+  "en": "filterInvoiceNumber",
+  "fr": "Numéro de facture",
+  "es": "Número de factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filterStartDate",
+  "de": "Start Datum",
+  "en": "filterStartDate",
+  "fr": "Date de début",
+  "es": "Fecha de inicio",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "filterEndDate",
+  "de": "End Datum",
+  "en": "filterEndDate",
+  "fr": "Date de fin",
+  "es": "Fecha de fin",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.add_product",
+  "de": "in den Warenkorb",
+  "en": "tx_cart.add_product",
+  "fr": "ajouter au panier",
+  "es": "añadir al carrito",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.remove_product",
+  "de": "entfernen",
+  "en": "remove",
+  "fr": "retirer",
+  "es": "eliminar",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.clear_cart",
+  "de": "Warenkorb löschen",
+  "en": "clear cart",
+  "fr": "vider le panier",
+  "es": "Vaciar carrito",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.update_cart",
+  "de": "Warenkorb aktualisieren",
+  "en": "update cart",
+  "fr": "mettre à jour le panier",
+  "es": "Actualizar carrito",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.update_status",
+  "de": "Status aktualisieren",
+  "en": "update status",
+  "fr": "mettre à jour le statut",
+  "es": "Actualizar estado",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.add_coupon",
+  "de": "Gutscheincode absenden",
+  "en": "add coupon",
+  "fr": "ajouter un bon",
+  "es": "Enviar código de cupón",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.remove_coupon",
+  "de": "entfernen",
+  "en": "remove",
+  "fr": "retirer",
+  "es": "eliminar",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.same_address",
+  "de": "An die gleiche Adresse versenden.",
+  "en": "Send it to the same address.",
+  "fr": "Envoyer à la même adresse.",
+  "es": "Enviar a la misma dirección.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.variants-select.choose",
+  "de": "Bitte auswählen ...",
+  "en": "tx_cart.variants-select.choose",
+  "fr": "Veuillez choisir ...",
+  "es": "Por favor, seleccione ...",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.history_back",
+  "de": "zurück",
+  "en": "back",
+  "fr": "retour",
+  "es": "atrás",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.validation",
+  "de": "Es ist ein Fehler aufgetreten. Bitte prüfen Sie Ihre Eingaben.",
+  "en": "An error has occurred. Please check your entries.",
+  "fr": "Une erreur s'est produite. Veuillez vérifier vos saisies.",
+  "es": "Se ha producido un error. Por favor, compruebe sus datos.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.cart.action.set_payment.not_available",
+  "de": "Diese Bezahlmethode ist nicht verfügbar.",
+  "en": "This payment method is not available.",
+  "fr": "Ce mode de paiement n'est pas disponible.",
+  "es": "Este método de pago no está disponible.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.cart.action.set_shipping.not_available",
+  "de": "Diese Versandmethode ist nicht verfügbar.",
+  "en": "This shipping method is not available.",
+  "fr": "Ce mode de livraison n'est pas disponible.",
+  "es": "Este método de envío no está disponible.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.successfully_paid",
+  "de": "Die Bestellung wurde erfolgreich bezahlt.",
+  "en": "tx_cart.controller.order.action.payment_success.successfully_paid",
+  "fr": "La commande a été payée avec succès.",
+  "es": "El pedido ha sido pagado correctamente.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.error_occured",
+  "de": "Es ist ein Fehler bei der Aktualisierung der Bestellung aufgetreten.",
+  "en": "tx_cart.controller.order.action.payment_success.error_occured",
+  "fr": "Une erreur s'est produite lors de la mise à jour de la commande.",
+  "es": "Se ha producido un error al actualizar el pedido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.access_denied",
+  "de": "Access denied!",
+  "en": "tx_cart.controller.order.action.payment_success.access_denied",
+  "fr": "Accès refusé !",
+  "es": "Access denied!",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.thank_you",
+  "de": "Vielen Dank für Ihre Bestellung.",
+  "en": "tx_cart.controller.order.action.payment_success.thank_you",
+  "fr": "Merci pour votre commande.",
+  "es": "Muchas gracias por su pedido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.thank_you_order_number",
+  "de": "Ihre Bestellnummer lautet: %1$s",
+  "en": "tx_cart.controller.order.action.payment_success.thank_you_order_number",
+  "fr": "Votre numéro de commande est : %1$s",
+  "es": "Su número de pedido es: %1$s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_cancel.successfully_canceled",
+  "de": "Die Bestellung wurde abgebrochen.",
+  "en": "tx_cart.controller.order.action.payment_cancel.successfully_canceled",
+  "fr": "La commande a été annulée.",
+  "es": "El pedido ha sido cancelado.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_cancel.error_occured",
+  "de": "Es ist ein Fehler bei der Aktualisierung der Bestellung aufgetreten.",
+  "en": "tx_cart.controller.order.action.payment_cancel.error_occured",
+  "fr": "Une erreur s'est produite lors de la mise à jour de la commande.",
+  "es": "Se ha producido un error al actualizar el pedido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_cancel.access_denied",
+  "de": "Access denied!",
+  "en": "tx_cart.controller.order.action.payment_cancel.access_denied",
+  "fr": "Accès refusé !",
+  "es": "Access denied!",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_cancel.thank_you",
+  "de": "Vielen Dank.",
+  "en": "tx_cart.controller.order.action.payment_cancel.thank_you",
+  "fr": "Merci.",
+  "es": "Muchas gracias.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.order.success",
+  "de": "Die generierte Bestellnummer lautet: %s.",
+  "en": "The generated order number is: %s.",
+  "fr": "Le numéro de commande généré est : %s.",
+  "es": "El número de pedido generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.order.already_generated",
+  "de": "Es existiert bereits eine Bestellnummer.",
+  "en": "An order number already exists!",
+  "fr": "Un numéro de commande existe déjà !",
+  "es": "Ya existe un número de pedido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.invoice.success",
+  "de": "Die generierte Rechnungsnummer lautet: %s.",
+  "en": "The generated invoice number is: %s.",
+  "fr": "Le numéro de facture généré est : %s",
+  "es": "El número de factura generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.invoice.already_generated",
+  "de": "Es existiert bereits eine Rechnungsnummer.",
+  "en": "An invoice number already exists!",
+  "fr": "Un numéro de facture existe déjà !",
+  "es": "Ya existe un número de factura.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.delivery.success",
+  "de": "Die generierte Lieferscheinnummer lautet: %s.",
+  "en": "The generated delivery number is: %s.",
+  "fr": "Le numéro de livraison généré est : %s",
+  "es": "El número de albarán generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.delivery.already_generated",
+  "de": "Es existiert bereits eine Lieferscheinnummer.",
+  "en": "An delivery number already exists!",
+  "fr": "Un numéro de livraison existe déjà !",
+  "es": "Ya existe un número de albarán.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.update_payment_action.success",
+  "de": "Die Zahlung wurde erfolgreich aktualisiert.",
+  "en": "The payment was successfully updated.",
+  "fr": "Le paiement a été mis à jour avec succès.",
+  "es": "El pago ha sido actualizado correctamente.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.update_shipping_action.success",
+  "de": "Der Versand wurde erfolgreich aktualisiert.",
+  "en": "The shipping was successfully updated.",
+  "fr": "La livraison a été mise à jour avec succès.",
+  "es": "El envío ha sido actualizado correctamente.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.actions",
+  "de": "Aktionen",
+  "en": "tx_cart.controller.order.actions",
+  "fr": "Actions",
+  "es": "Acciones",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show",
+  "de": "Anzeigen",
+  "en": "Show",
+  "fr": "Afficher",
+  "es": "Ver",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.edit",
+  "de": "Bearbeiten",
+  "en": "Edit",
+  "fr": "Modifier",
+  "es": "Editar",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.list",
+  "de": "Auflisten",
+  "en": "List",
+  "fr": "Liste",
+  "es": "Listar",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.export.csv",
+  "de": "Export (CSV)",
+  "en": "Export (CSV)",
+  "fr": "Exporter (CSV)",
+  "es": "Exportar (CSV)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateOrderNumber",
+  "de": "Bestellnummer generieren",
+  "en": "Generate Order Number",
+  "fr": "Générer un numéro de commande",
+  "es": "Generar número de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateOrderDocument",
+  "de": "Bestellbestätigung generieren",
+  "en": "Generate Order Document",
+  "fr": "Générer un document de commande",
+  "es": "Generar confirmación de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.downloadOrderDocument",
+  "de": "Bestellbestätigung herunterladen",
+  "en": "Download Order Document",
+  "fr": "Télécharger le document de commande",
+  "es": "Descargar confirmación de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateInvoiceNumber",
+  "de": "Rechnungsnummer generieren",
+  "en": "Generate Invoice Number",
+  "fr": "Générer un numéro de facture",
+  "es": "Generar número de factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateInvoiceDocument",
+  "de": "Rechnung generieren",
+  "en": "Generate Invoice Document",
+  "fr": "Générer un document de facture",
+  "es": "Generar factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.downloadInvoiceDocument",
+  "de": "Rechnung herunterladen",
+  "en": "Download Invoice Document",
+  "fr": "Télécharger le document de facture",
+  "es": "Descargar factura",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateDeliveryNumber",
+  "de": "Lieferscheinnummer generieren",
+  "en": "Generate Delivery Note Number",
+  "fr": "Générer un numéro de bon de livraison",
+  "es": "Generar número de albarán",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generateDeliveryDocument",
+  "de": "Lieferschein generieren",
+  "en": "Generate Delivery Note Document",
+  "fr": "Générer un bon de livraison",
+  "es": "Generar albarán",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.downloadDeliveryDocument",
+  "de": "Lieferschein herunterladen",
+  "en": "Download Delivery Note Document",
+  "fr": "Télécharger le bon de livraison",
+  "es": "Descargar albarán",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.billing_address",
+  "de": "Rechnungsadresse",
+  "en": "Billing Address",
+  "fr": "Adresse de facturation",
+  "es": "Dirección de facturación",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.shipping_address",
+  "de": "Versandadresse",
+  "en": "Shipping Address",
+  "fr": "Adresse de livraison",
+  "es": "Dirección de envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.shipping_method",
+  "de": "Versandart",
+  "en": "Shipping Method",
+  "fr": "Mode de livraison",
+  "es": "Método de envío",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.payment_method",
+  "de": "Zahlmethode",
+  "en": "Payment Method",
+  "fr": "Mode de paiement",
+  "es": "Método de pago",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.product_list",
+  "de": "Produktliste",
+  "en": "Product List",
+  "fr": "Liste des produits",
+  "es": "Lista de productos",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.coupons",
+  "de": "Gutscheine",
+  "en": "Coupons",
+  "fr": "Bons de réduction",
+  "es": "Cupones",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.block-header.order_overview",
+  "de": "Prüfen und Bestellen",
+  "en": "Check and Order",
+  "fr": "Vérifier et commander",
+  "es": "Revisar y pedir",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.show_cart.coupons.not_available",
+  "de": "Es wurde kein Gutschein-Code eingegeben.",
+  "en": "No coupon code was entered.",
+  "fr": "Aucun code de bon n'a été saisi.",
+  "es": "No se ha introducido ningún código de cupón.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.order_cart.thank_you",
+  "de": "Vielen Dank für Ihre Bestellung.",
+  "en": "Thank you for your order.",
+  "fr": "Merci pour votre commande.",
+  "es": "Muchas gracias por su pedido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.order_cart.thank_you_order_number",
+  "de": "Ihre Bestellnummer lautet: %1$s",
+  "en": "Your order number is: %1$s",
+  "fr": "Votre numéro de commande est : %1$s",
+  "es": "Su número de pedido es: %1$s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.order.history_empty",
+  "de": "Keine Bestellungen vorhanden.",
+  "en": "No orders found.",
+  "fr": "Aucune commande trouvée.",
+  "es": "No hay pedidos disponibles.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_class",
+  "de": "Steuerklasse",
+  "en": "tx_cart.tax_class",
+  "fr": "Classe de taxe",
+  "es": "Clase fiscal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_class.1",
+  "de": "normal",
+  "en": "tx_cart.tax_class.1",
+  "fr": "normal",
+  "es": "normal",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_class.2",
+  "de": "reduziert",
+  "en": "tx_cart.tax_class.2",
+  "fr": "réduit",
+  "es": "reducido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_class.3",
+  "de": "frei",
+  "en": "tx_cart.tax_class.3",
+  "fr": "exonéré",
+  "es": "gratis",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_vat",
+  "de": "Umsatzsteuer",
+  "en": "tx_cart.tax_vat",
+  "fr": "TVA",
+  "es": "Impuesto sobre el valor añadido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_vat.value",
+  "de": "Umsatzsteuer (%s %%)",
+  "en": "VAT (%s %%)",
+  "fr": "TVA (%s %%)",
+  "es": "Impuesto sobre el valor añadido (%s %%)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_cart.net",
+  "de": "Preis (netto)",
+  "en": "Price (net)",
+  "fr": "Prix (net)",
+  "es": "Precio (neto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_cart.gross",
+  "de": "Preis (brutto)",
+  "en": "Price (gross)",
+  "fr": "Prix (brut)",
+  "es": "Precio (bruto)",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_coupon",
+  "de": "Gutschein",
+  "en": "tx_cart_domain_model_coupon",
+  "fr": "Bon de réduction",
+  "es": "Cupón",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_coupon.code",
+  "de": "Gutschein-Code",
+  "en": "tx_cart_domain_model_coupon.code",
+  "fr": "Code du bon",
+  "es": "Código de cupón",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_coupon.code.not_useable",
+  "de": "Gutschein-Code ist nicht verwendbar.",
+  "en": "Coupon Code is not useable.",
+  "fr": "Le code du bon n'est pas utilisable.",
+  "es": "El código de cupón no es válido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_coupon.cart_min_price",
+  "de": "Mindestbestellwert",
+  "en": "Minimum Order Value",
+  "fr": "Montant minimum de commande",
+  "es": "Valor mínimo de pedido",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.form.submit",
+  "de": "in den Warenkorb",
+  "en": "tx_cart.plugin.form.submit",
+  "fr": "Ajouter au panier",
+  "es": "añadir al carrito",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.form.submit.success",
+  "de": "Das Produkt wurde in den Warenkorb gelegt.",
+  "en": "tx_cart.plugin.form.submit.success",
+  "fr": "Le produit a été ajouté à votre panier.",
+  "es": "El producto se ha añadido al carrito.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.plugin.form.submit.error",
+  "de": "Das Produkt konnte nicht in den Warenkorb gelegt werden.",
+  "en": "tx_cart.plugin.form.submit.error",
+  "fr": "Le produit n'a pas pu être ajouté au panier.",
+  "es": "No se ha podido añadir el producto al carrito.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.ok.coupon.added",
+  "de": "Gutschein wurde hinzugefügt.",
+  "en": "Coupon was added.",
+  "fr": "Le bon a été ajouté.",
+  "es": "El cupón se ha añadido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.coupon.not_accepted",
+  "de": "Gutscheincode wurde nicht akzeptiert.",
+  "en": "Coupon code was not accepted.",
+  "fr": "Le code du bon n'a pas été accepté.",
+  "es": "El código de cupón no ha sido aceptado.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.coupon.already_added",
+  "de": "Gutscheincode wurde schon hinzugefügt.",
+  "en": "Coupon code has already been added.",
+  "fr": "Le code du bon a déjà été ajouté.",
+  "es": "El código de cupón ya ha sido añadido.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.coupon.not_combinable",
+  "de": "Gutscheincodes sind nicht kombinierbar.",
+  "en": "Coupon codes can not be combined.",
+  "fr": "Les codes de bon ne peuvent pas être combinés.",
+  "es": "Los códigos de cupón no son combinables.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.ok.coupon.removed",
+  "de": "Gutschein wurde entfernt.",
+  "en": "Coupon was removed.",
+  "fr": "Le bon a été retiré.",
+  "es": "El cupón ha sido eliminado.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.error.coupon.not_found",
+  "de": "Gutscheincode wurde nicht gefunden.",
+  "en": "Coupon code was not found.",
+  "fr": "Le code du bon est introuvable.",
+  "es": "No se ha encontrado el código de cupón.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.quantityBelowRange",
+  "de": "Mindestbestellmenge nicht erreicht.",
+  "en": "Minimum order not reached.",
+  "fr": "Montant minimum de commande non atteint.",
+  "es": "Cantidad mínima de pedido no alcanzada.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.quantityAboveRange",
+  "de": "Maximalbestellmenge überschritten.",
+  "en": "Maximum order quantity exceeded.",
+  "fr": "Quantité de commande maximale dépassée.",
+  "es": "Cantidad máxima de pedido superada.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.settings.allowed_countries.de",
+  "de": "Deutschland",
+  "en": "Germany",
+  "fr": "Allemagne",
+  "es": "Alemania",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.settings.allowed_countries.at",
+  "de": "Österreich",
+  "en": "Austria",
+  "fr": "Autriche",
+  "es": "Austria",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.settings.allowed_countries.ch",
+  "de": "Schweiz",
+  "en": "Switzerland",
+  "fr": "Suisse",
+  "es": "Suiza",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.add_to_cart_finisher.message.status.200.body",
+  "de": "Das Produkt wurde zum Warenkorb hinzugefügt.",
+  "en": "The product was added to cart.",
+  "fr": "Le produit a été ajouté au panier.",
+  "es": "El producto se ha añadido al carrito.",
+  "pinned": false,
+  "has_ph": false,
+  "checks": []
+ }
+]

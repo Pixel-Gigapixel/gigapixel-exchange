@@ -1,0 +1,152 @@
+[
+ {
+  "id": "tx_cart.success.stock_handling.add.more",
+  "de": "%s Artikel wurden zum Warenkorb hinzugefügt",
+  "en": "%s Items were added to cart.",
+  "fr": "Les articles ont été ajoutés au panier.",
+  "es": "%s artículos han sido añadidos al carrito",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.salutation",
+  "de": "Sehr geehrte(r) %s,",
+  "en": "Dear %s,",
+  "fr": "Bonjour %s,",
+  "es": "Hola %s,",
+  "pinned": true,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_cart_product.tax",
+  "de": "Umsatzsteuer (%s)",
+  "en": "tx_cart_domain_model_cart_product.tax",
+  "fr": "Taxe (%s)",
+  "es": "Impuesto sobre el valor añadido (%s)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_product.tax",
+  "de": "Umsatzsteuer (%s)",
+  "en": "tx_cart_domain_model_order_product.tax",
+  "fr": "Taxe (%s)",
+  "es": "Impuesto sobre el valor añadido (%s)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_terms_and_conditions_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Allgemeinen Geschäftsbedingungen</a> gelesen und stimme diesen zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">general terms and conditions</a> and agree to them.",
+  "fr": "J'ai lu les <a href=\"%1$s\" target=\"%2$s\">conditions générales</a> et je les accepte.",
+  "es": "He leído las <a href=\"%1$s\" target=\"%2$s\">condiciones generales de contratación</a> y las acepto.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_revocation_instruction_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Widerrufsbelehrung</a> gelesen und stimme dieser zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">revocation instruction</a> and agree to them.",
+  "fr": "J'ai lu les <a href=\"%1$s\" target=\"%2$s\">instructions de rétractation</a> et je les accepte.",
+  "es": "He leído la <a href=\"%1$s\" target=\"%2$s\">instrucción de desistimiento</a> y doy mi conformidad.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart_domain_model_order_item.accept_privacy_policy_with_link",
+  "de": "Ich habe die <a href=\"%1$s\" target=\"%2$s\">Datenschutzerklärung</a> gelesen und stimme dieser zu.",
+  "en": "I have read the <a href=\"%1$s\" target=\"%2$s\">privacy policy</a> and agree to them.",
+  "fr": "J'ai lu la <a href=\"%1$s\" target=\"%2$s\">politique de confidentialité</a> et je l'accepte.",
+  "es": "He leído la <a href=\"%1$s\" target=\"%2$s\">política de privacidad</a> y doy mi conformidad.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.buyer.subject",
+  "de": "Bestellbestätigung - %s",
+  "en": "Order confirmation - %s",
+  "fr": "Confirmation de commande - %s",
+  "es": "Confirmación de pedido - %s",
+  "pinned": true,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.mail.seller.subject",
+  "de": "Bestelleingang - %s",
+  "en": "Order receipt - %s",
+  "fr": "Reçu de commande - %s",
+  "es": "Recepción del pedido - %s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.payment_success.thank_you_order_number",
+  "de": "Ihre Bestellnummer lautet: %1$s",
+  "en": "tx_cart.controller.order.action.payment_success.thank_you_order_number",
+  "fr": "Votre numéro de commande est : %1$s",
+  "es": "Su número de pedido es: %1$s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.order.success",
+  "de": "Die generierte Bestellnummer lautet: %s.",
+  "en": "The generated order number is: %s.",
+  "fr": "Le numéro de commande généré est : %s.",
+  "es": "El número de pedido generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.invoice.success",
+  "de": "Die generierte Rechnungsnummer lautet: %s.",
+  "en": "The generated invoice number is: %s.",
+  "fr": "Le numéro de facture généré est : %s",
+  "es": "El número de factura generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.generate_number_action.delivery.success",
+  "de": "Die generierte Lieferscheinnummer lautet: %s.",
+  "en": "The generated delivery number is: %s.",
+  "fr": "Le numéro de livraison généré est : %s",
+  "es": "El número de albarán generado es: %s.",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.controller.order.action.order_cart.thank_you_order_number",
+  "de": "Ihre Bestellnummer lautet: %1$s",
+  "en": "Your order number is: %1$s",
+  "fr": "Votre numéro de commande est : %1$s",
+  "es": "Su número de pedido es: %1$s",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ },
+ {
+  "id": "tx_cart.tax_vat.value",
+  "de": "Umsatzsteuer (%s %%)",
+  "en": "VAT (%s %%)",
+  "fr": "TVA (%s %%)",
+  "es": "Impuesto sobre el valor añadido (%s %%)",
+  "pinned": false,
+  "has_ph": true,
+  "checks": []
+ }
+]
