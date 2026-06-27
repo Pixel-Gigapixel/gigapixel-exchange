@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="de" target-language="fr" datatype="plaintext" original="EXT:dg_theme/Resources/Private/Language/CartPdf.xlf"
+          date="2026-06-19T00:00:00Z" product-name="dg_theme">
+        <header/>
+        <body>
+            <trans-unit id="cartpdf.overview.salutation" approved="yes">
+                <source>Sehr geehrte Damen und Herren,</source>
+                <target>Madame, Monsieur,</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.overview.body" approved="yes">
+                <source>vielen Dank für Ihre Bestellung. Hiermit bestätigen wir Ihren Auftrag mit folgenden Positionen:</source>
+                <target>nous vous remercions de votre commande. Par la présente, nous confirmons votre commande avec les postes suivants :</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.thanks" approved="yes">
+                <source>Wir danken für den erteilten Auftrag.</source>
+                <target>Nous vous remercions de votre commande.</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.order.title" approved="yes">
+                <source>Auftragsbestätigung</source>
+                <target>Confirmation de commande</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.total" approved="yes">
+                <source>Rechnungsbetrag</source>
+                <target>Montant de la facture</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.service_note" approved="yes">
+                <source>Die Leistung wurde im Rechnungsmonat erbracht.</source>
+                <target>La prestation a été fournie au cours du mois de facturation.</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.intro" approved="yes">
+                <source>vereinbarungsgemäß erlauben wir uns für Ihre Beauftragung nachstehende Rechnung zu stellen:</source>
+                <target>conformément à nos accords, nous vous prions de bien vouloir régler la facture suivante :</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.title" approved="yes">
+                <source>Rechnung</source>
+                <target>Facture</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.date_prefix" approved="yes">
+                <source>vom</source>
+                <target>du</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.pos" approved="yes">
+                <source>Pos</source>
+                <target>N°</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.description" approved="yes">
+                <source>Leistungsart</source>
+                <target>Désignation</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.qty" approved="yes">
+                <source>Anzahl</source>
+                <target>Qté</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.currency" approved="yes">
+                <source>Währung</source>
+                <target>Devise</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.net_total" approved="yes">
+                <source>Netto gesamt</source>
+                <target>Total HT</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.subtotal" approved="yes">
+                <source>Zwischensumme</source>
+                <target>Sous-total</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.vat" approved="yes">
+                <source>USt 19 %</source>
+                <target>TVA 19 %</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.shipping" approved="yes">
+                <source>zzgl. Versand &amp; Verpackung</source>
+                <target>plus frais d'expédition</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_terms_label" approved="yes">
+                <source>Zahlungsbedingung</source>
+                <target>Conditions de paiement</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.paypal_paid" approved="yes">
+                <source>Die Rechnung wurde bereits per PayPal beglichen.</source>
+                <target>La facture a déjà été réglée via PayPal.</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_due" approved="yes">
+                <source>Zahlbar binnen 14 Tagen ab Bekanntgabe ohne Abzug.</source>
+                <target>Payable dans les 14 jours sans déduction.</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.bank_details" approved="yes">
+                <source>Bankverbindung</source>
+                <target>Coordonnées bancaires</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.bank_recipient" approved="yes">
+                <source>Empfänger</source>
+                <target>Bénéficiaire</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_ref" approved="yes">
+                <source>Verwendungszweck</source>
+                <target>Référence de paiement</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.closing" approved="yes">
+                <source>Mit freundlichen Grüßen</source>
+                <target>Cordialement,</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.signature" approved="yes">
+                <source>Ihr Gigapixel-Team</source>
+                <target>Votre équipe Gigapixel</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.page_prefix" approved="yes">
+                <source>Seite</source>
+                <target>Page</target>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.page_of" approved="yes">
+                <source>von</source>
+                <target>sur</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

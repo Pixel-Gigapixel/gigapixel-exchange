@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="de" datatype="plaintext" original="EXT:dg_theme/Resources/Private/Language/CartPdf.xlf"
+          date="2026-06-19T00:00:00Z" product-name="dg_theme">
+        <header/>
+        <body>
+            <trans-unit id="cartpdf.overview.salutation" approved="yes">
+                <source>Sehr geehrte Damen und Herren,</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.overview.body" approved="yes">
+                <source>vielen Dank für Ihre Bestellung. Hiermit bestätigen wir Ihren Auftrag mit folgenden Positionen:</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.thanks" approved="yes">
+                <source>Wir danken für den erteilten Auftrag.</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.order.title" approved="yes">
+                <source>Auftragsbestätigung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.total" approved="yes">
+                <source>Rechnungsbetrag</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.service_note" approved="yes">
+                <source>Die Leistung wurde im Rechnungsmonat erbracht.</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.intro" approved="yes">
+                <source>vereinbarungsgemäß erlauben wir uns für Ihre Beauftragung nachstehende Rechnung zu stellen:</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.title" approved="yes">
+                <source>Rechnung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.date_prefix" approved="yes">
+                <source>vom</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.pos" approved="yes">
+                <source>Pos</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.description" approved="yes">
+                <source>Leistungsart</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.qty" approved="yes">
+                <source>Anzahl</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.currency" approved="yes">
+                <source>Währung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.col.net_total" approved="yes">
+                <source>Netto gesamt</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.subtotal" approved="yes">
+                <source>Zwischensumme</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.vat" approved="yes">
+                <source>USt 19 %</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.shipping" approved="yes">
+                <source>zzgl. Versand &amp; Verpackung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_terms_label" approved="yes">
+                <source>Zahlungsbedingung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.paypal_paid" approved="yes">
+                <source>Die Rechnung wurde bereits per PayPal beglichen.</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_due" approved="yes">
+                <source>Zahlbar binnen 14 Tagen ab Bekanntgabe ohne Abzug.</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.bank_details" approved="yes">
+                <source>Bankverbindung</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.bank_recipient" approved="yes">
+                <source>Empfänger</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.payment_ref" approved="yes">
+                <source>Verwendungszweck</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.closing" approved="yes">
+                <source>Mit freundlichen Grüßen</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.greetings.signature" approved="yes">
+                <source>Ihr Gigapixel-Team</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.page_prefix" approved="yes">
+                <source>Seite</source>
+            </trans-unit>
+            <trans-unit id="cartpdf.invoice.page_of" approved="yes">
+                <source>von</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
