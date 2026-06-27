@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2026-06-15T00:00:00Z"
+        product-name="cart_gigapixels">
+        <header />
+        <body>
+            <trans-unit id="filter">
+                <source>filter</source>
+                <target>Filtrer</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.more_link">
+                <source>more</source>
+                <target>plus</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.plugin.form.submit">
+                <source>Add to cart</source>
+                <target>Ajouter au panier</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.plugin.form.submit.success">
+                <source>The gigapixel has been added to your shopping cart.</source>
+                <target>Le gigapixel a été ajouté à votre panier.</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.plugin.form.submit.error">
+                <source>The gigapixel could not be added to the shopping cart!</source>
+                <target>Le gigapixel n'a pas pu être ajouté au panier !</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.plugin.form.submit.error.gigapixel_is_not_gigapixelable">
+                <source>Gigapixel is not gigapixelable.</source>
+                <target>Ce gigapixel n'est pas disponible à l'achat.</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels.plugin.form.submit.error.not_enough_seets_available">
+                <source>Not enough Gigapixels available.</source>
+                <target>Quantité de gigapixels insuffisante.</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.photographer">
+                <source>Photographer</source>
+                <target>Photographe</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.format_px">
+                <source>File Dimensions</source>
+                <target>Dimensions du fichier</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.digital_license">
+                <source>Digital License</source>
+                <target>Licence numérique</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_license">
+                <source>Print License</source>
+                <target>Licence d'impression</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.format_file">
+                <source>File Format</source>
+                <target>Format du fichier</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.related_gigapixels">
+                <source>Related Gigapixels</source>
+                <target>Images similaires</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.price_agreement">
+                <source>Price by agreement</source>
+                <target>Prix sur demande</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_calc">
+                <source>Print calculation</source>
+                <target>Calcul d'impression</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_calc.width">
+                <source>Width</source>
+                <target>Largeur</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_calc.height">
+                <source>Height</source>
+                <target>Hauteur</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_calc.res">
+                <source>Resolution</source>
+                <target>Résolution</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.print_calc.p_size">
+                <source>Printsize</source>
+                <target>Format d'impression</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.file_info">
+                <source>File information</source>
+                <target>Informations sur le fichier</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.original">
+                <source>Original capture</source>
+                <target>Prise de vue originale</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.original.text">
+                <source>genuine gigapixel photography, no AI upscaling</source>
+                <target>photographie gigapixel authentique, sans upscaling IA</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.hist">
+                <source>High-resolution digitization</source>
+                <target>Numérisation haute résolution</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.hist.text">
+                <source>no AI upscaling</source>
+                <target>sans upscaling IA</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.grafik">
+                <source>Digital graphic</source>
+                <target>Graphique numérique</target>
+            </trans-unit>
+            <trans-unit id="trust.photo.grafik.text">
+                <source>no AI generation, no AI upscaling</source>
+                <target>sans génération IA, sans upscaling IA</target>
+            </trans-unit>
+            <trans-unit id="trust.download">
+                <source>Instant download</source>
+                <target>Téléchargement instantané</target>
+            </trans-unit>
+            <trans-unit id="trust.download.text">
+                <source>available immediately after purchase</source>
+                <target>disponible immédiatement après l'achat</target>
+            </trans-unit>
+            <trans-unit id="trust.license">
+                <source>Legally secure license</source>
+                <target>Licence juridiquement sécurisée</target>
+            </trans-unit>
+            <trans-unit id="trust.license.text">
+                <source>for print, stretch ceilings &amp; wall design</source>
+                <target>pour impression, plafonds tendus et décoration murale</target>
+            </trans-unit>
+            <trans-unit id="trust.support">
+                <source>Personal support</source>
+                <target>Assistance personnelle</target>
+            </trans-unit>
+            <trans-unit id="trust.support.text">
+                <source>available at any time</source>
+                <target>disponible à tout moment</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.sku" approved="yes">
+                <source>SKU</source>
+                <target>SKU</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.title" approved="yes">
+                <source>Title</source>
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.name" approved="yes">
+                <source>Name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.format_file" approved="yes">
+                <source>File Format</source>
+                <target>Format de fichier</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.format_px" approved="yes">
+                <source>Without ZOOM</source>
+                <target>Sans ZOOM</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.filter.hidden" approved="yes">
+                <source>Hidden</source>
+                <target>Masqué</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.sku" approved="yes">
+                <source>Sku</source>
+                <target>SKU</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.name" approved="yes">
+                <source>Name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.notes" approved="yes">
+                <source>Notes</source>
+                <target>Notes</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.image" approved="yes">
+                <source>Image</source>
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.title" approved="yes">
+                <source>Title</source>
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.license" approved="yes">
+                <source>License</source>
+                <target>Licence</target>
+            </trans-unit>
+            <trans-unit id="tx_cartgigapixels_domain_model_gigapixel.price" approved="yes">
+                <source>Price</source>
+                <target>Prix</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
