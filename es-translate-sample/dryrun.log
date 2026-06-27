@@ -1,0 +1,106 @@
+Found 100 record-field pairs to translate.
+  [title]     1 | El Gran Ahornboden cerca de Karwendel en los Alpes
+  [title]     2 | 
+  [title]     3 | 
+  [title]     4 | El Gran Ahornboden cerca de Karwendel en los Alpes
+  [title]     5 | Hormigas en el borde de una calle
+  [title]     6 | Hormigas en el borde de una calle
+  [title]     7 | Límite entre hierba y asfalto
+  [title]     8 | Borde de un sendero peatonal
+  [title]     9 | Sendero de hormigas al borde del camino
+  [title]    10 | Sendero de hormigas al borde del camino
+  [title]    12 | Letra inicial
+  [title]    13 | Iglesia St. Johann Nepomuk en Múnich
+  [title]    14 | 
+  [title]    15 | Vista interior del óptico
+  [title]    16 | Austin Seven Ulster - recortado
+  [title]    17 | Austin Seven Ulster - recortado
+  [title]    18 | BMW 321 - recortado
+  [title]    19 | BMW Cooper - recortado
+  [title]    20 | BMW Dixi Ihle - recortado
+  [title]    21 | Pared de ladrillo rojo con juntas blancas
+  [title]    22 | Primer plano de una pared de ladrillo rojo con juntas blanca
+  [title]    23 | Grupo de árboles en la costa de Irlanda
+  [title]    24 | Grupo de árboles en la costa de Irlanda
+  [title]    25 | 
+  [title]    26 | 
+  [title]    27 | 
+  [title]    28 | 
+  [title]    29 | 
+  [title]    30 | Crawford Art Gallery en Cork, Irlanda
+  [title]    31 | Vista lejana del Parlamento del Estado de Baviera en Múnich
+  [title]    32 | El Parlamento del Estado de Baviera en Múnich
+  [title]    33 | 
+  [title]    34 | Edificio principal del Schloss Belvedere cerca de Weimar
+  [title]    35 | Edificio anexo del Schloss Belvedere cerca de Weimar
+  [title]    36 | Edificio anexo del Schloss Belvedere cerca de Weimar
+  [title]    37 | La Estación Central de Berlín en el Spree
+  [title]    38 | El Spree en la Estación Central de Berlín
+  [title]    39 | 
+  [title]    40 | Vista detallada de la Catedral de Berlín
+  [title]    41 | Plaza de la Catedral de Berlín
+  [title]    42 | Pared de chapa ondulada roja
+  [title]    43 | Pared de chapa ondulada roja pequeña
+  [title]    44 | Corona floreciente de un ciruelo
+  [title]    45 | Ramas florecientes
+  [title]    46 | Flores de cerezo
+  [title]    47 | Árbol floreciente
+  [title]    48 | Cerezo floreciente
+  [title]    49 | Rama cubierta de flores
+  [title]    50 | Flores de cerezo contra cielo azul
+  [title]    51 | Mar de flores en primavera
+  [kw]        1 | paisaje alpino, abril, excursión, pintoresco, blues, Europa,
+  [kw]        2 | sala de espera, antiguo, edificio antiguo, antigüedad, casa 
+  [kw]        3 | sala de espera, solo, solitario, arquitectónico, arquitectur
+  [kw]        4 | paisaje alpino, abril, excursión, pintoresco, blues, Europa,
+  [kw]        5 | fauna, senderos a pie, hierba, gramíneas, césped, naturaleza
+  [kw]        6 | fauna, senderos a pie, hierba, gramíneas, césped, naturaleza
+  [kw]        7 | fauna, senderos a pie, hierba, gramíneas, césped, primer pla
+  [kw]        8 | fauna, senderos a pie, hierba, gramíneas, césped, primer pla
+  [kw]        9 | fauna, senderos a pie, hierba, gramíneas, césped, primer pla
+  [kw]       10 | fauna, senderos a pie, hierba, gramíneas, césped, primer pla
+  [kw]       12 | arte, figura, estatua, bronce
+  [kw]       13 | antigüedad, arquitectónico, arquitectura, atracción, excursi
+  count mismatch: 12 in / 23 out — retrying 12 records individually
+  [kw]       14 | edificio antiguo, antiguo, casa antigua, añadido, pintado, o
+  [kw]       15 | ordenado, ojos, iluminado, iluminación, colorido, oficina, n
+  [kw]       16 | sala de espera, gases de escape, ejes, antiguo, equilibrado,
+  [kw]       17 | sala de espera, gases de escape, ejes, antiguo, equilibrado,
+  [kw]       18 | sala de espera, BMW, gases de escape, ejes, antiguo, macrofo
+  [kw]       19 | sala de espera, gases de escape, macro, ejes, antiguo, antig
+  [kw]       20 | sala de espera, gases de escape, macro, eje, antiguo, antigü
+  [kw]       21 | ladrillos, edificio antiguo, antiguo, dispuesto, ladrillo, e
+  [kw]       22 | ladrillos, edificio antiguo, antiguo, dispuesto, ladrillo, c
+  [kw]       23 | sala de espera, aventura, solo, solitario, vista, árboles, c
+  [kw]       24 | sala de espera, aventura, solo, solitario, vista, árboles, c
+  [kw]       25 | edificio antiguo, antiguo, casa antigua, añadido, ordenado, 
+  count mismatch: 12 in / 19 out — retrying 12 records individually
+  [kw]       26 | edificio antiguo, antiguo, casa antigua, adosado, organizado
+  [kw]       27 | edificio antiguo, antiguo, casa antigua, anexado, dispuesto,
+  [kw]       28 | casa antigua, antiguo, anexado, dispuesto, arquitectónico, a
+  [kw]       29 | edificio antiguo, antiguo, casa antigua, añadido, dispuesto,
+  [kw]       30 | edificio antiguo, antiguo, casa antigua, arquitectónico, arq
+  [kw]       31 | edificio antiguo, antiguo, casa antigua, anexado, ordenado, 
+  [kw]       32 | edificio antiguo, antiguo, casa antigua, añadido, ordenado, 
+  [kw]       33 | sala de espera, antiguo, edificio antiguo, casa antigua, pin
+  [kw]       34 | sala de espera, antiguo, edificio antiguo, casa antigua, pin
+  [kw]       35 | antiguo, edificio antiguo, casa antigua, pintado, iluminado,
+  [kw]       36 | antiguo, edificio antiguo, casa antigua, pintado, iluminado,
+  [kw]       37 | sala de espera, excursión, excursiones, estilos arquitectóni
+  count mismatch: 12 in / 17 out — retrying 12 records individually
+  [kw]       38 | sala de espera, excursión, excursiones, estilos arquitectóni
+  [kw]       39 | sala de espera, solitario, antiguo, edificio antiguo, arquit
+  [kw]       40 | sala de espera, soltero, antiguo, edificio antiguo, arquitec
+  [kw]       41 | solitario, antiguo, edificio antiguo, viejo, arquitectónico,
+  [kw]       42 | componente, primer plano, colorido, uniforme, metales, super
+  [kw]       43 | pieza, primer plano, colorido, uniforme, metales, superficie
+  [kw]       44 | sala de espera, rama, macro, ramas, árbol, árboles, copa de 
+  [kw]       45 | rama, ramas, árbol, macrofotografía, árboles, copas de árbol
+  [kw]       46 | rama, ramas, árbol, macro, árboles, copa de árbol, flor, ext
+  [kw]       47 | rama, ramas, árbol, macro, árboles, copa de árbol, flor, ext
+  [kw]       48 | rama, ramas, árbol, macro, árboles, copa de árbol, flor, ext
+  [kw]       49 | rama, ramas, árbol, macro, árboles, copa de árbol, flor, ext
+  count mismatch: 2 in / 1 out — retrying 2 records individually
+  [kw]       50 | rama, ramas, árbol, macrofotografía, árboles, copa de árbol,
+  [kw]       51 | rama, ramas, árbol, macro, árboles, copa de árbol, flor, ext
+[DRY-RUN] Would write 100 translations.
