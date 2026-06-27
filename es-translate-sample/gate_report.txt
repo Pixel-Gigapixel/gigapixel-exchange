@@ -1,0 +1,5 @@
+GATE-REPORT — ES title+keywords (dry-run, 50 Records / 100 Felder)
+Titel: 50 · Zahl-Paritäts-Findings: 0
+(Keywords: Print auf 60 Z. gekappt -> Zahl/Platzhalter-Gate nicht aussagekräftig; Keywords haben ohnehin keine Platzhalter, Zahl-Keywords selten.)
+
+Titel: keine Zahl-Paritäts-Abweichung.
