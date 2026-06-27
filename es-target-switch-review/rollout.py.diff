@@ -1,0 +1,79 @@
+diff --git a/tools/rollout.py b/tools/rollout.py
+index 4354065..a2b37e8 100644
+--- a/tools/rollout.py
++++ b/tools/rollout.py
+@@ -53,10 +53,12 @@ ENV_LOCAL  = os.path.expanduser("~/gigapixel-deploy/.env.local")
+ APIKEY_FILE = os.path.expanduser("~/.anthropic-api-key")
+ DEFAULT_MODEL = "claude-sonnet-4-6"          # Qualitaet; fuer Masse/Blog ggf. claude-haiku-4-5-20251001 (Kosten)
+ 
+-# biz cache-flush (ssh): Infra-Identifier (BIZ_SSH/BIZ_SSH_PORT/BIZ_APP_ROOT) kommen AUSSCHLIESSLICH
+-# aus ~/gigapixel-deploy/.env.local (gitignored) — KEIN hartkodierter Fallback. Gelesen + fail-fast
+-# erst zur Nutzungszeit in flush_cache() (so bleibt `rollout.py --help` ohne env lauffaehig).
+-BIZ_PHP      = os.environ.get("BIZ_PHP", "php82.bin.cli")     # PHP-Binary (kein Infra-Identifier); CLI-Default 96 MB ist zu klein -> -d memory_limit=512M
++# Ziel-System: --target {biz,gmbh} setzt TARGET (Default BIZ = Staging; ohne --target trifft ein Lauf NIE Live).
++# ALLE Infra-Werte env-getrieben aus ~/gigapixel-deploy/.env.local (gitignored), KEIN hartkodierter gmbh-Wert:
++#   DB:    DB_{TARGET}_HOST/USER/PASSWORD/NAME
++#   Cache: {TARGET}_SSH / {TARGET}_SSH_PORT / {TARGET}_APP_ROOT / {TARGET}_PHP (PHP-Default php82.bin.cli)
++# Fail-fast erst zur Nutzungszeit (so bleibt `rollout.py --help` ohne env lauffaehig).
++TARGET = "BIZ"   # wird in main() aus --target gesetzt (uppercase Prefix)
+ 
+ # pages-Textfelder, die je Sprache verschieden sind: ES = uebersetzt(DE) bzw. leer wie DE — NIE vom RU-Donor erben.
+ # (Sonst landet russisches seo_title/description auf der spanischen Seite.)
+@@ -92,14 +94,14 @@ def _require_env(name):
+ # =========================================================================================
+ _CONN = None
+ def _conn():
+-    """Lazy, prozessweite Verbindung zur biz-DB. autocommit=1 (ueberschreibt KonsoleH autocommit=OFF);
++    """Lazy, prozessweite Verbindung zur Ziel-DB (TARGET). autocommit=1 (ueberschreibt KonsoleH autocommit=OFF);
+     Writes nehmen sich per conn.begin() eine explizite Transaktion."""
+     global _CONN
+     if _CONN is None:
+         _load_secrets()
+         _CONN = pymysql.connect(
+-            host=os.environ["DB_BIZ_HOST"], user=os.environ["DB_BIZ_USER"],
+-            password=os.environ["DB_BIZ_PASSWORD"], database=os.environ["DB_BIZ_NAME"],
++            host=os.environ[f"DB_{TARGET}_HOST"], user=os.environ[f"DB_{TARGET}_USER"],
++            password=os.environ[f"DB_{TARGET}_PASSWORD"], database=os.environ[f"DB_{TARGET}_NAME"],
+             charset="utf8mb4", cursorclass=pymysql.cursors.DictCursor, autocommit=True)
+     return _CONN
+ 
+@@ -545,11 +547,12 @@ def build_insert(donor_row, de_uid, lang, translated, pid):
+     return sql, [row[c] for c in cols]
+ 
+ def flush_cache(log):
+-    """Voller TYPO3-Cache-Flush auf biz via ssh (memory_limit hoch, CLI-Default ist zu klein)."""
++    """Voller TYPO3-Cache-Flush auf dem Ziel-System (TARGET) via ssh (memory_limit hoch, CLI-Default ist zu klein)."""
+     _load_secrets()
+-    ssh, ssh_port, app_root = _require_env("BIZ_SSH"), _require_env("BIZ_SSH_PORT"), _require_env("BIZ_APP_ROOT")
+-    remote = f"cd {app_root} && {BIZ_PHP} -d memory_limit=512M vendor/bin/typo3 cache:flush"
+-    log(f"cache:flush auf biz ({app_root}) ...")
++    ssh, ssh_port, app_root = _require_env(f"{TARGET}_SSH"), _require_env(f"{TARGET}_SSH_PORT"), _require_env(f"{TARGET}_APP_ROOT")
++    php = os.environ.get(f"{TARGET}_PHP", "php82.bin.cli")
++    remote = f"cd {app_root} && {php} -d memory_limit=512M vendor/bin/typo3 cache:flush"
++    log(f"cache:flush auf {TARGET.lower()} ({app_root}) ...")
+     r = subprocess.run(["ssh", "-p", ssh_port, ssh, remote], capture_output=True, text=True)
+     out = (r.stdout + r.stderr).strip()
+     log(out if out else f"(cache:flush exit {r.returncode})")
+@@ -731,9 +734,13 @@ def main():
+     ap.add_argument("--from-review", metavar="DIR", default=None,
+                     help="COMMIT aus reviewten Dry-Run-JSONs (kein Modell-Call); Gates laufen als Safety-Gurt")
+     ap.add_argument("--force", action="store_true", help="auch vollstaendige Seiten neu (Vorsicht: Doppel-Insert!)")
++    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz",
++                    help="Ziel-System (Default biz=Staging; gmbh=LIVE). Steuert DB_{TARGET}_*/{TARGET}_SSH-Env.")
+     a = ap.parse_args()
+     if a.from_review and not a.commit:
+         ap.error("--from-review nur zusammen mit --commit")
++    global TARGET
++    TARGET = a.target.upper()
+ 
+     _load_secrets()
+     guide = open(GUIDE_PATH, encoding="utf-8").read()
+@@ -744,7 +751,7 @@ def main():
+     def log(m): print(m); logf.write(m + "\n"); logf.flush()
+ 
+     mode = "dry-run" if a.dry_run else ("COMMIT(from-review)" if a.from_review else "COMMIT")
+-    log(f"rollout: lang={a.lang} mode={mode} model={a.model} pids={len(pids)}")
++    log(f"rollout: target={TARGET}{' [LIVE]' if TARGET=='GMBH' else ''} lang={a.lang} mode={mode} model={a.model} pids={len(pids)}")
+     summary = {}
+     for pid in pids:
+         try:
