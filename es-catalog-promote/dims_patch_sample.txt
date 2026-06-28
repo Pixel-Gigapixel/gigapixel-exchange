@@ -1,0 +1,76 @@
+DIMS-PATCH Vorher/Nachher — 1558 betroffen, diverses Sample
+
+=== uid 3  (truth 10783×23225 = 0,25 GP) ===
+ALT: Burji Khalifa in Dubai in 2,50 Gigapixel (34055 × 73345 Pixel). Fotografiert von Daniel Richter. Ideal für großformatige Wandgestaltung und architektonische Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Burji Khalifa in Dubai in 0,25 Gigapixel (10783 × 23225 Pixel). Fotografiert von Daniel Richter. Ideal für großformatige Wandgestaltung und architektonische Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 4  (truth 26412×9467 = 0,25 GP) ===
+ALT: Der Grosse Ahornboden bei Karwendel in den Alpen als Gigapixel-Aufnahme mit 1,33 GP (60896 × 21826 Pixel). Fotografie von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messen. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Der Grosse Ahornboden bei Karwendel in den Alpen als Gigapixel-Aufnahme mit 0,25 GP (26412 × 9467 Pixel). Fotografie von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messen. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 5  (truth 37394×6694 = 0,25 GP) ===
+ALT: Ameisen am Rand einer Straße in 1,08 Gigapixel (77709 * 13911 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ameisen am Rand einer Straße in 0,25 Gigapixel (37394 * 6694 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 6  (truth 37394×6694 = 0,25 GP) ===
+ALT: Ameisen am Rand einer Straße in 1,08 Gigapixel (77709 * 13911 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ameisen am Rand einer Straße in 0,25 Gigapixel (37394 * 6694 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 7  (truth 26396×9483 = 0,25 GP) ===
+ALT: Ameisenstraße am Wegesrand in 0,80 Gigapixel (47164 * 16944 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ameisenstraße am Wegesrand in 0,25 Gigapixel (26396 * 9483 px). Aufnahme von Daniel Richter. Geeignet für großformatige Anwendungen wie Spanndecken, XXL-Wandgestaltung oder Messeauftritte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 272  (truth 34297×7299 = 0,25 GP) ===
+ALT: Ilmenau im Frühling als Gigapixel-Fotografie mit 2,32 Gigapixel (104496 × 22239 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Gebäuden und Binnenschifffahrt. Detailreich geeignet für großformatige Wandbilder, Büros und Messepräsentationen. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ilmenau im Frühling als Gigapixel-Fotografie mit 0,25 Gigapixel (34297 × 7299 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Gebäuden und Binnenschifffahrt. Detailreich geeignet für großformatige Wandbilder, Büros und Messepräsentationen. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 274  (truth 45274×5528 = 0,25 GP) ===
+ALT: Ilmenau-Herbst zeigt eine Stadtansicht mit Betonarchitektur und Binnenschifffahrt. Die Aufnahme umfasst 1,76 Gigapixel bei einer Auflösung von 96276 × 18287 Pixel. Fotografiert von Daniel Richter. Das Motiv eignet sich für repräsentative Wandgestaltung in Hotels, Büros und öffentlichen Gebäuden. Selbst in XXL-Formaten bleibt das Bild pixelfrei scharf. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ilmenau-Herbst zeigt eine Stadtansicht mit Betonarchitektur und Binnenschifffahrt. Die Aufnahme umfasst 0,25 Gigapixel bei einer Auflösung von 45274 × 5528 Pixel. Fotografiert von Daniel Richter. Das Motiv eignet sich für repräsentative Wandgestaltung in Hotels, Büros und öffentlichen Gebäuden. Selbst in XXL-Formaten bleibt das Bild pixelfrei scharf. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 276  (truth 31832×7857 = 0,25 GP) ===
+ALT: Ilmenau im Sommer als Gigapixel-Fotografie mit 2,42 Gigapixel (98937 × 24419 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Betonarchitektur und Binnenschifffahrt. Detailstark für XXL-Wandgestaltung, Büroräume und Messestände. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ilmenau im Sommer als Gigapixel-Fotografie mit 0,25 Gigapixel (31832 × 7857 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Betonarchitektur und Binnenschifffahrt. Detailstark für XXL-Wandgestaltung, Büroräume und Messestände. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 278  (truth 37149×6732 = 0,25 GP) ===
+ALT: Ilmenau im Winter als Gigapixel-Fotografie mit 1,84 Gigapixel (100792 × 18266 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Betonstrukturen und Binnenschifffahrt. Einsatzmöglichkeiten in großformatiger Wandgestaltung, Messebereichen und Bürogebäuden. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Ilmenau im Winter als Gigapixel-Fotografie mit 0,25 Gigapixel (37149 × 6732 px). Aufnahme von Daniel Richter zeigt Stadtansicht mit Betonstrukturen und Binnenschifffahrt. Einsatzmöglichkeiten in großformatiger Wandgestaltung, Messebereichen und Bürogebäuden. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 279  (truth 31689×7891 = 0,25 GP) ===
+ALT: Winterliche Landschaftsaufnahme aus Ilmenau mit schneebedecktem Thüringer Wald in 0,76 Gigapixel (53890 × 14155 Pixel). Aufnahme von Daniel Richter. Die Panorama-Datei eignet sich für großformatige Wandgestaltung, Spanndecken und Räume in Praxen sowie Kliniken. Bleibt auch auf mehrere Meter Breite pixelfrei scharf. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Winterliche Landschaftsaufnahme aus Ilmenau mit schneebedecktem Thüringer Wald in 0,25 Gigapixel (31689 × 7891 Pixel). Aufnahme von Daniel Richter. Die Panorama-Datei eignet sich für großformatige Wandgestaltung, Spanndecken und Räume in Praxen sowie Kliniken. Bleibt auch auf mehrere Meter Breite pixelfrei scharf. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 280  (truth 33098×7559 = 0,25 GP) ===
+ALT: Industrieanlage bei Nacht als Gigapixel-Fotografie mit 0,44 Gigapixel (43716 × 9984 px). Aufnahme von Daniel Richter zeigt beleuchtete Bauwerke und Abgase. Tauglich für großformatige Wandbilder, Messestände und repräsentative Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Industrieanlage bei Nacht als Gigapixel-Fotografie mit 0,25 Gigapixel (33098 × 7559 px). Aufnahme von Daniel Richter zeigt beleuchtete Bauwerke und Abgase. Tauglich für großformatige Wandbilder, Messestände und repräsentative Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 281  (truth 17013×14699 = 0,25 GP) ===
+ALT: Der Intershop in Jena als Gigapixel-Fotografie mit 5,04 Gigapixel (76349 × 65964 px). Aufnahme von Daniel Richter zeigt architektonische Details des alleinstehenden Gebäudes. Ideal für XXL-Wandgestaltung, Messestände und repräsentative Großraumbilder. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Der Intershop in Jena als Gigapixel-Fotografie mit 0,25 Gigapixel (17013 × 14699 px). Aufnahme von Daniel Richter zeigt architektonische Details des alleinstehenden Gebäudes. Ideal für XXL-Wandgestaltung, Messestände und repräsentative Großraumbilder. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 283  (truth 29514×8474 = 0,25 GP) ===
+ALT: Irlands Berge als Gigapixel-Fotografie mit 1,65 Gigapixel (75708 × 21738 px). Aufnahme von Daniel Richter zeigt Berglandschaft am Atlantik. Detailreich für großformatige Wandgestaltung, Messestände und repräsentative Räume. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Irlands Berge als Gigapixel-Fotografie mit 0,25 Gigapixel (29514 × 8474 px). Aufnahme von Daniel Richter zeigt Berglandschaft am Atlantik. Detailreich für großformatige Wandgestaltung, Messestände und repräsentative Räume. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 285  (truth 15827×15827 = 0,25 GP) ===
+ALT: Dysert O'Dea Burg in Irland als Gigapixel-Fotografie mit 3,84 Gigapixel (61962 × 61962 px). Aufnahme von Daniel Richter zeigt architektonische Details der alten alleinstehenden Burg. Geeignet für XXL-Wandbilder, Messestände und repräsentative Raumgestaltung. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Dysert O'Dea Burg in Irland als Gigapixel-Fotografie mit 0,25 Gigapixel (15827 × 15827 px). Aufnahme von Daniel Richter zeigt architektonische Details der alten alleinstehenden Burg. Geeignet für XXL-Wandbilder, Messestände und repräsentative Raumgestaltung. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+=== uid 286  (truth 18550×13500 = 0,25 GP) ===
+ALT: Rotes Haus am Hafen in Irland als Gigapixel-Fotografie mit 1,26 Gigapixel (41670 × 30326 px). Aufnahme von Daniel Richter zeigt architektonische Details des alten Gebäudes. Perfekt für großformatige Wandgestaltung, Messestände und XXL-Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Rotes Haus am Hafen in Irland als Gigapixel-Fotografie mit 0,25 Gigapixel (18550 × 13500 px). Aufnahme von Daniel Richter zeigt architektonische Details des alten Gebäudes. Perfekt für großformatige Wandgestaltung, Messestände und XXL-Raumkonzepte. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+
+=== ZUSATZ-BEWEISFÄLLE ===
+
+--- uid 289 [Bindestrich-GP '1,87-Gigapixel-Aufnahme']  truth 38175×6549 (wird gepatcht) ---
+ALT: Jena aus der Ferne – 1,87-Gigapixel-Aufnahme (104502 × 17928 Pixel) von Daniel Richter. Stadtansicht bei bewölktem Himmel mit Ausblick auf die deutsche Stadt. Für großformatige Wandgestaltung, Spanndecken und Messebau geeignet. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Jena aus der Ferne – 0,25-Gigapixel-Aufnahme (38175 × 6549 Pixel) von Daniel Richter. Stadtansicht bei bewölktem Himmel mit Ausblick auf die deutsche Stadt. Für großformatige Wandgestaltung, Spanndecken und Messebau geeignet. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+--- uid 531 [bidirektional: stated 0,25 < truth 1,34]  truth 71840×18615 (wird gepatcht) ---
+ALT: Das Schloss Belvedere bei Weimar als 0,25-Gigapixel-Aufnahme mit 31064 x 8049 Pixeln von Daniel Richter. Geeignet für repräsentative Wandgestaltung, Großformatdrucke und Messebau. Hervorragende Schärfe auch bei mehreren Metern Breite. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Das Schloss Belvedere bei Weimar als 1,34-Gigapixel-Aufnahme mit 71840 x 18615 Pixeln von Daniel Richter. Geeignet für repräsentative Wandgestaltung, Großformatdrucke und Messebau. Hervorragende Schärfe auch bei mehreren Metern Breite. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+
+--- uid 7265 [Punkt-Dezimal '0.14' = KORREKT -> NICHT angefasst (vormaliger Gate-Fehlbefund)]  truth 9826×14719 (UNVERÄNDERT) ---
+ALT: Umwandlung der ehemaligen Scheufelen-Papierfabrik in Oberlenningen im Lenninger Tal. Auflösung 9826 × 14719 Pixel (0.14 Gigapixel). Fotografie von imageBROKER/Arnulf Hettrich. Geeignet für großformatige Wandgestaltung. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
+NEU: Umwandlung der ehemaligen Scheufelen-Papierfabrik in Oberlenningen im Lenninger Tal. Auflösung 9826 × 14719 Pixel (0.14 Gigapixel). Fotografie von imageBROKER/Arnulf Hettrich. Geeignet für großformatige Wandgestaltung. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.
