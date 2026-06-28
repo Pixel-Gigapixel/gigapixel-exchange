@@ -1,0 +1,8 @@
+promote_es_catalog: biz → GMBH [LIVE]  mode=DRY-RUN
+  biz es je field: {'description': 8889, 'keywords': 8823, 'title': 8760}
+    title: 8760 (erwartet 8760) ✓
+    keywords: 8823 (erwartet 8823) ✓
+    description: 8889 (erwartet 8889) ✓
+  Quelle gelesen: 26472 es-Rows (erwartet 26472) ✓
+
+=== DRY-RUN: würde 26472 Rows inserten (uid gestrippt → AUTO_INCREMENT, Cols=['source_table', 'source_uid', 'field', 'language', 'value', 'source_hash', 'tstamp']) — KEIN Write ===
