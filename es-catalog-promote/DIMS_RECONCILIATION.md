@@ -1,48 +1,51 @@
-# Dims-Reconciliation (READ-ONLY) — falsche Maße in ai_description_de
+# Dims-Reconciliation (READ-ONLY, VERIFIZIERT) — falsche Maße in ai_description_de
 
-## Befund (über alle 8.889)
-- **1.704 Records (19%)**: `ai_description_de`-Maß ≠ `format_width × format_height` (= echte Datei-Dim, == `format_px`).
-- Beleg (uid: ai_de/ES | FR | echt):
-  | uid | ai_de = **ES** | **FR** | echt (format_px) |
-  |---|---|---|---|
-  | 3 | 34055×73345 | 10783×23225 | **10783×23225** |
-  | 4 | 60896×21826 | 26412×9467 | **26412×9467** |
-  | 5 | 77709×13911 | 37394×6694 | **37394×6694** |
-  | 272 | 104496×22239 | 34297×7299 | **34297×7299** |
-- Empirie (200er-Mismatch-Sample): **FR-desc-Dim == format_px in 92,5%**, FR == ai_de nur 3/200.
+## #2 — format_px ist autoritativ (gegen die ECHTE Datei bewiesen)
+`format_px`/`format_width`/`format_height` werden vom `DatamapDataHandlerHook::getImageProperties()` aus der
+Zoomify-`ImageProperties.xml` der echten Bild-Pyramide gelesen (WIDTH/HEIGHT). Unabhängiger Gegencheck —
+ich habe die live `ImageProperties.xml` direkt gecurlt (`https://www.large-format.photography/gigapixelKacheln/<bild>/`):
 
-## Was wirklich passiert ist
-1. `FillDescriptions` soll die Maße „from format_px" nehmen (`format_px == format_width×height` = echte Datei).
-2. `ai_description_de` wurde irgendwann **neu generiert** und produzierte für 1.704 Records **falsche** Maße
-   (z. B. ~10× zu groß; intern konsistent — die „X,XX GP" passt zur falschen Dim, ist aber faktisch falsch).
-3. **FR/RU** wurden **vor** dieser Neugenerierung übersetzt → tragen die **korrekten** format_px-Maße.
-   (Das sind exakt die ~1.632 Records mit `source_hash ≠ MD5(aktuelle ai_description_de)` von der C-Prep.)
-4. **ES** wurde **nach** der Korruption aus der aktuellen ai_description_de übersetzt → erbte die **falschen** Maße.
+| uid | Bild | ECHT (Zoomify-XML) | format_px | ai_de = **ES** |
+|---|---|---|---|---|
+| 3 | Burji-Khalifa | **10783×23225** | 10783×23225 ✓ | 34055×73345 ✗ |
+| 4 | Ahorn | **26412×9467** | 26412×9467 ✓ | 60896×21826 ✗ |
+| 5 | Ameisenstrasse | **37394×6694** | 37394×6694 ✓ | 77709×13911 ✗ |
+| 7 | Ameisenstrasse2 | **26396×9483** | 26396×9483 ✓ | 47164×16944 ✗ |
+| 272 | Ilmenau-Fruehling | **34297×7299** | 34297×7299 ✓ | 104496×22239 ✗ |
 
-## Tragweite — nicht nur ES
-- **DE-Live-Seite** zeigt die falschen Maße ebenfalls (rendert `ai_description_de` direkt). 19% der DE-Produkte.
-- **ES**: dieselben falschen Maße (geerbt).
-- **FR/RU**: korrekt (Zufall der Übersetzungs-Reihenfolge).
-- **format_px / format_width×height = autoritativ** (echte Datei-Metadaten).
+**5/5: format_px == echte Datei. ai_de/ES ist falsch** (~3,16× linear = √10 → 10× GP). FR/RU == echt = korrekt.
 
-uid-Liste der 1.704: `dims_wrong_uids.json` (im selben Ordner).
+## #1 — Ursache: LLM-Halluzination in FillDescriptions (kein Spalten-/Rechenfehler)
+`FillDescriptionsCommand` übergibt dem LLM `format_px` + `format_w/h` und sagt „pixel dimensions **from format_px**".
+Die Quelle war also **korrekt**; das LLM hat bei der Generierung für diese Records die Maße **frei erfunden**
+(konsistent ~√10 zu groß, GP passt zur falschen Dim → intern stimmig, faktisch falsch).
+**Konsequenz:** Ein FillDescriptions-**Re-Run würde den Fehler reproduzieren können** (nondeterministisch).
+→ **Deterministischer Patch aus `format_width/height` (kein LLM)** ist der sichere Weg.
+
+## #3 — Exakte betroffene Menge (punkt-/space-tausender-bewusst geparst)
+| Klasse | n |
+|---|---|
+| **dims_wrong** (Maß ≠ format_w×h) | **1.554** |
+| **gp_wrong** (Maß ok, aber GP-Figur ≠ truth, z. B. uid 7265 „14" statt „0,14") | **9** |
+| **=> BETROFFEN (Patch-Ziel)** | **1.563** |
+| no_dim (HIST/GRAFIK ohne Maßangabe — separate Mini-Lücke, nicht „falsch") | 137 |
+| no_gp (HIST/GRAFIK ohne GP-Figur — legitim) | 2.146 |
+| both_ok (Maß+GP korrekt) | 7.189 |
+
+uid-Liste der 1.563: `dims_affected_uids.json`. (Frühere „1.704/19%" war vor dem Tausenderpunkt-Fix überzählt.)
+
+## Tragweite
+- **DE-Live-Seite** zeigt die falschen Maße ebenfalls (rendert `ai_description_de` direkt) — 1.563 Produkte.
+- **ES**: dieselben falschen Maße (geerbt). **FR/RU**: korrekt (Pre-Korruptions-Übersetzung).
 
 ## Vorschlag (dein Call — kein Write erfolgt)
-**Empfohlen (Root-Fix, behebt DE + ES gemeinsam):**
-1. `ai_description_de` für die 1.704 korrigieren — die Maße `W × H` und die abgeleitete `X,XX GP/Gigapixel`
-   deterministisch aus `format_width/height` neu setzen (GP = W·H/1e9, Komma-Dezimal). Entweder
-   chirurgischer prosa-Replace (Dim + GP) oder gezielter `FillDescriptions`-Re-Run **nur** auf die 1.704.
-   → behebt die **DE-Live-Seite**.
-2. Danach `gigapixels:translate --language=es --fields=description` greift via MD5 **automatisch nur die 1.704**
-   (geänderter source_hash) → ES wird aus der korrigierten Quelle neu übersetzt.
-3. **FR/RU nicht anfassen** (bereits korrekt) — außer du willst Konsistenz erzwingen (dann auch deren
-   1.704 re-translaten, aber unnötig).
+**Root-Fix (behebt DE + ES, deterministisch, kein LLM):**
+1. `ai_description_de` der **1.563** patchen: das `W × H`-Maß **und** die `X,XX GP/Gigapixel`-Figur aus
+   `format_width/height` neu setzen (GP = W·H/1e9, Komma-Dezimal; Format/Tausenderstil des Records erhalten).
+   Transaktional, Backup, Vorab-SELECT des Match-Sets (wie beim `por ía`-Fix). → behebt die **DE-Seite**.
+2. `gigapixels:translate --language=es --fields=description` → MD5 greift **automatisch nur die 1.563**
+   (geänderter source_hash) → ES neu aus korrigierter Quelle. (Re-Gate danach: dims byte-genau.)
+3. **FR/RU** unangetastet (bereits korrekt).
+4. Optional separat: die **137 no_dim** (HIST/GRAFIK ohne Maß) — eigene Entscheidung, ob Maß ergänzt wird.
 
-**Alternative (nur ES, schneller, lässt DE falsch):** die Maße+GP direkt in den 1.704 ES-description-Rows
-chirurgisch ersetzen (wie der `por ía`-Fix). Nicht empfohlen — DE bliebe falsch sichtbar.
-
-**Offen vorab zu klären:** WARUM hat die ai_description_de-Neugenerierung falsche Maße erzeugt (FillDescriptions-
-Bug? falsche format_px-Quelle zum Generierungszeitpunkt?) — sonst reproduziert ein Re-Run den Fehler.
-Empfehlung: erst die 1.704 deterministisch aus format_width/height patchen (kein LLM), dann ES re-translaten.
-
-> Read-only. Kein Fix-Write bis zu deiner Entscheidung.
+> Read-only. Kein DE-Source-Write / kein Re-Translate bis zu deinem GO.
