@@ -1,0 +1,31 @@
+ES POST-RUN FULL-WIDTH-GATE (ungekappte DB-Ausgabe, biz)
+ES-Targets: title=8760 · keywords=8823
+
+(0) COVERAGE — DE-Inhalt aber KEINE es-Zeile (skipped/contract-fail, MD5-Re-Run holt sie):
+    fehlende es-title: 0  uids=[]
+    fehlende es-keywords: 0  uids=[]
+
+(1) DE-RESIDUE (von 17583 Feldern):
+    ECHTES Residue (kleingeschrieben, standalone): 7
+    False-Positive (bewahrter Eigenname, Regel 5 — Schloss/Haus/am/See): 279
+    [ECHT keywords 194] ['alt']  -> 'alt, antiguo, edificio, casa, apartamentos, arquitectónico, arquitectura, asfalto, estilos constructivos, cons'
+    [ECHT keywords 195] ['alt']  -> 'alt, antiguo, edificio antiguo, casa antigua, apartamentos, arquitectónico, arquitectura, asfalto, estilos con'
+    [ECHT keywords 196] ['alt']  -> 'alt, antiguo, edificio antiguo, casa antigua, apartamentos, arquitectónico, arquitectura, asfalto, estilos con'
+    [ECHT title 7265] ['in']  -> 'Conversion of the former Scheufelen paper factory in Oberlenningen, countryside in the Lenningen valley. The p'
+    [ECHT title 7565] ['des']  -> 'Paisaje de la Causse Mejean en verano en el Parque Nacional de las Cevenas. Patrimonio de la Humanidad de la U'
+    [ECHT title 7612] ['des']  -> "Página del libro Traitez de l'equilibre des liqueurs, et de la pesanteur de la masse de l'air, de Blaise Pasca"
+    [ECHT title 7613] ['des']  -> "Página del libro Traitez de l'equilibre des liqueurs, et de la pesanteur de la maße de l'air, de Blaise Pascal"
+
+(2) COUNT-DRIFT (keywords) — Richtung:
+    ES < DE (Δ<-2, erwartete Dedup der DE-Synonym-/Stuffing-Ketten): 4155
+    ES > DE (Δ>2, potentielle Halluzination — relevant): 6
+    uid 7445: DE=3 ES=18 (Δ=+15)
+    uid 144: DE=66 ES=78 (Δ=+12)
+    uid 7458: DE=43 ES=53 (Δ=+10)
+    uid 74: DE=82 ES=89 (Δ=+7)
+    uid 4324: DE=2 ES=7 (Δ=+5)
+    uid 2398: DE=8 ES=11 (Δ=+3)
+
+(3) gigapixel OHNE Akzent (nicht-Marke): 0 Treffer
+
+(4) empty-es-title trotz EN vorhanden (Über-Leerung, soll →0): 0
