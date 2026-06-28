@@ -21,3 +21,11 @@
 - Danach biz dims-grün → gmbh (Schritt 4-6) auf separaten GO.
 
 > HALT — kein gmbh-Write bis zu Daniels biz-Review.
+
+---
+## UPDATE — biz dims-grün (nach deterministischem 2-Record-Fix)
+- uid 4578 + 2309 via `patch_text` auf die ES-Row (kein Haiku) gefixt: Höhe 4724→11973 bzw. 21826→20182;
+  Prosa byte-identisch, Validierung (Maß/GP/Skeleton) ok, Backup `dims_es2_backup.json`.
+- Re-Gate über die 1.558: **DE-Maß ≠ truth = 0 · ES-Maß ≠ truth = 0 · Gate (1a) = 0** · Coverage 0 / leer 0.
+- **biz dims-grün (DB).** uid 9090 (0×0, fehlendes Bild) bleibt separater Missing-File-Punkt.
+- Nächster Schritt: gmbh (4–6) auf Daniels GO — Schritt 5 zieht die KORRIGIERTEN biz-es-Werte (inkl. der 2).
