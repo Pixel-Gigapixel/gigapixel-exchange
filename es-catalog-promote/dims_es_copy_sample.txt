@@ -1,0 +1,42 @@
+gmbh es-description UPDATE aus biz — 1558/1558 verschieden. WHERE: field='description' AND language='es' AND source_uid IN (<1558>)
+
+=== uid 4578 ===
+GMBH-ALT: Mañana de verano en los viñedos como toma gigapíxel de 2,80 (69829 × 40045 px). Fotógrafo: Robin-Oslo. La toma muestra viñedos en el Palatinado cerca de Grünstadt y en la región de Leininger Land. Ideal para decoración mural XXL en espacios representativos. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Mañana de verano en los viñedos como toma gigapíxel de 0,25 (20878 x 11973 px). Fotógrafo: Robin-Oslo. La fotografía muestra viñedos en el Palatinado cerca de Grünstadt y en la tierra de Leiningen. Ideal para decoración mural XXL en espacios representativos. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 2309 ===
+GMBH-ALT: Cascada en los Alpes, 0,25 Gigapixel (20013 × 12507 píxeles), fotografiado por Daniel Richter. La imagen muestra río, cuerpo de agua y corriente en ambiente alpino. Apto para techos tensados y decoración mural XXL. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Cascada en los Alpes, 0,65 Gigapixel (32295 × 20182 píxeles), fotografiado por Daniel Richter. La imagen muestra río, aguas y corriente en entorno alpino. Se presta para techos tensados y decoración mural XXL. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 3 ===
+GMBH-ALT: Burji Khalifa en Dubái en 2,50 Gigapixel (34055 × 73345 píxeles). Fotografiado por Daniel Richter. Ideal para decoración mural de gran formato y conceptos de espacios arquitectónicos. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Burji Khalifa en Dubái en 0,25 gigapíxel (10783 × 23225 píxeles). Fotografiado por Daniel Richter. Ideal para decoración mural de gran formato y conceptos arquitectónicos de espacios. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 4 ===
+GMBH-ALT: El Gran Ahornboden junto al Karwendel en los Alpes como toma gigapíxel con 1,33 GP (60896 × 21826 píxeles). Fotografía de Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : El Gran Ahornboden en Karwendel en los Alpes como toma gigapíxel con 0,25 GP (26412 × 9467 píxeles). Fotografía de Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 5 ===
+GMBH-ALT: Hormigas en el borde de una calle en 1,08 Gigapixel (77709 * 13911 px). Fotografía de Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o participaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Hormigas al borde de una carretera en 0,25 gigapíxel (37394 * 6694 px). Fotografiado por Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o presentaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 6 ===
+GMBH-ALT: Hormigas en el borde de una calle en 1,08 Gigapixel (77709 * 13911 px). Fotografía de Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o participaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Hormigas al borde de una carretera en 0,25 gigapíxel (37394 * 6694 px). Fotografiado por Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o presentaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 7 ===
+GMBH-ALT: Carril de hormigas en el borde del camino en 0,80 Gigapixel (47164 * 16944 px). Fotografía de Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o participaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Camino de hormigas al borde del sendero en 0,25 gigapíxel (26396 * 9483 px). Fotografiado por Daniel Richter. Apto para aplicaciones de gran formato como techos tensados, decoración mural XXL o presentaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 272 ===
+GMBH-ALT: Ilmenau en primavera como fotografía gigapíxel con 2,32 Gigapixel (104496 × 22239 px). Fotografía de Daniel Richter muestra vista de ciudad con edificios y navegación interior. Detallado, apto para imágenes murales de gran formato, oficinas y presentaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Ilmenau en primavera como fotografía gigapíxel con 0,25 gigapíxel (34297 × 7299 px). Fotografiado por Daniel Richter muestra vista urbana con edificios y navegación fluvial. Detallada apta para cuadros murales de gran formato, oficinas y presentaciones en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 274 ===
+GMBH-ALT: Ilmenau en otoño muestra una vista urbana con arquitectura de hormigón y navegación interior. La captura comprende 1,76 Gigapixel con una resolución de 96276 × 18287 píxeles. Fotografiado por Daniel Richter. El motivo es apto para decoración mural representativa en hoteles, oficinas y edificios públicos. Incluso en formatos XXL, la imagen permanece nítida sin pixelación. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Ilmenau-Otoño muestra una vista urbana con arquitectura de hormigón y navegación fluvial. La fotografía comprende 0,25 gigapíxel con una resolución de 45274 × 5528 píxeles. Fotografiado por Daniel Richter. El motivo es adecuado para decoración mural representativa en hoteles, oficinas y edificios públicos. Incluso en formatos XXL la imagen permanece nítida sin píxeles. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
+=== uid 276 ===
+GMBH-ALT: Ilmenau en verano como fotografía gigapíxel con 2,42 Gigapixel (98937 × 24419 px). Fotografía de Daniel Richter muestra vista de ciudad con arquitectura de hormigón y navegación interior. Detallado para decoración mural XXL, espacios de oficina y stands en ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+BIZ-NEU : Ilmenau en verano como fotografía gigapíxel con 0,25 gigapíxel (31832 × 7857 px). Fotografiado por Daniel Richter muestra vista urbana con arquitectura de hormigón y navegación fluvial. Rica en detalles para decoración mural XXL, espacios de oficina y stands de ferias. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.
+
