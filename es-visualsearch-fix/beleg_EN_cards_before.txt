@@ -1,0 +1,6 @@
+      4 architecture
+      8 cityscape
+      1 Genuine camera capture
+      1 no AI generation
+      1 no AI upscaling
+      2 Ultra-high-resolution

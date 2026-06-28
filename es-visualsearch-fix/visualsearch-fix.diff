@@ -1,0 +1,26 @@
+### EmbeddingSearchService.php (working-tree = HEAD + 4=>es, clean):
+diff --git a/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php b/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
+index ea911b8..b93ea9d 100644
+--- a/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
++++ b/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
+@@ -84,6 +84,7 @@ class EmbeddingSearchService
+         $langCode = match($languageId) {
+             2 => 'fr',
+             3 => 'ru',
++            4 => 'es',
+             default => null,
+         };
+         if ($langCode === null || empty($results)) return;
+
+### KeSearchAdapter.isolated.php (HEAD + NUR 4=>es, OHNE Photographer-Feature):
+--- a/KeSearchAdapter.php	2026-06-29 00:16:18.006129143 +0200
++++ b/KeSearchAdapter.isolated.php	2026-06-29 00:15:54.478344304 +0200
+@@ -27,7 +27,7 @@
+         $kwField   = $languageId !== 0 ? 'ai_keywords_en'    : 'ai_keywords_de';
+         $descField = $languageId !== 0 ? 'ai_description_en' : 'ai_description_de';
+ 
+-        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', default => null };
++        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', 4 => 'es', default => null };
+         $hasTrans = $langCode !== null;
+ 
+         // Split into individual words, ignore stopwords shorter than 2 chars
