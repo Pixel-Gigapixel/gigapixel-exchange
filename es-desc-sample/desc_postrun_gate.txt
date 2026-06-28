@@ -3,22 +3,7 @@ ES DESCRIPTION-GATE — 8889 Records (POST-RUN/DB, volle Menge)
 (0) COVERAGE — DE-Beschreibung (deleted=0) ohne es-Row: 0  uids=[]
 (0b) LEERE es-description trotz DE (Trunc/Skip): 0  uids=[]
 
-(1a) ECHTE Ziffernkorruption (DE-only UND ES-only, = Swap/Verrechnung): 5
-    uid 2309: DE-only={'12507': 1} ES-only={'21507': 1}
-    DE='Wasserfall in den Alpen, 0,25 Gigapixel (20013 × 12507 Pixel), fotografiert von Daniel Richter. Das Bild zeigt Fluss, Gewässer und Strom in alpiner Umgebung. Eignet sich für Spanndecken und XXL-Wandgestaltung. Echte Kameraaufnahme, keine KI-Generierung, kein KI-Upscaling.'
-    ES='Cascada en los Alpes, 0,25 Gigapixel (20013 × 21507 píxeles), fotografiado por Daniel Richter. La imagen muestra río, aguas y corriente en ambiente alpino. Se presta para techos tensados y decoración mural XXL. Captura de cámara auténtica, sin generación por IA, sin upscaling por IA.'
-    uid 7880: DE-only={'1950': 1} ES-only={'50': 1}
-    DE='Dekoratives, nahtloses Ahornblattmuster im 1950er-Jahre Mid-Century-Stil auf grauem Hintergrund, 10000 × 10000 px. Digitales Grafikmuster für Oberflächendesigns. Hohe Auflösung für großformatige Ausgaben. Keine KI-Generierung, kein KI-Upscaling.'
-    ES='Patrón decorativo sin costuras de hojas de arce en estilo Mid-Century de los años 50 sobre fondo gris, 10000 × 10000 px. Patrón gráfico digital para diseños de superficie. Alta resolución para salidas de gran formato. Sin generación por IA, sin upscaling por IA.'
-    uid 7881: DE-only={'1950': 1} ES-only={'50': 1}
-    DE='Dekoratives, nahtloses Blattmuster im 1950er-Jahre Mid-Century-Stil auf grauem Hintergrund, 10000 × 10000 px. Digitales Grafikmuster für Oberflächendesigns. Hohe Auflösung für großformatige Ausgaben. Keine KI-Generierung, kein KI-Upscaling.'
-    ES='Patrón decorativo sin costuras de hojas en estilo Mid-Century de los años 50 sobre fondo gris, 10000 × 10000 px. Patrón gráfico digital para diseños de superficie. Alta resolución para salidas de gran formato. Sin generación por IA, sin upscaling por IA.'
-    uid 7883: DE-only={'1950': 1} ES-only={'50': 1}
-    DE='Dekoratives, nahtloses Blattmuster im 1950er-Jahre Mid-Century-Stil auf grauem Hintergrund, 10000 × 10000 px. Digitales Grafikmuster für Oberflächendesigns. Hohe Auflösung für großformatige Ausgaben. Keine KI-Generierung, kein KI-Upscaling.'
-    ES='Patrón decorativo sin costuras de hojas en estilo Mid-Century de los años 50 sobre fondo gris, 10000 × 10000 px. Patrón gráfico digital para diseños de superficie. Alta resolución para salidas de gran formato. Sin generación por IA, sin upscaling por IA.'
-    uid 8312: DE-only={'1950': 1} ES-only={'50': 1}
-    DE='3D-Illustration eines Retro-Drive-In-Schilds im Stil der amerikanischen 1950er Jahre. Die digitale Darstellung zeigt ein stilisiertes Werbesymbol mit markanten Farbakzenten. Auflösung 10000 × 10000 Pixel. Keine KI-Generierung, kein KI-Upscaling.'
-    ES='Ilustración 3D de un letrero retro de autocine al estilo de los años 50 estadounidenses. La representación digital muestra un símbolo publicitario estilizado con acentos de color distintivos. Resolución 10000 × 10000 píxeles. Sin generación por IA, sin upscaling por IA.'
+(1a) ECHTE Ziffernkorruption (DE-only UND ES-only, = Swap/Verrechnung): 0
 
 (1b) Zahl entfällt/hinzu (nur eine Seite — meist Jh.→röm. 'siglo XVI', Tausender egal): 9
     uid 3856: DE-only={'16': 1} ES-only={}
@@ -57,34 +42,7 @@ ES DESCRIPTION-GATE — 8889 Records (POST-RUN/DB, volle Menge)
     uid 7839: DE='x' ES='×'
     uid 7840: DE='x' ES='×'
 
-(3) IA-Konsistenz (kein KI-Rest / 'upscaling por IA'): 27 Findings
-    uid 1355: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía ultra-alta resolución gigapíxel de un suelo de corcho en 2,77 Gigapixel (61152 × 45368 píxeles). Fotografía d'
-    uid 2180: DE-Upscaling ohne 'upscaling por IA' in ES  ES="Paisaje alpino cerca de Cortina d'Ampezzo de Daniel Richter: 0,52 Gigapixel (36819 * 14001 píxeles), Dolomites, Italia. "
-    uid 2567: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Paisaje alpino con 1,57 Gigapixel (72672 × 21582 píxeles). Fotografía de Daniel Richter. Apto para techos tensados y dec'
-    uid 4080: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Gráfica fractal generada por computadora, detallada, en 70.000 × 70.000 píxeles para formatos grandes que llenan el espa'
-    uid 5780: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Vista de fachada de arquitectura urbana y edificios en San Petersburgo en 0,10 Gigapixel (16024 x 6256 píxeles). Fotogra'
-    uid 5809: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Campo de amapolas en el Palatinado con 1,03 Gigapixel (52450 x 19624 píxeles). Fotografía de alta resolución de Claudia '
-    uid 5826: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Cienfuegos" de Norbert Achtelik con 0,10 Gigapixel (19290 x 5196 píxeles) que muestra costa, p'
-    uid 5827: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Toma gigapíxel "CUB-Cienfuegos" (0,10 Gigapixel, 23818 x 4223 píxeles) de Norbert Achtelik que muestra naturaleza tropic'
-    uid 5828: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Cienfuegos" de Norbert Achtelik con 0,10 Gigapixel (24448 x 4107 píxeles) que muestra playa, a'
-    uid 5829: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Toma gigapíxel "CUB-Cienfuegos" (0,12 Gigapixel, 22067 x 5466 píxeles) de Norbert Achtelik que muestra mar, costa y play'
-    uid 5830: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Cienfuegos" de Norbert Achtelik con 0,13 Gigapixel (24567 x 5479 píxeles) que muestra puesta d'
-    uid 5831: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Toma gigapíxel "CUB-Trinidad" (0,10 Gigapixel, 18647 x 5397 píxeles) de Norbert Achtelik que muestra arquitectura, casas'
-    uid 5832: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Trinidad" de Norbert Achtelik con 0,10 Gigapixel (17275 x 5800 píxeles) que muestra palmeras, '
-    uid 5833: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Toma gigapíxel "CUB-Trinidad" (0,10 Gigapixel, 16895 x 5922 píxeles) de Norbert Achtelik que muestra arquitectura, edifi'
-    uid 5834: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Trinidad" de Norbert Achtelik con 0,10 Gigapixel (17311 x 5823 píxeles) que muestra paisaje ur'
-    uid 5835: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Toma gigapíxel "CUB-Trinidad" (0,10 Gigapixel, 18779 x 5357 píxeles) de Norbert Achtelik que muestra ciudad, paisaje urb'
-    uid 5836: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Fotografía gigapíxel "CUB-Trinidad" de Norbert Achtelik con 0,10 Gigapixel (29900 x 3360 píxeles) que muestra paisaje, n'
-    uid 6196: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Baviera-NLC: toma de 0,20 Gigapixel (14638 × 13422 px) de Norbert Achtelik muestra cielo oscuro con rayo, atmósfera espa'
-    uid 6201: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Bruckmuehl: panorama de 0,25 Gigapixel (32344 × 7738 px) de Norbert Achtelik muestra paisaje con sol al atardecer, amane'
-    uid 7198: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Vista desde la torre del muelle sobre el paseo marítimo de Friedrichshafen en el lago de Constanza, toma de 0,10 gigapíx'
-    uid 7506: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Vista panorámica sobre las ruinas de Ostia Antica, Roma, Italia, Europa. 0,15 Gigapixel (20856 x 7268 píxeles). Fotograf'
-    uid 7513: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Amanecer en el Parque Nacional Urho Kekkonen invernal, Laponia, Finlandia, Europa. 0,10 Gigapixel (11648 x 8736 píxeles)'
-    uid 7589: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Iglesia St. Magdalena en Santa Maddalena con el grupo de las Geisler cubierto de nieve en luz otoñal, Villnößtal, Tirol '
-    uid 8039: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Panorama de un paisaje montañoso de alta montaña al atardecer con Glacier du Tour y cumbre del Aiguille de Chardonnet il'
-    uid 8040: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Paisaje montañoso de alta montaña con cumbre del Aiguille de Chardonnet y Glacier du Tour, Chamonix, Francia, como toma '
-    uid 8971: DE-Upscaling ohne 'upscaling por IA' in ES  ES='El centro de negocios dañado por un ataque de cohetes ruso en la Avenida Shevchenko en Odessa, Ucrania, con buen tiempo.'
-    uid 8977: DE-Upscaling ohne 'upscaling por IA' in ES  ES='Varias salpicaduras de sangre sobre fondo blanco, vista desde arriba. La toma posee una resolución de 0,12 Gigapixel (11'
+(3) IA-Konsistenz (kein KI-Rest / 'upscaling por IA'): 0 Findings
 
 (4) Fotograf/Eigenname verbatim in ES: 239 fehlend
     uid 86: DE-Name='Dachpappe mit 0' Token 'Dachpappe' fehlt  ES='Toma gigapíxel ultra-alta resolución de tela asfáltica con 0,18 Gigapixel (28961 × 6335 px). Fotografiado por Daniel Ric'

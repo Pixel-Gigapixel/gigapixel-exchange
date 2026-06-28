@@ -1,5 +1,13 @@
 # ES Beschreibungen (Teil C) — Post-Run-Gate über die volle Menge (8.889)
 
+> **REMEDIATION ABGESCHLOSSEN → C FINAL.**
+> (1) uid 2309 re-translated → `20013 × 12507` (DE-Wert erhalten). (2) `' por ía'`→`' por IA'`:
+> Match-Set byte-exakt = **29 Records / 43 Vorkommen**, alle `upscaling`/`generación por ía`
+> (0 legitime „por ía" — verifiziert), transaktionaler `REPLACE`, 0 verbleibend.
+> **Re-Gate: (1a) Ziffernkorruption = 0 · (3) IA = 0 · Coverage 0/0.** (Jahrzehnt-Idiom „19XXer→años XX"
+> im Gate jetzt ausgeschlossen.) Verbleibend nur kosmetisch/Artefakt: (2) x→× 24 (quellgetreu belassen),
+> (4) Fotograf-Regex-Artefakt 239 (echter Name erhalten). C-Code lokal committed (3e95153), kein Push.
+
 **Lauf:** `--language=es --fields=description` (ohne Limit, Haiku, MD5-inkrementell, Delimiter-Contract) → **8.889 geschrieben**.
 **Gate:** `es_desc_gate.py --db` (liest ungekappte ES aus `tx_gigapixels_translation`, DE aus `ai_description_de`).
 **Artefakte:** `desc_postrun_gate.txt` (Roh) · `flagged_postrun.tsv`.
