@@ -1,0 +1,28 @@
+ES DESCRIPTION-GATE — 50 Records (Dry-Run, volle Strings)
+
+(1) ZAHLEN byte-genau (Multiset DE==ES): 0 Abweichungen
+
+(2) Dimensions-Separator (× vs x) quellgetreu: 0 Abweichungen
+
+(3) IA-Konsistenz (kein KI-Rest / 'upscaling por IA'): 0 Findings
+
+(4) Fotograf/Eigenname verbatim in ES: 0 fehlend
+
+(5a) Sample-Phrasierung (50):
+      50× DE enthält 'kein KI-Upscaling'
+      50× DE enthält 'keine KI-Generierung'
+      50× DE enthält 'Echte Kameraaufnahme'
+
+(5b) VOLL-KORPUS-Varianten-Scan (8889 Records) — decken die Fixed-Renderings alles ab?
+     8792× (98%)  'kein KI-Upscaling'
+     8792× (98%)  'KI-Upscaling'
+     8597× (96%)  'keine KI-Generierung'
+     8597× (96%)  'KI-Generierung'
+     7964× (89%)  'Echte Kameraaufnahme'
+     6246× (70%)  'Spanndecke'
+     3487× (39%)  'großformatige'
+     3465× (38%)  'Messebau'
+      355× (3%)  'Klinik'
+      191× (2%)  'Messen'
+       17× (0%)  'Praxis'
+       16× (0%)  'Healing Environment'
