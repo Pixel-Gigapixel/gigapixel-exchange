@@ -1,0 +1,233 @@
+58 leere ES-Titel neu übersetzt — nicht-leer=58/58
+
+uid 282
+  DE: Der Turm des Intershops in Jena
+  ES: La torre de la Intershop en Jena
+
+uid 529
+  DE: Bayerische Hypotheken und Wechselbank in München
+  ES: Bayerische Hypotheken und Wechselbank en Múnich
+
+uid 531
+  DE: Das Schloss Belvedere bei Weimar
+  ES: El Palacio Belvedere cerca de Weimar
+
+uid 532
+  DE: Der Berliner Hauptbahnhof an der Spree
+  ES: La Estación Central de Berlín en el Spree
+
+uid 536
+  DE: Brandenburger Tor mit Vorplatz
+  ES: Puerta de Brandeburgo con explanada
+
+uid 540
+  DE: Firmenzentrale von Zeiss aus Jena
+  ES: Sede corporativa de Zeiss en Jena
+
+uid 551
+  DE: Der Big Ben von Dubai
+  ES: El Big Ben de Dubai
+
+uid 552
+  DE: Die Business Bucht von Dubai
+  ES: La bahía empresarial de Dubai
+
+uid 558
+  DE: Die Ulster-Bank in Dublin
+  ES: El Banco Ulster en Dublín
+
+uid 586
+  DE: Der Intershop in Jena
+  ES: La Intershop en Jena
+
+uid 588
+  DE: Dysert O'Dea Burg in Irland
+  ES: Castillo Dysert O'Dea en Irlanda
+
+uid 595
+  DE: John's Lane Kirche in Irland
+  ES: Iglesia John's Lane en Irlanda
+
+uid 1208
+  DE: Weinberg-Freyburg
+  ES: Weinberg-Freyburg
+
+uid 1676
+  DE: Arena am Panometer
+  ES: Arena en Panometer
+
+uid 1715
+  DE: alter Elbtunnel
+  ES: Antiguo túnel del Elba
+
+uid 2204
+  DE: Drei-Zinnen
+  ES: Tres Picos
+
+uid 2490
+  DE: Alpen46
+  ES: Alpen46
+
+uid 2610
+  DE: Schloss Sanssouci in Potsdam 5a
+  ES: Palacio Sanssouci en Potsdam 5a
+
+uid 2611
+  DE: Schloss Sanssouci in Potsdam 5a
+  ES: Palacio Sanssouci en Potsdam 5a
+
+uid 2612
+  DE: Schloss Sanssouci in Potsdam 5a
+  ES: Palacio Sanssouci en Potsdam 5a
+
+uid 2613
+  DE: Schloss Sanssouci in Potsdam 5a
+  ES: Palacio Sanssouci en Potsdam 5a
+
+uid 2614
+  DE: Schloss Sanssouci in Potsdam 5a
+  ES: Palacio Sanssouci en Potsdam 5a
+
+uid 2622
+  DE: Schloss Sanssouci in Potsdam 2
+  ES: Palacio Sanssouci en Potsdam 2
+
+uid 2623
+  DE: Schloss Sanssouci in Potsdam 2
+  ES: Palacio Sanssouci en Potsdam 2
+
+uid 2624
+  DE: Schloss Sanssouci in Potsdam 2
+  ES: Palacio Sanssouci en Potsdam 2
+
+uid 2625
+  DE: Schloss Sanssouci in Potsdam 5
+  ES: Palacio Sanssouci en Potsdam 5
+
+uid 2626
+  DE: Schloss Sanssouci in Potsdam 5
+  ES: Palacio Sanssouci en Potsdam 5
+
+uid 2627
+  DE: Schloss Sanssouci in Potsdam 5
+  ES: Palacio Sanssouci en Potsdam 5
+
+uid 2629
+  DE: Schloss Sanssouci in Potsdam 5
+  ES: Palacio Sanssouci en Potsdam 5
+
+uid 2630
+  DE: Schloss Sanssouci in Potsdam 5b
+  ES: Palacio Sanssouci en Potsdam 5b
+
+uid 2631
+  DE: Schloss Sanssouci in Potsdam 5b
+  ES: Palacio Sanssouci en Potsdam 5b
+
+uid 2632
+  DE: Schloss Sanssouci in Potsdam 5b
+  ES: Palacio Sanssouci en Potsdam 5b
+
+uid 2633
+  DE: Schloss Sanssouci in Potsdam 5b
+  ES: Palacio Sanssouci en Potsdam 5b
+
+uid 2634
+  DE: Schloss Sanssouci in Potsdam 5b
+  ES: Palacio Sanssouci en Potsdam 5b
+
+uid 2636
+  DE: Schloss Sanssouci in Potsdam 3
+  ES: Palacio Sanssouci en Potsdam 3
+
+uid 3343
+  DE: On Top
+  ES: En la Cima
+
+uid 3344
+  DE: On Top
+  ES: En la Cima
+
+uid 3727
+  DE: Lindenberg Sicht Kickelhahn
+  ES: Vista de Lindenberg Kickelhahn
+
+uid 3845
+  DE: BASF zur Blauen Stunde
+  ES: BASF a la hora azul
+
+uid 3846
+  DE: BASF zur Blauen Stunde 2
+  ES: BASF a la hora azul 2
+
+uid 3847
+  DE: BASF zur Blauen Stunde 3
+  ES: BASF a la hora azul 3
+
+uid 3852
+  DE: BASF zur Blauen Stunde 4
+  ES: BASF a la hora azul 4
+
+uid 3853
+  DE: BASF zur Blauen Stunde
+  ES: BASF a la hora azul
+
+uid 6098
+  DE: Hofkapellenwanderung
+  ES: Caminata de las capillas de corte
+
+uid 6265
+  DE: Lofer
+  ES: Lofer
+
+uid 6748
+  DE: Cliffs
+  ES: Acantilados
+
+uid 6888
+  DE: Regenbogen
+  ES: Arcoíris
+
+uid 6893
+  DE: Polarlicht
+  ES: Aurora boreal
+
+uid 7037
+  DE: LeFevre Overlook
+  ES: LeFevre Overlook
+
+uid 8156
+  DE: Schifferkirche in Ahrenshoop
+  ES: Iglesia de los Marineros en Ahrenshoop
+
+uid 8210
+  DE: Urwald Sababurg
+  ES: Bosque primario Sababurg
+
+uid 8211
+  DE: Urwald Sababurg
+  ES: Bosque primario Sababurg
+
+uid 8212
+  DE: Urwald Sababurg
+  ES: Bosque primario Sababurg
+
+uid 8213
+  DE: Urwald Sababurg
+  ES: Bosque primario Sababurg
+
+uid 8787
+  DE: Wasserburg Himmel
+  ES: Castillo de agua cielo
+
+uid 8951
+  DE: Spiekeroog Alte Inselkirche
+  ES: Spiekeroog iglesia antigua de la isla
+
+uid 9086
+  DE: Panoramic View of New Zealand’s Southern Alps Panoramablick auf die Südlichen Alpen Neuseelands
+  ES: Panoramablick auf die Südlichen Alpen Neuseelands
+
+uid 9087
+  DE: Panoramic View of New Zealand’s Southern Alps Panoramablick auf die Südlichen Alpen Neuseelands
+  ES: Panoramablick auf die Südlichen Alpen Neuseelands
