@@ -1,0 +1,52 @@
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
+index 56d75af..bc420c3 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
+@@ -61,6 +61,7 @@ class DisplayTitleViewHelper extends AbstractViewHelper
+             1 => 'en',
+             2 => 'fr',
+             3 => 'ru',
++            4 => 'es',
+             default => 'en',
+         };
+     }
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
+index 626f9d8..957cecd 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
+@@ -36,6 +36,7 @@ class OgTagsViewHelper extends AbstractViewHelper
+             1 => 'en',
+             2 => 'fr',
+             3 => 'ru',
++            4 => 'es',
+             default => 'de',
+         };
+     }
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+index 97550f4..a6a3afb 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+@@ -22,6 +22,8 @@ class SchemaViewHelper extends AbstractViewHelper
+         return match ($languageId) {
+             1 => 'en',
+             2 => 'fr',
++            3 => 'ru',
++            4 => 'es',
+             default => 'en',
+         };
+     }
+--- Show.isolated.html (HEAD → isoliert, NUR langId-4, KEIN photographerLink) ---
+--- a/Show.html	2026-06-28 20:46:59.514986126 +0200
++++ b/Show.isolated.html	2026-06-28 20:46:26.014158100 +0200
+@@ -146,9 +146,9 @@
+ 							</div>
+ 						</f:if>
+ 
+-						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3">
++						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4">
+ 							<f:then>
+-								<f:variable name="langCode"><f:if condition="{currentLanguageId} == 2"><f:then>fr</f:then><f:else>ru</f:else></f:if></f:variable>
++								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case></f:switch></f:variable>
+ 								<f:variable name="translatedDesc">{dg:productTranslation(uid: gigapixel.uid, field: 'description', language: langCode)}</f:variable>
+ 								<f:if condition="{translatedDesc}">
+ 									<f:then>
