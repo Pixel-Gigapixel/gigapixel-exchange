@@ -1,0 +1,20 @@
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+index a6a3afb..101187d 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+@@ -67,6 +67,15 @@ class SchemaViewHelper extends AbstractViewHelper
+         $description = $languageId === 0
+             ? trim($gigapixel->getAiDescriptionDe())
+             : trim($gigapixel->getAiDescriptionEn());
++        if ($languageId !== 0) {
++            $store     ??= GeneralUtility::makeInstance(TranslationRepository::class);
++            $lCode     ??= $this->langCode($languageId);
++            $transDesc   = $store->get('tx_cartgigapixels_domain_model_gigapixel',
++                                       $gigapixel->getUid(), 'description', $lCode);
++            if ($transDesc !== null && $transDesc !== '') {
++                $description = $transDesc;   // es/fr/ru aus dem Store (inkl. korrigierter Maße); EN nur Fallback
++            }
++        }
+         if ($description === '') {
+             $notes       = trim((string)($gigapixel->getNotes() ?? ''));
+             $description = $notes !== '' ? substr(strip_tags($notes), 0, 300) : (string)$name;
