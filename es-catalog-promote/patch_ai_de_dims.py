@@ -34,10 +34,11 @@ DIM_RE = re.compile(r'(\d[\d.   ]*\d|\d)\s*([×x*])\s*(\d[\d.   ]*\d|\d)(\
 # Bindestrich-Form "1,87-Gigapixel-Aufnahme" ebenfalls.
 GP_RE  = re.compile(r'(\d+(?:[.,]\d+)?)(\s*-?\s*)(Gigapixel|GP|gigap[íi]xel|Gigap[íi]xel)')
 
-def _db(autocommit):
+def _db(target, autocommit):
     ROLL._load_secrets()
-    return pymysql.connect(host=os.environ["DB_BIZ_HOST"], user=os.environ["DB_BIZ_USER"],
-        password=os.environ["DB_BIZ_PASSWORD"], database=os.environ["DB_BIZ_NAME"],
+    T = target.upper()
+    return pymysql.connect(host=os.environ[f"DB_{T}_HOST"], user=os.environ[f"DB_{T}_USER"],
+        password=os.environ[f"DB_{T}_PASSWORD"], database=os.environ[f"DB_{T}_NAME"],
         charset="utf8mb4", cursorclass=pymysql.cursors.DictCursor, autocommit=autocommit)
 
 def _digits(s): return int(re.sub(r'\D', '', s))
@@ -90,12 +91,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz",
+                    help="DB-Ziel (DB_<TARGET>_*); gmbh ist LIVE")
+    ap.add_argument("--column", default="ai_description_de",
+                    choices=["ai_description_de", "ai_description_en"],
+                    help="zu patchende Prosa-Spalte (Maße/GP); Wahrheit bleibt format_width/height")
     a = ap.parse_args()
     if a.write == a.dry_run:
         print("Genau eines von --dry-run / --write angeben."); return
-    c = _db(autocommit=False); cur = c.cursor()
-    cur.execute(f"SELECT uid, ai_description_de de, format_width fw, format_height fh "
-                f"FROM {GP_TABLE} WHERE deleted=0 AND ai_description_de<>''")
+    COL = a.column
+    SFX = ("" if a.target == "biz" else f"_{a.target}") + ("" if COL == "ai_description_de" else "_en")
+    print(f"patch_ai_de_dims: target={a.target}{' [LIVE]' if a.target=='gmbh' else ''}  mode={'WRITE' if a.write else 'DRY-RUN'}")
+    c = _db(a.target, autocommit=False); cur = c.cursor()
+    cur.execute(f"SELECT uid, {COL} de, format_width fw, format_height fh "
+                f"FROM {GP_TABLE} WHERE deleted=0 AND {COL}<>''")
     rows = cur.fetchall()
 
     affected = []   # (uid, old, new, truth, gpt)
@@ -125,7 +134,7 @@ def main():
 
     os.makedirs(OUT, exist_ok=True)
     # Match-Set (alle betroffenen, Vorher-Zustand)
-    with open(OUT+"/dims_patch_matchset.tsv", "w", encoding="utf-8") as f:
+    with open(OUT+f"/dims_patch_matchset{SFX}.tsv", "w", encoding="utf-8") as f:
         f.write("uid\told_dims\told_gp\ttruth_dims\ttruth_gp\n")
         for uid, old, new, truth, gpt in affected:
             f.write(f"{uid}\t{_dim_pair(old)}\t{_gp_val(old)}\t{truth[0]}x{truth[1]}\t{gpt}\n")
@@ -147,11 +156,11 @@ def main():
                 seen.add(key); out.append(it)
             if len(out)>=n: break
         return out
-    with open(OUT+"/dims_patch_sample.txt", "w", encoding="utf-8") as f:
+    with open(OUT+f"/dims_patch_sample{SFX}.txt", "w", encoding="utf-8") as f:
         f.write(f"DIMS-PATCH Vorher/Nachher — {len(affected)} betroffen, diverses Sample\n\n")
         for uid, old, new, truth, gpt in pick_diverse(affected, 15):
             f.write(f"=== uid {uid}  (truth {truth[0]}×{truth[1]} = {gpt} GP) ===\nALT: {old}\nNEU: {new}\n\n")
-    print("written:", OUT+"/dims_patch_sample.txt", "+ dims_patch_matchset.tsv")
+    print("written:", OUT+f"/dims_patch_sample{SFX}.txt", f"+ dims_patch_matchset{SFX}.tsv")
 
     if a.dry_run:
         print("\n=== DRY-RUN — KEIN Write ===")
@@ -159,19 +168,19 @@ def main():
 
     # --- WRITE (biz) ---
     ts = ROLL  # placeholder; timestamp via SQL NOW-ähnlich nicht nötig
-    backup = OUT+"/dims_patch_backup.tsv"
+    backup = OUT+f"/dims_patch_backup{SFX}.tsv"
     with open(backup, "w", encoding="utf-8") as f:
-        f.write("uid\told_ai_description_de\n")
+        f.write(f"uid\told_{COL}\n")
         for uid, old, new, truth, gpt in affected:
             f.write(f"{uid}\t{json.dumps(old, ensure_ascii=False)}\n")
     print(f"Backup geschrieben: {backup} ({len(affected)} Records)")
     try:
         c.begin()
         for uid, old, new, truth, gpt in affected:
-            cur.execute(f"UPDATE {GP_TABLE} SET ai_description_de=%s WHERE uid=%s AND ai_description_de=%s",
+            cur.execute(f"UPDATE {GP_TABLE} SET {COL}=%s WHERE uid=%s AND {COL}=%s",
                         (new, uid, old))
         c.commit()
-        print(f"COMMIT ok — {len(affected)} ai_description_de gepatcht.")
+        print(f"COMMIT ok — {len(affected)} {COL} gepatcht.")
     except Exception as e:
         c.rollback(); print("ROLLBACK -", repr(e)); raise
     finally:

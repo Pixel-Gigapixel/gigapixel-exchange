@@ -1,0 +1,62 @@
+DIMS-PATCH Vorher/Nachher — 1816 betroffen, diverses Sample
+
+=== uid 3  (truth 10783×23225 = 0,25 GP) ===
+ALT: Burji Khalifa in Dubai in 2.50 gigapixel (34055 × 73345 pixels). Photographed by Daniel Richter. Ideal for large-format wall design and architectural room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Burji Khalifa in Dubai in 0.25 gigapixel (10783 × 23225 pixels). Photographed by Daniel Richter. Ideal for large-format wall design and architectural room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 4  (truth 26412×9467 = 0,25 GP) ===
+ALT: The Großer Ahornboden at Karwendel in the Alps as a gigapixel image with 1.33 GP (60896 × 21826 pixels). Photography by Daniel Richter. Suitable for large format applications such as stretch ceilings, XXL wall design or trade fairs. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: The Großer Ahornboden at Karwendel in the Alps as a gigapixel image with 0.25 GP (26412 × 9467 pixels). Photography by Daniel Richter. Suitable for large format applications such as stretch ceilings, XXL wall design or trade fairs. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 5  (truth 37394×6694 = 0,25 GP) ===
+ALT: Ants at the edge of a road in 1.08 gigapixel (77709 * 13911 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ants at the edge of a road in 0.25 gigapixel (37394 * 6694 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 6  (truth 37394×6694 = 0,25 GP) ===
+ALT: Ants at the edge of a road in 1.08 gigapixel (77709 * 13911 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ants at the edge of a road in 0.25 gigapixel (37394 * 6694 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 7  (truth 26396×9483 = 0,25 GP) ===
+ALT: Ant trail at the wayside in 0.80 gigapixel (47164 * 16944 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ant trail at the wayside in 0.25 gigapixel (26396 * 9483 px). Photograph by Daniel Richter. Suitable for large-format applications such as stretch ceilings, XXL wall design or trade fair appearances. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 272  (truth 34297×7299 = 0,25 GP) ===
+ALT: Ilmenau in spring as gigapixel photography with 2.32 gigapixels (104496 × 22239 px). Photo by Daniel Richter shows city view with buildings and inland shipping. Rich in detail, suitable for large-format wall images, offices and trade fair presentations. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ilmenau in spring as gigapixel photography with 0.25 gigapixels (34297 × 7299 px). Photo by Daniel Richter shows city view with buildings and inland shipping. Rich in detail, suitable for large-format wall images, offices and trade fair presentations. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 274  (truth 45274×5528 = 0,25 GP) ===
+ALT: Ilmenau-Herbst shows a city view with concrete architecture and inland shipping. The image comprises 1.76 gigapixels at a resolution of 96276 × 18287 pixels. Photographed by Daniel Richter. The motif is suitable for representative wall design in hotels, offices and public buildings. Even in XXL formats, the image remains pixel-free sharp. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ilmenau-Herbst shows a city view with concrete architecture and inland shipping. The image comprises 0.25 gigapixels at a resolution of 45274 × 5528 pixels. Photographed by Daniel Richter. The motif is suitable for representative wall design in hotels, offices and public buildings. Even in XXL formats, the image remains pixel-free sharp. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 276  (truth 31832×7857 = 0,25 GP) ===
+ALT: Ilmenau in summer as gigapixel photography with 2.42 gigapixels (98937 × 24419 px). Photo by Daniel Richter shows city view with concrete architecture and inland shipping. High detail for XXL wall design, office spaces and trade fair stands. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ilmenau in summer as gigapixel photography with 0.25 gigapixels (31832 × 7857 px). Photo by Daniel Richter shows city view with concrete architecture and inland shipping. High detail for XXL wall design, office spaces and trade fair stands. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 278  (truth 37149×6732 = 0,25 GP) ===
+ALT: Ilmenau in winter as gigapixel photography with 1.84 gigapixels (100792 × 18266 px). Photo by Daniel Richter shows city view with concrete structures and inland shipping. Possible applications in large-format wall design, trade fair areas and office buildings. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Ilmenau in winter as gigapixel photography with 0.25 gigapixels (37149 × 6732 px). Photo by Daniel Richter shows city view with concrete structures and inland shipping. Possible applications in large-format wall design, trade fair areas and office buildings. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 279  (truth 31689×7891 = 0,25 GP) ===
+ALT: Winter landscape shot from Ilmenau with snow-covered Thuringian Forest in 0.76 gigapixels (53890 × 14155 pixels). Shot by Daniel Richter. The panorama file is suitable for large-format wall design, stretch ceilings and rooms in practices as well as clinics. Remains pixel-free sharp even at several meters in width. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Winter landscape shot from Ilmenau with snow-covered Thuringian Forest in 0.25 gigapixels (31689 × 7891 pixels). Shot by Daniel Richter. The panorama file is suitable for large-format wall design, stretch ceilings and rooms in practices as well as clinics. Remains pixel-free sharp even at several meters in width. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 280  (truth 33098×7559 = 0,25 GP) ===
+ALT: Industrial plant at night as gigapixel photography with 0.44 gigapixels (43716 × 9984 px). Photo by Daniel Richter shows illuminated structures and emissions. Suitable for large-format wall images, trade fair stands and representative room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Industrial plant at night as gigapixel photography with 0.25 gigapixels (33098 × 7559 px). Photo by Daniel Richter shows illuminated structures and emissions. Suitable for large-format wall images, trade fair stands and representative room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 281  (truth 17013×14699 = 0,25 GP) ===
+ALT: The Intershop in Jena as gigapixel photography with 5.04 gigapixels (76349 × 65964 px). Photo by Daniel Richter shows architectural details of the standalone building. Ideal for XXL wall design, trade fair stands and representative large-scale images. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: The Intershop in Jena as gigapixel photography with 0.25 gigapixels (17013 × 14699 px). Photo by Daniel Richter shows architectural details of the standalone building. Ideal for XXL wall design, trade fair stands and representative large-scale images. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 283  (truth 29514×8474 = 0,25 GP) ===
+ALT: Mountains of Ireland as gigapixel photography with 1.65 gigapixels (75708 × 21738 px). Photo by Daniel Richter shows mountain landscape at the Atlantic. Detailed for large-format wall design, trade fair stands and representative rooms. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Mountains of Ireland as gigapixel photography with 0.25 gigapixels (29514 × 8474 px). Photo by Daniel Richter shows mountain landscape at the Atlantic. Detailed for large-format wall design, trade fair stands and representative rooms. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 285  (truth 15827×15827 = 0,25 GP) ===
+ALT: Dysert O'Dea Castle in Ireland as gigapixel photography with 3.84 gigapixels (61962 × 61962 px). Photo by Daniel Richter shows architectural details of the old standalone castle. Suitable for XXL wall images, trade fair stands and representative room design. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Dysert O'Dea Castle in Ireland as gigapixel photography with 0.25 gigapixels (15827 × 15827 px). Photo by Daniel Richter shows architectural details of the old standalone castle. Suitable for XXL wall images, trade fair stands and representative room design. Genuine camera capture, no AI generation, no AI upscaling.
+
+=== uid 286  (truth 18550×13500 = 0,25 GP) ===
+ALT: Red house at the harbor in Ireland as gigapixel photography with 1.26 gigapixels (41670 × 30326 px). Photo by Daniel Richter shows architectural details of the old building. Perfect for large-format wall design, trade fair stands and XXL room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+NEU: Red house at the harbor in Ireland as gigapixel photography with 0.25 gigapixels (18550 × 13500 px). Photo by Daniel Richter shows architectural details of the old building. Perfect for large-format wall design, trade fair stands and XXL room concepts. Genuine camera capture, no AI generation, no AI upscaling.
+
