@@ -1,0 +1,80 @@
+TR SAMPLE-GATE — 8889 Records
+  empty: 66  [(1502, 'keywords'), (1503, 'keywords'), (1504, 'keywords'), (1505, 'keywords'), (1506, 'keywords'), (1509, 'keywords'), (1510, 'keywords'), (1511, 'keywords')]
+  de_res: 2  [(1449, 'description', ['fotografiert von']), (3214, 'description', ['fotografiert von'])]
+  en_res: 0  []
+  kw_pad: 2  [(7445, 3, 22), (7457, 59, 63)]
+  num: 15  [(1041, {'10722': 1}, {'21722': 1}), (1138, {'47827': 1}, {'47823': 1}), (4123, {'15': 2, '821': 2}, {'15821': 2}), (4124, {'70': 2, '000': 2}, {'70000': 2}), (4125, {'15': 2, '821': 2}, {'15821': 2}), (4126, {'70': 2, '000': 2}, {'70000': 2}), (6460, {'11500': 1}, {'11648': 1}), (6632, {'9608': 1}, {'4192': 1})]
+
+--- 12 Samples (title | kw | desc) ---
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  tr-title: "Büyük Ahornboden, Karwendel yakınında Alplar'da"
+  tr-kw:    'alp manzarası, nisan, gezinti, görsel, maviler, Avrupa, kayalar, kaya oluşumları, nem, özgürlük, idiylik, mevsimsel, peyzaj, yapraklı ağaçlar, yapraklar, doğal '
+  tr-desc:  "Karwendel'deki Büyük Akçaağaç Tarlası (Grosse Ahornboden) Alpler'de gigapiksel çekimi olarak 1,33 GP (60896 × 21826 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamala"
+
+uid 2:
+  DE-title: 'Schloss Belvedere bei Weimar'
+  tr-title: "Schloss Belvedere bei Weimar'da (Weimar'daki Belvedere Sarayı)"
+  tr-kw:    'bekleme odası, eski, eski bina, antika, mimari, mimarlık, cazibe, gezinti, çıkış, dengeli, dış, mimar stilleri, yapılar, bej, yaşlı, ünlü, bulutlu, çeşme, renkl'
+  tr-desc:  "Weimar'daki Belvedere Sarayı 0,25 gigapiksel çekimi olarak 31064 x 8049 piksel ile Daniel Richter tarafından. Şunlar için uygundur: temsilci duvar tasarımı, büyük format baskılar ve fuar standı yapımı"
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  tr-title: ''
+  tr-kw:    'bekleme odası, yalnız, mimari, mimarlık, cazibe, gezinti, dengeli, dış, mimar stilleri, yapılar, özgürleştirici, ünlü, kaygılı, mavi, şehir merkezi, dramatik, d'
+  tr-desc:  "Dubai'deki Burji Khalifa 0,25 gigapiksel (10783 × 23225 piksel) olarak. Çeken: Daniel Richter. Büyük format duvar tasarımı ve mimari mekan konseptleri için ideal. Gerçek kamera çekimi, yapay zeka üret"
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  tr-title: "Büyük Ahornboden, Karwendel yakınında Alplar'da"
+  tr-kw:    'alp manzarası, nisan, gezinti, görsel, maviler, Avrupa, kayalar, kaya oluşumları, nem, özgürlük, idiylik, mevsimsel, peyzaj, yapraklı ağaçlar, yapraklar, doğal '
+  tr-desc:  "Karwendel'deki Büyük Akçaağaç Tarlası (Grosse Ahornboden) Alpler'de gigapiksel çekimi olarak 0,25 GP (26412 × 9467 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar"
+
+uid 5:
+  DE-title: 'Ameisen am Rand einer Straße'
+  tr-title: 'Karınca sokağın kenarında'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, doğa, doğa fotoğrafları, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Bir yolun kenarındaki karıncalar 0,25 gigapiksel (37394 * 6694 px) olarak. Çeken: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı veya fuar katılımla'
+
+uid 6:
+  DE-title: 'Ameisen am Rand einer Straße'
+  tr-title: 'Karınca sokağın kenarında'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, doğa, doğa fotoğrafları, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Bir yolun kenarındaki karıncalar 0,25 gigapiksel (37394 * 6694 px) olarak. Çeken: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı veya fuar katılımla'
+
+uid 7:
+  DE-title: 'Grenze zwischen Gras und Asphalt'
+  tr-title: 'Çim ve asfalt arasındaki sınır'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, yakın çekim, doğa, doğa fotoğrafları, çim alanı, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Yol kenarındaki karınca yolu 0,25 gigapiksel (26396 * 9483 px) olarak. Çeken: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı veya fuar katılımları. '
+
+uid 8:
+  DE-title: 'Rand eines Fußwegs'
+  tr-title: 'Yaya yolunun kenarı'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, yakın çekim, doğa, doğa fotoğrafları, çim alanı, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Bir yayaleyolu kenarı gigapiksel fotoğrafı olarak 0,25 GP (19377 × 12918 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı veya '
+
+uid 9:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  tr-title: 'Yol kenarında karınca yolu'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, yakın çekim, doğa, doğa fotoğrafları, çim alanı, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Yol kenarındaki karınca yolu gigapiksel çekimi olarak 0,25 GP (19376 × 12917 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı v'
+
+uid 10:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  tr-title: 'Yol kenarında karınca yolu'
+  tr-kw:    'fauna, yaya yolu, çim, otlar, yakın çekim, doğa, doğa fotoğrafları, çim alanı, kaldırım, yol kenarı, hayvanlar, çevre, yol, böcek, karınca'
+  tr-desc:  'Yol kenarındaki karınca yolu gigapiksel çekimi olarak 0,25 GP (19376 × 12917 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar tasarımı v'
+
+uid 12:
+  DE-title: 'Anfangsbuchstabe'
+  tr-title: 'İlk harf'
+  tr-kw:    'sanat, figür, heykel, bronz'
+  tr-desc:  'İlk harf – yüksek çözünürlüklü fotoğrafı 0,25 gigapiksel (12224 × 20453 px) olarak. Çekimi bronz heykeli şekil ve bronz üzerinde sanatsal odak ile göstermektedir. Dosya şunlar için uygundur: büyük for'
+
+uid 13:
+  DE-title: 'St. Johann Nepomuk Kirche in München'
+  tr-title: "St. Johann Nepomuk Kilisesi Münih'te"
+  tr-kw:    'antika, mimari, mimarlık, cazibe, gezinti, dış, barok, mimar stilleri, yapılar, boyalı, yansıtma, incil, görsel, BMW, renkli, kaldırım, şehir, dekorasyon, anıt,'
+  tr-desc:  "Münih'teki St. Johann Nepomuk Kilisesi gigapiksel çekimi olarak 0,25 GP (15154 × 16517 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XXL duvar "
+
