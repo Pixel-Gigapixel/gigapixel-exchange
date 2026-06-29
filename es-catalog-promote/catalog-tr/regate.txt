@@ -1,0 +1,1 @@
+TR Re-Gate nach Cleanup: empty=0 · de_res=0 · pad=2 · num=11 (alle benigne: Tausender-/Dezimal-Separator-Normalisierung, 0 echte Dims-Fehler; 4 echte Dims deterministisch patch_text-gefixt).

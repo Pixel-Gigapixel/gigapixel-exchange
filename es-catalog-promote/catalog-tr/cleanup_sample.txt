@@ -1,0 +1,80 @@
+TR Cleanup-Sample (15 gemischt, inkl. num-gepatchte/re-translated)
+
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  tr-title: "Büyük Ahornboden, Karwendel yakınında Alplar'da"
+  tr-kw:    'alp manzarası, nisan, gezinti, görsel, maviler, Avrupa, kayalar, kaya oluşumları, nem, özgürlük, idiylik, mevsimsel, peyzaj, yapraklı ağaçlar, yaprakl'
+  tr-desc:  "Karwendel'deki Büyük Akçaağaç Tarlası (Grosse Ahornboden) Alpler'de gigapiksel çekimi olarak 1,33 GP (60896 × 21826 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, X"
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  tr-title: ''
+  tr-kw:    'bekleme odası, yalnız, mimari, mimarlık, cazibe, gezinti, dengeli, dış, mimar stilleri, yapılar, özgürleştirici, ünlü, kaygılı, mavi, şehir merkezi, d'
+  tr-desc:  "Dubai'deki Burji Khalifa 0,25 gigapiksel (10783 × 23225 piksel) olarak. Çeken: Daniel Richter. Büyük format duvar tasarımı ve mimari mekan konseptleri için ideal. Gerçek kamera çekimi, yapay zeka üretimi yok, yapay zeka "
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  tr-title: "Büyük Ahornboden, Karwendel yakınında Alplar'da"
+  tr-kw:    'alp manzarası, nisan, gezinti, görsel, maviler, Avrupa, kayalar, kaya oluşumları, nem, özgürlük, idiylik, mevsimsel, peyzaj, yapraklı ağaçlar, yaprakl'
+  tr-desc:  "Karwendel'deki Büyük Akçaağaç Tarlası (Grosse Ahornboden) Alpler'de gigapiksel çekimi olarak 0,25 GP (26412 × 9467 piksel) ile. Fotoğraf: Daniel Richter. Şunlar için uygundur: büyük format uygulamalar, gergi tavanlar, XX"
+
+uid 100:
+  DE-title: 'Alleinstehendes Hochhaus in Dubai'
+  tr-title: "Dubai'de yalnız duran gökdelen"
+  tr-kw:    'yapılar, mavi, mavimsi, mavimtırak, bina, şehir merkezi, konut, cephe, finansal, şirket, cam, cam cephe, bina görünüşü, yüksek, gökdelen, oteller, ken'
+  tr-desc:  "Dubai'de yalnız bir gökdelenin ultra-yüksek çözünürlüklü çekimi (0,10 Gigapixel, 4487 × 23031 piksel) çeken: Daniel Richter. Mavi gökyüzüne karşı cephe detayları içeren mimari fotoğrafı. Gergi tavanlar, XXL duvar görsell"
+
+uid 531:
+  DE-title: 'Das Schloss Belvedere bei Weimar'
+  tr-title: ''
+  tr-kw:    'Thuringia, eski, eski bina, eski ev, meşgul, aydınlanan, antika, mimari, çekicilik, tur, çıkış, dengeli, dış, bina, arındırıcı, mavi, mavi gökyüzü, re'
+  tr-desc:  "Weimar'daki Belvedere Sarayı, 1,34 Gigapixel çekimi olarak 71840 x 18615 piksel ile Daniel Richter tarafından fotoğraflanmıştır. Temsili duvar tasarımı, büyük format baskılar ve fuar standı yapımı için uygundur. Birkaç m"
+
+uid 629:
+  DE-title: 'Urwald'
+  tr-title: 'İlkel Orman'
+  tr-kw:    'ağaç, ağaçlar, ağaç grubu, ağaç tepeleri, ağaç tepesi, yaprak, yapraklar, dışarı, fauna, flora, çalılık, ağaçlık, yeşil, yaprak örtüsü, yapraklı ağaç,'
+  tr-desc:  'Yoğun orman görünümü, 0,25 Gigapixel, 20709 × 12087 piksel. Çeken: Daniel Richter. Gergi tavanlar, XXL duvar tasarımı ve fuar standı yapımı için uygundur. Gerçek kamera çekimi, yapay zeka üretimi yok, yapay zeka ile büyü'
+
+uid 1041:
+  DE-title: 'Festplatte offen'
+  tr-title: 'Açık Sabit Disk'
+  tr-kw:    'bekleme odası, bilgisayar, teknoloji, donanım, soyut, arka plan, elektronik, makro'
+  tr-desc:  "Açık bir sabit diskten oluşan gigapiksel fotoğrafı 0,23 Gigapixel'de (21060 × 10722 piksel). Daniel Richter tarafından çekilen teknik çekimi, donanım bileşenlerini soyut şekilde göstermektedir. Büyük format duvar tasarım"
+
+uid 1138:
+  DE-title: 'Meribel'
+  tr-title: ''
+  tr-kw:    'alp manzarası, Alplar, manzara, gezi, geziler, görünüm, dağlar, dağ manzaraları, dış alanlar, rekreasyon, deneyim, Avrupa, uzak manzara, dağ silsilesi'
+  tr-desc:  'Meribel kayak alanının panoraması, 5,35 gigapiksel (111956 × 47827 piksel) ile. Fotoğraf: Daniel Richter. Gergi tavanlar, XXL duvar tasarımı ve temsili geniş alanlar için uygundur. Gerçek kamera çekimi, yapay zeka üretim'
+
+uid 2309:
+  DE-title: 'Wasserfall6'
+  tr-title: 'Şelale 6'
+  tr-kw:    'şelale, nehir, su kütlesi, akım, Alpler'
+  tr-desc:  "Alpler'de şelale, 0,65 Gigapixel (32295 × 20182 piksel), çeken: Daniel Richter. Görüntü alpin ortamda akarsuyu, su yollarını ve akışı göstermektedir. Gergi tavanlar ve XXL duvar tasarımı için uygundur. Gerçek kamera çeki"
+
+uid 4123:
+  DE-title: 'Fraktal94'
+  tr-title: 'Fraktal94'
+  tr-kw:    'gergi, tavan, Mandelbulber, matematik, fraktal, sanat, alt, gergi tavan, 3d'
+  tr-desc:  'Fraktal94, Mandelbulber ile tasarlanan 15821 × 15821 piksel boyutundaki bilgisayar tarafından üretilmiş bir fraktaldır. Grafik, karmaşık matematiksel yapıları göstermektedir. Büyük format uygulamalar için uygundur. Yapay'
+
+uid 6460:
+  DE-title: 'Wolkenhimmel'
+  tr-title: 'Bulut Gökyüzü'
+  tr-kw:    'doğa, yaz, mavi, kırmızı, turuncu, hava durumu, bulutlu gökyüzü, panorama'
+  tr-desc:  "0,24 gigapiksel'de bulut gökyüzü panoraması (21123 × 11500 piksel), çeken: Norbert Neetz. Görüntü, doğal hava koşullarında mavi, kırmızı ve turuncu renkli yaz bulutlarını göstermektedir. Oteller ve ofisler gibi temsili a"
+
+uid 6632:
+  DE-title: 'Paris-Montmartre'
+  tr-title: ''
+  tr-kw:    'sokak, şehir, mimarlık, bina, seyahat, gün ışığı, turizm, kentsel, açık hava, ev, turist, gökyüzü, kaldırım, stok, meydan, cephe, otel, insanlar, Fran'
+  tr-desc:  'Paris-Montmartre gigapiksel fotoğrafı olarak 0,10 Gigapiksel (10459 x 9608 piksel). Çeken: Norbert Achtelik. Motif gündüz ışığında kentsel mimari ve sokakları göstermektedir. Gergi tavanlar ve XXL duvar tasarımı gibi büy'
+
+uid 7267:
+  DE-title: 'Aryapala Temple Meditation Center, Gorchi Terelj National Park, Ulan Bator, Mongolia, Asia || Aryapala Temple Meditation Center, Gorchi-Tereldsch-Nationalpark, Ulan Bator, Mongolei, Asien'
+  tr-title: 'Aryapala Temple Meditation Center, Gorchi Terelj National Park, Ulan Bator, Moğolistan, Asya'
+  tr-kw:    'ıssız, hiç kimse, insan yok, kimse yok, sakinleri boş, boş, dinsel yapı, kutsal yapı, ibadet yapısı, tapınak, mimari, meditasyon, Asya, iç mekân, renk'
+  tr-desc:  'Aryapala Temple Meditation Center im Gorchi-Tereldsch-Nationalpark bei Ulan Bator, Mongolei. Çözünürlük 14686 × 7641 piksel (0,11 GP). Fotoğraf: imageBROKER/Herbert Berger. Büyük format duvar tasarımı için uygundur. Gerç'
+
