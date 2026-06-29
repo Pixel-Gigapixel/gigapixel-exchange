@@ -1,0 +1,80 @@
+PL SAMPLE-GATE — 8889 Records
+  empty: 68  [(1502, 'keywords'), (1503, 'keywords'), (1504, 'keywords'), (1505, 'keywords'), (1506, 'keywords'), (1509, 'keywords'), (1510, 'keywords'), (1511, 'keywords')]
+  de_res: 4  [(2040, 'description', ['fotografiert von']), (3666, 'description', ['kein KI-Upscaling', 'großformatige']), (3668, 'description', ['kein KI-Upscaling', 'großformatige']), (3669, 'description', ['kein KI-Upscaling', 'großformatige'])]
+  en_res: 0  []
+  kw_pad: 2  [(7445, 3, 21), (7457, 59, 67)]
+  num: 21  [(825, {'7692': 1}, {'12917': 1}), (2067, {'63.961': 1, '29.234': 1}, {'63961': 1, '29234': 1}), (2068, {'39.617': 1, '27.657': 1}, {'39617': 1, '27657': 1}), (2069, {'19.068': 1, '13.126': 1}, {'19068': 1, '13126': 1}), (2842, {'0,22': 1}, {'0,25': 1}), (3856, {'16': 1}, {}), (3857, {'16': 1}, {}), (4324, {'2': 1}, {})]
+
+--- 12 Samples (title | kw | desc) ---
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  pl-title: 'Wielki Ahornboden koło Karwendel w Alpach'
+  pl-kw:    'krajobraz alpejski, kwiecień, wycieczka, malowniczy, blues, Europa, skały, formacje skalne, wilgotność, wolność, idylliczny, sezonowy, krajobrazowy, drzewa liśc'
+  pl-desc:  'Grosse Ahornboden przy Karwendel w Alpach jako zdjęcie gigapikselowe z 1,33 GP (60896 × 21826 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napina'
+
+uid 2:
+  DE-title: 'Schloss Belvedere bei Weimar'
+  pl-title: 'Schloss Belvedere koło Weimaru'
+  pl-kw:    'poczekalnia stara, stary budynek, stary, stary dom, pomalowany, oświetlony, antyczny, antyk, architektoniczny, architektura, atrakcja, wycieczka, wycieczki, wyj'
+  pl-desc:  'Pałac Belvedere w Weimarze jako zdjęcie gigapikselowe 0,25 z 31064 x 8049 pikseli autorstwa Daniel Richter. Nadaje się do reprezentacyjnej aranżacji ścian, druków wielkoformatowych i budowy stoisk tar'
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  pl-title: ''
+  pl-kw:    'poczekalnia, samotny, wolnostojący, architektoniczny, architektura, atrakcja, wycieczka, wycieczki, wyważony, zewnętrze, style architektoniczne, budowle, wyzwal'
+  pl-desc:  'Burji Khalifa w Dubaju w 0,25 Gigapixel (10783 × 23225 pikseli). Zdjęcie: Daniel Richter. Idealne do wielkoformatowej aranżacji ścian i architektonicznych koncepcji pomieszczeń. Autentyczne ujęcie z a'
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  pl-title: 'Wielki Ahornboden koło Karwendel w Alpach'
+  pl-kw:    'krajobraz alpejski, kwiecień, wycieczka, malowniczy, blues, Europa, skały, formacje skalne, wilgotność, wolność, idylliczny, sezonowy, krajobrazowy, drzewa liśc'
+  pl-desc:  'Grosse Ahornboden przy Karwendel w Alpach jako zdjęcie gigapikselowe z 0,25 GP (26412 × 9467 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinan'
+
+uid 5:
+  DE-title: 'Ameisen am Rand einer Straße'
+  pl-title: 'Mrówki na krawędzi ulicy'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka, ścieżki, '
+  pl-desc:  'Mrówki na krawędzi drogi w 0,25 Gigapixel (37394 * 6694 px). Zdjęcie: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ścian XXL lub stoiska targowe. A'
+
+uid 6:
+  DE-title: 'Ameisen am Rand einer Straße'
+  pl-title: 'Mrówki na krawędzi ulicy'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka, ścieżki, '
+  pl-desc:  'Mrówki na krawędzi drogi w 0,25 Gigapixel (37394 * 6694 px). Zdjęcie: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ścian XXL lub stoiska targowe. A'
+
+uid 7:
+  DE-title: 'Grenze zwischen Gras und Asphalt'
+  pl-title: 'Granica między trawą a asfaltem'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, zbliżenie, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka'
+  pl-desc:  'Szlak mrówek na krawędzi ścieżki w 0,25 Gigapixel (26396 * 9483 px). Zdjęcie: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ścian XXL lub stoiska ta'
+
+uid 8:
+  DE-title: 'Rand eines Fußwegs'
+  pl-title: 'Krawędź ścieżki dla pieszych'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, zbliżenie, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka'
+  pl-desc:  'Krawędź ścieżki pieszej jako fotografia gigapikselowa z 0,25 GP (19377 × 12918 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ś'
+
+uid 9:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  pl-title: 'Mrówkowiec na skraju drogi'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, zbliżenie, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka'
+  pl-desc:  'Szlak mrówek na krawędzi ścieżki jako zdjęcie gigapikselowe z 0,25 GP (19376 × 12917 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranż'
+
+uid 10:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  pl-title: 'Mrówkowiec na skraju drogi'
+  pl-kw:    'fauna, ścieżki piesze, trawa, trawy, trawnik, zbliżenie, przyroda, fotografie przyrodnicze, chodnik, pobocze drogi, poboża drogi, zwierzęta, środowisko, ścieżka'
+  pl-desc:  'Szlak mrówek na krawędzi ścieżki jako zdjęcie gigapikselowe z 0,25 GP (19376 × 12917 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranż'
+
+uid 12:
+  DE-title: 'Anfangsbuchstabe'
+  pl-title: 'Litera początkowa'
+  pl-kw:    'sztuka, figura, posąg, brąz'
+  pl-desc:  'Litera początkowa – fotografia wysokorozdzielcza w 0,25 Gigapixel (12224 × 20453 px). Ujęcie przedstawia brązową statuę z artystycznym naciskiem na figurę i brąz. Plik nadaje się do zastosowań wielkof'
+
+uid 13:
+  DE-title: 'St. Johann Nepomuk Kirche in München'
+  pl-title: 'Kościół Św. Jana Nepomucena w Monachium'
+  pl-kw:    'antyk, architektoniczny, architektura, atrakcja, wycieczka, wycieczki, zewnętrze, barok, style architektoniczne, budowle, malowany, refleksja, Biblia, malownicz'
+  pl-desc:  'Kościół St. Johann Nepomuk w Monachium jako zdjęcie gigapikselowe z 0,25 GP (15154 × 16517 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane,'
+
