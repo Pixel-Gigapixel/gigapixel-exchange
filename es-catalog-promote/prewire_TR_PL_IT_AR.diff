@@ -1,0 +1,77 @@
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
+@@ -62,6 +62,10 @@
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
++            8 => 'ar',
+             default => 'en',
+         };
+     }
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
+@@ -37,6 +37,10 @@
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
++            8 => 'ar',
+             default => 'de',
+         };
+     }
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+@@ -24,6 +24,10 @@
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
++            8 => 'ar',
+             default => 'en',
+         };
+     }
+--- a/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
++++ b/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
+@@ -85,6 +85,10 @@
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
++            8 => 'ar',
+             default => null,
+         };
+         if ($langCode === null || empty($results)) return;
+--- a/packages/gigapixels_visualsearch/Classes/Service/KeSearchAdapter.php
++++ b/packages/gigapixels_visualsearch/Classes/Service/KeSearchAdapter.php
+@@ -27,7 +27,7 @@
+         $kwField   = $languageId !== 0 ? 'ai_keywords_en'    : 'ai_keywords_de';
+         $descField = $languageId !== 0 ? 'ai_description_en' : 'ai_description_de';
+ 
+-        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', 4 => 'es', default => null };
++        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', 4 => 'es', 5 => 'tr', 6 => 'pl', 7 => 'it', 8 => 'ar', default => null };
+         $hasTrans = $langCode !== null;
+ 
+         // Split into individual words, ignore stopwords shorter than 2 chars
+--- a/packages/dg_theme/Resources/Private/Templates/Plugins/Gigapixel/Show.html
++++ b/packages/dg_theme/Resources/Private/Templates/Plugins/Gigapixel/Show.html
+@@ -146,9 +146,9 @@
+ 							</div>
+ 						</f:if>
+ 
+-						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4">
++						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4 || {currentLanguageId} == 5 || {currentLanguageId} == 6 || {currentLanguageId} == 7 || {currentLanguageId} == 8">
+ 							<f:then>
+-								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case></f:switch></f:variable>
++								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case><f:case value="5">tr</f:case><f:case value="6">pl</f:case><f:case value="7">it</f:case><f:case value="8">ar</f:case></f:switch></f:variable>
+ 								<f:variable name="translatedDesc">{dg:productTranslation(uid: gigapixel.uid, field: 'description', language: langCode)}</f:variable>
+ 								<f:if condition="{translatedDesc}">
+ 									<f:then>
