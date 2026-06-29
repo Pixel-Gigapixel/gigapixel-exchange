@@ -1,0 +1,5 @@
+# Crash-Check: Photographer-Feature MUSS in den isolierten Deploy-Artefakten 0× vorkommen
+# (es:PhotographerName|photographerLink|xmlns:vs|vs:|detectPhotographer|searchByPhotographer)
+
+KeSearchAdapter.php: 0  PASS
+Show.html: 0  PASS

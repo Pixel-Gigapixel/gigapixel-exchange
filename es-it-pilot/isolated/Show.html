@@ -1,0 +1,253 @@
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:cart="http://typo3.org/ns/Datenglueck/Cart/ViewHelpers"
+    xmlns:cartgigapixels="http://typo3.org/ns/Datenglueck/CartGigapixels/ViewHelpers"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:dg="http://typo3.org/ns/Datenglueck/DgTheme/ViewHelpers"
+    xmlns:v="https://fluidtypo3.org/schemas/vhs-master.xsd"
+>
+
+{v:variable.set(value: '{cartgigapixels:License(uid:gigapixel.license)}', name: 'license')}
+
+<f:variable name="displayTitle">{gigapixel.title}</f:variable>
+<f:if condition="{currentLanguageId} == 1">
+	<f:if condition="{gigapixel.titleEn}">
+		<f:variable name="displayTitle">{gigapixel.titleEn}</f:variable>
+	</f:if>
+</f:if>
+
+<f:if condition="{gigapixel.formatFile} == 'TIF'">
+	<f:then>
+		<v:variable.set name="zurl" value="{settings.urls.zoomTif}" />
+	</f:then>
+	<f:else>
+		<v:variable.set name="zurl" value="{settings.urls.zoomZip}" />
+	</f:else>
+</f:if>
+
+<v:variable.set name="resUrl" value="{f:uri.resource(path: 'JavaScript/Frontend/Libs/Zoomify/Assets/', extensionName: 'dg_theme')}" />
+
+<cart:titleTag>
+	<f:format.htmlentitiesDecode>{displayTitle}</f:format.htmlentitiesDecode>
+</cart:titleTag>
+
+<cartgigapixels:ogTags gigapixel="{gigapixel}" languageId="{currentLanguageId}" />
+<script type="application/ld+json">
+<cartgigapixels:schema gigapixel="{gigapixel}" languageId="{currentLanguageId}" />
+</script>
+<div class="gigapixel-wrapper container-fluid">
+	<div class="row">
+		<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 gigapixel-zoomimage">
+			<div class="gigapixel-title text-center">
+				<h1><cartgigapixels:displayTitle gigapixel="{gigapixel}" /></h1>
+			</div>
+			<div class="zoom-wrapper bg-white">
+				<div class="gigapixel-zoom bg-light" id="zoomContainer"></div>
+			</div>
+		</div>
+		<div class="gigapixel-info col-lg-3">
+			<f:if condition="{license.price} != 0">
+				<f:then>
+					<v:variable.set name="digiPrice" value="{v:math.product(a: license.price, fail: 0, b: settings.digiFactor)}" />
+					<div>
+						<f:render partial="Gigapixel/CartForm" arguments="{gigapixel: gigapixel, pid: cartSettings.cart.pid, digiPrice: digiPrice}" />
+					</div>
+					<f:if condition="{currentLanguageId} == 1">
+						<div id="gp-fx-anchor" data-eur-print="{license.price}" data-eur-digi="{digiPrice}" style="display:none;"></div>
+						<div id="gp-fx-display" style="display:none;margin:0.4rem 0 0.3rem;padding:0.35rem 0.6rem;background:#f7f7f7;border-radius:3px;font-size:0.8rem;color:#555;">
+							<span id="gp-fx-approx"></span>
+							<select id="gp-fx-select" style="margin-left:0.5rem;font-size:0.72rem;color:#777;border:none;background:transparent;cursor:pointer;vertical-align:baseline;">
+								<option value="EUR">EUR</option>
+								<option value="USD">USD</option>
+								<option value="GBP">GBP</option>
+								<option value="CHF">CHF</option>
+								<option value="CAD">CAD</option>
+								<option value="AUD">AUD</option>
+								<option value="NZD">NZD</option>
+								<option value="JPY">JPY</option>
+								<option value="CNY">CNY</option>
+								<option value="SEK">SEK</option>
+								<option value="NOK">NOK</option>
+								<option value="DKK">DKK</option>
+								<option value="PLN">PLN</option>
+								<option value="CZK">CZK</option>
+								<option value="HUF">HUF</option>
+								<option value="TRY">TRY</option>
+								<option value="ILS">ILS</option>
+								<option value="AED">AED</option>
+								<option value="EGP">EGP</option>
+							</select>
+							<div style="margin-top:0.2rem;font-size:0.72rem;color:#999;">Approximate price &mdash; exact amount charged in EUR at PayPal checkout.</div>
+						</div>
+					</f:if>
+					<div id="gp-trust-box" style="background:#fff8f0;border-left:4px solid #ee800b;padding:0.6rem 0.8rem;margin:0.4rem 0 0.5rem;border-radius:3px;font-size:0.8rem;line-height:1.7;">
+						<f:variable name="provenance">{dg:provenance(description: gigapixel.aiDescriptionDe)}</f:variable>
+						<f:if condition="{provenance} == 'HIST'">
+							<f:then><span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.photo.hist')}</span> &ndash; {f:translate(key: 'trust.photo.hist.text')}<br /></f:then>
+							<f:else><f:if condition="{provenance} == 'GRAFIK'">
+								<f:then><span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.photo.grafik')}</span> &ndash; {f:translate(key: 'trust.photo.grafik.text')}<br /></f:then>
+								<f:else><span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.photo.original')}</span> &ndash; {f:translate(key: 'trust.photo.original.text')}<br /></f:else>
+							</f:if></f:else>
+						</f:if>
+						<span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.download')}</span> &ndash; {f:translate(key: 'trust.download.text')}<br />
+						<span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.license')}</span> &ndash; {f:translate(key: 'trust.license.text')}<br />
+						<span style="color:#ee800b;font-weight:700;">&#10003; {f:translate(key: 'trust.support')}</span> &ndash; {f:translate(key: 'trust.support.text')}
+					</div>
+				</f:then>
+				<f:else>
+					<div>
+						<f:link.page pageUid="46">{f:translate(key: 'tx_cartgigapixels_domain_model_gigapixel.price_agreement')}</f:link.page>
+					</div>
+				</f:else>
+			</f:if>
+			<div class="row">
+				<div id="accordion" class="col">
+					<div class="text-left small d-inline-block w-50">
+						<a class="btn-link collapsed" data-toggle="collapse" href="#pixelCalc" role="button" aria-expanded="false" aria-controls="pixelCalc">{f:translate(key:
+							'tx_cartgigapixels_domain_model_gigapixel.print_calc')} </a>
+					</div>
+
+					<div class="text-right small d-inline-block w-50">
+						<a class="btn-link collapsed" data-toggle="collapse" href="#infoBox" role="button" aria-expanded="true" aria-controls="infoBox">{f:translate(key:
+                            'tx_cartgigapixels_domain_model_gigapixel.file_info')}</a>
+					</div>
+
+
+					<div class="col-lg-12 col-sm-12 mt-2 text-center collapse border" id="pixelCalc" data-parent="#accordion">
+						<f:render partial="Gigapixel/Pixelcalc" arguments="{gigapixel: gigapixel, settings: settings}" />
+					</div>
+					<div class="col-lg-12 col-sm-12 collapse show border" id="infoBox" data-parent="#accordion">
+						<div>
+							<div class="w-50 d-inline-block">
+								<small class="text-nowrap font-weight-bold">{f:translate(key: 'tx_cartgigapixels_domain_model_gigapixel.format_px')}:</small>
+							</div>
+							<div class="w-50 d-inline-block text-nowrap text-right">
+								<small>{gigapixel.formatPx}</small>
+							</div>
+						</div>
+						<div>
+							<div class="w-50 d-inline-block">
+								<small class="text-nowrap font-weight-bold">{f:translate(key: 'tx_cartgigapixels_domain_model_gigapixel.format_file')}:</small>
+							</div>
+							<div class="w-50 d-inline-block text-nowrap text-right">
+								<small class="badge badge-light">{gigapixel.formatFile}</small>
+							</div>
+						</div>
+						<f:if condition="{gigapixel.photographer} != 'Daniel Richter' && {gigapixel.photographer} != ''">
+							<div>
+								<div class="w-50 d-inline-block">
+									<small class="text-nowrap font-weight-bold">{f:translate(key: 'tx_cartgigapixels_domain_model_gigapixel.photographer')}:</small>
+								</div>
+								<div class="w-50 d-inline-block text-right">
+									<small> <f:format.crop maxCharacters="275">
+											<f:format.nl2br>{gigapixel.photographer}</f:format.nl2br>
+										</f:format.crop></small>
+								</div>
+							</div>
+						</f:if>
+
+						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4 || {currentLanguageId} == 5 || {currentLanguageId} == 6 || {currentLanguageId} == 7">
+							<f:then>
+								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case><f:case value="5">tr</f:case><f:case value="6">pl</f:case><f:case value="7">it</f:case></f:switch></f:variable>
+								<f:variable name="translatedDesc">{dg:productTranslation(uid: gigapixel.uid, field: 'description', language: langCode)}</f:variable>
+								<f:if condition="{translatedDesc}">
+									<f:then>
+										<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+											<f:format.nl2br>{translatedDesc}</f:format.nl2br>
+										</div>
+									</f:then>
+									<f:else>
+										<f:if condition="{gigapixel.aiDescriptionDe}">
+											<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+												<f:format.nl2br>{gigapixel.aiDescriptionDe}</f:format.nl2br>
+											</div>
+										</f:if>
+									</f:else>
+								</f:if>
+							</f:then>
+							<f:else>
+								<f:if condition="{currentLanguageId} == 1">
+									<f:then>
+										<f:if condition="{gigapixel.aiDescriptionEn}">
+											<f:then>
+												<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+													<f:format.nl2br>{gigapixel.aiDescriptionEn}</f:format.nl2br>
+												</div>
+											</f:then>
+											<f:else>
+												<f:if condition="{gigapixel.notes} != ''">
+													<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+														<f:format.nl2br>{gigapixel.notes}</f:format.nl2br>
+													</div>
+												</f:if>
+											</f:else>
+										</f:if>
+									</f:then>
+									<f:else>
+										<f:if condition="{gigapixel.aiDescriptionDe}">
+											<f:then>
+												<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+													<f:format.nl2br>{gigapixel.aiDescriptionDe}</f:format.nl2br>
+												</div>
+											</f:then>
+											<f:else>
+												<f:if condition="{gigapixel.notes} != ''">
+													<div class="gp-ai-description" style="margin:0.5rem 0;font-size:0.8rem;line-height:1.5;">
+														<f:format.nl2br>{gigapixel.notes}</f:format.nl2br>
+													</div>
+												</f:if>
+											</f:else>
+										</f:if>
+									</f:else>
+								</f:if>
+							</f:else>
+						</f:if>
+						<div class="col-lg-12 col-sm-12 mt-2 text-center info-bottom">
+							<f:if condition="{gigapixel.relatedGigapixels}">
+								<small class="text-nowrap font-weight-bold">{f:translate(key: 'tx_cartgigapixels_domain_model_gigapixel.related_gigapixels')}:</small>
+								<div id="relatedGigapixels" class="carousel slide mt-1 gigapixel-related" data-ride="carousel">
+									<div class="carousel-inner">
+										<f:for each="{gigapixel.relatedGigapixels}" as="relatedGigapixel" iteration="counter">
+											<f:render partial="Gigapixel/RelatedGigapixel" arguments="{gigapixel: relatedGigapixel, settings: settings, counter: counter}" />
+										</f:for>
+									</div>
+									<a class="carousel-control-prev" href="#relatedGigapixels" role="button" data-slide="prev"> <span class="carousel-control-prev-icon"
+										aria-hidden="true"></span> <span class="sr-only">Previous</span>
+									</a> <a class="carousel-control-next" href="#relatedGigapixels" role="button" data-slide="next"> <span class="carousel-control-next-icon"
+										aria-hidden="true"></span> <span class="sr-only">Next</span>
+									</a>
+								</div>
+							</f:if>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<f:if condition="{settings.viewerEngine} == 'openseadragon'">
+<f:then>
+  <div id="osd-cfg" style="display:none"
+       data-tiles="{zurl}{gigapixel.name}/"
+       data-prefix="{f:uri.resource(path:'JavaScript/openseadragon/images/', extensionName:'DgTheme')}"></div>
+  <div id="zoomContainer" style="width:100%;height:100%;"></div>
+  <f:asset.script identifier="openseadragon-lib"
+    src="EXT:dg_theme/Resources/Public/JavaScript/openseadragon/openseadragon.min.js" />
+  <f:asset.script identifier="openseadragon-init"
+    src="EXT:dg_theme/Resources/Public/JavaScript/openseadragon-init.js" />
+</f:then>
+<f:else>
+<f:asset.script identifier="zoomify" src="EXT:dg_theme/Resources/Public/JavaScript/Frontend/Libs/Zoomify/ZoomifyImageViewerPro-min.js" additionalAttributes="{nonce: '{f:security.nonce()}'}" />
+<f:asset.script identifier="zoomify" additionalAttributes="{nonce: '{f:security.nonce()}'}">
+
+	var zoomContainer = 'zoomContainer';
+	var zoomUrl = '{zurl}{gigapixel.name}';
+	var zoomHelp = '&zHelpVisible=0';
+	var zoomSkin = '&zSkinPath={resUrl}Skins/Default';
+	var zoomLogo = '&zLogoVisible=0';
+	var zoomInitial = '&zInitialZoom=fit';
+	var zoomToolBar = '&zToolbarVisible=6&zToolbarBackgroundVisible=1&zNavigatorVisible=3';
+	zoomPara = zoomSkin + zoomLogo + zoomInitial + zoomToolBar + zoomHelp;
+</f:asset.script>
+</f:else>
+</f:if>

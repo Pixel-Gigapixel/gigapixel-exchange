@@ -1,0 +1,14 @@
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
+index bc420c3..9e604bf 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/DisplayTitleViewHelper.php
+@@ -62,6 +62,9 @@ class DisplayTitleViewHelper extends AbstractViewHelper
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
+             default => 'en',
+         };
+     }

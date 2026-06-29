@@ -1,0 +1,26 @@
+diff --git a/config/sites/main/config.yaml b/config/sites/main/config.yaml
+index 47d6f23..6bca293 100644
+--- a/config/sites/main/config.yaml
++++ b/config/sites/main/config.yaml
+@@ -94,6 +94,21 @@ languages:
+     flag: es
+     languageId: 4
+     websiteTitle: ''
++  -
++    title: Italiano
++    enabled: true
++    base: /it/
++    typo3Language: it
++    locale: it_IT.UTF-8
++    iso-639-1: it
++    navigationTitle: Italiano
++    hreflang: it-IT
++    direction: ltr
++    fallbackType: fallback
++    fallbacks: '0'
++    flag: it
++    languageId: 7
++    websiteTitle: ''
+ rootPageId: 1
+ routeEnhancers:
+   PageTypeSuffix:

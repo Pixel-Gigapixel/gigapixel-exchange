@@ -1,0 +1,14 @@
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
+index 957cecd..7aac27d 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/OgTagsViewHelper.php
+@@ -37,6 +37,9 @@ class OgTagsViewHelper extends AbstractViewHelper
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
+             default => 'de',
+         };
+     }

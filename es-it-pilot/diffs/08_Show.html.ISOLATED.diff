@@ -1,0 +1,14 @@
+--- a/packages/dg_theme/Resources/Private/Templates/Plugins/Gigapixel/Show.html (HEAD)	2026-06-29 21:57:07.382498690 +0200
++++ b/packages/dg_theme/Resources/Private/Templates/Plugins/Gigapixel/Show.html (ISOLATED-deploy)	2026-06-29 21:32:02.322695333 +0200
+@@ -146,9 +146,9 @@
+ 							</div>
+ 						</f:if>
+ 
+-						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4">
++						<f:if condition="{currentLanguageId} == 2 || {currentLanguageId} == 3 || {currentLanguageId} == 4 || {currentLanguageId} == 5 || {currentLanguageId} == 6 || {currentLanguageId} == 7">
+ 							<f:then>
+-								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case></f:switch></f:variable>
++								<f:variable name="langCode"><f:switch expression="{currentLanguageId}"><f:case value="2">fr</f:case><f:case value="3">ru</f:case><f:case value="4">es</f:case><f:case value="5">tr</f:case><f:case value="6">pl</f:case><f:case value="7">it</f:case></f:switch></f:variable>
+ 								<f:variable name="translatedDesc">{dg:productTranslation(uid: gigapixel.uid, field: 'description', language: langCode)}</f:variable>
+ 								<f:if condition="{translatedDesc}">
+ 									<f:then>

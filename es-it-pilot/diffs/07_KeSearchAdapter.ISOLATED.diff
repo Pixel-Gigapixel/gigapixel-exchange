@@ -1,0 +1,11 @@
+--- a/packages/gigapixels_visualsearch/Classes/Service/KeSearchAdapter.php (HEAD)	2026-06-29 21:57:07.379498680 +0200
++++ b/packages/gigapixels_visualsearch/Classes/Service/KeSearchAdapter.php (ISOLATED-deploy)	2026-06-29 21:32:02.322586282 +0200
+@@ -27,7 +27,7 @@
+         $kwField   = $languageId !== 0 ? 'ai_keywords_en'    : 'ai_keywords_de';
+         $descField = $languageId !== 0 ? 'ai_description_en' : 'ai_description_de';
+ 
+-        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', 4 => 'es', default => null };
++        $langCode = match($languageId) { 2 => 'fr', 3 => 'ru', 4 => 'es', 5 => 'tr', 6 => 'pl', 7 => 'it', default => null };
+         $hasTrans = $langCode !== null;
+ 
+         // Split into individual words, ignore stopwords shorter than 2 chars

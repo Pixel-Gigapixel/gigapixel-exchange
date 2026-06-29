@@ -1,0 +1,14 @@
+diff --git a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+index 101187d..706bfd9 100644
+--- a/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
++++ b/packages/cart_gigapixels/Classes/ViewHelpers/SchemaViewHelper.php
+@@ -24,6 +24,9 @@ class SchemaViewHelper extends AbstractViewHelper
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
+             default => 'en',
+         };
+     }

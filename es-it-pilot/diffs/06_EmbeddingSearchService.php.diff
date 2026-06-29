@@ -1,0 +1,14 @@
+diff --git a/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php b/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
+index b93ea9d..b19caef 100644
+--- a/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
++++ b/packages/gigapixels_visualsearch/Classes/Service/EmbeddingSearchService.php
+@@ -85,6 +85,9 @@ class EmbeddingSearchService
+             2 => 'fr',
+             3 => 'ru',
+             4 => 'es',
++            5 => 'tr',
++            6 => 'pl',
++            7 => 'it',
+             default => null,
+         };
+         if ($langCode === null || empty($results)) return;

@@ -1,0 +1,30 @@
+diff --git a/packages/dg_theme/Configuration/TypoScript/Setup/Lib/LanguageMenu.typoscript b/packages/dg_theme/Configuration/TypoScript/Setup/Lib/LanguageMenu.typoscript
+index 665d27c..d6f824a 100644
+--- a/packages/dg_theme/Configuration/TypoScript/Setup/Lib/LanguageMenu.typoscript
++++ b/packages/dg_theme/Configuration/TypoScript/Setup/Lib/LanguageMenu.typoscript
+@@ -2,7 +2,7 @@ lib.languageMenu = HMENU
+ lib.languageMenu {
+   special = language
+   special {
+-    value = 0,1,2,3,4
++    value = 0,1,2,3,4,7
+     normalWhenNoLanguage = 1
+   }
+ 
+@@ -25,14 +25,14 @@ lib.languageMenu {
+         cObject = TEXT
+         # Use the TypoScript option split function to display different values for the first and following items
+         cObject {
+-          value = DE || EN || FR || RU || ES
++          value = DE || EN || FR || RU || ES || IT
+         }
+ 
+         # Nun wird der Link mit den aktuellen GET-Parametern neu aufgebaut
+         typolink {
+           parameter.data = page:uid
+           ATagParams = class="nav-link"
+-          additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=4
++          additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=4 || &L=7
+           addQueryString = 1
+           addQueryString {
+             exclude = L,id,cHash,no_cache
