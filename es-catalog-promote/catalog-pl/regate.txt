@@ -1,0 +1,1 @@
+PL Re-Gate nach Cleanup: empty=0 · de_res=0 · pad=2 · num=19 (real-dims-Fehler=0; Rest benigne Separator-Normalisierung; 2 echte Dims patch_text-gefixt).

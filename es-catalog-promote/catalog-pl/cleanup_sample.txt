@@ -1,0 +1,56 @@
+PL Cleanup-Sample (15 gemischt)
+
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  pl-title: 'Wielki Ahornboden koło Karwendel w Alpach'
+  pl-kw:    'krajobraz alpejski, kwiecień, wycieczka, malowniczy, blues, Europa, skały, formacje skalne, wilgotność, wolność, idylliczny, sezonowy, krajobrazowy, d'
+  pl-desc:  'Grosse Ahornboden przy Karwendel w Alpach jako zdjęcie gigapikselowe z 1,33 GP (60896 × 21826 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ścian '
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  pl-title: ''
+  pl-kw:    'poczekalnia, samotny, wolnostojący, architektoniczny, architektura, atrakcja, wycieczka, wycieczki, wyważony, zewnętrze, style architektoniczne, budow'
+  pl-desc:  'Burji Khalifa w Dubaju w 0,25 Gigapixel (10783 × 23225 pikseli). Zdjęcie: Daniel Richter. Idealne do wielkoformatowej aranżacji ścian i architektonicznych koncepcji pomieszczeń. Autentyczne ujęcie z aparatu, bez generowa'
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  pl-title: 'Wielki Ahornboden koło Karwendel w Alpach'
+  pl-kw:    'krajobraz alpejski, kwiecień, wycieczka, malowniczy, blues, Europa, skały, formacje skalne, wilgotność, wolność, idylliczny, sezonowy, krajobrazowy, d'
+  pl-desc:  'Grosse Ahornboden przy Karwendel w Alpach jako zdjęcie gigapikselowe z 0,25 GP (26412 × 9467 pikseli). Fotografia: Daniel Richter. Nadaje się do zastosowań wielkoformatowych, takich jak sufity napinane, aranżacja ścian X'
+
+uid 100:
+  DE-title: 'Alleinstehendes Hochhaus in Dubai'
+  pl-title: 'Samodzielny wieżowiec w Dubaju'
+  pl-kw:    'struktury, niebieski, błękitny, błękitnawy, budynek, śródmieście, mieszkania własnościowe, fasada, fasady, finansowy, firma, firmy, budynki, szkło, sz'
+  pl-desc:  'Ultra-wysokorozdzielcze ujęcie samodzielnie stojącego wieżowca w Dubaju (0,10 Gigapixel, 4487 × 23031 pikseli) fotografia: Daniel Richter. Zdjęcie architektoniczne ze szczegółami fasady na tle błękitnego nieba. Doskonałe'
+
+uid 531:
+  DE-title: 'Das Schloss Belvedere bei Weimar'
+  pl-title: ''
+  pl-kw:    'Turyngia, stary, stary budynek, stary dom, zaangażowany, naświetlony, zabytkowy, architektoniczny, architektura, atrakcja, wycieczka, wyjazd, zbilanso'
+  pl-desc:  'Pałac Belvedere koło Weimarú jako zdjęcie gigapikselowe 1,34 Gigapixel z 71840 x 18615 pikseli autorstwa Daniela Richtera. Nadaje się do reprezentacyjnej aranżacji ścian, wydruków wielkoformatowych i budowy stoisk targow'
+
+uid 629:
+  DE-title: 'Urwald'
+  pl-title: 'Pralasy'
+  pl-kw:    'drzewo, drzewa, grupa drzew, korony drzew, wierzchołki drzew, liść, liście, na zewnątrz, fauna, flora, krzaczki, zarośla, zielony, listowie, drzewo li'
+  pl-desc:  'Widok na gęsty las, 0,25 Gigapixel, 20709 × 12087 pikseli. Zdjęcie: Daniel Richter. Nadaje się do sufitów napinanych, aranżacji ścian XXL i targów. Autentyczne ujęcie z aparatu, bez generowania AI, bez upscalingu AI.'
+
+uid 825:
+  DE-title: 'Weinberg über Freyburg'
+  pl-title: 'Winnica nad Freyburgiem'
+  pl-kw:    'Saala, Unstrut, Saala-Unstrut, Saksonia-Anhalt, Freyburg, wino, winogrona, na wolnym powietrzu, uprawa, góra, stok, rolnictwo, łoza winorośli, winoroś'
+  pl-desc:  'Winnica-Freyburg pokazuje winogrona i krajobraz w regionie Saale-Unstrut. Zdjęcie obejmuje 0,25 Gigapixel przy rozdzielczości 32538 × 7692 pikseli. Fotografia: Daniel Richter. Motyw nadaje się do reprezentacyjnej aranżac'
+
+uid 2309:
+  DE-title: 'Wasserfall6'
+  pl-title: 'Wodospad 6'
+  pl-kw:    'wodospad, rzeka, woda, prąd, Alpy'
+  pl-desc:  'Wodospad w Alpach, 0,65 Gigapixel (32295 × 20182 pikseli), zdjęcie: Daniel Richter. Obraz przedstawia rzekę, zbiornik wodny i strumień w alpejskim otoczeniu. Nadaje się do sufitów napiętych i aranżacji ścian XXL. Autenty'
+
+uid 2842:
+  DE-title: 'Prag2'
+  pl-title: ''
+  pl-kw:    'Praga, miasto, rzeka, Czechy, Republika Czeska, Bohemia, słowiański, gotyk, barok, Zamek Praski, Vltava, most, mosty, ambasada'
+  pl-desc:  'Panorama Pragi nad rzeką i dachami w 0,22 Gigapixel (29751 * 7313 pikseli). Daniel Richter udokumentował krajobraz miasta w wysokiej rozdzielczości. Nadaje się do wielkoformatowych obrazów ściennych i wielkoformatowych a'
+
