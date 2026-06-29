@@ -1,0 +1,80 @@
+IT SAMPLE-GATE — 8889 Records
+  empty: 67  [(1502, 'keywords'), (1503, 'keywords'), (1504, 'keywords'), (1505, 'keywords'), (1506, 'keywords'), (1509, 'keywords'), (1510, 'keywords'), (1511, 'keywords')]
+  de_res: 3  [(3406, 'description', ['fotografiert von']), (3409, 'description', ['fotografiert von']), (3412, 'description', ['fotografiert von'])]
+  en_res: 0  []
+  kw_pad: 2  [(7445, 3, 22), (7457, 59, 65)]
+  num: 18  [(2055, {}, {'9': 1}), (3072, {'48.871': 1, '13.108': 1}, {'48,871': 1, '13,108': 1}), (3073, {'60.146': 1, '14.036': 1}, {'60,146': 1, '14,036': 1}), (3825, {'3': 1}, {}), (3856, {'16': 1}, {}), (3857, {'16': 1}, {}), (4918, {'18419': 1}, {'19419': 1}), (7293, {'16': 1}, {})]
+
+--- 12 Samples (title | kw | desc) ---
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  it-title: 'Il Grande Ahornboden presso Karwendel nelle Alpi'
+  it-kw:    'paesaggio alpino, aprile, escursione, pittoresco, blues, Europa, rocce, formazioni rocciose, umidità, libertà, idilliaco, stagionale, paesaggistico, alberi deci'
+  it-desc:  "La Grande Prateria d'Acero presso Karwendel nelle Alpi come ripresa gigapixel con 1,33 GP (60896 × 21826 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoff"
+
+uid 2:
+  DE-title: 'Schloss Belvedere bei Weimar'
+  it-title: 'Schloss Belvedere presso Weimar'
+  it-kw:    "sala d'attesa, vecchio, edificio antico, casa antica, dipinto, illuminato, antico, architettonico, architettura, attrazione, escursione, escursioni, uscita, equ"
+  it-desc:  'Il Castello Belvedere presso Weimar come ripresa gigapixel da 0,25 GP con 31064 x 8049 pixel di Daniel Richter. Adatto per decorazione murale rappresentativa, stampe di grande formato e allestimento f'
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  it-title: ''
+  it-kw:    "sala d'attesa, solo, solitario, architettonico, architettura, attrazione, escursione, escursioni, equilibrato, esterno, stili architettonici, strutture, liberat"
+  it-desc:  'Burji Khalifa a Dubai in 0,25 Gigapixel (10783 × 23225 pixel). Fotografia di Daniel Richter. Ideale per decorazione murale di grande formato e concetti spaziali architettonici. Autentica ripresa fotog'
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  it-title: 'Il Grande Ahornboden presso Karwendel nelle Alpi'
+  it-kw:    'paesaggio alpino, aprile, escursione, pittoresco, blues, Europa, rocce, formazioni rocciose, umidità, libertà, idilliaco, stagionale, paesaggistico, alberi deci'
+  it-desc:  "La Grande Prateria d'Acero presso Karwendel nelle Alpi come ripresa gigapixel con 0,25 GP (26412 × 9467 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffi"
+
+uid 5:
+  DE-title: 'Ameisen am Rand einer Straße'
+  it-title: 'Formiche al bordo di una strada'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambiente, sentiero'
+  it-desc:  'Formiche al margine di una strada in 0,25 Gigapixel (37394 * 6694 px). Ripresa di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazione murale XXL o presenze '
+
+uid 6:
+  DE-title: 'Ameisen am Rand einer Straße'
+  it-title: 'Formiche al bordo di una strada'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambiente, sentiero'
+  it-desc:  'Formiche al margine di una strada in 0,25 Gigapixel (37394 * 6694 px). Ripresa di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazione murale XXL o presenze '
+
+uid 7:
+  DE-title: 'Grenze zwischen Gras und Asphalt'
+  it-title: 'Confine tra erba e asfalto'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, primo piano, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambie'
+  it-desc:  'Strada di formiche al bordo del sentiero in 0,25 Gigapixel (26396 * 9483 px). Ripresa di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazione murale XXL o pr'
+
+uid 8:
+  DE-title: 'Rand eines Fußwegs'
+  it-title: 'Bordo di un sentiero pedonale'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, primo piano, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambie'
+  it-desc:  'Margine di un percorso pedonale come fotografia gigapixel con 0,25 GP (19377 × 12918 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazio'
+
+uid 9:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  it-title: 'Strada di formiche al margine del sentiero'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, primo piano, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambie'
+  it-desc:  'Strada di formiche al bordo del sentiero come ripresa gigapixel con 0,25 GP (19376 × 12917 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, dec'
+
+uid 10:
+  DE-title: 'Ameisenstraße am Wegesrand'
+  it-title: 'Strada di formiche al margine del sentiero'
+  it-kw:    'fauna, sentieri pedonali, erba, erbe, prato, primo piano, natura, fotografie naturalistiche, marciapiede, bordo della strada, bordi della strada, animali, ambie'
+  it-desc:  'Strada di formiche al bordo del sentiero come ripresa gigapixel con 0,25 GP (19376 × 12917 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, dec'
+
+uid 12:
+  DE-title: 'Anfangsbuchstabe'
+  it-title: 'Lettera iniziale'
+  it-kw:    'arte, figura, statua, bronzo'
+  it-desc:  'Lettera iniziale – fotografia ad alta risoluzione in 0,25 Gigapixel (12224 × 20453 px). La ripresa mostra una statua in bronzo con focus artistico su figura e bronzo. Il file è adatto per applicazioni'
+
+uid 13:
+  DE-title: 'St. Johann Nepomuk Kirche in München'
+  it-title: 'Chiesa di San Giovanni Nepomuk a Monaco di Baviera'
+  it-kw:    'antico, architettonico, architettura, attrazione, escursione, escursioni, esterno, barocco, stili architettonici, strutture, dipinto, meditazione, bibbia, pitto'
+  it-desc:  'Chiesa di San Giovanni Nepomuceno a Monaco come ripresa gigapixel con 0,25 GP (15154 × 16517 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, d'
+
