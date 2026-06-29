@@ -1,0 +1,1 @@
+IT Re-Gate nach Cleanup: empty=0 · de_res=0 · pad=1 · num=17 (real-dims-Fehler=0; Rest benigne Separator-Normalisierung; 3 echte Dims patch_text-gefixt).

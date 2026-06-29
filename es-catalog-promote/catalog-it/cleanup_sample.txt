@@ -1,0 +1,62 @@
+IT Cleanup-Sample (15 gemischt)
+
+uid 1:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  it-title: 'Il Grande Ahornboden presso Karwendel nelle Alpi'
+  it-kw:    'paesaggio alpino, aprile, escursione, pittoresco, blues, Europa, rocce, formazioni rocciose, umidità, libertà, idilliaco, stagionale, paesaggistico, a'
+  it-desc:  "La Grande Prateria d'Acero presso Karwendel nelle Alpi come ripresa gigapixel con 1,33 GP (60896 × 21826 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazio"
+
+uid 3:
+  DE-title: 'Burji Khalifa in Dubai'
+  it-title: ''
+  it-kw:    "sala d'attesa, solo, solitario, architettonico, architettura, attrazione, escursione, escursioni, equilibrato, esterno, stili architettonici, struttur"
+  it-desc:  'Burji Khalifa a Dubai in 0,25 Gigapixel (10783 × 23225 pixel). Fotografia di Daniel Richter. Ideale per decorazione murale di grande formato e concetti spaziali architettonici. Autentica ripresa fotografica, senza genera'
+
+uid 4:
+  DE-title: 'Der Grosse Ahornboden bei Karwendel in den Alpen'
+  it-title: 'Il Grande Ahornboden presso Karwendel nelle Alpi'
+  it-kw:    'paesaggio alpino, aprile, escursione, pittoresco, blues, Europa, rocce, formazioni rocciose, umidità, libertà, idilliaco, stagionale, paesaggistico, a'
+  it-desc:  "La Grande Prateria d'Acero presso Karwendel nelle Alpi come ripresa gigapixel con 0,25 GP (26412 × 9467 pixel). Fotografia di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, decorazion"
+
+uid 100:
+  DE-title: 'Alleinstehendes Hochhaus in Dubai'
+  it-title: 'Grattacielo isolato a Dubai'
+  it-kw:    'strutture, blu, bluastro, edificio, centro, condomini, facciata, facciate, finanziario, azienda, aziende, edifici, vetro, vetri, facciate in vetro, vi'
+  it-desc:  'Ripresa ultra-ad alta risoluzione di un edificio alto isolato a Dubai (0,10 Gigapixel, 4487 × 23031 pixel) di Daniel Richter. Fotografia di architettura con dettagli di facciata su cielo blu. Perfetto per controsoffitti '
+
+uid 531:
+  DE-title: 'Das Schloss Belvedere bei Weimar'
+  it-title: ''
+  it-kw:    'Turingia, antico, edificio antico, casa antica, impegnato, irradiato, architettonico, architettura, attrazione, escursione, uscita, bilanciato, estern'
+  it-desc:  'Il castello di Belvedere presso Weimar come ripresa gigapixel da 1,34 con 71840 x 18615 pixel di Daniel Richter. Adatto per decorazione murale rappresentativa, stampe di grande formato e allestimento fieristico. Eccellen'
+
+uid 629:
+  DE-title: 'Urwald'
+  it-title: 'Foresta primordiale'
+  it-kw:    "albero, alberi, gruppo di alberi, chiome d'albero, cime degli alberi, foglia, foglie, all'aperto, fauna, flora, cespuglieto, boscaglia, verde, fronda,"
+  it-desc:  'Vista sulla foresta fitta, 0,25 Gigapixel, 20709 × 12087 pixel. Ripresa di Daniel Richter. Adatto per controsoffitti tesi, decorazione murale XXL e allestimento fieristico. Autentica ripresa fotografica, senza generazion'
+
+uid 2309:
+  DE-title: 'Wasserfall6'
+  it-title: 'Cascata 6'
+  it-kw:    "cascata, fiume, corso d'acqua, corrente, Alpi"
+  it-desc:  "Cascata nelle Alpi, 0,65 Gigapixel (32295 × 20182 pixel), ripresa di Daniel Richter. L'immagine mostra torrente, corso d'acqua e corrente in ambiente alpino. Si presta per controsoffitti tesi e decorazione murale XXL. Au"
+
+uid 3072:
+  DE-title: 'Sonne über Gräser'
+  it-title: 'Sole sopra erbe'
+  it-kw:    'romantico, tramonto, alba, Fehmarn, costa, Mare Baltico, Mare del Nord, erbe'
+  it-desc:  '"Sole su erbe" – ripresa panoramica di erbe al tramonto con 0,64 gigapixel (48,48871 × 13108,108 pixel). Ripresa di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, allestimento fierist'
+
+uid 3073:
+  DE-title: 'Strand'
+  it-title: 'Spiaggia'
+  it-kw:    'romantico, sabbia, spiaggia, costa, Mare Baltico, Mare del Nord, Fehmarn, acqua, mare, gabbiani'
+  it-desc:  '"Spiaggia" – ripresa panoramica di un paesaggio costiero con 0,84 gigapixel (60,60146 × 14036,036 pixel). Ripresa di Daniel Richter. Adatto per applicazioni di grande formato come controsoffitti tesi, allestimento fieris'
+
+uid 4918:
+  DE-title: 'Geroldsauer Wasserfall'
+  it-title: ''
+  it-kw:    "sfocatura di movimento, fiume, Grobbach, esposizione lunga, deserto, natura dell'Europa centrale, fotografia naturalistica, Foresta Nera settentrional"
+  it-desc:  'Ripresa gigapixel Cascata di Geroldsau in 0,21 Gigapixel (11502 × 18419 pixel). Ripresa a lungo tempo di Norbert Neetz con sfocamento di movimento al fiume. Adatto per controsoffitti tesi, decorazione murale XXL e presen'
+
