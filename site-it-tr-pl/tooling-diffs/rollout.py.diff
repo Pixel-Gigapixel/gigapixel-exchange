@@ -1,5 +1,5 @@
 diff --git a/tools/rollout.py b/tools/rollout.py
-index a2b37e8..8dd56b0 100644
+index a2b37e8..e027904 100644
 --- a/tools/rollout.py
 +++ b/tools/rollout.py
 @@ -46,12 +46,23 @@ from collections import OrderedDict
@@ -178,7 +178,26 @@ index a2b37e8..8dd56b0 100644
      txt = re.sub(r"^```(?:\w+)?\s*|\s*```$", "", txt, flags=re.S).strip()
      return _parse_delimited(txt, list(fields.keys()))
  
-@@ -423,7 +502,7 @@ def ensure_page_overlay(de_pid, lang, guide, model, dry_run, review_dir, log):
+@@ -300,6 +379,18 @@ def dedupe_slug(slug, lang):
+         i += 1; s = f"{base}-{i}"
+     return s
+ 
++def page_slug_for(de, es_title, lang):
++    """Slug-Entscheid: STRUKTUR-/ROUTING-/ELTERN-Seiten erben den DE-Slug (NICHT uebersetzen),
++    nur echte Content-Seiten (doktype 1) bekommen einen lokalisierten Slug.
++    Grund: ein uebersetzter Slug einer Eltern-/Routing-Seite bricht Kind-/Produkt-URLs — real passiert
++    an der Katalog-PDP (pid 19, doktype 189, '/details'): ein IT-Slug '/acquistare-foto-gigapixel' haengt
++    alle Produkt-Detail-URLs um. Auch Siteroot ('/') bleibt '/'. doktype!=1 deckt PDP(189)/Shortcut(4)/
++    Link(3)/Plugin(190)/Sysfolder(254)/Spacer(199) ab."""
++    de_slug = de.get("slug") or ""
++    if de.get("doktype") != 1 or de_slug == "/":
++        return de_slug
++    return dedupe_slug(build_page_slug(de_slug, es_title), lang)
++
+ # ---- Blog-Meta-Zeile DETERMINISTISCH lokalisieren (gp-blog-meta: Datum + Kategorie) ----------
+ # Sprach-keyed: TR/PL/IT/AR brauchen später nur je eine neue Monats-/Kategorie-Tabelle.
+ DATE_PAT = (r'(\d{1,2})\.\s+(Januar|Februar|März|April|Mai|Juni|Juli|August|September|'
+@@ -423,12 +514,12 @@ def ensure_page_overlay(de_pid, lang, guide, model, dry_run, review_dir, log):
      translated = {}
      if fields:
          try:
@@ -187,7 +206,13 @@ index a2b37e8..8dd56b0 100644
          except Exception as e:
              log(f"  pid {de_pid}: Titel/Meta-Uebersetzung fehlgeschlagen ({e}) -> blocked"); return ("blocked", None)
  
-@@ -468,10 +547,13 @@ def _sentences_with_tokens(html_text, tokens):
+     es_title = translated.get("title", de.get("title") or "")
+-    slug = dedupe_slug(build_page_slug(de.get("slug"), es_title), lang)
++    slug = page_slug_for(de, es_title, lang)   # Struktur-Slugs erben DE; nur Content-Seiten lokalisiert
+     text_values = {k: translated.get(k, de.get(k) or "") for k in PAGE_MIRROR_TEXT}   # ES = uebersetzt(DE) sonst DE -> nie RU
+ 
+     log(f"  pid {de_pid}: PLAN ES-Overlay  title={es_title!r}  nav_title={text_values.get('nav_title')!r}")
+@@ -468,10 +559,13 @@ def _sentences_with_tokens(html_text, tokens):
              out.append(s.strip())
      return out[:6]
  
@@ -203,7 +228,7 @@ index a2b37e8..8dd56b0 100644
      de = {e["de_uid"]: e["bodytext"] for e in de_payload}
      es = {e["de_uid"]: e["bodytext"] for e in es_payload}
      msgs = []
-@@ -482,7 +564,7 @@ def humanize_gate_feedback(gout, de_payload, es_payload):
+@@ -482,7 +576,7 @@ def humanize_gate_feedback(gout, de_payload, es_payload):
          if prose_de:
              sents = _sentences_with_tokens(t, set(prose_de))
              quoted = "  ".join(f"„{s}”" for s in sents) or f"(Tokens: {dict(__import__('collections').Counter(prose_de))})"
@@ -212,7 +237,7 @@ index a2b37e8..8dd56b0 100644
                          "In Quellenblöcken (class=\"gp-blog-source\") nur Autor/Werktitel/Journal/Jahr im Original lassen; "
                          "erklärende/beschreibende Sätze MÜSSEN übersetzt werden.")
          # G2 — Zahl-Mismatch: Quelle vs. Ziel nennen, Skalenwort-Regel, NIE faelschen.
-@@ -578,7 +660,7 @@ def translate_page(de_elems, guide, model, pid, lang, log, gate_feedback=None):
+@@ -578,7 +672,7 @@ def translate_page(de_elems, guide, model, pid, lang, log, gate_feedback=None):
              while attempts < 2:
                  attempts += 1
                  try:
@@ -221,7 +246,7 @@ index a2b37e8..8dd56b0 100644
                      break
                  except Exception as e:
                      log(f"  pid {pid} uid {el['uid']}: Modell/Parse-Fehler ({e}) Versuch {attempts}")
-@@ -613,7 +695,7 @@ def process_page(pid, lang, guide, model, dry_run, review_dir, force, log):
+@@ -613,7 +707,7 @@ def process_page(pid, lang, guide, model, dry_run, review_dir, force, log):
      ok, gout = run_gates(de_payload, es_payload, taglines)
      if not ok:
          # Gate-Feedback-Retry — exakt 1x, auf SEITEN-Ebene, mit LESBAREM Feedback (humanisiert, nicht roh).
@@ -230,7 +255,23 @@ index a2b37e8..8dd56b0 100644
          log(f"pid {pid}: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:\n{fb}")
          de_payload, es_payload, inserts = translate_page(de_elems, guide, model, pid, lang, log, gate_feedback=fb)
          ok, gout = run_gates(de_payload, es_payload, taglines)
-@@ -726,7 +808,10 @@ def main():
+@@ -661,8 +755,13 @@ def build_page_overlay_from_review(de_pid, lang, page_json, log):
+         log(f"  pid {de_pid}: KEIN RU-pages-Overlay als Vorlage -> blocked"); return ("blocked", None)
+     donor = donor_rows[0]
+     text_values = {k: (page_json.get(k) if page_json.get(k) is not None else (de.get(k) or "")) for k in PAGE_MIRROR_TEXT}
+-    slug = page_json.get("slug") or build_page_slug(de.get("slug"), text_values.get("title") or "")
+-    slug2 = dedupe_slug(slug, lang)
++    # Struktur-/Routing-/Eltern-Seiten: DE-Slug ERBEN (auch im from-review, ueberschreibt einen evtl.
++    # lokalisierten Slug aus dem Dry-Run-JSON) — nur Content-Seiten lokalisiert. (PDP/Kind-URL-Schutz.)
++    if de.get("doktype") != 1 or (de.get("slug") or "") == "/":
++        slug = slug2 = de.get("slug") or ""
++    else:
++        slug = page_json.get("slug") or build_page_slug(de.get("slug"), text_values.get("title") or "")
++        slug2 = dedupe_slug(slug, lang)
+     if slug2 != slug:
+         log(f"  pid {de_pid}: WARN Slug-Kollision seit Dry-Run: {slug} -> {slug2}")
+     return ("create", _page_overlay_stmt(de, donor, lang, text_values, slug2))
+@@ -726,7 +825,10 @@ def main():
      ap = argparse.ArgumentParser()
      ap.add_argument("--pids", required=True, help="z. B. 201-389 oder 391,392,45")
      ap.add_argument("--lang", type=int, default=4)
@@ -242,7 +283,7 @@ index a2b37e8..8dd56b0 100644
      g = ap.add_mutually_exclusive_group(required=True)
      g.add_argument("--dry-run", action="store_true")
      g.add_argument("--commit", action="store_true")
-@@ -739,8 +824,10 @@ def main():
+@@ -739,8 +841,10 @@ def main():
      a = ap.parse_args()
      if a.from_review and not a.commit:
          ap.error("--from-review nur zusammen mit --commit")

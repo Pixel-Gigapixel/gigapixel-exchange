@@ -1,0 +1,37 @@
+diff --git a/tools/RUNBOOK_NEXT_LANGUAGE.md b/tools/RUNBOOK_NEXT_LANGUAGE.md
+index 3661931..762b188 100644
+--- a/tools/RUNBOOK_NEXT_LANGUAGE.md
++++ b/tools/RUNBOOK_NEXT_LANGUAGE.md
+@@ -112,3 +112,32 @@ nach Default auf DE/EN zurück (Titel deutsch, Beschreibung/Karten/Schema englis
+ 
+ ## REIHENFOLGE FÜR SPRACHE N (komplett)
+ 1. Config (1a) → 2. Site-Content auf biz (1b) + manuelle XLIFFs (1c) + Glossar → 3. Scoped-Dump + Flip nach gmbh (Auto-Gate) → 4. **A** (cart_gigapixels 45 + Warenkorb-Overlay uid 62) → 5. **B** (title+keywords: Prompts+Dispatch+Delimiter+Post-Run-Gate) → 6. **C** (descriptions) → 7. **D** (die 7 langId→code-Render-Spots um `N=>'xx'` erweitern, Code-Diff biz→gmbh) → 8. **Promotion Schicht 2** (tx_gigapixels_translation biz→gmbh) → 9. **Served-Verifikation — GANZE Produktseite CACHE-FREI** (Site + Detailseite: sichtbarer Text · Maße · Similar-Karten · meta/og · JSON-LD-Schema · Textsuche + Checkout-Klick bis Zahlungsseite, KEINE echte Bestellung). **DB-grün ≠ gerendert-grün.**
++
++## ADDENDUM 2026-06-29 (IT-Pilot-Lehren — Pflicht für TR/PL/AR)
++- **D-Spots waren NIE für 5/6/7 vorverdrahtet** (HEAD endete bei `4=>'es'`). Schritt 7 IMMER real prüfen:
++  `grep -nE "[4-8] => '" <die 7 Dateien>` — nicht der Summary glauben. `4=>'es'` ist live-stabil.
++- **`tx_gigapixels_translation.language` = CODE (`'it'`), nicht langId** → Spots mappen langId→Code; Promotion-Script nutzt Code.
++- **ENTANGLEMENT-FALLE:** `KeSearchAdapter.php` + `Show.html` tragen im Working-Tree ein uncommittetes
++  Photographer-Feature (untracked `PhotographerName.php`). **NIE wholesale deployen** → gmbh-Fatal (fehlende Klasse).
++  Isolierte HEAD+langId-Hunk-Kopien bauen, `grep -E "PhotographerName|xmlns:vs|vs:" = 0` VOR rsync.
++- **Gate-Härtung (in `catalog_sample_gate.py`):** `DE_TOK_HI` (ultrahochauflösend|hochauflösend|auflösend|
++  Aufnahme|Auflösung|Geeignet|zeigt|Gebäude) blockt GRÜN — Haiku reicht Stray-Source-DE durch (IT 33/TR 11/PL 35).
++  `DE_TOK_LO` (und|mit) nur WARN = Eigennamen-Verdacht. `cleanup_catalog_lang.py` löscht de_tok → retranslate.
++  **Body-Leaks auf biz cleanen VOR Promotion** (TR/PL noch nicht promotet → sauber promoten).
++- **Served-Check-Realität:** Katalog-Content (H1/Beschreibung/og/Schema/Maße) wird italienisch; noch DE bleiben
++  bewusst die SEPARATEN Schichten: Seitenbaum-Menü (langId-N pages/tt_content-Dump), Related-Heading/Claim-Block/
++  PageTitle-/alt-Suffix (XLIFF). Nicht mit Katalog-Leaks verwechseln.
++- **gmbh-Deploy:** rsync gegen `/usr/www/users/gigapx/deploy/app/` (current→app), Backup `var/_it_backup/*.pre-<L>-<date>`,
++  `php82.bin.cli -l`, Flush = `rm -rf var/cache/code/fluid_template/* && vendor/bin/typo3 cache:flush`.
++
++## Addendum (2026-06-30) — Struktur-Slugs NICHT übersetzen + Post-Promotion-PDP-Check
++- **Struktur-/Routing-/Eltern-Slugs erben den DE-Slug, NICHT übersetzen.** Nur echte Content-Seiten
++  (doktype 1) bekommen lokalisierte Slugs. Verdrahtet in `rollout.py:page_slug_for()` (greift in
++  ensure_page_overlay UND --from-review): `doktype != 1` ODER Siteroot (`/`) → DE-Slug 1:1.
++  **Warum:** ein übersetzter Slug der PDP-Eltern (pid 19, doktype 189, `/details`) hängt ALLE
++  Produkt-Detail-URLs um (Regress: IT `/acquistare-foto-gigapixel`, TR/PL analog → Produkt-URLs gebrochen).
++  Content-Slugs (glossario/privacy/metodologia …) BLEIBEN lokalisiert (korrekt + gewollt).
++- **Nach JEDER Promotion: eine Katalog-PDP served-checken** je Sprache — `/<lang>/details/<produkt-slug>`
++  muss 200 sein + Canonical auf `/<lang>/details/<p>`. Genau die Lücke, die der reine Page-Smoke nicht sah.
++- **Slug-Diff vor Promotion:** Struktur-/Eltern-Seiten (Kind-Seiten ODER Records darunter, plus pid 19)
++  mit IT/TR/PL-Slug ≠ DE listen → müssen = DE sein; nur diese brechen URLs.
