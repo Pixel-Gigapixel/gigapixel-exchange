@@ -1,0 +1,36 @@
+[search.placeholder]
+  src: Bilder suchen…
+  it: Cerca immagini…
+[search.btn.camera]
+  src: Bildsuche öffnen
+  it: Apri ricerca immagini
+[search.btn.submit]
+  src: Suchen
+  it: Cerca
+[drop.prompt]
+  src: Bild hierher ziehen oder
+  it: Trascina l'immagine qui oppure
+[drop.prompt.click]
+  src: klicken
+  it: clicca
+[drop.hint]
+  src: JPEG · PNG · WebP · max 10 MB
+  it: JPEG · PNG · WebP · max 10 MB
+[options.summary]
+  src: Optionen
+  it: Opzioni
+[slider.weight.label]
+  src: Bild / Text
+  it: Immagine / Testo
+[slider.weight.title]
+  src: Wie stark soll das Bild gegenüber dem Text gewichtet werden?
+  it: Quanto peso attribuire all'immagine rispetto al testo?
+[slider.weight.left]
+  src: ◀ Text
+  it: ◀ Testo
+[slider.weight.right]
+  src: Bild ▶
+  it: Immagine ▶
+[slider.weight.image]
+  src: Bild
+  it: Immagine

@@ -1,0 +1,3 @@
+site_gate xliff [it]  Items=361
+  DE_HI=0  EN_HI=0  (GRUEN <=> beide 0)
+  DE_LO=0  EN_LO=0  (nur WARN)

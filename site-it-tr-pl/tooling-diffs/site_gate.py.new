@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Gemeinsamer Zwei-Tier-Sprach-Gate fuer SITE-Content (pages/tt_content/Glossar/XLIFF).
+
+Zwei Tiers, identische Definition wie catalog_sample_gate.py (damit GRUEN deckungsgleich bleibt):
+  HIGH = Quell-Vokabular, das in KEINER Zielsprache stehen darf  -> blockt GRUEN (Zahl muss 0 sein)
+  LOW  = Tokens, die meist in BEWAHRTEN Eigennamen stecken       -> nur WARN, kein Block
+
+GRUEN je Sprache  <=>  DE_HI == 0 UND EN_HI == 0.
+
+Read-only Hilfsmodul: keine DB-, keine Datei-Writes. Wird von glossar_load.py (Dry-Run-Nachweis)
+und vom Site-Postrun-Gate importiert -> EINE Definition, kein Drift.
+"""
+import re
+import unicodedata
+
+# --- HIGH: muss in keiner Zielsprache vorkommen (blockt GRUEN) -------------------------
+# Kanonisch identisch zu catalog_sample_gate.DE_TOK_HI / EN_TOK_HI (BEWUSST eng gehalten):
+# breitere Funktionswort-Sets flaggen sonst bewahrte Bibliografie-Zitate, Eigennamen
+# (z. B. "Tagged Image File Format", "Resolution Limit of the Eye"), URLs/SKUs falsch.
+# Reste-Erkennung darum: enges Produkt-/Fachvokabular HIGH + Funktionswoerter LOW (WARN).
+# Praeserviert-by-design (Bibliografie/Zitate/URLs) wird VOR dem Scan entfernt (s. strip_html).
+DE_HI = re.compile(r'ultrahochauflösend|hochauflösend|auflösend|Aufnahme|Auflösung|Geeignet|\bzeigt\b', re.I)
+EN_HI = re.compile(r'ultrahigh|high-res|\bresolution\b|\brecording\b|\bsuitable\b', re.I)
+
+# --- ES_HI: Spanisch-Leak in NICHT-spanischen Zielen (tr/pl/it) -------------------------
+# Ursache: rollout.py:555-Bug ('ins Spanische' im Gate-Retry) -> ganze Felder wurden spanisch.
+# Der DE/EN-Gate faengt das NICHT (Spanisch ist weder DE noch EN). Tokens bewusst Spanisch-SPEZIFISCH,
+# d. h. NICHT im Italienischen gueltig (kein 'una/con/del/per') -> auch fuer it=Ziel false-positive-arm.
+# NUR FP-sichere, eindeutig spanische Marker: akzentuiert (á/é/í/ó/ú/ñ — kommen in TR ı/ş/ö, PL ą/ł/ó,
+# IT à/è/ì so NICHT vor) + lange ES-spezifische Woerter (IT/TR/PL-Aequivalent unterscheidet sich klar).
+# BEWUSST RAUS (kollidieren mit echten TR/PL-Woertern -> FP): el/los/las (PL 'las'=Wald), para/por
+# (TR 'para'=Geld, 'el'=Hand), muy/sus/eso/esto/mismo/hacia. Voll-spanische Seiten enthalten IMMER die
+# eindeutigen Marker (resolución/imágenes/megapíxeles …), daher kein Detektions-Verlust.
+ES_HI = re.compile(
+    r'\b(también|según|aquí|cómo|qué|más|está|están|imágenes|resolución|fotografía|píxeles|megapíxeles'
+    r'|diseño|tamaño|través|porque|puede|usted|privacidad|servicio|nuestro|nuestra)\b'
+    r'|¿|¡', re.I)
+# 'gratuito' (IT/ES identisch), 'ciudad' (knapp), short function words: bewusst NICHT enthalten.
+
+# --- LOW: meist in bewahrten Eigennamen / kurze Funktionswoerter -> nur WARN -----------
+DE_LO = re.compile(r'\bund\b|\bmit\b|\bnicht\b|\bwerden\b|\bwird\b|\bsind\b|\boder\b|\bfür\b|\bBilder\b', re.I)
+EN_LO = re.compile(r'\bthe\b|\bwith\b|\band\b|\bview\b|\bof\b|\bimage\b|\bour\b|\bwall\b', re.I)
+
+# Praeserviert-by-design: URLs (Pfad-Segmente wie /bilder/), Mail, und Zitat-/Bibliografie-Spannen
+# („…" / "…" / «…»). TRANSLATION_GUIDE §4a: Bibliografie bleibt original; Zitate stehen oft im
+# Original. Diese Spannen werden VOR dem HIGH-Scan entfernt und separat als Review-Liste gemeldet
+# (nicht still verworfen — s. scan_text(..., return_quotes=True)).
+_URL_RE = re.compile(r'https?://\S+|www\.\S+|\b\S+\.(?:de|com|gmbh|org|net|eu|info)\b\S*', re.I)
+_QUOTE_RE = re.compile(r'„[^"„]*"|»[^«»]*«|«[^«»]*»|"[^"]{3,}"')
+# Bibliografie-Zitat: "(JAHR)…bis zum naechsten Satzpunkt" — der Werktitel nach (Jahr): bleibt im
+# Original (Guide §4a). Faengt z. B. "(2024): Resolution Limit of the Eye." Autor/Initialen davor
+# enthalten kein HIGH-Vokabular und stoeren nicht.
+_CITE_RE = re.compile(r'\((?:1[89]|20)\d{2}\)\s*:?[^.]*\.')
+
+
+def strip_html(s):
+    """Tags raus, Entities grob auf Text — prueft sichtbaren Text, nicht Markup/Attribute."""
+    s = re.sub(r'<[^>]+>', ' ', s or '')
+    s = s.replace('&amp;', '&').replace('&nbsp;', ' ').replace('&quot;', '"').replace('&#39;', "'")
+    return s
+
+
+# Produktnamen, die EN-Vokabular enthalten, aber Marken sind (bewahrt) -> vor dem Scan entfernen.
+_PRODUCT_RE = re.compile(r'Adobe Super Resolution|Super Resolution|Topaz Gigapixel AI|Gigapixel AI', re.I)
+
+
+def _strip_preserved(t):
+    """URLs + Zitat-/Bibliografie-Spannen + Produktnamen entfernen (praeserviert-by-design)."""
+    t = _URL_RE.sub(' ', t)
+    t = _CITE_RE.sub(' ', t)
+    t = _QUOTE_RE.sub(' ', t)
+    t = _PRODUCT_RE.sub(' ', t)
+    return t
+
+
+def scan_text(text, html=True, return_quotes=False):
+    """Liefert dict {de_hi, de_lo, en_hi, en_lo} der GEFUNDENEN Tokens (dedupliziert).
+    HIGH-Scan laeuft auf dem Body OHNE praeservierte Spannen (URLs/Zitate). GRUEN <=> de_hi==[] & en_hi==[].
+    return_quotes=True: zusaetzlich {q_de_hi, q_en_hi} = HIGH-Treffer INNERHALB der Zitate (Review-Liste)."""
+    raw = strip_html(text) if html else (text or '')
+    body = _strip_preserved(raw)
+    out = {
+        "de_hi": sorted(set(m.group(0) for m in DE_HI.finditer(body))),
+        "de_lo": sorted(set(m.group(0) for m in DE_LO.finditer(body))),
+        "en_hi": sorted(set(m.group(0) for m in EN_HI.finditer(body))),
+        "en_lo": sorted(set(m.group(0) for m in EN_LO.finditer(body))),
+        "es_hi": sorted(set(m.group(0).lower() for m in ES_HI.finditer(body))),
+    }
+    if return_quotes:
+        quoted = " ".join(_QUOTE_RE.findall(raw))
+        out["q_de_hi"] = sorted(set(m.group(0) for m in DE_HI.finditer(quoted)))
+        out["q_en_hi"] = sorted(set(m.group(0) for m in EN_HI.finditer(quoted)))
+    return out
+
+
+def scan_items(items, html=True):
+    """items: Iterable von (label, text). Liefert (summary, fails).
+    summary = {de_hi, de_lo, en_hi, en_lo} Gesamtzahlen ueber alle Items.
+    fails   = Liste (label, token_typ, tokens) NUR fuer HIGH-Treffer (die GRUEN blocken)."""
+    summary = {"de_hi": 0, "de_lo": 0, "en_hi": 0, "en_lo": 0, "es_hi": 0}
+    fails = []
+    for label, text in items:
+        r = scan_text(text, html=html)
+        for k in summary:
+            summary[k] += len(r[k])
+        if r["de_hi"]:
+            fails.append((label, "DE_HI", r["de_hi"]))
+        if r["en_hi"]:
+            fails.append((label, "EN_HI", r["en_hi"]))
+        if r.get("es_hi"):
+            fails.append((label, "ES_HI", r["es_hi"]))
+    return summary, fails

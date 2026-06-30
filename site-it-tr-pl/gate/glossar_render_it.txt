@@ -1,0 +1,18 @@
+# Glossar-Term gerendert [it]  (de_uid 1)
+Titel:  Acquisizione Gigapixel
+Slug:   /glossar/acquisizione-gigapixel   (it: /glossario, tr: /soezluek, pl: /s-ownik — Eltern-Segment)
+
+Kurzdefinition:
+  Un'acquisizione fotografica con almeno un miliardo di pixel (1000 Megapixel). Nasce solitamente dallo stitching di molte singole immagini per formare un'immagine complessiva estremamente ricca di dettagli – senza upscaling IA.
+
+Langdefinition (HTML):
+<p>Un'acquisizione Gigapixel è un'immagine fotografica con una risoluzione a partire da un miliardo di pixel. Per confronto: una fotocamera professionale full-frame fornisce da 40 a 100 Megapixel – un'acquisizione Gigapixel raggiunge quindi dalle dieci alle venticinque volte e oltre.</p><p>Questa risoluzione non viene generata da un singolo sensore, ma attraverso la ripresa sistematica di molte singole immagini sovrapposte, che vengono poi assemblate tramite stitching in un'immagine complessiva senza cuciture. Ogni area dell'immagine viene catturata con la massima nitidezza ottica.</p><p>Decisivo per la qualità dell'immagine è che la risoluzione sia di origine ottica e non venga interpolata tramite upscaling IA in post-produzione. Solo in questo modo le strutture più fini rimangono fedeli ai dettagli sull'intera superficie – il prerequisito fondamentale per applicazioni in grande formato come soffitti tesi, allestimenti fieristici o stampa architettonica.</p>
+
+Meta-Description:
+  Cosa caratterizza un'acquisizione Gigapixel: a partire da un miliardo di pixel, generata otticamente tramite stitching, senza upscaling IA – ideale per la stampa in grande formato fedele ai dettagli.
+
+FAQ:
+  Q: A partire da quando si parla di acquisizione Gigapixel?
+  A: A partire da una risoluzione di un miliardo di pixel, ovvero 1000 Megapixel. Al di sotto si parla di risoluzione Megapixel.
+  Q: La risoluzione viene generata tramite IA?
+  A: No. Una vera acquisizione Gigapixel nasce otticamente dallo stitching di molte singole immagini riprese realmente. L'upscaling IA genera solo dettagli apparenti e interpolati.

@@ -1,0 +1,256 @@
+diff --git a/tools/rollout.py b/tools/rollout.py
+index a2b37e8..130d116 100644
+--- a/tools/rollout.py
++++ b/tools/rollout.py
+@@ -46,12 +46,23 @@ from collections import OrderedDict
+ import pymysql
+ 
+ # ---- Konfiguration ----
+-LANG_ISO   = {2: "fr", 3: "ru", 4: "es"}                 # nur fuer Logs/Slug-Hinweise
++LANG_ISO   = {2: "fr", 3: "ru", 4: "es", 5: "tr", 6: "pl", 7: "it"}   # nur fuer Logs/Slug-Hinweise
++LANG_NAME  = {2: "Franzoesische (fr-FR)", 3: "Russische (ru-RU)", 4: "Spanische (es-ES)",
++              5: "Tuerkische (tr-TR)", 6: "Polnische (pl-PL)", 7: "Italienische (it-IT)"}  # fuer den Uebersetzer-Prompt
+ GUIDE_PATH = os.path.expanduser("~/gigapixel-deploy/tools/TRANSLATION_GUIDE.md")
+ GATES_PATH = os.path.expanduser("~/gigapixel-deploy/tools/gates.py")
+ ENV_LOCAL  = os.path.expanduser("~/gigapixel-deploy/.env.local")
+ APIKEY_FILE = os.path.expanduser("~/.anthropic-api-key")
+-DEFAULT_MODEL = "claude-sonnet-4-6"          # Qualitaet; fuer Masse/Blog ggf. claude-haiku-4-5-20251001 (Kosten)
++
++# ---- Uebersetzungs-Engine -------------------------------------------------------------
++# Default: cloud-Ollama (glm-5.1:cloud) — bestes verfuegbares GLM-Modell, KEIN Sonnet/Haiku (Kosten).
++# Anthropic bleibt als --engine anthropic erreichbar (Notfall/Vergleich), wird im Normalbetrieb NICHT genutzt.
++ENGINE        = "ollama"                      # in main() aus --engine gesetzt; importierende Tools nutzen den Default
++DEFAULT_ENGINE = "ollama"
++OLLAMA_URL    = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
++OLLAMA_MODEL  = "glm-5.1:cloud"              # cloud-Modell ueber ollama.com (remote_host https://ollama.com:443)
++ANTHROPIC_MODEL = "claude-sonnet-4-6"        # nur fuer --engine anthropic
++DEFAULT_MODEL = OLLAMA_MODEL                  # aktiver Default = Ollama-GLM
+ 
+ # Ziel-System: --target {biz,gmbh} setzt TARGET (Default BIZ = Staging; ohne --target trifft ein Lauf NIE Live).
+ # ALLE Infra-Werte env-getrieben aus ~/gigapixel-deploy/.env.local (gitignored), KEIN hartkodierter gmbh-Wert:
+@@ -172,37 +183,99 @@ def _fields_to_markers(fields):
+     return "\n".join(out)
+ 
+ def _parse_delimited(txt, expected_keys):
+-    """Marker-Ausgabe -> OrderedDict. Inhalt je Feld bis zum naechsten <<<FIELD:/<<<END>>>, getrimmt.
+-    Fehlt <<<END>>>, fehlt jeder Marker oder ein erwartetes Feld -> ValueError (greift bestehenden Retry)."""
++    """Marker-Ausgabe -> OrderedDict. Inhalt je Feld bis zum naechsten <<<FIELD:>>>; ein evtl.
++    nachfolgendes <<<END>>> wird vom Feldwert abgeschnitten.
++    Tolerant gegen ZWEI Marker-Dialekte:
++      (a) ein einziges <<<END>>> ganz am Schluss (Anthropic-Contract), und
++      (b) ein <<<END>>> NACH JEDEM Feld (glm-5.1:cloud neigt dazu).
++    Frueher wurde am ERSTEN <<<END>>> gesplittet -> in Dialekt (b) gingen alle Felder ausser dem ersten
++    verloren. Jetzt: alle FIELD-Marker im GESAMT-Text suchen, Feldwert = bis zum naechsten FIELD-Marker,
++    dann ein anhaengendes <<<END>>> (+ Whitespace) strippen.
++    Fehlt jeder Marker oder ein erwartetes Feld -> ValueError (greift bestehenden Retry)."""
+     if END_MARK not in txt:
+         raise ValueError("Marker <<<END>>> fehlt")
+-    body = txt.split(END_MARK, 1)[0]
+-    matches = list(_FIELD_RE.finditer(body))
++    matches = list(_FIELD_RE.finditer(txt))
+     if not matches:
+         raise ValueError("kein <<<FIELD:...>>>-Marker gefunden")
+     out = OrderedDict()
+     for i, m in enumerate(matches):
+         start = m.end()
+-        end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
+-        out[m.group(1)] = body[start:end].strip()
++        end = matches[i + 1].start() if i + 1 < len(matches) else len(txt)
++        val = txt[start:end]
++        # anhaengendes <<<END>>> (Dialekt b: nach jedem Feld; Dialekt a: nur beim letzten) abschneiden
++        idx = val.find(END_MARK)
++        if idx != -1:
++            val = val[:idx]
++        out[m.group(1)] = val.strip()
+     missing = [k for k in expected_keys if k not in out]
+     if missing:
+         raise ValueError(f"erwartete Felder fehlen in der Ausgabe: {missing}")
+     return out
+ 
+-def translate_fields(fields, guide, model, gate_feedback=None):
++
++def _ollama_chat(system, user, model, temperature=0, timeout=900):
++    """Ein Chat-Turn gegen cloud-Ollama (/api/chat, NDJSON-Streaming). Stdlib-only (urllib),
++    keine Zusatz-Dependency. Streaming, damit lange Generierungen (FAQ/Datenschutz ~10k+ Tokens)
++    nicht in einen HTTP-Read-Timeout laufen. Liefert den akkumulierten message.content-Text.
++    Wirft RuntimeError bei HTTP-Fehler/leerer Antwort (greift den bestehenden Retry in translate_page)."""
++    import urllib.request, urllib.error
++    payload = {
++        "model": model,
++        "stream": True,
++        "options": {"temperature": temperature},
++        "messages": [
++            {"role": "system", "content": system},
++            {"role": "user", "content": user},
++        ],
++    }
++    data = json.dumps(payload).encode("utf-8")
++    req = urllib.request.Request(OLLAMA_URL, data=data, headers={"Content-Type": "application/json"})
++    chunks = []
++    try:
++        with urllib.request.urlopen(req, timeout=timeout) as resp:
++            for raw in resp:
++                raw = raw.strip()
++                if not raw:
++                    continue
++                obj = json.loads(raw)
++                if obj.get("error"):
++                    raise RuntimeError(f"ollama error: {obj['error']}")
++                msg = obj.get("message") or {}
++                if msg.get("content"):
++                    chunks.append(msg["content"])
++                if obj.get("done"):
++                    dr = obj.get("done_reason")
++                    if dr and dr not in ("stop", "end"):
++                        raise RuntimeError(f"ollama done_reason={dr} (Generierung nicht sauber beendet)")
++    except urllib.error.URLError as e:
++        raise RuntimeError(f"ollama HTTP/Netzwerk-Fehler: {e}")
++    out = "".join(chunks).strip()
++    if not out:
++        raise RuntimeError("ollama lieferte leere Antwort")
++    return out
++
++def translate_fields(fields, guide, model, lang, gate_feedback=None):
+     """fields: OrderedDict der zu uebersetzenden Felder (header/subheader/bodytext; leere weglassen).
+     Liefert dict mit uebersetzten Werten. Modell gibt die Felder im Marker-Contract zurueck
+-    (escaping-frei, rohes HTML) — Parser oben mappt zurueck ins fields-dict (unveraenderter Contract)."""
+-    import anthropic
++    (escaping-frei, rohes HTML) — Parser oben mappt zurueck ins fields-dict (unveraenderter Contract).
++    Engine: ENGINE=='ollama' -> cloud-Ollama glm-5.1:cloud (Default); 'anthropic' -> Claude (Notfall)."""
+     _load_secrets()
+     # Guard: Quellinhalt darf die Marker-Strings nicht enthalten, sonst waere der Contract mehrdeutig
+     # (in HTML praktisch ausgeschlossen; die Assertion kostet nichts).
+     for k, v in fields.items():
+         if v and ("<<<FIELD:" in v or END_MARK in v):
+             raise ValueError(f"Quellfeld {k} enthaelt Marker-Strings — Delimiter-Contract unsicher")
+-    client = anthropic.Anthropic()
+-    system = guide + (
++    lang_name = LANG_NAME.get(lang, "Spanische (es-ES)")
++    # ZIELSPRACHEN-ANKER ganz oben: der TRANSLATION_GUIDE.md ist mit SPANISCHEN Beispielen geschrieben
++    # (historisch ES-Rollout). glm-5.1 driftet bei langem Content sonst ins Spanische, weil es die
++    # Guide-Beispielsprache nachahmt. Darum explizit: Beispiele = nur Regel-Illustration, NICHT Zielsprache.
++    target_anchor = (
++        f"# ZIELSPRACHE (ABSOLUT VORRANGIG)\n"
++        f"Uebersetze AUSSCHLIESSLICH ins {lang_name}. Die Beispiele weiter unten im Leitfaden verwenden "
++        f"Spanisch NUR zur Illustration der REGELN — Spanisch ist NICHT die Zielsprache (ausser die "
++        f"Zielsprache IST Spanisch). Gib NIEMALS spanischen Text aus, wenn die Zielsprache nicht Spanisch ist. "
++        f"Jeder ausgegebene Satz MUSS {lang_name} sein.\n\n")
++    system = target_anchor + guide + (
+         "\n\n# AUSGABE-FORMAT (zwingend)\n"
+         "Gib die Uebersetzung NUR als markierte Felder zurueck — KEIN JSON, KEIN Markdown, kein Text "
+         "davor/danach. Pro Eingabe-Feld genau ein Marker, dann der uebersetzte Inhalt ROH, dann der "
+@@ -210,21 +283,27 @@ def translate_fields(fields, guide, model, gate_feedback=None):
+         "<<<FIELD:header>>>\n…uebersetzter Header…\n<<<FIELD:bodytext>>>\n…uebersetztes HTML, roh…\n<<<END>>>\n"
+         "Bodytext ist rohes HTML — Quotes NICHT escapen. Gib NUR Felder aus, die in der Eingabe "
+         "vorhanden waren. HTML-Struktur, Zahlen, Waehrung, Symbole, &amp;, Marken byte-genau lassen.")
+-    intro = ("Uebersetze die Felder dieses Marker-Blocks ins Spanische (es-ES) nach den Regeln des "
+-             "System-Prompts; gib sie im SELBEN Marker-Format zurueck:\n")
++    intro = (f"Uebersetze die Felder dieses Marker-Blocks ins {lang_name} (NICHT ins Spanische, ausser "
++             f"{lang_name} ist Spanisch) nach den Regeln des System-Prompts; gib sie im SELBEN Marker-Format zurueck:\n")
+     if gate_feedback:
+         intro = ("Die vorige Uebersetzung hat Gates verletzt. KORRIGIERE gezielt:\n" + gate_feedback +
+                  "\n\nHier erneut die Quelle im Marker-Format, gib korrigierte Felder im selben Format:\n")
+     user = intro + _fields_to_markers(fields)
+-    # Opus 4.8 lehnt das (deprecate) temperature-Feld ab; Sonnet bleibt deterministisch bei temperature=0.
+-    extra = {} if "opus-4-8" in model else {"temperature": 0}
+-    # max_tokens hoch: lange Quellelemente (z. B. pid 142 ~7,8k Tok, FAQ/Datenschutz ~10k+) brauchen
+-    # >8192 Output, sonst TRUNCATION (kein <<<END>>> -> Parse-Fehler). Sonnet 4.6 deckt 64K, Opus 4.8 128K.
+-    # Ab ~16K Output MUSS gestreamt werden, sonst SDK-HTTP-Timeout -> client.messages.stream + get_final_message.
+-    with client.messages.stream(model=model, max_tokens=32000, system=system,
+-                                messages=[{"role": "user", "content": user}], **extra) as stream:
+-        resp = stream.get_final_message()
+-    txt = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
++    if ENGINE == "ollama":
++        # cloud-Ollama (glm-5.1:cloud): NDJSON-Streaming, temperature=0 fuer Determinismus.
++        txt = _ollama_chat(system, user, model, temperature=0)
++    else:
++        import anthropic
++        client = anthropic.Anthropic()
++        # Opus 4.8 lehnt das (deprecate) temperature-Feld ab; Sonnet bleibt deterministisch bei temperature=0.
++        extra = {} if "opus-4-8" in model else {"temperature": 0}
++        # max_tokens hoch: lange Quellelemente (z. B. pid 142 ~7,8k Tok, FAQ/Datenschutz ~10k+) brauchen
++        # >8192 Output, sonst TRUNCATION (kein <<<END>>> -> Parse-Fehler). Sonnet 4.6 deckt 64K, Opus 4.8 128K.
++        # Ab ~16K Output MUSS gestreamt werden, sonst SDK-HTTP-Timeout -> client.messages.stream + get_final_message.
++        with client.messages.stream(model=model, max_tokens=32000, system=system,
++                                    messages=[{"role": "user", "content": user}], **extra) as stream:
++            resp = stream.get_final_message()
++        txt = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+     txt = re.sub(r"^```(?:\w+)?\s*|\s*```$", "", txt, flags=re.S).strip()
+     return _parse_delimited(txt, list(fields.keys()))
+ 
+@@ -423,7 +502,7 @@ def ensure_page_overlay(de_pid, lang, guide, model, dry_run, review_dir, log):
+     translated = {}
+     if fields:
+         try:
+-            translated = translate_fields(fields, guide, model)
++            translated = translate_fields(fields, guide, model, lang)
+         except Exception as e:
+             log(f"  pid {de_pid}: Titel/Meta-Uebersetzung fehlgeschlagen ({e}) -> blocked"); return ("blocked", None)
+ 
+@@ -468,10 +547,13 @@ def _sentences_with_tokens(html_text, tokens):
+             out.append(s.strip())
+     return out[:6]
+ 
+-def humanize_gate_feedback(gout, de_payload, es_payload):
++def humanize_gate_feedback(gout, de_payload, es_payload, lang=4):
+     """Macht den rohen gates.py-Output (Tabelle/Multisets) zu konkreten, handlungsleitenden Saetzen fuers Modell.
+-    Re-leitet die Verletzungen direkt aus den Payloads ab (robuster als gout zu parsen)."""
++    Re-leitet die Verletzungen direkt aus den Payloads ab (robuster als gout zu parsen).
++    lang: ZWINGEND die Ziel-Sprache durchreichen — sonst landet im Feedback der frueher hartkodierte
++    'ins Spanische'-Satz und das Modell uebersetzt die Seite faelschlich ins Spanische (realer Leak-Bug)."""
+     G = _gates_mod()
++    lang_name = LANG_NAME.get(lang, "Spanische (es-ES)")
+     de = {e["de_uid"]: e["bodytext"] for e in de_payload}
+     es = {e["de_uid"]: e["bodytext"] for e in es_payload}
+     msgs = []
+@@ -482,7 +564,7 @@ def humanize_gate_feedback(gout, de_payload, es_payload):
+         if prose_de:
+             sents = _sentences_with_tokens(t, set(prose_de))
+             quoted = "  ".join(f"„{s}”" for s in sents) or f"(Tokens: {dict(__import__('collections').Counter(prose_de))})"
+-            msgs.append(f"[uid {uid}] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins Spanische: {quoted}  "
++            msgs.append(f"[uid {uid}] Diese Sätze sind noch DEUTSCH — übersetze sie vollständig ins {lang_name}: {quoted}  "
+                         "In Quellenblöcken (class=\"gp-blog-source\") nur Autor/Werktitel/Journal/Jahr im Original lassen; "
+                         "erklärende/beschreibende Sätze MÜSSEN übersetzt werden.")
+         # G2 — Zahl-Mismatch: Quelle vs. Ziel nennen, Skalenwort-Regel, NIE faelschen.
+@@ -578,7 +660,7 @@ def translate_page(de_elems, guide, model, pid, lang, log, gate_feedback=None):
+             while attempts < 2:
+                 attempts += 1
+                 try:
+-                    translated = translate_fields(fields, guide, model, gate_feedback=gate_feedback)
++                    translated = translate_fields(fields, guide, model, lang, gate_feedback=gate_feedback)
+                     break
+                 except Exception as e:
+                     log(f"  pid {pid} uid {el['uid']}: Modell/Parse-Fehler ({e}) Versuch {attempts}")
+@@ -613,7 +695,7 @@ def process_page(pid, lang, guide, model, dry_run, review_dir, force, log):
+     ok, gout = run_gates(de_payload, es_payload, taglines)
+     if not ok:
+         # Gate-Feedback-Retry — exakt 1x, auf SEITEN-Ebene, mit LESBAREM Feedback (humanisiert, nicht roh).
+-        fb = humanize_gate_feedback(gout, de_payload, es_payload)
++        fb = humanize_gate_feedback(gout, de_payload, es_payload, lang)
+         log(f"pid {pid}: GATES FAIL (Pass 1) -> Retry mit lesbarem Feedback:\n{fb}")
+         de_payload, es_payload, inserts = translate_page(de_elems, guide, model, pid, lang, log, gate_feedback=fb)
+         ok, gout = run_gates(de_payload, es_payload, taglines)
+@@ -726,7 +808,10 @@ def main():
+     ap = argparse.ArgumentParser()
+     ap.add_argument("--pids", required=True, help="z. B. 201-389 oder 391,392,45")
+     ap.add_argument("--lang", type=int, default=4)
+-    ap.add_argument("--model", default=DEFAULT_MODEL)
++    ap.add_argument("--engine", choices=["ollama", "anthropic"], default=DEFAULT_ENGINE,
++                    help="Uebersetzungs-Engine (Default ollama=glm-5.1:cloud; anthropic nur Notfall/Kosten)")
++    ap.add_argument("--model", default=None,
++                    help="Modell-Override; Default je Engine (ollama->glm-5.1:cloud, anthropic->claude-sonnet-4-6)")
+     g = ap.add_mutually_exclusive_group(required=True)
+     g.add_argument("--dry-run", action="store_true")
+     g.add_argument("--commit", action="store_true")
+@@ -739,8 +824,10 @@ def main():
+     a = ap.parse_args()
+     if a.from_review and not a.commit:
+         ap.error("--from-review nur zusammen mit --commit")
+-    global TARGET
++    global TARGET, ENGINE
+     TARGET = a.target.upper()
++    ENGINE = a.engine
++    a.model = a.model or (OLLAMA_MODEL if ENGINE == "ollama" else ANTHROPIC_MODEL)
+ 
+     _load_secrets()
+     guide = open(GUIDE_PATH, encoding="utf-8").read()

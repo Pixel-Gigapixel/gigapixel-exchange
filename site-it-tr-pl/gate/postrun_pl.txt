@@ -1,0 +1,18 @@
+=== Site-Postrun-Gate [pl] (lang 6) — biz, read-only ===
+
+[pages]  Items=387  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=2 EN_LO=0 = WARN)
+
+[tt_content]  Items=459  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=5 EN_LO=47 = WARN)
+
+[glossar_terms]  Items=275  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
+
+[glossar_cats]  Items=7  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
+
+[xliff]  Items=361  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
+
+=== GESAMT [pl]: DE_HI=0  EN_HI=0  ES_HI=0  DE_LO=7  EN_LO=47 ===
+GATE: PASS (gruen) — DE_HI=0 & EN_HI=0 & ES_HI=0
+
+--- Review: HIGH-Vokabular in BEWAHRTEN Zitaten/Bibliografie (2 Items, praeserviert-by-design, kein Block) ---
+    tt_content.uid2034.bodytext  DE=[] EN=['Resolution']
+    tt_content.uid2055.bodytext  DE=[] EN=['Resolution']

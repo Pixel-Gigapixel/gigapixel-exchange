@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Struktur-Overlays fuer NICHT-Content-Seiten (Shortcuts doktype4, Plugins doktype190, externe doktype3).
+
+Diese Seiten haben keinen uebersetzbaren tt_content -> der Content-Rollout (rollout.py) ueberspringt sie
+(de_ce=0). ES hat aber Overlays (lokalisierte Menue-/Nav-Titel). Damit die Site-Schicht IT/TR/PL die gleiche
+Abdeckung wie ES erreicht (Inventar-Gap=0), legt dieses Tool kanonische Overlays an:
+  - DE-Row klonen (Spalten-Paritaet, bewaehrte Struktur)
+  - sys_language_uid=lang, l10n_parent/l10n_source=de_uid
+  - title via cloud-Ollama (glm-5.1:cloud) uebersetzt; nav_title nur wenn DE nicht leer
+  - doktype/shortcut/shortcut_mode/url/slug/nav_hide/hidden 1:1 von DE gespiegelt
+    (Shortcut-Ziel zeigt auf DE-uid; TYPO3 loest die Sprach-Overlay-Variante automatisch auf)
+
+Zielmenge = DE-Seiten, fuer die ES (lang4) ein Overlay hat, die Ziel-Sprache aber nicht, mit doktype in (3,4,190).
+Idempotent (vorhandene Overlays werden uebersprungen). --dry-run plant nur; --commit schreibt transaktional + flush.
+"""
+import os, argparse, importlib.util
+from collections import OrderedDict
+
+DEPLOY = os.path.dirname(os.path.abspath(__file__))
+spec = importlib.util.spec_from_file_location("rollout", os.path.join(DEPLOY, "rollout.py"))
+R = importlib.util.module_from_spec(spec); spec.loader.exec_module(R)
+
+LANG_ISO = {5: "tr", 6: "pl", 7: "it"}
+STRUCT_DOKTYPES = (3, 4, 190)
+GUIDE_PATH = os.path.expanduser("~/gigapixel-deploy/tools/TRANSLATION_GUIDE.md")
+
+
+def target_pids(lang):
+    """DE-uids mit ES-Overlay aber ohne <lang>-Overlay, doktype in STRUCT_DOKTYPES."""
+    es = set(r['l10n_parent'] for r in R.db_query(
+        "SELECT l10n_parent FROM pages WHERE deleted=0 AND sys_language_uid=4 AND l10n_parent>0"))
+    tgt = set(r['l10n_parent'] for r in R.db_query(
+        "SELECT l10n_parent FROM pages WHERE deleted=0 AND sys_language_uid=%s AND l10n_parent>0", (lang,)))
+    missing = es - tgt
+    if not missing:
+        return []
+    q = ",".join(str(x) for x in sorted(missing))
+    rows = R.db_query(f"SELECT uid,doktype,title,nav_title FROM pages WHERE uid IN ({q}) AND sys_language_uid=0 AND deleted=0")
+    return [dict(r) for r in rows if dict(r)['doktype'] in STRUCT_DOKTYPES]
+
+
+def translate_title(title, lang, guide):
+    fields = OrderedDict([("title", title)])
+    last = None
+    for _ in range(3):   # glm laesst sporadisch den <<<END>>>-Marker weg -> kurze Wiederholung
+        try:
+            out = R.translate_fields(fields, guide, R.OLLAMA_MODEL, lang)
+            return out.get("title", title)
+        except Exception as e:
+            last = e
+    raise last
+
+
+def build_overlay_stmt(de_uid, lang, new_title, new_nav):
+    de = R.db_query("SELECT * FROM pages WHERE uid=%s", (de_uid,))[0]
+    row = dict(de)
+    row.pop("uid", None)
+    row["sys_language_uid"] = lang
+    row["l10n_parent"] = de_uid
+    if "l10n_source" in row:
+        row["l10n_source"] = de_uid
+    if "l10n_diffsource" in row:
+        row["l10n_diffsource"] = ""
+    if "t3_origuid" in row:
+        row["t3_origuid"] = de_uid
+    row["title"] = new_title
+    if new_nav is not None:
+        row["nav_title"] = new_nav
+    cols = list(row.keys())
+    placeholders = ",".join("UNIX_TIMESTAMP()" if k in ("tstamp", "crdate") else "%s" for k in cols)
+    sql = (f"INSERT INTO pages (" + ",".join(f"`{k}`" for k in cols) + f") VALUES ({placeholders})")
+    vals = [row[k] for k in cols if k not in ("tstamp", "crdate")]
+    return sql, vals
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--lang", type=int, required=True, choices=[5, 6, 7])
+    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz")
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--dry-run", action="store_true")
+    g.add_argument("--commit", action="store_true")
+    a = ap.parse_args()
+    lang = a.lang; iso = LANG_ISO[lang]
+    R._load_secrets(); R.TARGET = a.target.upper()
+    guide = open(GUIDE_PATH, encoding="utf-8").read()
+
+    pids = target_pids(lang)
+    print(f"structural_overlay [{iso}] target={R.TARGET}: {len(pids)} Struktur-Seiten ohne Overlay")
+    plans = []   # (de_uid, new_title, new_nav) — EINMAL uebersetzen, fuer Commit wiederverwenden
+    for p in pids:
+        new_title = translate_title(p["title"], lang, guide)
+        new_nav = translate_title(p["nav_title"], lang, guide) if (p["nav_title"] or "").strip() else None
+        plans.append((p["uid"], new_title, new_nav))
+        print(f"  uid{p['uid']:>3} dt={p['doktype']:>3}  {p['title']!r} -> {new_title!r}")
+    if a.dry_run:
+        print("\nDRY-RUN — kein Insert.")
+        return
+    # commit transaktional (Uebersetzungen aus plans wiederverwenden, kein zweiter Modell-Lauf)
+    stmts = []
+    for (de_uid, new_title, new_nav) in plans:
+        sql, vals = build_overlay_stmt(de_uid, lang, new_title, new_nav)
+        stmts.append((sql, vals))
+    if stmts:
+        R.db_execute_tx(stmts)
+    n = R.db_query("SELECT COUNT(*) n FROM pages WHERE deleted=0 AND sys_language_uid=%s", (lang,))[0]["n"]
+    print(f"\nCOMMIT ok — {len(stmts)} Overlays inserted. pages[{iso}] jetzt: {n}")
+    R.flush_cache(print)
+
+
+if __name__ == "__main__":
+    main()

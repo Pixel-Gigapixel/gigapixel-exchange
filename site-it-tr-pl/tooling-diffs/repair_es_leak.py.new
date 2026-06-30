@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Repair des Spanisch-Leaks (rollout.py:555-Bug 'ins Spanische' im Gate-Retry).
+
+Kontaminierte tt_content-Overlays (Ziel-Sprache, aber Inhalt spanisch) werden durch korrekte
+Uebersetzungen ersetzt. Quelle = gate-verifizierte Dry-Run-JSONs (rollout --dry-run --force, mit
+gefixtem Feedback). Pro Seite mit _gates=PASS:
+   1) alte Ziel-tt_content-Overlays soft-deleten (deleted=1)  -> es_ce wird 0
+   2) commit_page_from_review() inserted die verifizierte Uebersetzung (kein neuer Modell-Call)
+Seiten mit _gates!=PASS bleiben unangetastet (alt erhalten) und werden GEMELDET (nicht still verworfen).
+
+Read der JSONs aus --review-dir; Writes nur auf --target (Default biz). Page-Overlays bleiben unberuehrt
+(die sind NICHT kontaminiert — der Bug saß nur im Seiten-Content-Retry).
+"""
+import os, glob, json, argparse, importlib.util
+
+DEPLOY = os.path.dirname(os.path.abspath(__file__))
+spec = importlib.util.spec_from_file_location("rollout", os.path.join(DEPLOY, "rollout.py"))
+R = importlib.util.module_from_spec(spec); spec.loader.exec_module(R)
+
+LANG_ISO = {5: "tr", 6: "pl", 7: "it"}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--lang", type=int, required=True, choices=[5, 6, 7])
+    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz")
+    ap.add_argument("--review-dir", required=True)
+    ap.add_argument("--commit", action="store_true", required=True)
+    a = ap.parse_args()
+    lang = a.lang; iso = LANG_ISO[lang]
+    R._load_secrets(); R.TARGET = a.target.upper()
+    review = os.path.expanduser(a.review_dir)
+    def log(m): print(m, flush=True)
+
+    # PASS-pids aus den Dry-Run-JSONs sammeln (NICHT die .page.json)
+    pass_pids, fail = [], []
+    for f in sorted(glob.glob(os.path.join(review, f"{iso}-*.json"))):
+        if f.endswith(".page.json"):
+            continue
+        pid = int(os.path.basename(f)[len(iso) + 1:-5])
+        j = json.load(open(f, encoding="utf-8"))
+        if j.get("_gates") == "PASS":
+            pass_pids.append(pid)
+        else:
+            fail.append((pid, j.get("_gates")))
+
+    log(f"repair_es_leak [{iso}] target={R.TARGET}: {len(pass_pids)} PASS-Seiten, {len(fail)} FAIL/skip")
+    repaired, problems = [], []
+    for pid in sorted(pass_pids):
+        # 1) alte Ziel-tt_content-Overlays soft-deleten
+        R.db_execute_tx([("UPDATE tt_content SET deleted=1, tstamp=UNIX_TIMESTAMP() "
+                          "WHERE pid=%s AND sys_language_uid=%s AND l18n_parent>0 AND deleted=0", (pid, lang))])
+        # 2) verifizierte Uebersetzung inserten
+        r = R.commit_page_from_review(pid, lang, review, log)
+        if r == "committed":
+            repaired.append(pid)
+        else:
+            problems.append((pid, r))
+            log(f"  pid {pid}: WARN from-review -> {r} (alte Overlays bleiben soft-deleted! pruefen)")
+    log(f"\n=== repair [{iso}]: {len(repaired)} Seiten neu uebersetzt; "
+        f"{len(problems)} Probleme {problems}; {len(fail)} gate_fail im Dry-Run {fail} ===")
+    R.flush_cache(log)
+
+
+if __name__ == "__main__":
+    main()

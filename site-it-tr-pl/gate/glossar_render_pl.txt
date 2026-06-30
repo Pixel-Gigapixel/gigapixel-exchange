@@ -1,0 +1,18 @@
+# Glossar-Term gerendert [pl]  (de_uid 1)
+Titel:  Zdjęcie gigapikselowe
+Slug:   /glossar/zdjecie-gigapikselowe   (it: /glossario, tr: /soezluek, pl: /s-ownik — Eltern-Segment)
+
+Kurzdefinition:
+  Zdjęcie fotograficzne o rozdzielczości co najmniej jednego miliarda pikseli (1000 megapikseli). Powstaje zazwyczaj poprzez stitching wielu pojedynczych kadrów w niezwykle bogaty w detale obraz całkowity – bez upscalingu AI.
+
+Langdefinition (HTML):
+<p>Zdjęcie gigapikselowe to obraz fotograficzny o rozdzielczości od jednego miliarda pikseli. Dla porównania: profesjonalny aparat pełnoklatkowy dostarcza 40 do 100 megapikseli – zdjęcie gigapikselowe osiąga więc od dziesięciokrotnie do dwudziestopięciokrotnie więcej.</p><p>Rozdzielczość ta nie jest uzyskiwana przez pojedynczy sensor, lecz poprzez systematyczne wykonywanie wielu nakładających się na siebie pojedynczych kadrów, które następnie za pomocą stitchingu są łączone w bezszwowowy obraz całkowity. Każdy fragment obrazu jest przy tym rejestrowany z pełną ostrością optyczną.</p><p>Decydujące dla jakości obrazu jest to, że rozdzielczość powstaje optycznie i nie jest interpolowana przez późniejszy upscaling AI. Tylko w ten sposób najdrobniejsze struktury pozostają wierne w detalu na całej powierzchni – podstawowy warunek dla zastosowań wielkoformatowych, takich jak sufity napinane, stoiska targowe czy druk architektoniczny.</p>
+
+Meta-Description:
+  Czym jest zdjęcie gigapikselowe: od jednego miliarda pikseli, generowane optycznie poprzez stitching, bez upscalingu AI – idealne do wiernego druku wielkoformatowego.
+
+FAQ:
+  Q: Od kiedy mówi się o zdjęciu gigapikselowym?
+  A: Od rozdzielczości jednego miliarda pikseli, czyli 1000 megapikseli. Poniżej tego mówi się o rozdzielczości megapikselowej.
+  Q: Czy rozdzielczość jest generowana przez AI?
+  A: Nie. Prawdziwe zdjęcie gigapikselowe powstaje optycznie poprzez stitching wielu rzeczywiście zarejestrowanych pojedynczych kadrów. Upscaling AI generuje jedynie pozorne, interpolowane detale.

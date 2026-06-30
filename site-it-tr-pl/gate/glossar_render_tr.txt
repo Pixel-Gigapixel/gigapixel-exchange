@@ -1,0 +1,18 @@
+# Glossar-Term gerendert [tr]  (de_uid 1)
+Titel:  Gigapixel çekim
+Slug:   /glossar/gigapixel-cekim   (it: /glossario, tr: /soezluek, pl: /s-ownik — Eltern-Segment)
+
+Kurzdefinition:
+  En az bir milyar piksele (1000 Megapixel) sahip fotoğrafik bir çekim. Genellikle çok sayıda tek karenin stitching yöntemiyle son derece detaylı bir genel görüntüde birleştirilmesiyle oluşur – IA ile upscaling olmadan.
+
+Langdefinition (HTML):
+<p>Bir Gigapixel çekim, bir milyar pikselden başlayan bir çözünürlüğe sahip fotoğrafik bir görüntüdür. Karşılaştırma için: Profesyonel bir tam çerçeve fotoğraf makinesi 40 ila 100 Megapixel sunar – bir Gigapixel çekim ise bunun on ile yirmi beş katı ve daha fazlasına ulaşır.</p><p>Bu çözünürlük tek bir sensör tarafından değil, sonradan stitching yöntemiyle sorunsuz bir genel görüntüde birleştirilen çok sayıda örtüşen tek karenin sistematik olarak çekilmesiyle oluşturulur. Her görüntü alanı tam optik netlikle kaydedilir.</p><p>Görüntü kalitesi için belirleyici olan, çözünürlüğün optik olarak oluşması ve sonradan IA upscaling ile enterpolasyona tabi tutulmamasıdır. Ancak bu şekilde en ince yapılar bile tüm yüzeyde detaylı korunur – gerilimli tavan sistemleri, fuar yapımı veya mimari baskı gibi büyük formatlı uygulamalar için temel ön koşul.</p>
+
+Meta-Description:
+  Bir Gigapixel çekimin ne olduğunu: bir milyar pikselden başlayan, stitching ile optik olarak oluşturulan, IA upscaling içermeyen – detaylı büyük format baskı için ideal.
+
+FAQ:
+  Q: Bir çekime ne zaman Gigapixel çekim denir?
+  A: Bir milyar piksel, yani 1000 Megapixel çözünürlükten itibaren. Bunun altında Megapixel çözünürlükten bahsedilir.
+  Q: Çözünürlük IA ile mi oluşturulur?
+  A: Hayır. Gerçek bir Gigapixel çekim, gerçekten çekilmiş çok sayıda tek karenin stitching işlemiyle optik olarak birleştirilmesiyle oluşur. IA upscaling yalnızca görünür, enterpole edilmiş detaylar oluşturur.

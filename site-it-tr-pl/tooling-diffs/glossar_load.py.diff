@@ -1,0 +1,356 @@
+diff --git a/tools/glossar_load.py b/tools/glossar_load.py
+index 849046f..0cdc7c6 100644
+--- a/tools/glossar_load.py
++++ b/tools/glossar_load.py
+@@ -1,13 +1,21 @@
+ #!/usr/bin/env python3
+ # -*- coding: utf-8 -*-
+-"""Glossar-Load (transaktional): 55 ES-Term-Rows (lang4) + 7 ES-Kategorie-Overlays + 2 ES-Plugin-Elemente.
+-Liest die reviewten term-*.json (Source-of-Truth) aus --review-dir, normalisiert gigapíxel/Gigapixel im
+-Anzeigetext (NICHT Slugs), inserted transaktional. Idempotenz-Guard: bricht ab, wenn lang4 schon existiert.
+-ES voll (long_definition+meta_description behalten — über FR/RU-Parität, per 'vollständig'-Mandat).
+-
+-Ziel-System env-getrieben über --target {biz,gmbh} (Default biz=Staging; ohne --target trifft ein Lauf NIE Live):
+-  DB_{TARGET}_HOST/USER/PASSWORD/NAME  +  {TARGET}_SSH/{TARGET}_SSH_PORT/{TARGET}_APP_ROOT/{TARGET}_PHP
+-de_uid-Identity zwischen biz und gmbh → l10n_parent greift 1:1 (kein Re-Keying nötig).
++"""Glossar-Load (transaktional): Term-Rows + Kategorie-Overlays je Zielsprache.
++
++ZWEI Pfade:
++  --lang 4 (ES, Legacy): liest reviewte term-*.json (Source-of-Truth) aus --review-dir + statische CAT_ES,
++                         inserted Terme + Kategorien + 2 Plugin-Elemente. UNVERAENDERT (ES ist live).
++  --lang 5/6/7 (TR/PL/IT): uebersetzt DE-Quelle (sys_language_uid=0) ueber cloud-Ollama (glm-5.1:cloud,
++                           rollout.translate_fields) -> term-*.json + cats.json, Slugs aus den uebersetzten
++                           Titeln. Plugin-Elemente (819/820) werden NICHT angefasst — die legt der
++                           Site-Rollout (rollout.py) bereits als tt_content-Overlay auf pid 391/392 an.
++
++Modus:
++  --dry-run : uebersetzt -> schreibt review-JSONs + EIN gerendertes Term-Beispiel + site_gate-Report. KEIN DB-Write.
++  --commit  : liest review-JSONs aus --review-dir -> INSERT transaktional (Idempotenz-Guard auf lang L) + flush.
++
++Ziel-System env-getrieben ueber --target {biz,gmbh} (Default biz=Staging; ohne --target trifft ein Lauf NIE Live).
++de_uid-Identity zwischen biz und gmbh -> l10n_parent greift 1:1 (kein Re-Keying noetig).
+ """
+ import os, re, json, glob, argparse, importlib.util
+ 
+@@ -15,13 +23,22 @@ DEPLOY = os.path.dirname(os.path.abspath(__file__))
+ def _load(mod, path):
+     spec = importlib.util.spec_from_file_location(mod, os.path.join(DEPLOY, path))
+     m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+-R = _load("rollout", "rollout.py")   # _load_secrets, typo3_slug_segment, flush_cache (target-aware)
++R = _load("rollout", "rollout.py")   # _load_secrets, _conn, typo3_slug_segment, flush_cache, translate_fields
++SG = _load("site_gate", "site_gate.py")
+ import pymysql
+ 
+ CAT_ES = {1: "Captura", 2: "Procesamiento", 3: "Producción", 4: "Impresión", 7: "Medios", 5: "Técnica", 6: "Aplicación"}
++LANG_ISO = {4: "es", 5: "tr", 6: "pl", 7: "it"}
++GUIDE_PATH = os.path.expanduser("~/gigapixel-deploy/tools/TRANSLATION_GUIDE.md")
++
++TT = "tt_content"
++TERM = "tx_gigapixelglossary_domain_model_term"
++CAT = "tx_gigapixelglossary_domain_model_category"
++
+ 
+ def normalize(t):
+-    """gigapíxel/Gigapixel: Gattungswort klein+Akzent, Marke/Portal (GmbH/portal/plataforma) groß behalten."""
++    """gigapíxel/Gigapixel: Gattungswort klein+Akzent, Marke/Portal (GmbH/portal/plataforma) groß behalten.
++    (ES-Akzent-Normalisierung; fuer tr/pl/it neutral — die schreiben 'gigapixel' ohne Akzent.)"""
+     if not t:
+         return t
+     t = re.sub(r'\bGigap[ií]xeles\b', 'gigapíxeles', t)
+@@ -36,6 +53,7 @@ def normalize(t):
+     t = re.sub(r'\bgigapixel\b', 'gigapíxel', t)
+     return t
+ 
++
+ def db(target):
+     R._load_secrets()
+     return pymysql.connect(
+@@ -43,41 +61,169 @@ def db(target):
+         password=os.environ[f"DB_{target}_PASSWORD"], database=os.environ[f"DB_{target}_NAME"],
+         charset="utf8mb4", cursorclass=pymysql.cursors.DictCursor, autocommit=False)
+ 
+-def main():
+-    ap = argparse.ArgumentParser()
+-    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz",
+-                    help="Ziel-System (Default biz=Staging; gmbh=LIVE)")
+-    ap.add_argument("--review-dir", default=os.path.expanduser("~/exports/es-glossar-review"),
+-                    help="Verzeichnis mit den reviewten term-*.json")
+-    a = ap.parse_args()
+-    TARGET = a.target.upper()
+-    OUT = os.path.expanduser(a.review_dir)
+-    print(f"glossar_load: target={TARGET}{' [LIVE]' if TARGET=='GMBH' else ''} review-dir={OUT}")
+-
+-    conn = db(TARGET); c = conn.cursor()
+-    TT = "tt_content"; TERM = "tx_gigapixelglossary_domain_model_term"; CAT = "tx_gigapixelglossary_domain_model_category"
+-
+-    # --- Idempotenz-Guard ---
+-    c.execute(f"SELECT COUNT(*) n FROM {TERM} WHERE sys_language_uid=4 AND deleted=0"); n_term = c.fetchone()['n']
+-    c.execute(f"SELECT COUNT(*) n FROM {CAT} WHERE sys_language_uid=4 AND deleted=0"); n_cat = c.fetchone()['n']
+-    c.execute(f"SELECT COUNT(*) n FROM {TT} WHERE pid IN (391,392) AND sys_language_uid=4 AND deleted=0"); n_pl = c.fetchone()['n']
+-    if n_term or n_cat or n_pl:
+-        print(f"ABBRUCH (Idempotenz): lang4 existiert bereits — Terme={n_term} Kat={n_cat} Plugin={n_pl}")
++
++# =========================================================================================
++# UEBERSETZUNG (lang 5/6/7) — cloud-Ollama via rollout.translate_fields
++# =========================================================================================
++def translate_term(de_row, lang, guide):
++    """Uebersetzt die Textfelder eines DE-Term-Rows. faq_items wird strukturerhaltend uebersetzt
++    (q/a als Marker-Felder, JSON danach neu zusammengebaut). Slug = typo3-Segment des uebersetzten Titels."""
++    from collections import OrderedDict
++    fields = OrderedDict()
++    for k in ("title", "short_definition", "long_definition", "meta_description"):
++        v = (de_row.get(k) or "").strip()
++        if v:
++            fields[k] = v
++    faq = []
++    raw = (de_row.get("faq_items") or "").strip()
++    if raw and raw != "[]":
++        try:
++            faq = json.loads(raw)
++        except Exception:
++            faq = []
++    for i, item in enumerate(faq):
++        if (item.get("question") or "").strip():
++            fields[f"faq_q{i}"] = item["question"]
++        if (item.get("answer") or "").strip():
++            fields[f"faq_a{i}"] = item["answer"]
++
++    out = R.translate_fields(fields, guide, R.OLLAMA_MODEL, lang)
++
++    title = out.get("title", de_row.get("title") or "")
++    faq_out = []
++    for i, item in enumerate(faq):
++        faq_out.append({
++            "question": out.get(f"faq_q{i}", item.get("question", "")),
++            "answer":   out.get(f"faq_a{i}", item.get("answer", "")),
++        })
++    return {
++        "de_uid": str(de_row["uid"]),
++        "category": str(de_row["category"]),
++        "is_methodology_term": str(de_row["is_methodology_term"]),
++        "robots": de_row.get("robots") or "index,follow",
++        "title": title,
++        "slug": R.typo3_slug_segment(title),
++        "short_definition": out.get("short_definition", ""),
++        "long_definition": out.get("long_definition", ""),
++        "meta_description": out.get("meta_description", ""),
++        "faq_items": json.dumps(faq_out, ensure_ascii=False),
++        "_de": {k: (de_row.get(k) or "") for k in ("title", "short_definition", "long_definition", "meta_description")},
++        "_lang": lang,
++    }
++
++
++def translate_cats(de_cats, lang, guide):
++    """Uebersetzt die 7 Kategorie-Titel in EINEM Call. Liefert {de_uid: {'title','slug','sorting','pid'}}."""
++    from collections import OrderedDict
++    fields = OrderedDict()
++    for cu, src in de_cats.items():
++        fields[f"cat_{cu}"] = src["title"]
++    out = R.translate_fields(fields, guide, R.OLLAMA_MODEL, lang)
++    res = {}
++    for cu, src in de_cats.items():
++        title = out.get(f"cat_{cu}", src["title"])
++        res[cu] = {"title": title, "slug": R.typo3_slug_segment(title), "sorting": src["sorting"], "pid": src["pid"]}
++    return res
++
++
++# =========================================================================================
++# DRY-RUN (lang 5/6/7): uebersetzen -> review-JSONs + Render-Beispiel + Gate
++# =========================================================================================
++def do_dry_run(lang, out_dir, guide):
++    iso = LANG_ISO[lang]
++    os.makedirs(out_dir, exist_ok=True)
++    conn = db("BIZ"); c = conn.cursor()
++    c.execute(f"SELECT uid,title,slug,category,is_methodology_term,short_definition,long_definition,"
++              f"meta_description,faq_items,robots FROM {TERM} WHERE sys_language_uid=0 AND deleted=0 ORDER BY uid")
++    de_terms = [dict(r) for r in c.fetchall()]
++    c.execute(f"SELECT uid,pid,title,sorting FROM {CAT} WHERE sys_language_uid=0 AND deleted=0 ORDER BY sorting")
++    de_cats = {dict(r)['uid']: dict(r) for r in c.fetchall()}
++    conn.close()
++    print(f"glossar dry-run [{iso}]: {len(de_terms)} Terme + {len(de_cats)} Kategorien -> {out_dir}")
++
++    gate_items = []
++    for i, de in enumerate(de_terms, 1):
++        t = translate_term(de, lang, guide)
++        with open(os.path.join(out_dir, f"term-{int(de['uid']):03d}.json"), "w", encoding="utf-8") as f:
++            json.dump(t, f, ensure_ascii=False, indent=1)
++        for fld in ("title", "short_definition", "long_definition", "meta_description", "faq_items"):
++            gate_items.append((f"term{de['uid']}.{fld}", t[fld]))
++        print(f"  [{i:>2}/{len(de_terms)}] uid {de['uid']:>2}  {t['title']!r}  slug={t['slug']}")
++
++    cats = translate_cats(de_cats, lang, guide)
++    json.dump({str(k): v for k, v in cats.items()}, open(os.path.join(out_dir, "cats.json"), "w", encoding="utf-8"),
++              ensure_ascii=False, indent=1)
++    for cu, v in cats.items():
++        gate_items.append((f"cat{cu}.title", v["title"]))
++    print(f"  Kategorien: " + ", ".join(f"{de_cats[cu]['title']}->{v['title']}" for cu, v in cats.items()))
++
++    # ---- Render-Beispiel: EINE Glossar-Definition (Term 1) gerendert ----
++    sample = json.load(open(os.path.join(out_dir, "term-001.json"), encoding="utf-8"))
++    render = []
++    render.append(f"# Glossar-Term gerendert [{iso}]  (de_uid {sample['de_uid']})")
++    render.append(f"Titel:  {sample['title']}")
++    render.append(f"Slug:   /glossar/{sample['slug']}   (it: /glossario, tr: /soezluek, pl: /s-ownik — Eltern-Segment)")
++    render.append(f"\nKurzdefinition:\n  {sample['short_definition']}")
++    render.append(f"\nLangdefinition (HTML):\n{sample['long_definition']}")
++    render.append(f"\nMeta-Description:\n  {sample['meta_description']}")
++    render.append(f"\nFAQ:")
++    for it in json.loads(sample["faq_items"]):
++        render.append(f"  Q: {it['question']}\n  A: {it['answer']}")
++    render_txt = "\n".join(render)
++    open(os.path.join(out_dir, "RENDER_SAMPLE.txt"), "w", encoding="utf-8").write(render_txt)
++    print("\n" + "=" * 78 + "\n" + render_txt + "\n" + "=" * 78)
++
++    # ---- Gate ----
++    summary, fails = SG.scan_items(gate_items, html=True)
++    report = [f"site_gate glossar [{iso}]  Items={len(gate_items)}",
++              f"  DE_HI={summary['de_hi']}  EN_HI={summary['en_hi']}  (GRUEN <=> beide 0)",
++              f"  DE_LO={summary['de_lo']}  EN_LO={summary['en_lo']}  (nur WARN)"]
++    if fails:
++        report.append("  HIGH-Treffer (blocken GRUEN):")
++        for label, typ, toks in fails:
++            report.append(f"    {label}  {typ}  {toks}")
++    rep_txt = "\n".join(report)
++    open(os.path.join(out_dir, "GATE.txt"), "w", encoding="utf-8").write(rep_txt)
++    print("\n" + rep_txt)
++    green = (summary["de_hi"] == 0 and summary["en_hi"] == 0)
++    print(f"\nGATE: {'PASS (gruen)' if green else 'FAIL — HIGH-Reste, NICHT committen'}")
++    return green
++
++
++# =========================================================================================
++# COMMIT
++# =========================================================================================
++def do_commit(lang, out_dir, target):
++    iso = LANG_ISO[lang]
++    conn = db(target); c = conn.cursor()
++    print(f"glossar commit [{iso}] target={target}{' [LIVE]' if target=='GMBH' else ''} review-dir={out_dir}")
++
++    # --- Idempotenz-Guard (nur Term+Kat; Plugin-Elemente managt der Site-Rollout) ---
++    c.execute(f"SELECT COUNT(*) n FROM {TERM} WHERE sys_language_uid=%s AND deleted=0", (lang,)); n_term = c.fetchone()['n']
++    c.execute(f"SELECT COUNT(*) n FROM {CAT} WHERE sys_language_uid=%s AND deleted=0", (lang,)); n_cat = c.fetchone()['n']
++    if n_term or n_cat:
++        print(f"ABBRUCH (Idempotenz): lang{lang} existiert bereits — Terme={n_term} Kat={n_cat}")
+         conn.close(); return
+-    c.execute(f"SHOW COLUMNS FROM {TT} LIKE 'l10n_source'"); has_l10nsrc = bool(c.fetchall())
+ 
+     c.execute(f"SELECT uid,category,is_methodology_term,robots,pid FROM {TERM} WHERE sys_language_uid=0 AND deleted=0")
+     de_term = {r['uid']: r for r in c.fetchall()}
++    c.execute(f"SELECT uid,pid,sorting FROM {CAT} WHERE sys_language_uid=0 AND deleted=0")
++    de_cat = {r['uid']: r for r in c.fetchall()}
++
++    is_es = (lang == 4)
++    cats = None
++    if not is_es:
++        cats = {int(k): v for k, v in json.load(open(os.path.join(out_dir, "cats.json"), encoding="utf-8")).items()}
+ 
+     try:
+         conn.begin()
+-        # ---------- 55 TERME ----------
++        # ---------- TERME ----------
+         term_uids = {}
+-        for f in sorted(glob.glob(os.path.join(OUT, "term-*.json"))):
+-            d = json.load(open(f, encoding="utf-8")); du = d["de_uid"]; src = de_term[du]
++        for f in sorted(glob.glob(os.path.join(out_dir, "term-*.json"))):
++            d = json.load(open(f, encoding="utf-8")); du = int(d["de_uid"]); src = de_term[du]
+             row = dict(
+                 pid=src['pid'], deleted=0, hidden=0,
+-                sys_language_uid=4, l10n_parent=du, l10n_diffsource=None, l10n_state=None,
++                sys_language_uid=lang, l10n_parent=du, l10n_diffsource=None, l10n_state=None,
+                 title=normalize(d["title"]), slug=d["slug"], category=src['category'],
+                 short_definition=normalize(d["short_definition"]),
+                 long_definition=normalize(d["long_definition"]),
+@@ -94,44 +240,70 @@ def main():
+                    "VALUES (" + ",".join(["%s"] * len(cols)) + ",UNIX_TIMESTAMP(),UNIX_TIMESTAMP())")
+             c.execute(sql, vals); term_uids[du] = c.lastrowid
+         # ---------- 7 KATEGORIEN ----------
+-        c.execute(f"SELECT uid,pid,sorting FROM {CAT} WHERE sys_language_uid=0 AND deleted=0")
+-        de_cat = {r['uid']: r for r in c.fetchall()}
+         cat_uids = {}
+-        for cu, es in CAT_ES.items():
++        cat_src = CAT_ES.items() if is_es else [(cu, v["title"]) for cu, v in cats.items()]
++        for cu, title in cat_src:
+             src = de_cat[cu]
++            slug = R.typo3_slug_segment(title)
+             sql = (f"INSERT INTO {CAT} (`pid`,`deleted`,`hidden`,`sys_language_uid`,`l10n_parent`,`sorting`,"
+                    "`l10n_state`,`title`,`slug`,`description`,`tstamp`,`crdate`) "
+-                   "VALUES (%s,0,0,4,%s,%s,NULL,%s,%s,'',UNIX_TIMESTAMP(),UNIX_TIMESTAMP())")
+-            c.execute(sql, (src['pid'], cu, src['sorting'], es, R.typo3_slug_segment(es)))
++                   "VALUES (%s,0,0,%s,%s,%s,NULL,%s,%s,'',UNIX_TIMESTAMP(),UNIX_TIMESTAMP())")
++            c.execute(sql, (src['pid'], lang, cu, src['sorting'], title, slug))
+             cat_uids[cu] = c.lastrowid
+-        # ---------- 2 PLUGIN-ELEMENTE (tt_content clone von 819/820) ----------
+-        plug_uids = {}
+-        for de_pl in (819, 820):
+-            c.execute(f"SELECT * FROM {TT} WHERE uid=%s", (de_pl,)); base = c.fetchone()
+-            base.pop('uid')
+-            base['sys_language_uid'] = 4; base['l18n_parent'] = de_pl
+-            if has_l10nsrc:
+-                base['l10n_source'] = de_pl
+-            cols = list(base.keys())
+-            sql = (f"INSERT INTO {TT} (" + ",".join(f"`{k}`" for k in cols) + ") VALUES (" +
+-                   ",".join("UNIX_TIMESTAMP()" if k in ('tstamp', 'crdate') else "%s" for k in cols) + ")")
+-            execvals = [base[k] for k in cols if k not in ('tstamp', 'crdate')]
+-            c.execute(sql, execvals); plug_uids[de_pl] = c.lastrowid
++        # ---------- PLUGIN-ELEMENTE: nur ES (Legacy). lang 5/6/7 -> Site-Rollout hat sie schon. ----------
++        if is_es:
++            c.execute(f"SHOW COLUMNS FROM {TT} LIKE 'l10n_source'"); has_l10nsrc = bool(c.fetchall())
++            for de_pl in (819, 820):
++                c.execute(f"SELECT * FROM {TT} WHERE uid=%s", (de_pl,)); base = c.fetchone()
++                base.pop('uid'); base['sys_language_uid'] = 4; base['l18n_parent'] = de_pl
++                if has_l10nsrc:
++                    base['l10n_source'] = de_pl
++                cols = list(base.keys())
++                sql = (f"INSERT INTO {TT} (" + ",".join(f"`{k}`" for k in cols) + ") VALUES (" +
++                       ",".join("UNIX_TIMESTAMP()" if k in ('tstamp', 'crdate') else "%s" for k in cols) + ")")
++                c.execute(sql, [base[k] for k in cols if k not in ('tstamp', 'crdate')])
+         conn.commit()
+         print("COMMIT ok.")
+         print(f"  Terme:  {len(term_uids)}  uid-Range {min(term_uids.values())}-{max(term_uids.values())}")
+         print(f"  Kat:    {len(cat_uids)}   uids {sorted(cat_uids.values())}")
+-        print(f"  Plugin: 391<-{plug_uids[819]}  392<-{plug_uids[820]}")
+-        c.execute(f"SELECT COUNT(*) n FROM {TERM} WHERE sys_language_uid=4 AND deleted=0"); print("  Verify lang4 Terme:", c.fetchone()['n'])
+-        c.execute(f"SELECT COUNT(*) n FROM {CAT} WHERE sys_language_uid=4 AND deleted=0"); print("  Verify lang4 Kat:", c.fetchone()['n'])
++        c.execute(f"SELECT COUNT(*) n FROM {TERM} WHERE sys_language_uid=%s AND deleted=0", (lang,)); print("  Verify Terme:", c.fetchone()['n'])
++        c.execute(f"SELECT COUNT(*) n FROM {CAT} WHERE sys_language_uid=%s AND deleted=0", (lang,)); print("  Verify Kat:", c.fetchone()['n'])
+     except Exception as e:
+         conn.rollback(); print("ROLLBACK -", repr(e)); raise
+     finally:
+         conn.close()
+ 
+-    # Cache-Flush auf demselben Ziel (rollout.flush_cache ist TARGET-aware)
+-    R.TARGET = TARGET
++    R.TARGET = target
+     R.flush_cache(print)
+ 
++
++def main():
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--target", choices=["biz", "gmbh"], default="biz",
++                    help="Ziel-System (Default biz=Staging; gmbh=LIVE)")
++    ap.add_argument("--lang", type=int, default=4, choices=[4, 5, 6, 7],
++                    help="Zielsprache (4=ES Legacy, 5=TR, 6=PL, 7=IT)")
++    ap.add_argument("--review-dir", default=None,
++                    help="Verzeichnis der term-*.json (Default: ~/exports/es-glossar-review fuer ES, sonst ~/exports/glossar-<iso>-review)")
++    g = ap.add_mutually_exclusive_group(required=True)
++    g.add_argument("--dry-run", action="store_true", help="uebersetzen + review-JSONs + Render + Gate, KEIN DB-Write (nur lang 5/6/7)")
++    g.add_argument("--commit", action="store_true", help="INSERT aus review-JSONs")
++    a = ap.parse_args()
++    lang = a.lang
++    iso = LANG_ISO[lang]
++    out_dir = os.path.expanduser(a.review_dir) if a.review_dir else (
++        os.path.expanduser("~/exports/es-glossar-review") if lang == 4
++        else os.path.expanduser(f"~/exports/glossar-{iso}-review"))
++    R._load_secrets()
++    guide = open(GUIDE_PATH, encoding="utf-8").read()
++
++    if a.dry_run:
++        if lang == 4:
++            ap.error("--dry-run nur fuer lang 5/6/7 (ES ist Legacy/live, kommt aus es-glossar-review)")
++        do_dry_run(lang, out_dir, guide)
++    else:
++        do_commit(lang, out_dir, a.target.upper())
++
++
+ if __name__ == "__main__":
+     main()

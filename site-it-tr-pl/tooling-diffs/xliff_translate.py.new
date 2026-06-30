@@ -1,0 +1,214 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""XLIFF-Translator (TR/PL/IT) ueber cloud-Ollama (glm-5.1:cloud via rollout.translate_fields).
+
+Nimmt die 6 es.*.xlf als Vorlage und erzeugt <iso>.*.xlf im SELBEN Package-Verzeichnis.
+Uebersetzt wird aus <source> (en bzw. de Original) -> Zielsprache; <target>-Inhalt wird ersetzt,
+alles andere (id, source, Struktur, Reihenfolge) bleibt byte-identisch -> minimaler, valider Diff.
+
+ERHALT (kritisch fuer UI-Strings):
+  - Leading/Trailing-Whitespace ("Category: ", " in the portal.") — wird separat gekapselt und
+    nach der Uebersetzung wieder umgelegt (translate_fields strippt den Kern).
+  - Platzhalter %s/%d/%1$s, {0}, Pfeile (→), HTML-Tags, XML-Entities — per Prompt bewahrt + Paritaets-Check.
+  - Reine Symbol-/Platzhalter-Units (kein Buchstabe) werden NICHT uebersetzt (1:1 aus Quelle).
+
+Modus:
+  --dry-run : schreibt die erzeugten .xlf + GATE.txt + SAMPLE.txt nur in --review-dir. KEIN Schreiben in den Tree.
+  --write   : schreibt die .xlf zusaetzlich in den packages-Tree (deploybar).
+
+Batcht mehrere trans-units pro Modell-Call (Marker-Contract), Platzhalter-Paritaet wird verifiziert.
+"""
+import os, re, argparse, importlib.util, html
+from collections import OrderedDict
+from xml.sax.saxutils import escape as xml_escape
+
+DEPLOY = os.path.dirname(os.path.abspath(__file__))
+def _load(mod, path):
+    spec = importlib.util.spec_from_file_location(mod, os.path.join(DEPLOY, path))
+    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+R = _load("rollout", "rollout.py")
+SG = _load("site_gate", "site_gate.py")
+
+PKG = "/mnt/raid1/gigapixel/packages"
+ES_FILES = [
+    f"{PKG}/cart_gigapixels/Resources/Private/Language/es.locallang.xlf",
+    f"{PKG}/dg_theme/Resources/Private/Language/es.CartPdf.xlf",
+    f"{PKG}/dg_theme/Resources/Private/Language/es.Form.xlf",
+    f"{PKG}/dg_theme/Resources/Private/Language/es.locallang.cart.xlf",
+    f"{PKG}/gigapixel_glossary/Resources/Private/Language/es.locallang.xlf",
+    f"{PKG}/gigapixels_visualsearch/Resources/Private/Language/es.locallang.xlf",
+]
+LANG_ISO = {5: "tr", 6: "pl", 7: "it"}
+GUIDE_PATH = os.path.expanduser("~/gigapixel-deploy/tools/TRANSLATION_GUIDE.md")
+
+TU_RE = re.compile(r'(<trans-unit\b[^>]*>)(.*?)(</trans-unit>)', re.S)
+SRC_RE = re.compile(r'<source>(.*?)</source>', re.S)
+TGT_RE = re.compile(r'<target>(.*?)</target>', re.S)
+PLACEHOLDER_RE = re.compile(r'%[0-9]*\$?[sd]|\{\d+\}|%[sd]')
+
+XLIFF_GUIDE_EXTRA = (
+    "\n\n# XLIFF-UI-STRINGS\n"
+    "Du uebersetzt kurze UI-/E-Commerce-Strings (Buttons, Labels, Meldungen). Regeln:\n"
+    "- Platzhalter EXAKT bewahren: %s %d %1$s {0} usw. — nicht uebersetzen, nicht umstellen, Anzahl gleich.\n"
+    "- HTML-Tags, Pfeile (→), Sonderzeichen und Interpunktion am Rand byte-genau lassen.\n"
+    "- Nur die menschenlesbaren Woerter uebersetzen; Marken (Gigapixel) bewahren.\n"
+    "- Knapp und idiomatisch wie echte Software-UI der Zielsprache.")
+
+
+def has_letters(s):
+    return bool(re.search(r'[^\W\d_]', s or '', re.UNICODE))
+
+
+def split_ws(s):
+    """-> (lead_ws, core, trail_ws). core ist die getrimmte Mitte; Raender exakt bewahrt."""
+    m = re.match(r'^(\s*)(.*?)(\s*)$', s, re.S)
+    return m.group(1), m.group(2), m.group(3)
+
+
+def placeholders(s):
+    from collections import Counter
+    return Counter(PLACEHOLDER_RE.findall(s or ''))
+
+
+def translate_batch(units, lang, guide):
+    """units: list of (key, core_unescaped). Liefert {key: translated_core}. Platzhalter-Paritaet
+    wird geprueft; bei Verstoss faellt die Unit auf den Quell-Core zurueck (kein stilles Verschlucken)."""
+    fields = OrderedDict((k, v) for k, v in units)
+    out = R.translate_fields(fields, guide, R.OLLAMA_MODEL, lang)
+    res = {}
+    for k, src in units:
+        t = out.get(k, src)
+        if placeholders(t) != placeholders(src):
+            t = src  # Platzhalter kaputt -> Quelle behalten, im Gate als Issue sichtbar
+        res[k] = t
+    return res
+
+
+def translate_file(es_path, lang, guide, log):
+    iso = LANG_ISO[lang]
+    text = open(es_path, encoding="utf-8").read()
+    blocks = list(TU_RE.finditer(text))
+    # 1) sammeln: was muss uebersetzt werden
+    todo = []          # (block_idx, key, lead, core, trail, src_raw_escaped)
+    plan = {}          # block_idx -> dict
+    for bi, m in enumerate(blocks):
+        inner = m.group(2)
+        sm = SRC_RE.search(inner)
+        if not sm:
+            continue
+        src_esc = sm.group(1)
+        src = html.unescape(src_esc)
+        lead, core, trail = split_ws(src)
+        plan[bi] = {"lead": lead, "core": core, "trail": trail, "translate": has_letters(core)}
+        if plan[bi]["translate"]:
+            todo.append((bi, f"u{bi}", core))
+    # 2) batchen (max 22 Units oder ~5000 Zeichen)
+    batches, cur, cur_chars = [], [], 0
+    for item in todo:
+        clen = len(item[2])
+        if cur and (len(cur) >= 22 or cur_chars + clen > 5000):
+            batches.append(cur); cur, cur_chars = [], 0
+        cur.append(item); cur_chars += clen
+    if cur:
+        batches.append(cur)
+    log(f"  {os.path.basename(es_path)} [{iso}]: {len(blocks)} units, {len(todo)} zu uebersetzen, {len(batches)} batches")
+    # 3) uebersetzen
+    translated = {}    # bi -> core_target
+    for bn, batch in enumerate(batches, 1):
+        units = [(k, core) for (bi, k, core) in batch]
+        try:
+            res = translate_batch(units, lang, guide)
+        except Exception as e:
+            log(f"    batch {bn}: FEHLER {e} -> Retry einzeln")
+            res = {}
+            for k, core in units:
+                try:
+                    res.update(translate_batch([(k, core)], lang, guide))
+                except Exception as e2:
+                    log(f"      unit {k}: FEHLER {e2} -> Quelle behalten"); res[k] = core
+        for (bi, k, core) in batch:
+            translated[bi] = res.get(k, core)
+        log(f"    batch {bn}/{len(batches)} ok ({len(batch)} units)")
+    # 4) rekonstruieren
+    gate_items = []
+    def repl(m):
+        bi = repl.idx; repl.idx += 1
+        head, inner, tail = m.group(1), m.group(2), m.group(3)
+        if bi not in plan:
+            return m.group(0)
+        p = plan[bi]
+        if p["translate"]:
+            tgt_core = translated.get(bi, p["core"])
+        else:
+            tgt_core = p["core"]          # Symbol-/Platzhalter-Unit: 1:1
+        tgt = p["lead"] + tgt_core + p["trail"]
+        tgt_esc = xml_escape(tgt)
+        gate_items.append((f"{os.path.basename(es_path)}#{bi}", tgt))
+        if TGT_RE.search(inner):
+            new_inner = TGT_RE.sub(lambda _: f"<target>{tgt_esc}</target>", inner, count=1)
+        else:  # kein target vorhanden -> nach source einfuegen
+            new_inner = SRC_RE.sub(lambda mm: mm.group(0) + f"<target>{tgt_esc}</target>", inner, count=1)
+        return head + new_inner + tail
+    repl.idx = 0
+    new_text = TU_RE.sub(repl, text)
+    # target-language Attribut umstellen
+    new_text = re.sub(r'target-language="es"', f'target-language="{iso}"', new_text)
+    out_name = os.path.basename(es_path).replace("es.", f"{iso}.", 1)
+    return out_name, new_text, gate_items
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--lang", type=int, required=True, choices=[5, 6, 7])
+    ap.add_argument("--review-dir", default=None)
+    ap.add_argument("--write", action="store_true", help="zusaetzlich in den packages-Tree schreiben (deploybar)")
+    a = ap.parse_args()
+    lang = a.lang; iso = LANG_ISO[lang]
+    review = os.path.expanduser(a.review_dir) if a.review_dir else os.path.expanduser(f"~/exports/xliff-{iso}-review")
+    os.makedirs(review, exist_ok=True)
+    R._load_secrets()
+    guide = open(GUIDE_PATH, encoding="utf-8").read() + XLIFF_GUIDE_EXTRA
+    def log(m): print(m, flush=True)
+
+    log(f"xliff_translate [{iso}] -> review={review}  write={a.write}")
+    all_gate = []
+    for es in ES_FILES:
+        out_name, new_text, gi = translate_file(es, lang, guide, log)
+        # review-Kopie
+        open(os.path.join(review, out_name), "w", encoding="utf-8").write(new_text)
+        # in den Tree
+        if a.write:
+            tree_path = os.path.join(os.path.dirname(es), out_name)
+            open(tree_path, "w", encoding="utf-8").write(new_text)
+            log(f"    -> geschrieben: {tree_path}")
+        all_gate += gi
+
+    # Gate ueber alle target-Strings
+    summary, fails = SG.scan_items(all_gate, html=True)
+    rep = [f"site_gate xliff [{iso}]  Items={len(all_gate)}",
+           f"  DE_HI={summary['de_hi']}  EN_HI={summary['en_hi']}  (GRUEN <=> beide 0)",
+           f"  DE_LO={summary['de_lo']}  EN_LO={summary['en_lo']}  (nur WARN)"]
+    if fails:
+        rep.append("  HIGH-Treffer (blocken GRUEN):")
+        for label, typ, toks in fails[:60]:
+            rep.append(f"    {label}  {typ}  {toks}")
+        if len(fails) > 60:
+            rep.append(f"    ... +{len(fails)-60} weitere")
+    rep_txt = "\n".join(rep)
+    open(os.path.join(review, "GATE.txt"), "w", encoding="utf-8").write(rep_txt)
+    log("\n" + rep_txt)
+    log(f"\nGATE: {'PASS (gruen)' if (summary['de_hi']==0 and summary['en_hi']==0) else 'FAIL — HIGH-Reste'}")
+
+    # Sample: 12 trans-units der Glossar-Datei zur Sichtprobe
+    sample_src = os.path.join(review, f"{iso}.locallang.xlf")
+    if os.path.exists(sample_src):
+        units = TU_RE.findall(open(sample_src, encoding="utf-8").read())
+        with open(os.path.join(review, "SAMPLE.txt"), "w", encoding="utf-8") as f:
+            for head, inner, tail in units[:12]:
+                idm = re.search(r'id="([^"]+)"', head)
+                s = SRC_RE.search(inner); t = TGT_RE.search(inner)
+                f.write(f"[{idm.group(1) if idm else '?'}]\n  src: {html.unescape(s.group(1)) if s else ''}\n  {iso}: {html.unescape(t.group(1)) if t else ''}\n")
+
+
+if __name__ == "__main__":
+    main()

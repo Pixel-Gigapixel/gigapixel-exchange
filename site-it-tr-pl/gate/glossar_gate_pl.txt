@@ -1,0 +1,3 @@
+site_gate glossar [pl]  Items=282
+  DE_HI=0  EN_HI=0  (GRUEN <=> beide 0)
+  DE_LO=1  EN_LO=0  (nur WARN)

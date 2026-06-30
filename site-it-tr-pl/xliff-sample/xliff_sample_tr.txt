@@ -1,0 +1,36 @@
+[search.placeholder]
+  src: Bilder suchen…
+  tr: Görselleri ara…
+[search.btn.camera]
+  src: Bildsuche öffnen
+  tr: Görsel aramayı aç
+[search.btn.submit]
+  src: Suchen
+  tr: Ara
+[drop.prompt]
+  src: Bild hierher ziehen oder
+  tr: Görseli buraya sürükleyin veya
+[drop.prompt.click]
+  src: klicken
+  tr: tıklayın
+[drop.hint]
+  src: JPEG · PNG · WebP · max 10 MB
+  tr: JPEG · PNG · WebP · maks 10 MB
+[options.summary]
+  src: Optionen
+  tr: Seçenekler
+[slider.weight.label]
+  src: Bild / Text
+  tr: Görsel / Metin
+[slider.weight.title]
+  src: Wie stark soll das Bild gegenüber dem Text gewichtet werden?
+  tr: Görsel, metne göre ne kadar ağırlıklı olmalı?
+[slider.weight.left]
+  src: ◀ Text
+  tr: ◀ Metin
+[slider.weight.right]
+  src: Bild ▶
+  tr: Görsel ▶
+[slider.weight.image]
+  src: Bild
+  tr: Görsel
