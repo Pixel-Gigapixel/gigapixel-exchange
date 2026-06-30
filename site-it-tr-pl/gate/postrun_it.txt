@@ -2,6 +2,8 @@
 
 [pages]  Items=390  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 
+[page_meta]  Items=246  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
+
 [tt_content]  Items=461  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=3 EN_LO=52 = WARN)
 
 [glossar_terms]  Items=275  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)

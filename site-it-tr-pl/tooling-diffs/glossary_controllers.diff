@@ -1,0 +1,85 @@
+diff --git a/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php b/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
+index 813a7da..b6575ef 100644
+--- a/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
++++ b/packages/gigapixel_glossary/Classes/Controller/MethodologyController.php
+@@ -44,6 +44,18 @@ class MethodologyController extends ActionController
+                 'Metodología de la fotografía gigapíxel – métodos de captura propios | Gigapixel GmbH',
+                 'Métodos de captura, pasos de procesamiento y criterios de calidad tras los auténticos panoramas terapíxel, explicados de forma transparente.',
+             ],
++            7 => [
++                'Metodologia della fotografia Gigapixel – Tecniche di acquisizione personalizzate | Gigapixel GmbH',
++                'Metodi di acquisizione, fasi di elaborazione e criteri di qualità alla base dei veri panorami terapixel – spiegati in modo trasparente.',
++            ],
++            5 => [
++                'Gigapiksel Fotoğrafçılık Metodolojisi – Özel Çekim Teknikleri | Gigapixel GmbH',
++                'Gerçek terapiksel panoramaların arkasındaki çekim yöntemleri, işleme adımları ve kalite kriterleri – şeffaf bir şekilde açıklanmıştır.',
++            ],
++            6 => [
++                'Metodologia fotografii gigapikselowej – Niestandardowe techniki rejestracji | Gigapixel GmbH',
++                'Metody rejestracji, kroki przetwarzania i kryteria jakości stojące za prawdziwymi panoramami terapikselowymi – przejrzyście wyjaśnione.',
++            ],
+             default => [
+                 'Methodik der Gigapixel-Fotografie – eigene Aufnahmeverfahren | Gigapixel GmbH',
+                 'Aufnahmeverfahren, Verarbeitungsschritte und Qualitätskriterien hinter echten Terapixel-Panoramen – transparent erklärt.',
+@@ -73,7 +85,7 @@ class MethodologyController extends ActionController
+             '<link rel="alternate" hreflang="x-default" href="https://gigapixel.gmbh/methodik" />'
+         );
+ 
+-        $glossarSlug = match($languageId) { 1 => '/glossary', 2 => '/glossaire', 3 => '/glossarij', 4 => '/glosario', default => '/glossar' };
++        $glossarSlug = match($languageId) { 1 => '/glossary', 2 => '/glossaire', 3 => '/glossarij', 4 => '/glosario', 7 => '/glossario', 5 => '/soezluek', 6 => '/s-ownik', default => '/glossar' };
+         $this->view->assign('terms', $this->termRepository->findMethodologyTerms($languageId));
+         $this->view->assign('glossarBase', $langBase . $glossarSlug);
+         $this->view->assign('schemaBase', 'https://gigapixel.gmbh' . $langBase . $glossarSlug);
+diff --git a/packages/gigapixel_glossary/Classes/Controller/TermController.php b/packages/gigapixel_glossary/Classes/Controller/TermController.php
+index 0955b93..91bca98 100644
+--- a/packages/gigapixel_glossary/Classes/Controller/TermController.php
++++ b/packages/gigapixel_glossary/Classes/Controller/TermController.php
+@@ -48,6 +48,18 @@ class TermController extends ActionController
+                 'Glosario Gigapixel – Términos técnicos explicados',
+                 'Los términos técnicos centrales de la auténtica fotografía gigapíxel, explicados de forma comprensible, desde la captura hasta el procesamiento.',
+             ],
++            7 => [
++                'Glossario Gigapixel – Termini chiave spiegati',
++                'I termini chiave della vera fotografia gigapixel – spiegati chiaramente, dall\'acquisizione all\'elaborazione.',
++            ],
++            5 => [
++                'Gigapiksel Sözlüğü – Önemli Terimler Açıklanıyor',
++                'Gerçek gigapiksel fotoğrafçılığının önemli terimleri – çekimden işlemeye kadar açıkça açıklanmıştır.',
++            ],
++            6 => [
++                'Słownik Gigapixel – Kluczowe pojęcia wyjaśnione',
++                'Kluczowe pojęcia prawdziwej fotografii gigapikselowej – jasno wyjaśnione, od rejestracji po przetwarzanie.',
++            ],
+             default => [
+                 'Gigapixel-Glossar – Fachbegriffe erklärt',
+                 'Die zentralen Fachbegriffe echter Gigapixel-Fotografie – verständlich erklärt, von der Aufnahme bis zur Verarbeitung.',
+@@ -83,6 +95,9 @@ class TermController extends ActionController
+             2 => ['Glossaire', '/glossaire'],
+             3 => ['Глоссарий', '/glossarij'],
+             4 => ['Glosario', '/glosario'],
++            7 => ['Glossario', '/glossario'],
++            5 => ['Sözlük', '/soezluek'],
++            6 => ['Słownik', '/s-ownik'],
+             default => ['Glossar', '/glossar'],
+         };
+         $schemaBase = 'https://gigapixel.gmbh' . $langBase . $glossarSlug;
+@@ -177,6 +192,9 @@ class TermController extends ActionController
+             2 => ['Glossaire', '/glossaire'],
+             3 => ['Глоссарий', '/glossarij'],
+             4 => ['Glosario', '/glosario'],
++            7 => ['Glossario', '/glossario'],
++            5 => ['Sözlük', '/soezluek'],
++            6 => ['Słownik', '/s-ownik'],
+             default => ['Glossar', '/glossar'],
+         };
+         $glossarUrl   = 'https://gigapixel.gmbh' . $langBase . $glossarSlug;
+@@ -234,6 +252,9 @@ class TermController extends ActionController
+             1 => ' – Definition & Examples | Gigapixel Glossary',
+             2 => ' – Définition & Exemples | Glossaire Gigapixel',
+             3 => ' – Определение & Примеры | Глоссарий Gigapixel',
++            7 => ' – Definizione & Esempi | Glossario Gigapixel',
++            5 => ' – Tanım & Örnekler | Gigapiksel Sözlüğü',
++            6 => ' – Definicja i przykłady | Słownik Gigapixel',
+             default => ' – Definition & Beispiele | Gigapixel-Glossar',
+         };
+         $ogTitle = $term->getTitle() . $suffix;

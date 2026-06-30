@@ -2,6 +2,8 @@
 
 [pages]  Items=390  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=2 EN_LO=0 = WARN)
 
+[page_meta]  Items=246  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=1 EN_LO=0 = WARN)
+
 [tt_content]  Items=461  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=5 EN_LO=47 = WARN)
 
 [glossar_terms]  Items=275  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
@@ -10,7 +12,7 @@
 
 [xliff]  Items=361  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 
-=== GESAMT [pl]: DE_HI=0  EN_HI=0  ES_HI=0  DE_LO=7  EN_LO=47 ===
+=== GESAMT [pl]: DE_HI=0  EN_HI=0  ES_HI=0  DE_LO=8  EN_LO=47 ===
 GATE: PASS (gruen) — DE_HI=0 & EN_HI=0 & ES_HI=0
 
 --- Review: HIGH-Vokabular in BEWAHRTEN Zitaten/Bibliografie (2 Items, praeserviert-by-design, kein Block) ---

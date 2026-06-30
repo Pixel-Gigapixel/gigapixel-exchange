@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Rendered-Meta-Gate: prueft die SERVED Meta-Ebene gerenderter Seiten auf DE/EN/ES-Residue.
+
+Deckt die Luecke, die der DB-Postrun-Gate nicht sieht: CONTROLLER-generierte Meta (z. B. Glossar/Methodik
+setzen description/og/twitter via MetaTagManagerRegistry, nicht aus dem pages-Record). Scant je HTML-Datei:
+  <title>, <meta name="description">, og:description, twitter:description, og:title, twitter:title.
+
+Usage: site_meta_gate.py <dir-mit-html>   (Default: ~/gigapixel-exchange/site-it-tr-pl/rendered)
+Read-only. site_gate-Definition (DE_HI/EN_HI/ES_HI). Exit 0 = gruen.
+"""
+import os, re, sys, glob, html, importlib.util
+DEPLOY = os.path.dirname(os.path.abspath(__file__))
+sg = importlib.util.spec_from_file_location("site_gate", os.path.join(DEPLOY, "site_gate.py"))
+SG = importlib.util.module_from_spec(sg); sg.loader.exec_module(SG)
+
+PATTERNS = {
+    "title": re.compile(r'<title>(.*?)</title>', re.I | re.S),
+    "description": re.compile(r'<meta\s+name="description"\s+content="([^"]*)"', re.I),
+    "og:description": re.compile(r'<meta\s+property="og:description"\s+content="([^"]*)"', re.I),
+    "twitter:description": re.compile(r'<meta\s+name="twitter:description"\s+content="([^"]*)"', re.I),
+    "og:title": re.compile(r'<meta\s+property="og:title"\s+content="([^"]*)"', re.I),
+}
+
+
+def main():
+    d = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser("~/gigapixel-exchange/site-it-tr-pl/rendered")
+    files = sorted(glob.glob(os.path.join(d, "*.html")))
+    total = {"de_hi": 0, "en_hi": 0, "es_hi": 0}
+    fails = []
+    for f in files:
+        doc = open(f, encoding="utf-8", errors="replace").read()
+        for fld, rx in PATTERNS.items():
+            m = rx.search(doc)
+            if not m:
+                continue
+            val = html.unescape(m.group(1)).strip()
+            r = SG.scan_text(val, html=False)
+            for k in total:
+                total[k] += len(r[k])
+            if r["de_hi"] or r["en_hi"] or r["es_hi"]:
+                fails.append((os.path.basename(f), fld, r["de_hi"], r["en_hi"], r["es_hi"], val[:70]))
+    print(f"=== Rendered-Meta-Gate  {len(files)} Seiten  ===")
+    for name, fld, de, en, es, v in fails:
+        print(f"  {name} [{fld}] DE{de} EN{en} ES{es}: {v}")
+    green = total["de_hi"] == 0 and total["en_hi"] == 0 and total["es_hi"] == 0
+    print(f"GESAMT Meta: DE_HI={total['de_hi']} EN_HI={total['en_hi']} ES_HI={total['es_hi']}  -> "
+          f"{'PASS (gruen)' if green else 'FAIL'}")
+    sys.exit(0 if green else 1)
+
+
+if __name__ == "__main__":
+    main()

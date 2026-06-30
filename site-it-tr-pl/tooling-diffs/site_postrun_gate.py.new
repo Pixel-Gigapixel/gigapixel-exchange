@@ -23,6 +23,10 @@ LANG_ISO = {5: "tr", 6: "pl", 7: "it"}
 PKG = "/mnt/raid1/gigapixel/packages"
 PAGE_FIELDS = ["title", "nav_title", "seo_title", "description", "abstract", "keywords",
                "og_title", "og_description", "twitter_title", "twitter_description"]
+# Page-Meta-Ebene (separat ausgewiesen): <meta name="description"> + og/twitter/seo — record-getrieben.
+# (Controller-generierte Meta wie auf der Glossar-Seite faengt der Rendered-Meta-Scan site_meta_gate.py;
+#  diese DB-Ebene deckt alle record-getriebenen Seiten ab — die Ebene fehlte zuvor im Gate.)
+META_FIELDS = ["description", "og_description", "twitter_description", "seo_title", "og_title", "abstract"]
 TT_FIELDS = ["header", "subheader", "bodytext"]
 TERM = "tx_gigapixelglossary_domain_model_term"
 CAT = "tx_gigapixelglossary_domain_model_category"
@@ -43,6 +47,15 @@ def collect(lang, cur):
             if (d.get(f) or "").strip():
                 items.append((f"pages.uid{d['uid']}.{f}", d[f]))
     out["pages"] = items
+    # page_meta (separate Ebene: meta description / og / seo — record-getrieben)
+    cur.execute(f"SELECT uid,{','.join(META_FIELDS)} FROM pages WHERE deleted=0 AND sys_language_uid=%s", (lang,))
+    mitems = []
+    for r in cur.fetchall():
+        d = dict(r)
+        for f in META_FIELDS:
+            if (d.get(f) or "").strip():
+                mitems.append((f"page_meta.uid{d['uid']}.{f}", d[f]))
+    out["page_meta"] = mitems
     # tt_content
     cur.execute(f"SELECT uid,{','.join(TT_FIELDS)} FROM tt_content WHERE deleted=0 AND sys_language_uid=%s", (lang,))
     items = []

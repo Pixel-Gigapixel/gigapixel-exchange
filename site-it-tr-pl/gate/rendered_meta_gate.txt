@@ -1,0 +1,2 @@
+=== Rendered-Meta-Gate  21 Seiten  ===
+GESAMT Meta: DE_HI=0 EN_HI=0 ES_HI=0  -> PASS (gruen)
