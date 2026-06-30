@@ -7,8 +7,12 @@ Referenz = Inventar des Workstreams (ES langId4 = Vorlage): pages 107, tt_conten
 | Sprache | Ist | Ref (ES) | Gap | Kommentar |
 |---|---|---|---|---|
 | TR (5) | 107 | 107 | **0** | vollständig |
-| PL (6) | 106 | 107 | 1 | pid 371 (Blog, Zahl/KI-Mismatch) → DE-Fallback |
-| IT (7) | 105 | 107 | 2 | pid 138 (HTML-Skelett), pid 371 (24/7) → DE-Fallback |
+| PL (6) | 107 | 107 | **0** | pid 371 mit glm-5.2 grün → inserted |
+| IT (7) | 107 | 107 | **0** | pid 138 + 371 mit glm-5.2 grün → inserted |
+
+**Gap = 0 für alle drei Sprachen.** Die zuvor 3 DE-Fallback-Seiten (IT 138/371, PL 371) wurden mit
+**glm-5.2:cloud** gate-grün übersetzt (DE_HI/EN_HI/ES_HI=0, Zahl/Tag/&-Parität) und auf biz inserted
+(Page+Content-Overlay neu, da vorher keins existierte).
 
 Davon je Sprache **17 Struktur-Overlays** (Shortcuts doktype 4, Plugins 190, externe 3) — neu angelegt
 (`structural_overlay.py`), Titel via glm übersetzt, Slug/doktype/shortcut/url von DE gespiegelt. Diese
@@ -60,5 +64,7 @@ Definition: GRÜN ⇔ DE_HI=0 & EN_HI=0 & ES_HI=0 (HIGH-Token-Sets in `site_gate
 `catalog_sample_gate.py` ausgerichtet, + neuer ES_HI-Tier). Bewahrte Bibliografie/Zitate/URLs/Produktnamen
 werden vor dem Scan entfernt (siehe `gate/postrun_*.txt`, inkl. transparenter Zitat-Review-Liste).
 
-**Netto-Gap (echte Übersetzungs-Lücke): 3 Content-Seiten (IT 138/371, PL 371)** — alles übrige vollständig
-in Zielsprache, gate-grün.
+**Netto-Gap: 0.** Alle inserted Site-Overlays in Zielsprache, gate-grün (DE_HI=0 & EN_HI=0 & ES_HI=0).
+Legal-Seiten verifiziert: Datenschutz (pid 49) IT „Informativa sulla privacy" / TR „Gizlilik Politikası" /
+PL „Polityka prywatności"; Impressum (pid 11) IT „Fornitore del servizio" / TR „Hizmet Sağlayıcı" /
+PL „Usługodawca" (DE-Firmenadresse korrekt bewahrt).

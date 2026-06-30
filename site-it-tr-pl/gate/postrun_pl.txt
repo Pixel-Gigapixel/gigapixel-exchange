@@ -1,8 +1,8 @@
 === Site-Postrun-Gate [pl] (lang 6) — biz, read-only ===
 
-[pages]  Items=387  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=2 EN_LO=0 = WARN)
+[pages]  Items=390  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=2 EN_LO=0 = WARN)
 
-[tt_content]  Items=459  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=5 EN_LO=47 = WARN)
+[tt_content]  Items=461  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=5 EN_LO=47 = WARN)
 
 [glossar_terms]  Items=275  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 

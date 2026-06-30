@@ -1,5 +1,5 @@
 diff --git a/tools/rollout.py b/tools/rollout.py
-index a2b37e8..130d116 100644
+index a2b37e8..8dd56b0 100644
 --- a/tools/rollout.py
 +++ b/tools/rollout.py
 @@ -46,12 +46,23 @@ from collections import OrderedDict
@@ -22,7 +22,7 @@ index a2b37e8..130d116 100644
 +ENGINE        = "ollama"                      # in main() aus --engine gesetzt; importierende Tools nutzen den Default
 +DEFAULT_ENGINE = "ollama"
 +OLLAMA_URL    = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
-+OLLAMA_MODEL  = "glm-5.1:cloud"              # cloud-Modell ueber ollama.com (remote_host https://ollama.com:443)
++OLLAMA_MODEL  = os.environ.get("OLLAMA_MODEL", "glm-5.2:cloud")  # Z.ai-Flagship ueber ollama.com (remote_host https://ollama.com:443); 5.1 war Vorgaenger
 +ANTHROPIC_MODEL = "claude-sonnet-4-6"        # nur fuer --engine anthropic
 +DEFAULT_MODEL = OLLAMA_MODEL                  # aktiver Default = Ollama-GLM
  
@@ -116,7 +116,7 @@ index a2b37e8..130d116 100644
 -    (escaping-frei, rohes HTML) — Parser oben mappt zurueck ins fields-dict (unveraenderter Contract)."""
 -    import anthropic
 +    (escaping-frei, rohes HTML) — Parser oben mappt zurueck ins fields-dict (unveraenderter Contract).
-+    Engine: ENGINE=='ollama' -> cloud-Ollama glm-5.1:cloud (Default); 'anthropic' -> Claude (Notfall)."""
++    Engine: ENGINE=='ollama' -> cloud-Ollama glm-5.2:cloud (Default); 'anthropic' -> Claude (Notfall)."""
      _load_secrets()
      # Guard: Quellinhalt darf die Marker-Strings nicht enthalten, sonst waere der Contract mehrdeutig
      # (in HTML praktisch ausgeschlossen; die Assertion kostet nichts).
@@ -236,9 +236,9 @@ index a2b37e8..130d116 100644
      ap.add_argument("--lang", type=int, default=4)
 -    ap.add_argument("--model", default=DEFAULT_MODEL)
 +    ap.add_argument("--engine", choices=["ollama", "anthropic"], default=DEFAULT_ENGINE,
-+                    help="Uebersetzungs-Engine (Default ollama=glm-5.1:cloud; anthropic nur Notfall/Kosten)")
++                    help="Uebersetzungs-Engine (Default ollama=glm-5.2:cloud; anthropic nur Notfall/Kosten)")
 +    ap.add_argument("--model", default=None,
-+                    help="Modell-Override; Default je Engine (ollama->glm-5.1:cloud, anthropic->claude-sonnet-4-6)")
++                    help="Modell-Override; Default je Engine (ollama->glm-5.2:cloud, anthropic->claude-sonnet-4-6)")
      g = ap.add_mutually_exclusive_group(required=True)
      g.add_argument("--dry-run", action="store_true")
      g.add_argument("--commit", action="store_true")

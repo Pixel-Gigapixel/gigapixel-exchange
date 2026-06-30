@@ -1,5 +1,5 @@
 diff --git a/tools/glossar_load.py b/tools/glossar_load.py
-index 849046f..0cdc7c6 100644
+index 849046f..8173949 100644
 --- a/tools/glossar_load.py
 +++ b/tools/glossar_load.py
 @@ -1,13 +1,21 @@
@@ -18,7 +18,7 @@ index 849046f..0cdc7c6 100644
 +ZWEI Pfade:
 +  --lang 4 (ES, Legacy): liest reviewte term-*.json (Source-of-Truth) aus --review-dir + statische CAT_ES,
 +                         inserted Terme + Kategorien + 2 Plugin-Elemente. UNVERAENDERT (ES ist live).
-+  --lang 5/6/7 (TR/PL/IT): uebersetzt DE-Quelle (sys_language_uid=0) ueber cloud-Ollama (glm-5.1:cloud,
++  --lang 5/6/7 (TR/PL/IT): uebersetzt DE-Quelle (sys_language_uid=0) ueber cloud-Ollama (glm-5.2:cloud,
 +                           rollout.translate_fields) -> term-*.json + cats.json, Slugs aus den uebersetzten
 +                           Titeln. Plugin-Elemente (819/820) werden NICHT angefasst — die legt der
 +                           Site-Rollout (rollout.py) bereits als tt_content-Overlay auf pid 391/392 an.

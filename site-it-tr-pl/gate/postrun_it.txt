@@ -1,8 +1,8 @@
 === Site-Postrun-Gate [it] (lang 7) — biz, read-only ===
 
-[pages]  Items=384  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
+[pages]  Items=390  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 
-[tt_content]  Items=457  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=3 EN_LO=50 = WARN)
+[tt_content]  Items=461  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=3 EN_LO=52 = WARN)
 
 [glossar_terms]  Items=275  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 
@@ -10,7 +10,7 @@
 
 [xliff]  Items=361  DE_HI=0 EN_HI=0 ES_HI=0  (DE_LO=0 EN_LO=0 = WARN)
 
-=== GESAMT [it]: DE_HI=0  EN_HI=0  ES_HI=0  DE_LO=3  EN_LO=50 ===
+=== GESAMT [it]: DE_HI=0  EN_HI=0  ES_HI=0  DE_LO=3  EN_LO=52 ===
 GATE: PASS (gruen) — DE_HI=0 & EN_HI=0 & ES_HI=0
 
 --- Review: HIGH-Vokabular in BEWAHRTEN Zitaten/Bibliografie (2 Items, praeserviert-by-design, kein Block) ---

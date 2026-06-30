@@ -7,7 +7,7 @@ Diese Seiten haben keinen uebersetzbaren tt_content -> der Content-Rollout (roll
 Abdeckung wie ES erreicht (Inventar-Gap=0), legt dieses Tool kanonische Overlays an:
   - DE-Row klonen (Spalten-Paritaet, bewaehrte Struktur)
   - sys_language_uid=lang, l10n_parent/l10n_source=de_uid
-  - title via cloud-Ollama (glm-5.1:cloud) uebersetzt; nav_title nur wenn DE nicht leer
+  - title via cloud-Ollama (glm-5.2:cloud) uebersetzt; nav_title nur wenn DE nicht leer
   - doktype/shortcut/shortcut_mode/url/slug/nav_hide/hidden 1:1 von DE gespiegelt
     (Shortcut-Ziel zeigt auf DE-uid; TYPO3 loest die Sprach-Overlay-Variante automatisch auf)
 

@@ -51,6 +51,13 @@ aller 12 gerenderten Seiten (0 DE/EN/ES im sichtbaren Body).
 
 Alte spanische Overlays sind soft-deleted (deleted=1) — reversibel, kein Datenverlust.
 
-## Rest (siehe README → Offene Punkte)
-IT 138, IT/PL 371 — harte Content-Seiten (HTML-Skelett / „24/7"), via glm nicht grün, rendern via
-DE-Fallback. Nicht an Sonnet/Opus eskaliert (glm-only-Vorgabe).
+## Rev. 2 — glm-5.2 löst die 3 Reststeiten
+Nach Umstellung des Übersetzungs-Modells auf **glm-5.2:cloud** (Z.ai-Flagship; `OLLAMA_MODEL` zentral in
+`rollout.py`, alle Tools nutzen `R.OLLAMA_MODEL`; Dry-Run-Log `model=glm-5.2:cloud` verifiziert) wurden die
+3 zuvor harten Seiten gate-grün übersetzt und auf biz inserted:
+- IT pid 138 (uid 548, HTML-Tag-Skelett) → PASS
+- IT pid 371 (uid 799, „24/7") → PASS (nach 1 Gate-Retry)
+- PL pid 371 (uid 799, „KI"/Zahl) → PASS (nach 1 Gate-Retry)
+
+Verifiziert ES_HI=0 + Sprachprobe (IT „Airport Lounge: immagini Gigapixel…", PL „Poczekalnie lotniskowe…").
+**Keine DE-Fallback-Content-Seite mehr offen. Pages-Gap = 0 (107/107/107).**

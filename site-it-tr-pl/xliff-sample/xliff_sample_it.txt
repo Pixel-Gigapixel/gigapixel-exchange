@@ -1,36 +1,37 @@
-[search.placeholder]
-  src: Bilder suchen…
-  it: Cerca immagini…
-[search.btn.camera]
-  src: Bildsuche öffnen
-  it: Apri ricerca immagini
-[search.btn.submit]
-  src: Suchen
-  it: Cerca
-[drop.prompt]
-  src: Bild hierher ziehen oder
-  it: Trascina l'immagine qui oppure
-[drop.prompt.click]
-  src: klicken
-  it: clicca
-[drop.hint]
-  src: JPEG · PNG · WebP · max 10 MB
-  it: JPEG · PNG · WebP · max 10 MB
-[options.summary]
-  src: Optionen
-  it: Opzioni
-[slider.weight.label]
-  src: Bild / Text
-  it: Immagine / Testo
-[slider.weight.title]
-  src: Wie stark soll das Bild gegenüber dem Text gewichtet werden?
-  it: Quanto peso attribuire all'immagine rispetto al testo?
-[slider.weight.left]
-  src: ◀ Text
-  it: ◀ Testo
-[slider.weight.right]
-  src: Bild ▶
-  it: Immagine ▶
-[slider.weight.image]
-  src: Bild
-  it: Immagine
+=== XLIFF-Stichprobe [it] ===
+
+[checkout] it.locallang.cart.xlf
+  tx_cart.submit_order
+    en: Place order
+    it: Effettua l'ordine
+  tx_cart.error.stock_handling.add
+    en: Desired number of this item not available.
+    it: Il numero desiderato di questo articolo non è disponibile.
+
+[cart_labels] it.locallang.xlf
+  filter
+    en: filter
+    it: Filtro
+  tx_cartgigapixels.more_link
+    en: more
+    it: Altro
+  tx_cartgigapixels.plugin.form.submit
+    en: Add to cart
+    it: Aggiungi al carrello
+  tx_cartgigapixels.plugin.form.submit.success
+    en: The gigapixel has been added to your shopping cart.
+    it: Il gigapixel è stato aggiunto al carrello.
+
+[order_mail] it.CartPdf.xlf
+  cartpdf.overview.salutation
+    en: Sehr geehrte Damen und Herren,
+    it: Gentili Signore e Signori,
+  cartpdf.overview.body
+    en: vielen Dank für Ihre Bestellung. Hiermit bestätigen wir Ihren Auftrag mit folgenden Positionen:
+    it: La ringraziamo per il Suo ordine. Con la presente confermiamo il Suo incarico con le seguenti voci:
+  cartpdf.greetings.thanks
+    en: Wir danken für den erteilten Auftrag.
+    it: Ringraziamo per l'incarico conferito.
+  cartpdf.order.title
+    en: Auftragsbestätigung
+    it: Conferma d'ordine

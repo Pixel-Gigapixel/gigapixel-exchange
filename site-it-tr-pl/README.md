@@ -1,6 +1,6 @@
 # Site-Schicht IT / TR / PL — Review-Bundle D (biz)
 
-**Stand:** 2026-06-30 · **Ziel-System:** biz (Staging) · **Übersetzungs-Engine:** cloud-Ollama `glm-5.1:cloud` (NICHT mehr Sonnet/Haiku) · **HALT für Daniel-Review + EIN gmbh-GO.**
+**Stand:** 2026-06-30 (Rev. 2, glm-5.2) · **Ziel-System:** biz (Staging) · **Übersetzungs-Engine:** cloud-Ollama `glm-5.2:cloud` (Z.ai-Flagship; NICHT Sonnet/Haiku) · **HALT für Daniel-Review + EIN gmbh-GO.**
 
 Dieses Bundle deckt die komplette Site-Schicht für Italienisch (langId 7), Türkisch (5) und Polnisch (6):
 pages-Overlays, tt_content, Glossar (Terme + Kategorien), XLIFF-UI-Strings, meta-keywords, Struktur-Overlays.
@@ -10,15 +10,16 @@ pages-Overlays, tt_content, Glossar (Terme + Kategorien), XLIFF-UI-Strings, meta
 
 | Komponente | IT | TR | PL | Quelle/Ref |
 |---|---|---|---|---|
-| pages-Overlays | 105 | **107** | 106 | ES=107 |
-| tt_content | 235 | 237 | 236 | ES=232 |
+| pages-Overlays | **107** | **107** | **107** | ES=107 → **Gap 0** |
+| tt_content | 236 | 237 | 237 | ES=232 |
 | Glossar-Terme | 55 | 55 | 55 | DE=55 |
 | Glossar-Kategorien | 7 | 7 | 7 | DE=7 |
 | XLIFF-Keys (6 Dateien) | 361 | 361 | 361 | en-source=361 |
 | **Postrun-Gate** | **PASS** | **PASS** | **PASS** | DE_HI=0 & EN_HI=0 & ES_HI=0 |
 
-Gerenderte Seiten (biz, served HTML, alle HTTP 200, `lang`-Attribut korrekt, 0 DE/EN/ES-Leak im Body):
-Startseite · /bilder-verkaufen · Checkout (/cart) · Glossar — je Sprache → `rendered/`.
+Gerenderte Seiten (biz, served HTML, **alle 18 HTTP 200**, `lang`-Attribut korrekt, 0 DE/EN/ES-Leak im Body):
+Startseite · /bilder-verkaufen · Checkout (/cart) · Glossar · **Datenschutz** · **Impressum** — je Sprache → `rendered/`
+(die zwei Rechtsseiten explizit, da zuvor ES-korrumpiert).
 
 ## Wichtigster Befund: Spanisch-Leak (behoben)
 
@@ -41,25 +42,23 @@ Datenschutz/Impressum, Tier-2-Landingpages, Blog).
 
 Details + Zahlen: `FINDINGS.md`.
 
-## Offene Punkte (HALT — deine Entscheidung)
+## Reststeiten — mit glm-5.2 gelöst (Rev. 2)
 
-3 harte Content-Seiten konnten von glm nicht gate-grün übersetzt werden und rendern aktuell via
-**DE-Fallback** (`fallbackType: fallback` ist site-weit aktiv → Seite funktioniert, zeigt deutschen Text):
+Die 3 zuvor harten Content-Seiten, die mit glm-5.1 nur als DE-Fallback liefen, sind mit **glm-5.2:cloud**
+gate-grün (DE_HI/EN_HI/ES_HI=0, Zahl/Tag/&-Parität) übersetzt und auf biz inserted:
 
-| pid | Sprache | Grund |
-|---|---|---|
-| 138 | IT | HTML-Tag-Skelett-Mismatch (uid 548) — glm verändert Tags |
-| 371 | IT, PL | Zahl-/Token-Mismatch „24/7" / „KI" (uid 799) — historisch nur von Opus gelöst |
+| pid | Sprache | vorher (5.1) | jetzt (5.2) |
+|---|---|---|---|
+| 138 | IT | HTML-Tag-Skelett-Mismatch (uid 548) → DE-Fallback | PASS, inserted |
+| 371 | IT | Zahl-Mismatch „24/7" (uid 799) → DE-Fallback | PASS (nach Retry), inserted |
+| 371 | PL | „KI"/Zahl (uid 799) → DE-Fallback | PASS (nach Retry), inserted |
 
-Empfehlung: Guide-Regel für „rund um die Uhr → ziffernfrei" auf IT/TR/PL erweitern, oder diese 2 Seiten
-manuell. **Per glm-only-Vorgabe NICHT an Sonnet/Opus eskaliert.**
-
-Große Legal-Seiten (Impressum/Datenschutz) waren grenzwertig (glm liefert bei >10k-Token-Eingaben teils
-leere Antworten) — wurden in Repair-Runde 2 mit gehärtetem Prompt aber **grün** (siehe Gate).
+**Keine offenen DE-Fallback-Seiten mehr. Gap = 0.** Modell-Call verifiziert: Dry-Run-Log
+`model=glm-5.2:cloud` (nicht 5.1/Sonnet/Haiku).
 
 ## Verzeichnis
 
-- `rendered/` — 12 gerenderte biz-Seiten (HTML, served, Basic-Auth-gerendert)
+- `rendered/` — 18 gerenderte biz-Seiten (6 je Sprache inkl. Datenschutz+Impressum; HTML, served)
 - `gate/` — Postrun-Gate je Sprache (DE_HI/EN_HI/ES_HI = 0) + Glossar-Render-Beispiele
 - `xliff-sample/` — XLIFF-Stichprobe (12 trans-units je Sprache) + XLIFF-Gate
 - `tooling-diffs/` — Diffs (`rollout.py`, `glossar_load.py`) + neue Tools (`site_gate`, `xliff_translate`,

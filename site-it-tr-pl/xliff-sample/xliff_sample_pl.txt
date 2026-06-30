@@ -1,36 +1,37 @@
-[search.placeholder]
-  src: Bilder suchen…
-  pl: Szukaj obrazów…
-[search.btn.camera]
-  src: Bildsuche öffnen
-  pl: Otwórz wyszukiwarkę obrazów
-[search.btn.submit]
-  src: Suchen
-  pl: Szukaj
-[drop.prompt]
-  src: Bild hierher ziehen oder
-  pl: Przeciągnij obraz tutaj lub
-[drop.prompt.click]
-  src: klicken
-  pl: kliknij
-[drop.hint]
-  src: JPEG · PNG · WebP · max 10 MB
-  pl: JPEG · PNG · WebP · max 10 MB
-[options.summary]
-  src: Optionen
-  pl: Opcje
-[slider.weight.label]
-  src: Bild / Text
-  pl: Obraz / Tekst
-[slider.weight.title]
-  src: Wie stark soll das Bild gegenüber dem Text gewichtet werden?
-  pl: Jak mocno obraz ma być ważony względem tekstu?
-[slider.weight.left]
-  src: ◀ Text
-  pl: ◀ Tekst
-[slider.weight.right]
-  src: Bild ▶
-  pl: Obraz ▶
-[slider.weight.image]
-  src: Bild
-  pl: Obraz
+=== XLIFF-Stichprobe [pl] ===
+
+[checkout] pl.locallang.cart.xlf
+  tx_cart.submit_order
+    en: Place order
+    pl: Złóż zamówienie
+  tx_cart.error.stock_handling.add
+    en: Desired number of this item not available.
+    pl: Żądana ilość tego produktu jest niedostępna.
+
+[cart_labels] pl.locallang.xlf
+  filter
+    en: filter
+    pl: Filtr
+  tx_cartgigapixels.more_link
+    en: more
+    pl: więcej
+  tx_cartgigapixels.plugin.form.submit
+    en: Add to cart
+    pl: Dodaj do koszyka
+  tx_cartgigapixels.plugin.form.submit.success
+    en: The gigapixel has been added to your shopping cart.
+    pl: Gigapiksel został dodany do koszyka.
+
+[order_mail] pl.CartPdf.xlf
+  cartpdf.overview.salutation
+    en: Sehr geehrte Damen und Herren,
+    pl: Szanowni Państwo,
+  cartpdf.overview.body
+    en: vielen Dank für Ihre Bestellung. Hiermit bestätigen wir Ihren Auftrag mit folgenden Positionen:
+    pl: dziękujemy za złożenie zamówienia. Niniejszym potwierdzamy Państwa zlecenie z następującymi pozycjami:
+  cartpdf.greetings.thanks
+    en: Wir danken für den erteilten Auftrag.
+    pl: Dziękujemy za zlecenie.
+  cartpdf.order.title
+    en: Auftragsbestätigung
+    pl: Potwierdzenie zamówienia

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""XLIFF-Translator (TR/PL/IT) ueber cloud-Ollama (glm-5.1:cloud via rollout.translate_fields).
+"""XLIFF-Translator (TR/PL/IT) ueber cloud-Ollama (glm-5.2:cloud via rollout.translate_fields).
 
 Nimmt die 6 es.*.xlf als Vorlage und erzeugt <iso>.*.xlf im SELBEN Package-Verzeichnis.
 Uebersetzt wird aus <source> (en bzw. de Original) -> Zielsprache; <target>-Inhalt wird ersetzt,

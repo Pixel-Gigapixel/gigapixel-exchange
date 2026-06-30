@@ -1,36 +1,37 @@
-[search.placeholder]
-  src: Bilder suchen…
-  tr: Görselleri ara…
-[search.btn.camera]
-  src: Bildsuche öffnen
-  tr: Görsel aramayı aç
-[search.btn.submit]
-  src: Suchen
-  tr: Ara
-[drop.prompt]
-  src: Bild hierher ziehen oder
-  tr: Görseli buraya sürükleyin veya
-[drop.prompt.click]
-  src: klicken
-  tr: tıklayın
-[drop.hint]
-  src: JPEG · PNG · WebP · max 10 MB
-  tr: JPEG · PNG · WebP · maks 10 MB
-[options.summary]
-  src: Optionen
-  tr: Seçenekler
-[slider.weight.label]
-  src: Bild / Text
-  tr: Görsel / Metin
-[slider.weight.title]
-  src: Wie stark soll das Bild gegenüber dem Text gewichtet werden?
-  tr: Görsel, metne göre ne kadar ağırlıklı olmalı?
-[slider.weight.left]
-  src: ◀ Text
-  tr: ◀ Metin
-[slider.weight.right]
-  src: Bild ▶
-  tr: Görsel ▶
-[slider.weight.image]
-  src: Bild
-  tr: Görsel
+=== XLIFF-Stichprobe [tr] ===
+
+[checkout] tr.locallang.cart.xlf
+  tx_cart.submit_order
+    en: Place order
+    tr: Sipariş ver
+  tx_cart.error.stock_handling.add
+    en: Desired number of this item not available.
+    tr: Bu üründen istenen adet mevcut değildir.
+
+[cart_labels] tr.locallang.xlf
+  filter
+    en: filter
+    tr: Filtre
+  tx_cartgigapixels.more_link
+    en: more
+    tr: Daha fazlası
+  tx_cartgigapixels.plugin.form.submit
+    en: Add to cart
+    tr: Sepete ekle
+  tx_cartgigapixels.plugin.form.submit.success
+    en: The gigapixel has been added to your shopping cart.
+    tr: Gigapixel alışveriş sepetinize eklendi.
+
+[order_mail] tr.CartPdf.xlf
+  cartpdf.overview.salutation
+    en: Sehr geehrte Damen und Herren,
+    tr: Sayın İlgili,
+  cartpdf.overview.body
+    en: vielen Dank für Ihre Bestellung. Hiermit bestätigen wir Ihren Auftrag mit folgenden Positionen:
+    tr: Siparişiniz için teşekkür ederiz. Siparişinizi aşağıdaki kalemlerle onaylıyoruz:
+  cartpdf.greetings.thanks
+    en: Wir danken für den erteilten Auftrag.
+    tr: Verdiğiniz sipariş için teşekkür ederiz.
+  cartpdf.order.title
+    en: Auftragsbestätigung
+    tr: Sipariş Onayı
